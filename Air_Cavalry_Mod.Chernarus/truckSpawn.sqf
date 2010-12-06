@@ -29,14 +29,14 @@ if (_rand <= 0.7) then {
 	_tempSoldier8 addMagazine "HandGrenade_West";
 
 	removeAllWeapons _tempSoldier9;
-	for "_x" from 1 to 6 do {_tempSoldier7 addMagazine "30Rnd_762x39_AK47"};
-	_tempSoldier7 addWeapon "ACE_AKM";
-	_tempSoldier7 addMagazine "HandGrenade_West";
+	for "_x" from 1 to 6 do {_tempSoldier9 addMagazine "30Rnd_762x39_AK47"};
+	_tempSoldier9 addWeapon "ACE_AKM";
+	_tempSoldier9 addMagazine "HandGrenade_West";
 
 	removeAllWeapons _tempSoldier10;
-	for "_x" from 1 to 6 do {_tempSoldier8 addMagazine "30Rnd_762x39_AK47"};
-	_tempSoldier8 addWeapon "ACE_AKM";
-	_tempSoldier8 addMagazine "HandGrenade_West";
+	for "_x" from 1 to 6 do {_tempSoldier10 addMagazine "30Rnd_762x39_AK47"};
+	_tempSoldier10 addWeapon "ACE_AKM";
+	_tempSoldier10 addMagazine "HandGrenade_West";
 
 sleep 0.1;
 
