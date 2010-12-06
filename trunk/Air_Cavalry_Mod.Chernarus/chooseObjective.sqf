@@ -27,7 +27,7 @@ if (isServer) then {
 			_winTrigger = createTrigger["EmptyDetector",getMarkerPos "city1"];
 			_winTrigger setTriggerArea[600,600,0,false];
 			_winTrigger setTriggerActivation["ANY","PRESENT",false];
-			_winTrigger setTriggerStatements["({side _x==east} count thislist == 0) AND ({_x in thislist} count units group player >= 1)", "enemyDown = 1; _null = [] execVM 'task2.sqf';", ""];
+			_winTrigger setTriggerStatements["({side _x==east} count thislist == 0) AND ({_x in thislist} count units group player >= 1)", "enemyDown = 1; [-2, {_null = [] execVM _this}, 'task2.sqf'] call CBA_fnc_globalExecute;", ""];
 		};
 		case 2:
 		{
@@ -49,7 +49,7 @@ if (isServer) then {
 			_winTrigger = createTrigger["EmptyDetector",getMarkerPos "city2"];
 			_winTrigger setTriggerArea[600,600,0,false];
 			_winTrigger setTriggerActivation["ANY","PRESENT",false];
-			_winTrigger setTriggerStatements["({side _x==east} count thislist == 0) AND ({_x in thislist} count units group player >= 1)", "enemyDown = 1; _null = [] execVM 'task2.sqf';", ""];
+			_winTrigger setTriggerStatements["({side _x==east} count thislist == 0) AND ({_x in thislist} count units group player >= 1)", "enemyDown = 1; [-2, {_null = [] execVM _this}, 'task2.sqf'] call CBA_fnc_globalExecute;", ""];
 		};
 		case 3:
 		{
@@ -71,7 +71,7 @@ if (isServer) then {
 			_winTrigger = createTrigger["EmptyDetector",getMarkerPos "city3"];
 			_winTrigger setTriggerArea[600,600,0,false];
 			_winTrigger setTriggerActivation["ANY","PRESENT",false];
-			_winTrigger setTriggerStatements["({side _x==east} count thislist == 0) AND ({_x in thislist} count units group player >= 1)", "enemyDown = 1; _null = [] execVM 'task2.sqf';", ""];
+			_winTrigger setTriggerStatements["({side _x==east} count thislist == 0) AND ({_x in thislist} count units group player >= 1)", "enemyDown = 1; [-2, {_null = [] execVM _this}, 'task2.sqf'] call CBA_fnc_globalExecute;", ""];
 		};
 		case 4:
 		{
@@ -93,7 +93,7 @@ if (isServer) then {
 			_winTrigger = createTrigger["EmptyDetector",getMarkerPos "city4"];
 			_winTrigger setTriggerArea[600,600,0,false];
 			_winTrigger setTriggerActivation["ANY","PRESENT",false];
-			_winTrigger setTriggerStatements["({side _x==east} count thislist == 0) AND ({_x in thislist} count units group player >= 1)", "enemyDown = 1; _null = [] execVM 'task2.sqf';", ""];
+			_winTrigger setTriggerStatements["({side _x==east} count thislist == 0) AND ({_x in thislist} count units group player >= 1)", "enemyDown = 1; [-2, {_null = [] execVM _this}, 'task2.sqf'] call CBA_fnc_globalExecute;", ""];
 		};
 	};
 };
