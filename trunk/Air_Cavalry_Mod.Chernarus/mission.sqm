@@ -499,7 +499,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=157;
+		items=158;
 		class Item0
 		{
 			position[]={4768.6821,339,10168.352};
@@ -1506,10 +1506,16 @@ class Mission
 			name="bombplace4";
 			type="Empty";
 		};
+		class Item157
+		{
+			position[]={4772.2974,339,10215.954};
+			name="taskpoint2";
+			type="Empty";
+		};
 	};
 	class Sensors
 	{
-		items=1;
+		items=2;
 		class Item0
 		{
 			position[]={670.32092,408.13644,12382.043};
@@ -1517,6 +1523,20 @@ class Mission
 			age="UNKNOWN";
 			expCond="local player";
 			expActiv="handle = [] execVM ""weaponrespawn_ace.sqf"";";
+			class Effects
+			{
+			};
+		};
+		class Item1
+		{
+			position[]={4786.5679,339,10191.72};
+			a=800;
+			b=800;
+			activationBy="WEST";
+			interruptable=1;
+			age="UNKNOWN";
+			expCond="this && enemyDown == 1;";
+			expActiv="_null = [] execVM ""mission_done.sqf"";";
 			class Effects
 			{
 			};
