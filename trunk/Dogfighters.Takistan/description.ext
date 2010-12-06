@@ -1,0 +1,14 @@
+respawn = 3;
+respawnDelay = 5;
+disabledAI = 1;
+
+class Params 
+{
+	class aircraftType
+        {
+                title = Plane;
+                values[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11};
+                texts[] = {L39, A10, su25, Harrier, F35B, AN-2, Su-27, Su-30, Su-34, AH-6 GAU, AH-6 Twin, BQM-74};
+                default = 1;
+        };
+};

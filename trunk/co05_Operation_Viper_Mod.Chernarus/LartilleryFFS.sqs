@@ -1,0 +1,149 @@
+_pos = _this select 0
+onMapSingleClick "";
+artmissions = artmissions + 1
+
+_markerobj = createMarker [format ["marker%1", artmissions],_pos]
+_markerobj setMarkerType "Destroy"
+format ["marker%1", artmissions] setMarkerText format["Fire mission", artmissions]
+
+
+HINT format ["Artillery Dispatched, Impact in 30 seconds, out."]
+~30
+_rounds = 0
+HINT "Splash"
+#art
+busy = true
+~0.1
+_shell = "Sh_122_HE" createvehicle [0,0]
+_shell setpos [((_pos select 0) + random 100),((_pos select 1) - random 100), 400 + random 0 ]
+~0.4
+_shell = "Sh_122_HE" createvehicle [0,0]
+_shell setpos [((_pos select 0) + random 100),((_pos select 1) - random 100), 400 + random 0 ]
+~0.3
+_shell = "Sh_122_HE" createvehicle [0,0]
+_shell setpos [((_pos select 0) - random 100),((_pos select 1) + random 100), 400 + random 0 ]
+~0.25
+_shell = "Sh_122_HE" createvehicle [0,0]
+_shell setpos [((_pos select 0) + random 100),((_pos select 1) - random 100), 400 + random 0 ]
+~0.2
+_shell = "Sh_122_HE" createvehicle [0,0]
+_shell setpos [((_pos select 0) - random 100),((_pos select 1) + random 100), 400 + random 0 ]
+~0.3
+_shell = "Sh_122_HE" createvehicle [0,0]
+_shell setpos [((_pos select 0) + random 100),((_pos select 1) - random 100), 400 + random 0 ]
+~0.45
+_shell = "Sh_122_HE" createvehicle [0,0]
+_shell setpos [((_pos select 0) - random 100),((_pos select 1) + random 100), 400 + random 0 ]
+~.1
+_shell = "Sh_122_HE" createvehicle [0,0]
+_shell setpos [((_pos select 0) - random 100),((_pos select 1) - random 100), 400 + random 0 ]
+
+~0.1
+_shell = "Sh_122_HE" createvehicle [0,0]
+_shell setpos [((_pos select 0) + random 100),((_pos select 1) - random 100), 800 + random 0 ]
+~0.4
+_shell = "Sh_122_HE" createvehicle [0,0]
+_shell setpos [((_pos select 0) + random 100),((_pos select 1) - random 100), 800 + random 0 ]
+~0.3
+_shell = "Sh_122_HE" createvehicle [0,0]
+_shell setpos [((_pos select 0) - random 100),((_pos select 1) + random 100), 800 + random 0 ]
+~0.25
+_shell = "Sh_122_HE" createvehicle [0,0]
+_shell setpos [((_pos select 0) + random 100),((_pos select 1) - random 100), 800 + random 0 ]
+~0.2
+_shell = "Sh_122_HE" createvehicle [0,0]
+_shell setpos [((_pos select 0) - random 100),((_pos select 1) + random 100), 800 + random 0 ]
+~0.3
+_shell = "Sh_122_HE" createvehicle [0,0]
+_shell setpos [((_pos select 0) + random 100),((_pos select 1) - random 100), 800 + random 0 ]
+~0.45
+_shell = "Sh_122_HE" createvehicle [0,0]
+_shell setpos [((_pos select 0) - random 100),((_pos select 1) + random 100), 800 + random 0 ]
+~.1
+_shell = "Sh_122_HE" createvehicle [0,0]
+_shell setpos [((_pos select 0) - random 100),((_pos select 1) - random 100), 800 + random 0 ]
+
+~0.1
+_shell = "Sh_122_HE" createvehicle [0,0]
+_shell setpos [((_pos select 0) + random 100),((_pos select 1) - random 100), 1000 + random 0 ]
+~0.4
+_shell = "Sh_122_HE" createvehicle [0,0]
+_shell setpos [((_pos select 0) + random 100),((_pos select 1) - random 100), 1000 + random 0 ]
+~0.3
+_shell = "Sh_122_HE" createvehicle [0,0]
+_shell setpos [((_pos select 0) - random 100),((_pos select 1) + random 100), 1000 + random 0 ]
+~0.25
+_shell = "Sh_122_HE" createvehicle [0,0]
+_shell setpos [((_pos select 0) + random 100),((_pos select 1) - random 100), 1000 + random 0 ]
+~0.2
+_shell = "Sh_122_HE" createvehicle [0,0]
+_shell setpos [((_pos select 0) - random 100),((_pos select 1) + random 100), 1000 + random 0 ]
+~0.3
+_shell = "Sh_122_HE" createvehicle [0,0]
+_shell setpos [((_pos select 0) + random 100),((_pos select 1) - random 100), 1000 + random 0 ]
+~0.45
+_shell = "Sh_122_HE" createvehicle [0,0]
+_shell setpos [((_pos select 0) - random 100),((_pos select 1) + random 100), 1000 + random 0 ]
+~.1
+_shell = "Sh_122_HE" createvehicle [0,0]
+_shell setpos [((_pos select 0) - random 100),((_pos select 1) - random 100), 1000 + random 0 ]
+
+~0.1
+_shell = "Sh_122_HE" createvehicle [0,0]
+_shell setpos [((_pos select 0) + random 100),((_pos select 1) - random 100), 1200 + random 0 ]
+~0.4
+_shell = "Sh_122_HE" createvehicle [0,0]
+_shell setpos [((_pos select 0) + random 100),((_pos select 1) - random 100), 1200 + random 0 ]
+~0.3
+_shell = "Sh_122_HE" createvehicle [0,0]
+_shell setpos [((_pos select 0) - random 100),((_pos select 1) + random 100), 1200 + random 0 ]
+~0.25
+_shell = "Sh_122_HE" createvehicle [0,0]
+_shell setpos [((_pos select 0) + random 100),((_pos select 1) - random 100), 1200 + random 0 ]
+~0.2
+_shell = "Sh_122_HE" createvehicle [0,0]
+_shell setpos [((_pos select 0) - random 100),((_pos select 1) + random 100), 1200 + random 0 ]
+~0.3
+_shell = "Sh_122_HE" createvehicle [0,0]
+_shell setpos [((_pos select 0) + random 100),((_pos select 1) - random 100), 1200 + random 0 ]
+~0.45
+_shell = "Sh_122_HE" createvehicle [0,0]
+_shell setpos [((_pos select 0) - random 100),((_pos select 1) + random 100), 1200 + random 0 ]
+~.1
+_shell = "Sh_122_HE" createvehicle [0,0]
+_shell setpos [((_pos select 0) - random 100),((_pos select 1) - random 100), 1200 + random 0 ]
+
+~0.1
+_shell = "Sh_122_HE" createvehicle [0,0]
+_shell setpos [((_pos select 0) + random 100),((_pos select 1) - random 100), 600 + random 0 ]
+~0.4
+_shell = "Sh_122_HE" createvehicle [0,0]
+_shell setpos [((_pos select 0) + random 100),((_pos select 1) - random 100), 600 + random 0 ]
+~0.3
+_shell = "Sh_122_HE" createvehicle [0,0]
+_shell setpos [((_pos select 0) - random 100),((_pos select 1) + random 100), 600 + random 0 ]
+~0.25
+_shell = "Sh_122_HE" createvehicle [0,0]
+_shell setpos [((_pos select 0) + random 100),((_pos select 1) - random 100), 600 + random 0 ]
+~0.2
+_shell = "Sh_122_HE" createvehicle [0,0]
+_shell setpos [((_pos select 0) - random 100),((_pos select 1) + random 100), 600 + random 0 ]
+~0.3
+_shell = "Sh_122_HE" createvehicle [0,0]
+_shell setpos [((_pos select 0) + random 100),((_pos select 1) - random 100), 600 + random 0 ]
+~0.45
+_shell = "Sh_122_HE" createvehicle [0,0]
+_shell setpos [((_pos select 0) - random 100),((_pos select 1) + random 100), 600 + random 0 ]
+~.1
+_shell = "Sh_122_HE" createvehicle [0,0]
+_shell setpos [((_pos select 0) - random 100),((_pos select 1) - random 100), 600 + random 0 ]
+
+~8
+_rounds = _rounds + 1
+?(_rounds > 8) : goto "end"
+
+goto "art"
+
+#end
+
+busy = false
