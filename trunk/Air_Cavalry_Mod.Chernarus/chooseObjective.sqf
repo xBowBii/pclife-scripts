@@ -27,7 +27,7 @@ if (isServer) then {
 			_winTrigger = createTrigger["EmptyDetector",getMarkerPos "city1"];
 			_winTrigger setTriggerArea[600,600,0,false];
 			_winTrigger setTriggerActivation["ANY","PRESENT",false];
-			_winTrigger setTriggerStatements["({side _x==east} count thislist == 0) AND ({_x in thislist} count units group player >= 1)", "enemydown = 1;", ""];
+			_winTrigger setTriggerStatements["({side _x==east} count thislist == 0) AND ({_x in thislist} count units group player >= 1)", "enemyDown = 1;", ""];
 		};
 		case 2:
 		{
@@ -49,7 +49,7 @@ if (isServer) then {
 			_winTrigger = createTrigger["EmptyDetector",getMarkerPos "city2"];
 			_winTrigger setTriggerArea[600,600,0,false];
 			_winTrigger setTriggerActivation["ANY","PRESENT",false];
-			_winTrigger setTriggerStatements["({side _x==east} count thislist == 0) AND ({_x in thislist} count units group player >= 1)", "enemydown = 1;", ""];
+			_winTrigger setTriggerStatements["({side _x==east} count thislist == 0) AND ({_x in thislist} count units group player >= 1)", "enemyDown = 1;", ""];
 		};
 		case 3:
 		{
@@ -71,7 +71,7 @@ if (isServer) then {
 			_winTrigger = createTrigger["EmptyDetector",getMarkerPos "city3"];
 			_winTrigger setTriggerArea[600,600,0,false];
 			_winTrigger setTriggerActivation["ANY","PRESENT",false];
-			_winTrigger setTriggerStatements["({side _x==east} count thislist == 0) AND ({_x in thislist} count units group player >= 1)", "enemydown = 1;", ""];
+			_winTrigger setTriggerStatements["({side _x==east} count thislist == 0) AND ({_x in thislist} count units group player >= 1)", "enemyDown = 1;", ""];
 		};
 		case 4:
 		{
@@ -93,7 +93,7 @@ if (isServer) then {
 			_winTrigger = createTrigger["EmptyDetector",getMarkerPos "city4"];
 			_winTrigger setTriggerArea[600,600,0,false];
 			_winTrigger setTriggerActivation["ANY","PRESENT",false];
-			_winTrigger setTriggerStatements["({side _x==east} count thislist == 0) AND ({_x in thislist} count units group player >= 1)", "enemydown = 1;", ""];
+			_winTrigger setTriggerStatements["({side _x==east} count thislist == 0) AND ({_x in thislist} count units group player >= 1)", "enemyDown = 1;", ""];
 		};
 	};
 };
