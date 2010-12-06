@@ -378,7 +378,7 @@ class Mission
 			id=0;
 			side="EMPTY";
 			vehicle="UH1Y";
-			skill=0.46666664;
+			skill=0.2;
 		};
 		class Item1
 		{
@@ -498,7 +498,7 @@ class Mission
 			side="EMPTY";
 			vehicle="AH6J_EP1";
 			leader=1;
-			skill=0.60000002;
+			skill=0.2;
 		};
 		class Item14
 		{
