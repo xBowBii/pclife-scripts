@@ -61,10 +61,10 @@ wp setWaypointSpeed "FULL";
 	_tempSoldier02 = _myGroup2 createUnit ["GUE_Soldier_GL",getMarkerPos _point,[],0.6,"Private"];
 
 	_zu = "Ural_ZU23_Gue" createVehicle (getMarkerPos _point);
-	_tempSoldier01 moveInDriver _truck;
-	_tempSoldier02 moveInGunner _truck;
+	_tempSoldier01 moveInDriver _zu;
+	_tempSoldier02 moveInGunner _zu;
 
-wp1 = _myGroup2 addwaypoint [position _dest];
+wp1 = _myGroup2 addwaypoint [getMarkerPos _dest, 0];
 wp1 setWaypointType "SAD";
 wp1 setWaypointSpeed "FULL";
 };

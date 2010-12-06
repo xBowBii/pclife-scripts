@@ -1509,7 +1509,7 @@ class Mission
 		class Item157
 		{
 			position[]={4772.2974,339,10215.954};
-			name="taskpoint2";
+			name="taskpointtwo";
 			type="Empty";
 		};
 	};
