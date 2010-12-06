@@ -114,7 +114,10 @@ ammoCrateUs addMagazineCargo ["ACE_33Rnd_9x19_G18",60];
 ammoCrateUs addMagazineCargo ["15Rnd_9x19_M9",60];
 ammoCrateUs addMagazineCargo ["7Rnd_45ACP_1911",60];
 
-ammoCrateUs addMagazineCargo ["ACE_30Rnd_556x45_S_Stanag",60];
+
+ammoCrateUs addMagazineCargo ["30Rnd_556x45_Stanag",60];
+ammoCrateUs addMagazineCargo ["30Rnd_556x45_StanagSD",60];
+//ammoCrateUs addMagazineCargo ["ACE_30Rnd_556x45_S_Stanag",60];
 ammoCrateUs addMagazineCargo ["100Rnd_762x51_M240",60];
 ammoCrateUs addMagazineCargo ["ACE_30Rnd_556x45_S_G36",60];
 ammoCrateUs addMagazineCargo ["200Rnd_556x45_M249",60];
@@ -126,7 +129,6 @@ ammoCrateUs addMagazineCargo ["HandGrenade_West", 50];
 ammoCrateUs addWeaponCargo ["Binocular",10];
 ammoCrateUs addWeaponCargo ["ACE_Earplugs",10];
 ammoCrateUs addWeaponCargo ["ACE_GlassesLHD_glasses",10];
-//ammoCrateUs addWeaponCargo ["ACE_GlassesSpecial",10];
 ammoCrateUs addWeaponCargo ["ACE_GlassesTactical",10];
 ammoCrateUs addWeaponCargo ["ACE_Rucksack_MOLLE_ACU",10];
 ammoCrateUs addweaponcargo ["ACE_M122TripodProxy", 1];
