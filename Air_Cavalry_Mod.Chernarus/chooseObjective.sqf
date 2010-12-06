@@ -24,6 +24,10 @@ if (isServer) then {
 			_truckTrigger setTriggerArea[300,300,0,false];
 			_truckTrigger setTriggerActivation["ANY","PRESENT",false];
 			_truckTrigger setTriggerStatements["{_x in thislist} count units group player >= 1", "_null = ['city1','truck1'] execVM 'truckSpawn.sqf';", ""];
+			_winTrigger = createTrigger["EmptyDetector",getMarkerPos "city1"];
+			_winTrigger setTriggerArea[600,600,0,false];
+			_winTrigger setTriggerActivation["ANY","PRESENT",false];
+			_winTrigger setTriggerStatements["({side _x==east} count thislist == 0) AND ({_x in thislist} count units group player >= 1)", "enemydown = 1;", ""];
 		};
 		case 2:
 		{
@@ -42,6 +46,10 @@ if (isServer) then {
 			_truckTrigger setTriggerArea[300,300,0,false];
 			_truckTrigger setTriggerActivation["ANY","PRESENT",false];
 			_truckTrigger setTriggerStatements["{_x in thislist} count units group player >= 1", "_null = ['city2','truck2'] execVM 'truckSpawn.sqf';", ""];
+			_winTrigger = createTrigger["EmptyDetector",getMarkerPos "city2"];
+			_winTrigger setTriggerArea[600,600,0,false];
+			_winTrigger setTriggerActivation["ANY","PRESENT",false];
+			_winTrigger setTriggerStatements["({side _x==east} count thislist == 0) AND ({_x in thislist} count units group player >= 1)", "enemydown = 1;", ""];
 		};
 		case 3:
 		{
@@ -60,6 +68,10 @@ if (isServer) then {
 			_truckTrigger setTriggerArea[300,300,0,false];
 			_truckTrigger setTriggerActivation["ANY","PRESENT",false];
 			_truckTrigger setTriggerStatements["{_x in thislist} count units group player >= 1", "_null = ['city3','truck3'] execVM 'truckSpawn.sqf';", ""];
+			_winTrigger = createTrigger["EmptyDetector",getMarkerPos "city3"];
+			_winTrigger setTriggerArea[600,600,0,false];
+			_winTrigger setTriggerActivation["ANY","PRESENT",false];
+			_winTrigger setTriggerStatements["({side _x==east} count thislist == 0) AND ({_x in thislist} count units group player >= 1)", "enemydown = 1;", ""];
 		};
 		case 4:
 		{
@@ -78,6 +90,10 @@ if (isServer) then {
 			_truckTrigger setTriggerArea[300,300,0,false];
 			_truckTrigger setTriggerActivation["ANY","PRESENT",false];
 			_truckTrigger setTriggerStatements["{_x in thislist} count units group player >= 1", "_null = ['city4','truck4'] execVM 'truckSpawn.sqf';", ""];
+			_winTrigger = createTrigger["EmptyDetector",getMarkerPos "city4"];
+			_winTrigger setTriggerArea[600,600,0,false];
+			_winTrigger setTriggerActivation["ANY","PRESENT",false];
+			_winTrigger setTriggerStatements["({side _x==east} count thislist == 0) AND ({_x in thislist} count units group player >= 1)", "enemydown = 1;", ""];
 		};
 	};
 };
