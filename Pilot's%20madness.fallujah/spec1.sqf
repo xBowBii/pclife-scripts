@@ -1,0 +1,1 @@
+[spec1, killer, "spec1"] call ace_fnc_startSpectator;

@@ -1,0 +1,7 @@
+execVM "briefing.sqf"
+execVM "chooseObjective.sqf"
+
+["ammocrate1"] execVM "fillCrateUs.sqf"
+["ammocrate2"] execVM "fillCrateRus.sqf"
+
+ace_wounds_prevtime = 300

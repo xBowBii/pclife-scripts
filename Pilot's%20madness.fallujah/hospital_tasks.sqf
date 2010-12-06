@@ -1,0 +1,11 @@
+tskobj3 = player createSimpleTask["Check shop"];
+tskobj3 setSimpleTaskDestination (getMarkerPos "obj3");
+tskobj3 setSimpleTaskDescription["Find and rescue John", "Check shop", "John may be here"];
+tskobj4 = player createSimpleTask["Check warehouse"];
+tskobj4 setSimpleTaskDestination (getMarkerPos "obj4");
+tskobj4 setSimpleTaskDescription["Find and rescue John", "Check warehouse", "John may be here"];
+tskobj5 = player createSimpleTask["Check hangar"];
+tskobj5 setSimpleTaskDestination (getMarkerPos "obj5");
+tskobj5 setSimpleTaskDescription["Find and rescue John", "Check hangar", "John may be here"];
+player setCurrentTask tskobj5;
+tskobj2 setTaskState "Canceled";

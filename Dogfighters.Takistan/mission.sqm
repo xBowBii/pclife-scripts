@@ -1,0 +1,421 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"takistan",
+		"cacharacters2",
+		"cacharacters_e",
+		"ca_l39",
+		"caair_e"
+	};
+	addOnsAuto[]=
+	{
+		"cacharacters_e",
+		"takistan"
+	};
+	randomSeed=14436404;
+	class Intel
+	{
+		briefingName="Dogfighters";
+		briefingDescription="Dogfighters yup yup";
+		resistanceWest=0;
+		startWeather=0;
+		forecastWeather=0;
+		year=2009;
+		month=10;
+		day=11;
+		hour=12;
+		minute=0;
+	};
+	class Groups
+	{
+		items=8;
+		class Item0
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6468.936,2788.3542,1602.1675};
+					id=0;
+					side="GUER";
+					vehicle="UN_CDF_Soldier_pilot_EP1";
+					player="PLAYER COMMANDER";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item1
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={2947.8352,2864.8455,3031.2793};
+					azimut=45;
+					id=1;
+					side="GUER";
+					vehicle="UN_CDF_Soldier_Pilot_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item2
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1496.4791,2877.3545,6541.814};
+					azimut=90;
+					id=2;
+					side="GUER";
+					vehicle="UN_CDF_Soldier_Pilot_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item3
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={2973.2766,2544.3381,10035.355};
+					azimut=135;
+					id=3;
+					side="GUER";
+					vehicle="UN_CDF_Soldier_Pilot_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item4
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6440.0117,2527.9893,11515.602};
+					azimut=180;
+					id=4;
+					side="GUER";
+					vehicle="UN_CDF_Soldier_Pilot_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item5
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={10018.925,2657.6155,10072.668};
+					azimut=225;
+					id=5;
+					side="GUER";
+					vehicle="UN_CDF_Soldier_Pilot_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item6
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={11464.683,2867.1074,6509.2461};
+					azimut=270;
+					id=6;
+					side="GUER";
+					vehicle="UN_CDF_Soldier_Pilot_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item7
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={10048.337,2931.415,3032.9658};
+					azimut=315;
+					id=7;
+					side="GUER";
+					vehicle="UN_CDF_Soldier_Pilot_EP1";
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.60000002;
+				};
+			};
+		};
+	};
+	class Markers
+	{
+		items=13;
+		class Item0
+		{
+			position[]={6470.8403,2788.3064,1595.4827};
+			name="respawn_west";
+			type="Empty";
+		};
+		class Item1
+		{
+			position[]={6502.0469,2737.8923,6530.3486};
+			name="BIS_spaceCenter";
+			markerType="ELLIPSE";
+			type="Empty";
+			colorName="ColorGreen";
+			fillName="Border";
+			a=5000;
+			b=5000;
+			drawBorder=1;
+		};
+		class Item2
+		{
+			position[]={2957.115,2859.1523,3063.717};
+			name="respawn_west_1";
+			type="Empty";
+		};
+		class Item3
+		{
+			position[]={1501.4292,2878.9473,6539.7944};
+			name="respawn_west_2";
+			type="Empty";
+		};
+		class Item4
+		{
+			position[]={2969.6643,2547.4409,10066.068};
+			name="respawn_west_3";
+			type="Empty";
+		};
+		class Item5
+		{
+			position[]={6458.2915,2527.8638,11521.756};
+			name="respawn_west_4";
+			type="Empty";
+			angle=180;
+		};
+		class Item6
+		{
+			position[]={10009.665,2657.3523,10078.617};
+			name="respawn_west_5";
+			type="Empty";
+		};
+		class Item7
+		{
+			position[]={11465.351,2881.4333,6539.793};
+			name="respawn_west_6";
+			type="Empty";
+		};
+		class Item8
+		{
+			position[]={10009.665,2938.6111,3051.167};
+			name="respawn_west_7";
+			type="Empty";
+		};
+		class Item9
+		{
+			position[]={1018.1486,2732.4258,11791.187};
+			name="BIS_safe1";
+			markerType="ELLIPSE";
+			type="Empty";
+			colorName="ColorGreen";
+			a=1000;
+			b=1000;
+		};
+		class Item10
+		{
+			position[]={1004.6564,2980.29,1006.8836};
+			name="BIS_safe1_1";
+			markerType="ELLIPSE";
+			type="Empty";
+			colorName="ColorGreen";
+			a=1000;
+			b=1000;
+		};
+		class Item11
+		{
+			position[]={11793.07,3005.0933,1002.7468};
+			name="BIS_safe1_2";
+			markerType="ELLIPSE";
+			type="Empty";
+			colorName="ColorGreen";
+			a=1000;
+			b=1000;
+		};
+		class Item12
+		{
+			position[]={11795.46,2591.0505,11797.119};
+			name="BIS_safe1_3";
+			markerType="ELLIPSE";
+			type="Empty";
+			colorName="ColorGreen";
+			a=1000;
+			b=1000;
+		};
+	};
+	class Sensors
+	{
+		items=4;
+		class Item0
+		{
+			position[]={1019.7941,2732.1963,11787.543};
+			a=1000;
+			b=1000;
+			activationBy="ANY";
+			interruptable=1;
+			age="UNKNOWN";
+			name="BIS_safeZone1";
+			class Effects
+			{
+			};
+		};
+		class Item1
+		{
+			position[]={1019.7939,2984.1902,1007.9347};
+			a=1000;
+			b=1000;
+			activationBy="ANY";
+			interruptable=1;
+			age="UNKNOWN";
+			name="BIS_safeZone2";
+			class Effects
+			{
+			};
+		};
+		class Item2
+		{
+			position[]={11796.078,3004.2539,982.83643};
+			a=1000;
+			b=1000;
+			activationBy="ANY";
+			interruptable=1;
+			age="UNKNOWN";
+			name="BIS_safeZone3";
+			class Effects
+			{
+			};
+		};
+		class Item3
+		{
+			position[]={11808.629,2592.2515,11800.091};
+			a=1000;
+			b=1000;
+			activationBy="ANY";
+			interruptable=1;
+			age="UNKNOWN";
+			name="BIS_safeZone4";
+			class Effects
+			{
+			};
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"takistan"
+	};
+	addOnsAuto[]=
+	{
+		"takistan"
+	};
+	randomSeed=317941;
+	class Intel
+	{
+		startWeather=0.25;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=9;
+		minute=20;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"takistan"
+	};
+	addOnsAuto[]=
+	{
+		"takistan"
+	};
+	randomSeed=15682365;
+	class Intel
+	{
+		startWeather=0.25;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=9;
+		minute=20;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"takistan"
+	};
+	addOnsAuto[]=
+	{
+		"takistan"
+	};
+	randomSeed=1417818;
+	class Intel
+	{
+		startWeather=0.25;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=9;
+		minute=20;
+	};
+};

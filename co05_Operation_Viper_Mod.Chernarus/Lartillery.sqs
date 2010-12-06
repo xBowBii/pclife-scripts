@@ -1,0 +1,17 @@
+?(artmissions > 3) : goto "No_more"
+?(busy) : goto "busy"
+
+Hint "Fire mission activated,coordinates required";
+onMapSingleClick "[_pos] exec ""LartilleryFF.sqs"""; Exit
+goto "end"
+
+#No_more
+
+Hint "No more spot rounds accepted"
+goto "end"
+
+#busy
+hint "We are busy with another fire mission"
+goto "end"
+
+#End

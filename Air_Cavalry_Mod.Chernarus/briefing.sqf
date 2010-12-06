@@ -1,0 +1,1 @@
+player createDiaryRecord["Diary", ["Briefing", "Your mission is to capture and hold a town that has recently been overrun by Guerilla troops, they have fortified the city its self as well as the area surrounding it quite heavily. Light gunship support, transport and medevac will be provided by UH-1, MH-60, and MV-22. Support vehicles are standing by as well, Good Luck!"]];
