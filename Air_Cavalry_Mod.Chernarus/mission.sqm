@@ -20,7 +20,9 @@ class Mission
 		"cawheeled2_m1114_armored",
 		"acex_ru_c_weapon",
 		"cba_main",
-		"ca_modules_e_weather"
+		"ca_modules_e_weather",
+		"CAAir_E_AH6J",
+		"CAAir_E_UH1H_EP1"
 	};
 	addOnsAuto[]=
 	{
@@ -32,12 +34,13 @@ class Mission
 		"ca_modules_e_weather",
 		"CAAir2_UH1Y",
 		"CAAir",
-		"CAAir2_MV22",
 		"CAWheeled2_HMMWV_Ambulance",
 		"acex_veh_5ton",
 		"CAWheeled",
 		"cawheeled2_m1114_armored",
 		"acex_ru_c_weapon",
+		"CAAir_E_AH6J",
+		"CAAir_E_UH1H_EP1",
 		"chernarus"
 	};
 	randomSeed=10023652;
@@ -66,7 +69,7 @@ class Mission
 				class Item0
 				{
 					position[]={670.30359,403.52319,12274.343};
-					id=3;
+					id=2;
 					side="LOGIC";
 					vehicle="BIS_clouds_Logic";
 					leader=1;
@@ -83,7 +86,7 @@ class Mission
 				class Item0
 				{
 					position[]={669.21002,413.29584,12311.062};
-					id=9;
+					id=8;
 					side="LOGIC";
 					vehicle="Logic";
 					leader=1;
@@ -101,7 +104,7 @@ class Mission
 				class Item0
 				{
 					position[]={670.56396,392.83063,12236.486};
-					id=10;
+					id=9;
 					side="LOGIC";
 					vehicle="ACE_Wounds_Logic";
 					leader=1;
@@ -119,7 +122,7 @@ class Mission
 				class Item0
 				{
 					position[]={670.40894,385.23425,12205.093};
-					id=11;
+					id=10;
 					side="LOGIC";
 					vehicle="ACE_SYS_Force1st_Logic";
 					leader=1;
@@ -138,7 +141,7 @@ class Mission
 				{
 					position[]={4751.9702,339,10172.482};
 					azimut=60;
-					id=12;
+					id=11;
 					side="WEST";
 					vehicle="USMC_Soldier_TL";
 					player="PLAY CDG";
@@ -151,7 +154,7 @@ class Mission
 				{
 					position[]={4751.4985,339,10170.224};
 					azimut=60;
-					id=13;
+					id=12;
 					side="WEST";
 					vehicle="USMC_Soldier_AR";
 					player="PLAY CDG";
@@ -163,7 +166,7 @@ class Mission
 				{
 					position[]={4749.1812,339,10173.175};
 					azimut=60;
-					id=14;
+					id=13;
 					side="WEST";
 					vehicle="USMC_Soldier";
 					player="PLAY CDG";
@@ -175,7 +178,7 @@ class Mission
 				{
 					position[]={4751.1348,339,10168.01};
 					azimut=60;
-					id=15;
+					id=14;
 					side="WEST";
 					vehicle="USMC_Soldier";
 					player="PLAY CDG";
@@ -195,7 +198,7 @@ class Mission
 				{
 					position[]={4762.9512,339,10155.182};
 					azimut=60;
-					id=16;
+					id=15;
 					side="WEST";
 					vehicle="USMC_Soldier_TL";
 					player="PLAY CDG";
@@ -208,7 +211,7 @@ class Mission
 				{
 					position[]={4762.3989,339,10152.82};
 					azimut=60;
-					id=17;
+					id=16;
 					side="WEST";
 					vehicle="USMC_Soldier_AR";
 					player="PLAY CDG";
@@ -220,7 +223,7 @@ class Mission
 				{
 					position[]={4759.8647,339,10155.577};
 					azimut=60;
-					id=18;
+					id=17;
 					side="WEST";
 					vehicle="USMC_Soldier";
 					player="PLAY CDG";
@@ -232,7 +235,7 @@ class Mission
 				{
 					position[]={4761.7764,339,10150.271};
 					azimut=60;
-					id=19;
+					id=18;
 					side="WEST";
 					vehicle="USMC_Soldier";
 					player="PLAY CDG";
@@ -252,7 +255,7 @@ class Mission
 				{
 					position[]={4775.395,339,10175.247};
 					azimut=240;
-					id=20;
+					id=19;
 					side="WEST";
 					vehicle="USMC_Soldier_SL";
 					player="PLAYER COMMANDER";
@@ -265,7 +268,7 @@ class Mission
 				{
 					position[]={4778.019,339,10171.564};
 					azimut=240;
-					id=21;
+					id=20;
 					side="WEST";
 					vehicle="USMC_Soldier_Medic";
 					player="PLAY CDG";
@@ -285,27 +288,27 @@ class Mission
 				{
 					position[]={4761.2417,339,10163.536};
 					azimut=60;
-					id=23;
+					id=22;
 					side="WEST";
 					vehicle="USMC_Soldier_Pilot";
 					player="PLAY CDG";
 					leader=1;
 					rank="SERGEANT";
 					skill=0.60000002;
-					init="removeallweapons this; for ""_i"" from 1 to 6 do {this addmagazine ""30Rnd_9x19_MP5""}; this addweapon ""ACE_MP5A5""; this addmagazine ""SmokeShell""; this addmagazine ""SmokeShellRed""; this addweapon ""ACE_DAGR""; this removeweapon ""ItemGPS""; this removeweapon ""ACE_Broken_GPS""; this removeweapon ""ACRE_PRC343""; this removeweapon ""ItemRadio""; _remove = [this] call acre_api_fnc_getCurrentRadio; this removeweapon ""_remove""; this addweapon ""ACRE_PRC148""; this removeweapon ""NVGoggles""; this removeweapon ""ACE_BrokenNVGoggles"";";
+					init="removeallweapons this; for ""_i"" from 1 to 6 do {this addmagazine ""30Rnd_9x19_MP5""}; this addweapon ""ACE_MP5A5""; this addmagazine ""SmokeShell""; this addmagazine ""SmokeShellRed""; this addweapon ""ACE_DAGR""; this removeweapon ""ItemGPS""; this removeweapon ""ACE_Broken_GPS""; this removeweapon ""ACRE_PRC343""; this removeweapon ""ItemRadio""; _remove = [this] call acre_api_fnc_getCurrentRadio; this removeweapon ""_remove""; this addweapon ""ACRE_PRC148""; this removeweapon ""NVGoggles""; this removeweapon ""ACE_BrokenNVGoggles""; this addweapon ""ACRE_PRC119"";";
 					description="Pilot 1";
 				};
 				class Item1
 				{
 					position[]={4759.498,339,10166.188};
 					azimut=60;
-					id=22;
+					id=21;
 					side="WEST";
 					vehicle="USMC_Soldier_Pilot";
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
-					init="removeallweapons this; for ""_i"" from 1 to 6 do {this addmagazine ""30Rnd_9x19_MP5""}; this addweapon ""ACE_MP5A5""; this addmagazine ""SmokeShell""; this addmagazine ""SmokeShellRed""; this addweapon ""ACE_DAGR""; this removeweapon ""ItemGPS""; this removeweapon ""ACE_Broken_GPS""; this removeweapon ""ACRE_PRC343""; this removeweapon ""ItemRadio""; _remove = [this] call acre_api_fnc_getCurrentRadio; this removeweapon ""_remove""; this addweapon ""ACRE_PRC148""; this removeweapon ""NVGoggles""; this removeweapon ""ACE_BrokenNVGoggles"";";
+					init="removeallweapons this; for ""_i"" from 1 to 6 do {this addmagazine ""30Rnd_9x19_MP5""}; this addweapon ""ACE_MP5A5""; this addmagazine ""SmokeShell""; this addmagazine ""SmokeShellRed""; this addweapon ""ACE_DAGR""; this removeweapon ""ItemGPS""; this removeweapon ""ACE_Broken_GPS""; this removeweapon ""ACRE_PRC343""; this removeweapon ""ItemRadio""; _remove = [this] call acre_api_fnc_getCurrentRadio; this removeweapon ""_remove""; this addweapon ""ACRE_PRC148""; this removeweapon ""NVGoggles""; this removeweapon ""ACE_BrokenNVGoggles"";  this addweapon ""ACRE_PRC119"";";
 					description="Pilot 2";
 				};
 			};
@@ -319,7 +322,7 @@ class Mission
 				class Item0
 				{
 					position[]={669.17902,380.16986,12171.479};
-					id=30;
+					id=29;
 					side="LOGIC";
 					vehicle="CBA_main_require";
 					leader=1;
@@ -337,7 +340,7 @@ class Mission
 				class Item0
 				{
 					position[]={671.19989,376.04501,12111.113};
-					id=32;
+					id=31;
 					side="LOGIC";
 					vehicle="WeatherParticlesManager";
 					leader=1;
@@ -355,7 +358,7 @@ class Mission
 				class Item0
 				{
 					position[]={670.74121,377.06335,12138.164};
-					id=31;
+					id=30;
 					side="LOGIC";
 					vehicle="WeatherPostprocessManager";
 					leader=1;
@@ -367,11 +370,11 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=14;
+		items=15;
 		class Item0
 		{
 			position[]={4809.7969,339,10196.692};
-			azimut=239.98399;
+			azimut=-121;
 			id=0;
 			side="EMPTY";
 			vehicle="UH1Y";
@@ -379,8 +382,8 @@ class Mission
 		};
 		class Item1
 		{
-			position[]={4833.6704,339,10153.823};
-			azimut=599.97577;
+			position[]={4833.9219,338.99887,10155.836};
+			azimut=-121;
 			id=1;
 			side="EMPTY";
 			vehicle="MH60S";
@@ -388,70 +391,70 @@ class Mission
 		};
 		class Item2
 		{
-			position[]={4855.9795,339,10111.607};
-			azimut=240;
-			id=2;
-			side="EMPTY";
-			vehicle="MV22";
-			skill=0.2;
-		};
-		class Item3
-		{
 			position[]={4878.9023,339,10081.121};
 			azimut=-121;
-			id=4;
+			id=3;
 			side="EMPTY";
 			vehicle="HMMWV_Ambulance";
 			skill=0.60000002;
 		};
-		class Item4
+		class Item3
 		{
 			position[]={4882.0571,339,10075.317};
 			azimut=-121;
-			id=5;
+			id=4;
 			side="EMPTY";
 			vehicle="ACE_Truck5tReammo";
 			skill=0.60000002;
 		};
-		class Item5
+		class Item4
 		{
 			position[]={4885.0781,339,10069.87};
 			azimut=-121;
-			id=6;
+			id=5;
 			side="EMPTY";
 			vehicle="ACE_Truck5tRefuel";
 			skill=0.60000002;
 		};
-		class Item6
+		class Item5
 		{
 			position[]={4888.3135,339,10064.173};
 			azimut=-121;
-			id=7;
+			id=6;
 			side="EMPTY";
 			vehicle="ACE_Truck5tRepair";
 			skill=0.60000002;
 		};
-		class Item7
+		class Item6
 		{
 			position[]={4891.8359,339,10058.769};
 			azimut=-121;
-			id=8;
+			id=7;
 			side="EMPTY";
 			vehicle="ACE_Truck5tMG";
 			skill=0.60000002;
 		};
-		class Item8
+		class Item7
 		{
 			position[]={4728.4121,339,10202.9};
 			azimut=240;
-			id=24;
+			id=23;
 			side="EMPTY";
 			vehicle="ACE_BandageBoxWest";
 			skill=0.60000002;
 		};
-		class Item9
+		class Item8
 		{
 			position[]={4756.7197,339,10204.016};
+			azimut=60;
+			id=24;
+			side="EMPTY";
+			vehicle="HMMWV";
+			skill=0.60000002;
+		};
+		class Item9
+		{
+			position[]={4760.2969,339,10197.637};
 			azimut=60;
 			id=25;
 			side="EMPTY";
@@ -460,41 +463,52 @@ class Mission
 		};
 		class Item10
 		{
-			position[]={4760.2969,339,10197.637};
-			azimut=60;
-			id=26;
-			side="EMPTY";
-			vehicle="HMMWV";
-			skill=0.60000002;
-		};
-		class Item11
-		{
 			position[]={4875.8174,339,10086.344};
 			azimut=-121;
-			id=27;
+			id=26;
 			side="EMPTY";
 			vehicle="HMMWV_Armored";
 			skill=0.60000002;
 		};
-		class Item12
+		class Item11
 		{
 			position[]={4743.0547,339,10211.131};
 			azimut=240;
-			id=28;
+			id=27;
 			side="EMPTY";
 			vehicle="ACE_WeaponBox_Launchers_RU";
 			skill=0.60000002;
 			init="this addweaponcargo [""ACE_RPOM"", 10];";
 		};
-		class Item13
+		class Item12
 		{
 			position[]={4745.7446,339,10212.563};
 			azimut=240;
-			id=29;
+			id=28;
 			side="EMPTY";
 			vehicle="ACE_MagazineBox_Launchers_RU";
 			skill=0.60000002;
 			init="this addMagazineCargo [""ACE_AT13TB"", 15]";
+		};
+		class Item13
+		{
+			position[]={4793.2358,339,10222.067};
+			azimut=-121;
+			id=32;
+			side="EMPTY";
+			vehicle="AH6J_EP1";
+			leader=1;
+			skill=0.60000002;
+			description="Pilot 1";
+		};
+		class Item14
+		{
+			position[]={4858.7241,339,10113.511};
+			azimut=-121;
+			id=33;
+			side="EMPTY";
+			vehicle="UH1H_TK_GUE_EP1";
+			skill=0.2;
 		};
 	};
 	class Markers
