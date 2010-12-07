@@ -4,4 +4,4 @@ execVM "chooseObjective.sqf"
 ["ammocrate1"] execVM "fillCrateUs.sqf"
 ["ammocrate2"] execVM "fillCrateRus.sqf"
 
-ace_wounds_prevtime = 5
+ace_wounds_prevtime = 300
