@@ -1,10 +1,11 @@
-[-2, {_null = [] execVM _this}, "task.sqf"] call CBA_fnc_globalExecute;
 if (isServer) then {
 	_randName = random 4;
 	_randName = ceil _randName;
 	_point = format ["city%1", _randName];
 	taskpoint = _point;
+	publicVariable "taskpoint";
 	enemyDown = 0;
+	[-2, {_null = [] execVM _this}, "task.sqf"] call CBA_fnc_globalExecute;
 	switch (_randName) do
 	{
 		case 1:
