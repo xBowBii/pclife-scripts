@@ -1,0 +1,478 @@
+version=2;
+blood=2;
+singleVoice=0;
+customScheme=1;
+trackIR=1;
+freeTrack=0;
+controller="Default";
+sensitivity="Medium";
+vibrations=1;
+class ControllerSchemes
+{
+};
+keyMoveForward[]={17};
+keyMoveBack[]={31};
+keyTurnLeft[]={30};
+keyTurnRight[]={32};
+keyMoveUp[]={};
+keyMoveDown[]={};
+keyMoveFastForward[]={273};
+keyMoveSlowForward[]={};
+keyMoveLeft[]={211};
+keyMoveRight[]={207};
+keyEvasiveForward[]={};
+keyEvasiveLeft[]={16};
+keyEvasiveRight[]={18};
+keyEvasiveBack[]={};
+keyStand[]={46};
+keyCrouch[]={45};
+keyProne[]={44};
+keyLeanLeft[]={16,524291};
+keyLeanRight[]={18,524297};
+keyLeanLeftToggle[]={272};
+keyLeanRightToggle[]={274};
+keyWalkRunToggle[]={298};
+keyWalkRunTemp[]={42};
+keyToggleWeapons[]={131330,65539};
+keySwitchWeapon[]={};
+keyFire[]={487653376};
+keyDefaultAction[]={65536,131328};
+keyReloadMagazine[]={19};
+keyLockTargets[]={15,131329};
+keyLockTarget[]={65537};
+keyRevealTarget[]={65537};
+keyTempRaiseWeapon[]={};
+keyToggleRaiseWeapon[]={-1660944365,285};
+keyPrevAction[]={26,1048580,131334};
+keyNextAction[]={27,1048581,131332};
+keyAction[]={28,65538,131333};
+keyActionContext[]={65536,131328};
+keyHeadlights[]={38};
+keyNightVision[]={49};
+keyBinocular[]={48};
+keyHandgun[]={39};
+keyCompass[]={37};
+keyCompassToggle[]={293};
+keyWatch[]={24};
+keyWatchToggle[]={280};
+keyMiniMap[]={};
+keyMiniMapToggle[]={-1660944334};
+keyShowMap[]={50};
+keyHideMap[]={50};
+keyHelp[]={35};
+keyTimeInc[]={13};
+keyTimeDec[]={12};
+keyOptics[]={82,65665};
+keyOpticsMode[]={181};
+keyPersonView[]={156};
+keyTacticalView[]={83};
+keyZoomIn[]={78,131331};
+keyZoomInToggle[]={334};
+keyZoomOut[]={74};
+keyZoomOutToggle[]={330};
+keyZoomContIn[]={524299};
+keyZoomContOut[]={524293};
+keyZeroingUp[]={201};
+keyZeroingDown[]={209};
+keyLookAround[]={56};
+keyLookAroundToggle[]={55,312};
+keyLookLeftDown[]={79,262405};
+keyLookDown[]={80,262404};
+keyLookRightDown[]={81,262403};
+keyLookLeft[]={75,262406};
+keyLookCenter[]={76};
+keyLookRight[]={77,262402};
+keyLookLeftUp[]={71,262407};
+keyLookUp[]={72,262400};
+keyLookRightUp[]={73,262401};
+keyLookLeftCont[]={524289};
+keyLookRightCont[]={524295};
+keyLookDownCont[]={524288};
+keyLookUpCont[]={524294};
+keyPrevChannel[]={51};
+keyNextChannel[]={52};
+keyChat[]={53};
+keyVoiceOverNet[]={314};
+keyPushToTalk[]={58};
+keyPushToTalkAll[]={};
+keyPushToTalkSide[]={};
+keyPushToTalkCommand[]={};
+keyPushToTalkGroup[]={};
+keyPushToTalkVehicle[]={};
+keyPushToTalkDirect[]={};
+keyNetworkStats[]={23};
+keyNetworkPlayers[]={25};
+keyDSInterface[]={905969689};
+keySelectAll[]={41};
+keyTurbo[]={};
+keyVehicleTurbo[]={42};
+keyWalk[]={};
+keyHoldBreath[]={65537};
+keySalute[]={43};
+keySitDown[]={40};
+keySurrender[]={};
+keyGetOver[]={47};
+keyAimUp[]={1048578};
+keyAimDown[]={1048579};
+keyAimLeft[]={1048576};
+keyAimRight[]={1048577};
+keyAimHeadUp[]={1048578};
+keyAimHeadDown[]={1048579};
+keyAimHeadLeft[]={1048576};
+keyAimHeadRight[]={1048577};
+keyIngamePause[]={1};
+keyMenuSelect[]={};
+keyMenuBack[]={14,65665};
+keyForceCommandingMode[]={57};
+keySwitchCommand[]={486539321,221};
+keyHeliUp[]={16};
+keyHeliDown[]={44};
+keyHeliLeft[]={1048576};
+keyHeliRight[]={1048577};
+keyHeliCyclicLeft[]={30,203,196872};
+keyHeliCyclicRight[]={32,205,196864};
+keyHeliRudderLeft[]={45,211};
+keyHeliRudderRight[]={46,207};
+keyHeliForward[]={17,200,1048579,196873};
+keyHeliBack[]={31,208,1048578,196865};
+keyHeliFastForward[]={18};
+keyAutoHover[]={299};
+keyAutoHoverCancel[]={43};
+keyHeliThrottlePos[]={};
+keyHeliThrottleNeg[]={};
+keySeagullUp[]={16,1048579,196865};
+keySeagullDown[]={44,1048578,196873};
+keySeagullForward[]={17,200};
+keySeagullBack[]={31,208};
+keySeagullFastForward[]={18};
+keyCarLeft[]={30,203,196872};
+keyCarRight[]={32,205,196864};
+keyCarWheelLeft[]={1048576};
+keyCarWheelRight[]={1048577};
+keyCarForward[]={17,200,196873};
+keyCarBack[]={31,208,196865};
+keyCarFastForward[]={18};
+keyCarSlowForward[]={16};
+keyCarAimUp[]={1048578};
+keyCarAimDown[]={1048579};
+keyCarAimLeft[]={1048576};
+keyCarAimRight[]={1048577};
+keyCommandLeft[]={30,203};
+keyCommandRight[]={32,205};
+keyCommandForward[]={17,200};
+keyCommandBack[]={31,208};
+keyCommandFast[]={18};
+keyCommandSlow[]={16};
+keySwitchGunnerWeapon[]={486539297};
+keyVehLockTargets[]={15,131329};
+keySwapGunner[]={};
+keyHeliManualFire[]={40};
+keyTurnIn[]={45,46};
+keyTurnOut[]={44};
+keyCancelAction[]={};
+keyCommandWatch[]={56};
+keyTeamSwitch[]={20};
+keyTeamSwitchPrev[]={21};
+keyTeamSwitchNext[]={22};
+keyGear[]={34};
+keyGetOut[]={};
+keyEject[]={};
+keyLandGear[]={-1660944350};
+keyLandGearUp[]={-1660944350};
+keyFlapsDown[]={-1660944347};
+keyFlapsUp[]={-1660944346};
+keyLaunchCM[]={19};
+keyNextCM[]={486539283};
+keyBuldSwitchCamera[]={210};
+keyBuldFreeLook[]={76};
+keyBuldSelect[]={57};
+keyBuldResetCamera[]={82};
+keyBuldMagnetizePoints[]={63};
+keyBuldMagnetizePlanes[]={64};
+keyBuldMagnetizeYFixed[]={65};
+keyBuldTerrainRaise1m[]={24};
+keyBuldTerrainRaise10cm[]={22};
+keyBuldTerrainLower1m[]={38};
+keyBuldTerrainLower10cm[]={36};
+keyBuldTerrainRaise5m[]={25};
+keyBuldTerrainRaise50cm[]={23};
+keyBuldTerrainLower5m[]={39};
+keyBuldTerrainLower50cm[]={37};
+keyBuldTerrainShowNode[]={35};
+keyBuldSelectionType[]={31};
+keyBuldLeft[]={203};
+keyBuldRight[]={205};
+keyBuldForward[]={200};
+keyBuldBack[]={208};
+keyBuldMoveLeft[]={1048576};
+keyBuldMoveRight[]={1048577};
+keyBuldMoveForward[]={1048578};
+keyBuldMoveBack[]={1048579};
+keyBuldTurbo[]={42};
+keyBuldUp[]={201,16};
+keyBuldDown[]={209,44};
+keyBuldLookLeft[]={75};
+keyBuldLookRight[]={77};
+keyBuldLookUp[]={72};
+keyBuldLookDown[]={80};
+keyBuldZoomIn[]={78};
+keyBuldZoomOut[]={74};
+keyBuldTextureInfo[]={20};
+keyDiary[]={36};
+keyUser1[]={17};
+keyUser2[]={31};
+keyUser3[]={30};
+keyUser4[]={32};
+keyUser5[]={16};
+keyUser6[]={44};
+keyUser7[]={72};
+keyUser8[]={80};
+keyUser9[]={75};
+keyUser10[]={77};
+keyUser11[]={42,54};
+keyUser12[]={57};
+keyUser13[]={210};
+keyUser14[]={211};
+keyUser15[]={};
+keyUser16[]={};
+keyUser17[]={};
+keyUser18[]={};
+keyUser19[]={};
+keyUser20[]={};
+revMouse=0;
+mouseSmoothing=30;
+joystickSensitivity[]={0.5,0.5,0.5,0.5,0.5,0.5,1,1,0.5,0.5,0.5,0.5,0.5,0.5,1,1};
+anisoFilter=4;
+TexQuality=3;
+TexMemory=3;
+useWBuffer=0;
+tripleHead=0;
+class Difficulties
+{
+	class recruit
+	{
+		class Flags
+		{
+			Armor=1;
+			FriendlyTag=1;
+			EnemyTag=0;
+			HUD=1;
+			HUDPerm=1;
+			HUDWp=1;
+			HUDWpPerm=1;
+			HUDGroupInfo=1;
+			AutoSpot=1;
+			Map=1;
+			WeaponCursor=1;
+			AutoGuideAT=1;
+			ClockIndicator=1;
+			3rdPersonView=1;
+			UltraAI=0;
+			AutoAim=0;
+			CameraShake=0;
+			UnlimitedSaves=1;
+			DeathMessages=1;
+			NetStats=1;
+			VonID=1;
+		};
+		skillFriendly=0.98500001;
+		skillEnemy=0.995;
+		precisionFriendly=0.5;
+		precisionEnemy=0.4899998;
+	};
+	class regular
+	{
+		class Flags
+		{
+			Armor=0;
+			FriendlyTag=0;
+			EnemyTag=0;
+			HUD=0;
+			HUDPerm=0;
+			HUDWp=0;
+			HUDWpPerm=0;
+			HUDGroupInfo=1;
+			AutoSpot=0;
+			Map=1;
+			WeaponCursor=0;
+			AutoGuideAT=0;
+			ClockIndicator=0;
+			3rdPersonView=1;
+			UltraAI=0;
+			AutoAim=0;
+			CameraShake=1;
+			UnlimitedSaves=1;
+			DeathMessages=1;
+			NetStats=1;
+			VonID=1;
+		};
+		skillFriendly=0.98500001;
+		skillEnemy=0.995;
+		precisionFriendly=0.5;
+		precisionEnemy=0.4899998;
+	};
+	class veteran
+	{
+		class Flags
+		{
+			HUD=1;
+			HUDWp=1;
+			HUDGroupInfo=0;
+			Map=1;
+			WeaponCursor=1;
+			ClockIndicator=0;
+			3rdPersonView=1;
+			UltraAI=0;
+			CameraShake=1;
+			UnlimitedSaves=1;
+			DeathMessages=1;
+			NetStats=1;
+			VonID=0;
+		};
+		skillFriendly=0.98500001;
+		skillEnemy=0.995;
+		precisionFriendly=0.5;
+		precisionEnemy=0.4899998;
+	};
+	class mercenary
+	{
+		class Flags
+		{
+			UltraAI=0;
+			DeathMessages=0;
+			NetStats=0;
+			VonID=0;
+		};
+		skillFriendly=0.98500001;
+		skillEnemy=0.995;
+		precisionFriendly=0.5;
+		precisionEnemy=0.4899998;
+	};
+};
+showTitles=1;
+showRadio=1;
+shadingQuality=10;
+shadowQuality=4;
+maxSamplesPlayed=64;
+class Identity
+{
+	face="Face11_EP1";
+	glasses="None";
+	speaker="Male02";
+	squad="";
+	pitch=0.99999988;
+};
+class ModLauncherList
+{
+};
+browsingSource="Internet";
+class Filter
+{
+	serverName="";
+	missionType="";
+	missionName="warfare";
+	maxPing=0;
+	minPlayers=0;
+	maxPlayers=0;
+	fullServers=1;
+	passwordedServers=1;
+	battleyeRequired=0;
+	expansions=1;
+};
+lastMPMission="CO 12 Air Cavalry Mod";
+class MainMap
+{
+	class Compass
+	{
+		inBack=0;
+		position[]={-0.078312859,-0.044122033,0.2};
+		positionBack[]={0.0051562451,0,0.1};
+	};
+	class Watch
+	{
+		inBack=0;
+		position[]={-0.051922131,-0.052590299,0.20999999};
+		positionBack[]={-0.0056718756,0,0.11};
+	};
+	class WalkieTalkie
+	{
+		inBack=0;
+		position[]={0.093636662,-0.038821734,0.25};
+		positionBack[]={0.27680561,-0.13857237,0.625};
+	};
+	class GPS2
+	{
+		inBack=0;
+		position[]={0.089205205,-0.060421329,0.22};
+		positionBack[]={0.012374995,0,0.12};
+	};
+};
+difficulty="regular";
+lastSPMission="E08: Бенчмарк";
+activeKeys[]=
+{
+	"BIS_SPB1",
+	"BIS_TE01",
+	"BIS_TE02",
+	"BIS_TE03",
+	"BIS_TE04",
+	"BIS_TE05",
+	"BIS_TE06",
+	"BIS_TE07",
+	"BIS_TE08",
+	"BIS_TE09",
+	"BIS_TE10",
+	"BIS_TE11",
+	"BIS_TE12",
+	"BIS_TE13",
+	"BIS_TE14",
+	"BIS_TE15",
+	"BIS_Showcase_Civilian",
+	"BIS_CE0",
+	"BIS_CE1",
+	"BIS_CE2",
+	"BIS_CE3",
+	"BIS_CE4",
+	"BIS_CE5B",
+	"BIS_CE6",
+	"BIS_SOM_INFO_HINT_1",
+	"BIS_MPA_timesPlayed1"
+};
+armoryPoints=125;
+difficultyMP="regular";
+currentCampaign="Campaigns\phcampaign";
+class JoysticksList
+{
+	class Joystick1
+	{
+		guid="7F958410-313F-11DF-8001-444553540000";
+		name="Logitech Force 3D Pro USB";
+		offset=256;
+		isXInput=0;
+		mode="Disable";
+	};
+};
+lastCampaignMission="Eagle wing";
+mouseSensitivityX=1;
+mouseSensitivityY=1;
+floatingZoneArea=0.16;
+teamSwitchOffsetX=0;
+teamSwitchOffsetY=0;
+headBob=0;
+sceneComplexity=310000;
+viewDistance=1000;
+terrainGrid=3.125;
+volumeCD=6.5;
+volumeFX=6.5;
+volumeSpeech=6.5;
+volumeVoN=6.5;
+vonRecThreshold=0.029999999;
+gamma=1;
+brightness=1;
+fovTop=0.75;
+fovLeft=0.9375;
+uiTopLeftX=0.22499999;
+uiTopLeftY=0.2421875;
+uiBottomRightX=0.77499998;
+uiBottomRightY=0.7578125;
+IGUIScale=0.55000001;
