@@ -7,5 +7,5 @@ class Header
 
 
 respawn = "BASE";
-respawnDelay = 60;
+respawnDelay = 5;
 disabledAI = 1;
