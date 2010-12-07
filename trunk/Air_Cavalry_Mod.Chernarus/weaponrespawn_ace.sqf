@@ -19,8 +19,8 @@ while {true} do {
 	_ruckmags = [];
 	_ruckweapons = [];
 	if (_p call ACE_fnc_HasRuck) then {
-		_ruckmags = _p call ACE_fnc_RuckMagazinesList;
-		_ruckweapons = _p call ACE_fnc_RuckWeaponsList;
+		_ruckmags = [_p] call ACE_fnc_RuckMagazinesList;
+		_ruckweapons = [_p] call ACE_fnc_RuckWeaponsList;
 		_hasruck = true;
 	};
 	removeAllItems _p;
@@ -41,10 +41,10 @@ while {true} do {
     };
 	if (_hasruck) then {
 		if (!isNil "_ruckmags") then {
-			[_p, _ruckmags] call ACE_fnc_PackMagazine;
+			_null = [_p, _ruckmags] call ACE_fnc_PackMagazine;
 		};
 		if (!isNil "_ruckweapons") then {
-			[_p, _ruckmags] call ACE_fnc_PackWeapon;
+			_null = [_p, _ruckmags] call ACE_fnc_PackWeapon;
 		};
 	};
 };
