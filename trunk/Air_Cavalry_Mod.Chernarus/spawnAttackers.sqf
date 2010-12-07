@@ -1,13 +1,11 @@
 //Spawns random attacking groups of enemies. Groups spawning at relative to _point markers with "a" suffix.
 //i.e. for _point = "city1", script needs "city1a1", "city1a2" and so on markers.
-//Syntax: [marker_where_attackers_should_go:string, amount_of_squads:int] execVM "createAttackers.sqf";
+//Syntax: [marker_where_attackers_should_go:string, amount_of_squads:int] execVM "spawnAttackers.sqf";
 
 if(isServer) then
 {
 _point = _this select 0;
-_amount = _this select 1;
-
-for "_x" from 1 to _amount do {
+_spawn = _this select 1;
 
 _myGroup = createGroup east;
 //_vehicleGroup = createGroup east;
@@ -15,7 +13,6 @@ _myGroup = createGroup east;
 //call compile format["_mygroup%1 createGroup east",_x];
 _rand = random 3;
 _rand = ceil _rand;
-call compile format["_spawn = %1a%2", _point, _x];
 switch (_rand) do
 	{
 		case 1:
