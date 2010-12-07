@@ -41,6 +41,8 @@ class Mission
 		"acex_ru_c_weapon",
 		"CAAir_E_AH6J",
 		"CAAir_E_UH1H_EP1",
+		"ace_c_weapon",
+		"ace_sys_crewserved",
 		"chernarus"
 	};
 	randomSeed=10023652;
@@ -262,7 +264,7 @@ class Mission
 					leader=1;
 					rank="LIEUTENANT";
 					skill=0.33333331;
-					init="this removeweapon ""ACRE_PRC343""; this removeweapon ""ItemRadio""; _remove = [this] call acre_api_fnc_getCurrentRadio; this removeweapon ""_remove""; this addweapon ""ACRE_PRC148""; this addweapon ""ACRE_PRC119"";  this addweapon ""ACE_DAGR""; this removeweapon ""ItemGPS""; this removeweapon ""ACE_Broken_GPS""; this removeweapon ""NVGoggles""; this removeweapon ""ACE_BrokenNVGoggles"";";
+					init="this removeweapon ""ACRE_PRC343""; this removeweapon ""ItemRadio""; _remove = [this] call acre_api_fnc_getCurrentRadio; this removeweapon ""_remove""; this addweapon ""ACRE_PRC148""; this addweapon ""ACRE_PRC119"";  this addweapon ""ACE_DAGR""; this removeweapon ""ItemGPS""; this removeweapon ""ACE_Broken_GPS""; this removeweapon ""NVGoggles""; this removeweapon ""ACE_BrokenNVGoggles""; this allowdamage false;";
 				};
 				class Item1
 				{
@@ -370,7 +372,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=15;
+		items=30;
 		class Item0
 		{
 			position[]={4809.7969,339,10196.692};
@@ -508,6 +510,143 @@ class Mission
 			side="EMPTY";
 			vehicle="UH1H_TK_GUE_EP1";
 			skill=0.2;
+		};
+		class Item15
+		{
+			position[]={4709.8584,339,10229.273};
+			azimut=240;
+			id=34;
+			side="EMPTY";
+			vehicle="ACE_Tbox_US";
+			skill=0.60000002;
+		};
+		class Item16
+		{
+			position[]={4712.1152,339,10230.5};
+			azimut=240;
+			id=35;
+			side="EMPTY";
+			vehicle="ACE_Tbox_US";
+			skill=0.60000002;
+		};
+		class Item17
+		{
+			position[]={4714.4976,339,10231.724};
+			azimut=240;
+			id=36;
+			side="EMPTY";
+			vehicle="ACE_Tbox_US";
+			skill=0.60000002;
+		};
+		class Item18
+		{
+			position[]={4826.6509,339.08075,10218.201};
+			azimut=240;
+			id=37;
+			side="EMPTY";
+			vehicle="ACE_CSW_Box_M2";
+			leader=1;
+			skill=0.33333331;
+		};
+		class Item19
+		{
+			position[]={4824.708,339.08075,10217.063};
+			azimut=240;
+			id=38;
+			side="EMPTY";
+			vehicle="ACE_CSW_Box_Mk19";
+			leader=1;
+			skill=0.33333331;
+		};
+		class Item20
+		{
+			position[]={4828.4009,339.08075,10219.319};
+			azimut=240;
+			id=39;
+			side="EMPTY";
+			vehicle="ACE_Tbox_556x45Belt";
+			skill=0.60000002;
+		};
+		class Item21
+		{
+			position[]={4829.9404,339.08075,10220.238};
+			azimut=240;
+			id=40;
+			side="EMPTY";
+			vehicle="ACE_Tbox_556x45Belt";
+			skill=0.60000002;
+		};
+		class Item22
+		{
+			position[]={4832.0781,339.08075,10221.484};
+			azimut=240;
+			id=41;
+			side="EMPTY";
+			vehicle="ACE_Tbox_556x45STANAG";
+			skill=0.60000002;
+		};
+		class Item23
+		{
+			position[]={4833.3774,339.08075,10222.224};
+			azimut=240;
+			id=42;
+			side="EMPTY";
+			vehicle="ACE_Tbox_556x45STANAG";
+			skill=0.60000002;
+		};
+		class Item24
+		{
+			position[]={4835.2051,339.08075,10223.286};
+			azimut=240;
+			id=43;
+			side="EMPTY";
+			vehicle="ACE_Tbox_762x51Belt";
+			skill=0.60000002;
+		};
+		class Item25
+		{
+			position[]={4836.6455,339.08075,10224.033};
+			azimut=240;
+			id=44;
+			side="EMPTY";
+			vehicle="ACE_Tbox_762x51Belt";
+			skill=0.60000002;
+		};
+		class Item26
+		{
+			position[]={4838.5234,339.08075,10225.163};
+			azimut=240;
+			id=45;
+			side="EMPTY";
+			vehicle="ACE_Tbox_545x39Magazine";
+			skill=0.60000002;
+		};
+		class Item27
+		{
+			position[]={4839.981,339.08075,10226.128};
+			azimut=240;
+			id=46;
+			side="EMPTY";
+			vehicle="ACE_Tbox_545x39Magazine";
+			skill=0.60000002;
+		};
+		class Item28
+		{
+			position[]={4841.895,339.08075,10227.251};
+			azimut=240;
+			id=47;
+			side="EMPTY";
+			vehicle="ACE_Tbox_762x54Belt";
+			skill=0.60000002;
+		};
+		class Item29
+		{
+			position[]={4843.3096,339.08075,10228.074};
+			azimut=240;
+			id=48;
+			side="EMPTY";
+			vehicle="ACE_Tbox_762x54Belt";
+			skill=0.60000002;
 		};
 	};
 	class Markers
