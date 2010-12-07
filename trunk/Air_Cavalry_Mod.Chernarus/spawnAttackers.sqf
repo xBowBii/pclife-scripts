@@ -15,7 +15,6 @@ _myGroup = createGroup east;
 //call compile format["_mygroup%1 createGroup east",_x];
 _rand = random 3;
 _rand = ceil _rand;
-format ["%1w%2",_point,_x]
 call compile format["_spawn = %1a%2", _point, _x];
 switch (_rand) do
 	{
