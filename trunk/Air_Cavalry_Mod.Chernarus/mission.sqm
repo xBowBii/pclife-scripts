@@ -651,7 +651,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=172;
+		items=166;
 		class Item0
 		{
 			position[]={4768.6821,339,10168.352};
@@ -1450,299 +1450,263 @@ class Mission
 		};
 		class Item122
 		{
-			position[]={-4149.1646,43.979553,1155.8752};
-			name="frog1";
-			type="Empty";
-		};
-		class Item123
-		{
-			position[]={-4026.6431,32.257702,886.27539};
-			name="frog2";
-			type="Empty";
-		};
-		class Item124
-		{
-			position[]={22712.727,137.7917,21156.438};
-			name="wpend";
-			type="Empty";
-		};
-		class Item125
-		{
 			position[]={11550.438,66.951782,6609.3887};
 			name="city1d1";
 			type="Empty";
 		};
-		class Item126
+		class Item123
 		{
 			position[]={11552.199,66.789902,6593.7891};
 			name="city1d2";
 			type="Empty";
 		};
-		class Item127
+		class Item124
 		{
 			position[]={10990.363,96.708023,6667.5234};
 			name="city1d3";
 			type="Empty";
 		};
-		class Item128
+		class Item125
 		{
 			position[]={10986.555,95.513435,6654.5942};
 			name="city1d4";
 			type="Empty";
 		};
-		class Item129
+		class Item126
 		{
 			position[]={7613.9438,195.85286,4956.3345};
 			name="city2d1";
 			type="Empty";
 		};
-		class Item130
+		class Item127
 		{
 			position[]={7599.4912,196.00607,4938.3799};
 			name="city2d2";
 			type="Empty";
 		};
-		class Item131
+		class Item128
 		{
 			position[]={7508.0601,211.26256,4950.6162};
 			name="city2d3";
 			type="Empty";
 		};
-		class Item132
+		class Item129
 		{
 			position[]={7493.7222,211.39729,4953.9844};
 			name="city2d4";
 			type="Empty";
 		};
-		class Item133
+		class Item130
 		{
 			position[]={7537.0107,225.0387,5296.1411};
 			name="city2d5";
 			type="Empty";
 		};
-		class Item134
+		class Item131
 		{
 			position[]={7554.6445,224.81871,5300.856};
 			name="city2d6";
 			type="Empty";
 		};
-		class Item135
+		class Item132
 		{
 			position[]={7778.8765,226.39154,5301.1348};
 			name="city2d7";
 			type="Empty";
 		};
-		class Item136
+		class Item133
 		{
 			position[]={7797.1304,225.55899,5289.1606};
 			name="city2d8";
 			type="Empty";
 		};
-		class Item137
+		class Item134
 		{
 			position[]={1718.3533,150.69914,4040.7212};
 			name="city3d1";
 			type="Empty";
 		};
-		class Item138
+		class Item135
 		{
 			position[]={1731.2715,150.61955,4024.8074};
 			name="city3d2";
 			type="Empty";
 		};
-		class Item139
+		class Item136
 		{
 			position[]={1929.5743,139.75854,3861.167};
 			name="city3d3";
 			type="Empty";
 		};
-		class Item140
+		class Item137
 		{
 			position[]={1921.1235,139.72316,3844.3882};
 			name="city3d4";
 			type="Empty";
 		};
-		class Item141
+		class Item138
 		{
 			position[]={1745.1792,136.65739,3594.7905};
 			name="city3d5";
 			type="Empty";
 		};
-		class Item142
+		class Item139
 		{
 			position[]={1728.6449,136.65291,3588.5439};
 			name="city3d6";
 			type="Empty";
 		};
-		class Item143
+		class Item140
 		{
 			position[]={10914.959,232.14845,8073.6455};
 			name="city4d1";
 			type="Empty";
 		};
-		class Item144
+		class Item141
 		{
 			position[]={10893.628,231.81886,8058.8545};
 			name="city4d2";
 			type="Empty";
 		};
-		class Item145
+		class Item142
 		{
 			position[]={10726.054,225.96588,8209.4951};
 			name="city4d3";
 			type="Empty";
 		};
-		class Item146
+		class Item143
 		{
 			position[]={10710.11,226.00912,8202.9521};
 			name="city4d4";
 			type="Empty";
 		};
-		class Item147
+		class Item144
 		{
 			position[]={10535.54,188.15598,7796.9785};
 			name="city4d5";
 			type="Empty";
 		};
-		class Item148
+		class Item145
 		{
 			position[]={10521.086,188.15646,7799.1143};
 			name="city4d6";
 			type="Empty";
 		};
-		class Item149
+		class Item146
 		{
 			position[]={10504.99,187.82526,7871.147};
 			name="city4d7";
 			type="Empty";
 		};
-		class Item150
+		class Item147
 		{
 			position[]={10493.541,187.92883,7879.0996};
 			name="city4d8";
 			type="Empty";
 		};
-		class Item151
+		class Item148
 		{
 			position[]={10532.756,227.99596,8109.3916};
 			name="city4d9";
 			type="Empty";
 		};
-		class Item152
+		class Item149
 		{
 			position[]={7071.8057,293.98999,7680.376};
 			name="truck2";
 			type="Empty";
 		};
-		class Item153
-		{
-			position[]={915.33044,71.347687,3486.8608};
-			name="bombplace3";
-			type="Empty";
-		};
-		class Item154
-		{
-			position[]={6635.7822,229.43596,4688.8979};
-			name="bombplace2";
-			type="Empty";
-		};
-		class Item155
-		{
-			position[]={10367.599,250.7771,6171.6475};
-			name="bombplace1";
-			type="Empty";
-		};
-		class Item156
+		class Item150
 		{
 			position[]={9857.041,161.88924,7663.9253};
 			name="bombplace4";
 			type="Empty";
 		};
-		class Item157
+		class Item151
 		{
 			position[]={4772.2974,339,10215.954};
 			name="taskpointtwo";
 			type="Empty";
 		};
-		class Item158
+		class Item152
 		{
 			position[]={3338.1826,156.82484,3403.5771};
 			name="city3a1";
 			type="Empty";
 		};
-		class Item159
+		class Item153
 		{
 			position[]={3310.7869,143.48975,3333.6401};
 			name="city3a2";
 			type="Empty";
 		};
-		class Item160
+		class Item154
 		{
 			position[]={1701.5496,16.767286,2327.1233};
 			name="city3a3";
 			type="Empty";
 		};
-		class Item161
+		class Item155
 		{
 			position[]={10241.931,266.80984,5880.5962};
 			name="city1a1";
 			type="Empty";
 		};
-		class Item162
+		class Item156
 		{
 			position[]={10245.963,260.76074,5806.5029};
 			name="city1a2";
 			type="Empty";
 		};
-		class Item163
+		class Item157
 		{
 			position[]={1620.1647,16.732985,2348.7708};
 			name="city3a4";
 			type="Empty";
 		};
-		class Item164
+		class Item158
 		{
 			position[]={6453.9277,83.591705,3749.8389};
 			name="city2a1";
 			type="Empty";
 		};
-		class Item165
+		class Item159
 		{
 			position[]={6482.3516,83.77404,3750.7554};
 			name="city2a2";
 			type="Empty";
 		};
-		class Item166
+		class Item160
 		{
 			position[]={8746.5049,270.83752,4081.1609};
 			name="city2a3";
 			type="Empty";
 		};
-		class Item167
+		class Item161
 		{
 			position[]={8826.5674,276.75726,4128.2568};
 			name="city2a4";
 			type="Empty";
 		};
-		class Item168
+		class Item162
 		{
 			position[]={12484.729,138.06432,7394.1294};
 			name="city4a1";
 			type="Empty";
 		};
-		class Item169
+		class Item163
 		{
 			position[]={12487.39,132.76343,7337.3687};
 			name="city4a2";
 			type="Empty";
 		};
-		class Item170
+		class Item164
 		{
 			position[]={12291.735,165.028,6767.5664};
 			name="city4a3";
 			type="Empty";
 		};
-		class Item171
+		class Item165
 		{
 			position[]={11014.661,111.40961,6768.2998};
 			name="city4a4";
