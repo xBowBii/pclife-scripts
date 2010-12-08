@@ -25,7 +25,7 @@ switch (usEra) do
 		ammoCrateUs addWeaponCargo ["ACE_M4_Aim",5];
 		ammoCrateUs addWeaponCargo ["ACE_M4_GL_UP",5];
 		ammoCrateUs addWeaponCargo ["M240",2];
-		ammoCrateUs addWeaponCargo ["M249_EP1",2];
+		ammoCrateUs addWeaponCargo ["M249",2];
 		ammoCrateUs addWeaponCargo ["ACE_M60",2];
 
 		ammoCrateUs addMagazineCargo ["5Rnd_762x51_M24",30];
