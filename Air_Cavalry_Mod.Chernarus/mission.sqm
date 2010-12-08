@@ -1393,7 +1393,7 @@ class Mission
 		};
 		class Item113
 		{
-			position[]={4721.5547,339,10200.574};
+			position[]={4721.6079,339,10200.1};
 			name="ammocrate1";
 			type="Empty";
 		};
@@ -1721,13 +1721,13 @@ class Mission
 		};
 		class Item165
 		{
-			position[]={4741.1685,339,10210.638};
+			position[]={4742.4897,339,10211.748};
 			name="ammocrate3";
 			type="Empty";
 		};
 		class Item166
 		{
-			position[]={4744.8828,339,10212.998};
+			position[]={4747.2617,339,10214.585};
 			name="ammocrate4";
 			type="Empty";
 		};
