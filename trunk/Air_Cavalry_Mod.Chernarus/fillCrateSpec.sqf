@@ -37,7 +37,7 @@ switch (specEra) do
 		ammoCrateSpec addWeaponCargo ["ACE_SOC_M4A1_AIM_SD",5];
 		ammoCrateSpec addWeaponCargo ["ACE_oc14sd",5];
 		ammoCrateSpec addWeaponCargo ["ACE_gr1sd",2];
-		ammoCrateSpec addWeaponCargo ["ACE_M4SPR_SD",5];
+		ammoCrateSpec addWeaponCargo ["ACE_M4SPR_SD",2];
 		ammoCrateSpec addWeaponCargo ["ACE_M4SPR_SD",2];
 		ammoCrateSpec addWeaponCargo ["ACE_Mk12mod1_SD",5];
 
