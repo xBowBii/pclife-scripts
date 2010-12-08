@@ -77,7 +77,6 @@ switch (rusEra) do
 
 };
 
-ammoCrateRus addWeaponCargo ["Makarov",5];
 ammoCrateRus addWeaponCargo ["ACE_APS",5];
 ammoCrateRus addWeaponCargo ["ACE_TT",5];
 
@@ -86,7 +85,6 @@ ammoCrateRus addWeaponCargo ["Saiga12K", 5];
 ammoCrateRus addMagazineCargo ["8Rnd_B_Saiga12_Pellets",60];
 ammoCrateRus addMagazineCargo ["8Rnd_B_Saiga12_74Slug",60];
 
-ammoCrateRus addMagazineCargo ["8Rnd_9x18_Makarov",60];
 ammoCrateRus addMagazineCargo ["ACE_20Rnd_9x18_APS",60];
 ammoCrateRus addMagazineCargo ["ACE_8Rnd_762x25_B_Tokarev",60];
 
