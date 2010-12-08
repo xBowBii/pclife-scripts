@@ -22,7 +22,9 @@ class Mission
 		"cba_main",
 		"ca_modules_e_weather",
 		"CAAir_E_AH6J",
-		"CAAir_E_UH1H_EP1"
+		"CAAir_E_UH1H_EP1",
+		"CABuildings",
+		"camisc_e"
 	};
 	addOnsAuto[]=
 	{
@@ -43,6 +45,9 @@ class Mission
 		"CAAir_E_UH1H_EP1",
 		"ace_c_weapon",
 		"ace_sys_crewserved",
+		"CABuildings",
+		"camisc3",
+		"camisc_e",
 		"chernarus"
 	};
 	randomSeed=10023652;
@@ -150,7 +155,7 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.33333331;
-					init="this removeweapon ""ACRE_PRC343""; this removeweapon ""ItemRadio""; _remove = [this] call acre_api_fnc_getCurrentRadio; this removeweapon ""_remove""; this addweapon ""ACRE_PRC148""; this addweapon ""ACRE_PRC119""; this addweapon ""ACE_DAGR""; this removeweapon ""ItemGPS""; this removeweapon ""ACE_Broken_GPS""; this removeweapon ""NVGoggles""; this removeweapon ""ACE_BrokenNVGoggles"";";
+					init="removeallweapons this; this addweapon ""M16A2""; for ""_i"" from 1 to 6 do {this addmagazine ""30Rnd_556x45_Stanag""}; this removeweapon ""ACRE_PRC343""; this removeweapon ""ItemRadio""; _remove = [this] call acre_api_fnc_getCurrentRadio; this removeweapon ""_remove""; this addweapon ""ACRE_PRC148""; this addweapon ""ACRE_PRC119""; this addweapon ""ACE_DAGR""; this removeweapon ""ItemGPS""; this removeweapon ""ACE_Broken_GPS""; this removeweapon ""NVGoggles""; this removeweapon ""ACE_BrokenNVGoggles"";";
 				};
 				class Item1
 				{
@@ -174,7 +179,7 @@ class Mission
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.33333331;
-					init="this removeweapon ""ACRE_PRC343""; this removeweapon ""ItemRadio""; _remove = [this] call acre_api_fnc_getCurrentRadio; this removeweapon ""_remove""; this addweapon ""ACRE_PRC148""; this removeweapon ""ItemGPS""; this removeweapon ""ACE_Broken_GPS""; this removeweapon ""NVGoggles""; this removeweapon ""ACE_BrokenNVGoggles"";";
+					init="removeallweapons this; this addweapon ""M16A2""; for ""_i"" from 1 to 6 do {this addmagazine ""30Rnd_556x45_Stanag""}; this removeweapon ""ACRE_PRC343""; this removeweapon ""ItemRadio""; _remove = [this] call acre_api_fnc_getCurrentRadio; this removeweapon ""_remove""; this addweapon ""ACRE_PRC148""; this removeweapon ""ItemGPS""; this removeweapon ""ACE_Broken_GPS""; this removeweapon ""NVGoggles""; this removeweapon ""ACE_BrokenNVGoggles"";";
 				};
 				class Item3
 				{
@@ -186,7 +191,7 @@ class Mission
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.33333331;
-					init="this removeweapon ""ACRE_PRC343""; this removeweapon ""ItemRadio""; _remove = [this] call acre_api_fnc_getCurrentRadio; this removeweapon ""_remove""; this addweapon ""ACRE_PRC148""; this removeweapon ""ItemGPS""; this removeweapon ""ACE_Broken_GPS""; this removeweapon ""NVGoggles""; this removeweapon ""ACE_BrokenNVGoggles"";";
+					init="removeallweapons this; this addweapon ""M16A2""; for ""_i"" from 1 to 6 do {this addmagazine ""30Rnd_556x45_Stanag""}; this removeweapon ""ACRE_PRC343""; this removeweapon ""ItemRadio""; _remove = [this] call acre_api_fnc_getCurrentRadio; this removeweapon ""_remove""; this addweapon ""ACRE_PRC148""; this removeweapon ""ItemGPS""; this removeweapon ""ACE_Broken_GPS""; this removeweapon ""NVGoggles""; this removeweapon ""ACE_BrokenNVGoggles"";";
 				};
 			};
 		};
@@ -207,7 +212,7 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.33333331;
-					init="this removeweapon ""ACRE_PRC343""; this removeweapon ""ItemRadio""; _remove = [this] call acre_api_fnc_getCurrentRadio; this removeweapon ""_remove""; this addweapon ""ACRE_PRC148""; this addweapon ""ACRE_PRC119""; this addweapon ""ACE_DAGR""; this removeweapon ""ItemGPS""; this removeweapon ""ACE_Broken_GPS""; this removeweapon ""NVGoggles""; this removeweapon ""ACE_BrokenNVGoggles"";";
+					init="removeallweapons this; this addweapon ""M16A2""; for ""_i"" from 1 to 6 do {this addmagazine ""30Rnd_556x45_Stanag""}; this removeweapon ""ACRE_PRC343""; this removeweapon ""ItemRadio""; _remove = [this] call acre_api_fnc_getCurrentRadio; this removeweapon ""_remove""; this addweapon ""ACRE_PRC148""; this addweapon ""ACRE_PRC119""; this addweapon ""ACE_DAGR""; this removeweapon ""ItemGPS""; this removeweapon ""ACE_Broken_GPS""; this removeweapon ""NVGoggles""; this removeweapon ""ACE_BrokenNVGoggles"";";
 				};
 				class Item1
 				{
@@ -231,7 +236,7 @@ class Mission
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.33333331;
-					init="this removeweapon ""ACRE_PRC343""; this removeweapon ""ItemRadio""; _remove = [this] call acre_api_fnc_getCurrentRadio; this removeweapon ""_remove""; this addweapon ""ACRE_PRC148""; this removeweapon ""ItemGPS""; this removeweapon ""ACE_Broken_GPS""; this removeweapon ""NVGoggles""; this removeweapon ""ACE_BrokenNVGoggles"";";
+					init="removeallweapons this; this addweapon ""M16A2""; for ""_i"" from 1 to 6 do {this addmagazine ""30Rnd_556x45_Stanag""}; this removeweapon ""ACRE_PRC343""; this removeweapon ""ItemRadio""; _remove = [this] call acre_api_fnc_getCurrentRadio; this removeweapon ""_remove""; this addweapon ""ACRE_PRC148""; this removeweapon ""ItemGPS""; this removeweapon ""ACE_Broken_GPS""; this removeweapon ""NVGoggles""; this removeweapon ""ACE_BrokenNVGoggles"";";
 				};
 				class Item3
 				{
@@ -243,7 +248,7 @@ class Mission
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.33333331;
-					init="this removeweapon ""ACRE_PRC343""; this removeweapon ""ItemRadio""; _remove = [this] call acre_api_fnc_getCurrentRadio; this removeweapon ""_remove""; this addweapon ""ACRE_PRC148""; this removeweapon ""ItemGPS""; this removeweapon ""ACE_Broken_GPS""; this removeweapon ""NVGoggles""; this removeweapon ""ACE_BrokenNVGoggles"";";
+					init="removeallweapons this; this addweapon ""M16A2""; for ""_i"" from 1 to 6 do {this addmagazine ""30Rnd_556x45_Stanag""}; this removeweapon ""ACRE_PRC343""; this removeweapon ""ItemRadio""; _remove = [this] call acre_api_fnc_getCurrentRadio; this removeweapon ""_remove""; this addweapon ""ACRE_PRC148""; this removeweapon ""ItemGPS""; this removeweapon ""ACE_Broken_GPS""; this removeweapon ""NVGoggles""; this removeweapon ""ACE_BrokenNVGoggles"";";
 				};
 			};
 		};
@@ -264,7 +269,7 @@ class Mission
 					leader=1;
 					rank="LIEUTENANT";
 					skill=0.33333331;
-					init="this removeweapon ""ACRE_PRC343""; this removeweapon ""ItemRadio""; _remove = [this] call acre_api_fnc_getCurrentRadio; this removeweapon ""_remove""; this addweapon ""ACRE_PRC148""; this addweapon ""ACRE_PRC119"";  this addweapon ""ACE_DAGR""; this removeweapon ""ItemGPS""; this removeweapon ""ACE_Broken_GPS""; this removeweapon ""NVGoggles""; this removeweapon ""ACE_BrokenNVGoggles"";";
+					init="removeallweapons this; this addweapon ""M16A2""; for ""_i"" from 1 to 6 do {this addmagazine ""30Rnd_556x45_Stanag""}; this addweapon ""M9""; for ""_i"" from 1 to 4 do {this addmagazine ""15Rnd_9x19_M9""}; this removeweapon ""ACRE_PRC343""; this removeweapon ""ItemRadio""; _remove = [this] call acre_api_fnc_getCurrentRadio; this removeweapon ""_remove""; this addweapon ""ACRE_PRC148""; this addweapon ""ACRE_PRC119"";  this addweapon ""ACE_DAGR""; this removeweapon ""ItemGPS""; this removeweapon ""ACE_Broken_GPS""; this removeweapon ""NVGoggles""; this removeweapon ""ACE_BrokenNVGoggles"";";
 				};
 				class Item1
 				{
@@ -276,7 +281,7 @@ class Mission
 					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.33333331;
-					init="this removeweapon ""ACRE_PRC343""; this removeweapon ""ItemRadio""; _remove = [this] call acre_api_fnc_getCurrentRadio; this removeweapon ""_remove""; this addweapon ""ACRE_PRC148""; this removeweapon ""ItemGPS""; this removeweapon ""ACE_Broken_GPS""; this removeweapon ""NVGoggles""; this removeweapon ""ACE_BrokenNVGoggles"";";
+					init="removeallweapons this; this addweapon ""M16A2""; for ""_i"" from 1 to 6 do {this addmagazine ""30Rnd_556x45_Stanag""}; this removeweapon ""ACRE_PRC343""; this removeweapon ""ItemRadio""; _remove = [this] call acre_api_fnc_getCurrentRadio; this removeweapon ""_remove""; this addweapon ""ACRE_PRC148""; this removeweapon ""ItemGPS""; this removeweapon ""ACE_Broken_GPS""; this removeweapon ""NVGoggles""; this removeweapon ""ACE_BrokenNVGoggles"";";
 				};
 			};
 		};
@@ -324,7 +329,7 @@ class Mission
 				class Item0
 				{
 					position[]={669.17902,380.16986,12171.479};
-					id=29;
+					id=28;
 					side="LOGIC";
 					vehicle="CBA_main_require";
 					leader=1;
@@ -342,7 +347,7 @@ class Mission
 				class Item0
 				{
 					position[]={671.19989,376.04501,12111.113};
-					id=31;
+					id=30;
 					side="LOGIC";
 					vehicle="WeatherParticlesManager";
 					leader=1;
@@ -360,19 +365,20 @@ class Mission
 				class Item0
 				{
 					position[]={670.74121,377.06335,12138.164};
-					id=30;
+					id=29;
 					side="LOGIC";
 					vehicle="WeatherPostprocessManager";
 					leader=1;
 					lock="UNLOCKED";
 					skill=0.60000002;
+					init="this setvariable [""intensity"",0.5];";
 				};
 			};
 		};
 	};
 	class Vehicles
 	{
-		items=30;
+		items=32;
 		class Item0
 		{
 			position[]={4809.7969,339,10196.692};
@@ -381,6 +387,7 @@ class Mission
 			side="EMPTY";
 			vehicle="UH1Y";
 			skill=0.2;
+			init="this addweaponcargo [""ACRE_PRC148"",2]; this addweaponcargo [""ACRE_PRC119"",2];";
 		};
 		class Item1
 		{
@@ -390,130 +397,140 @@ class Mission
 			side="EMPTY";
 			vehicle="MH60S";
 			skill=0.2;
+			init="this addweaponcargo [""ACRE_PRC148"",2]; this addweaponcargo [""ACRE_PRC119"",2];";
 		};
 		class Item2
 		{
-			position[]={4878.9023,339,10081.121};
+			position[]={4905.606,339,10040.938};
 			azimut=-121;
 			id=3;
 			side="EMPTY";
 			vehicle="HMMWV_Ambulance";
 			skill=0.60000002;
+			init="this addweaponcargo [""ACRE_PRC148"",2]; this addweaponcargo [""ACRE_PRC119"",2];";
 		};
 		class Item3
 		{
-			position[]={4882.0571,339,10075.317};
+			position[]={4908.7607,339,10035.134};
 			azimut=-121;
 			id=4;
 			side="EMPTY";
 			vehicle="ACE_Truck5tReammo";
 			skill=0.60000002;
+			init="this addweaponcargo [""ACRE_PRC148"",2]; this addweaponcargo [""ACRE_PRC119"",2];";
 		};
 		class Item4
 		{
-			position[]={4885.0781,339,10069.87};
+			position[]={4911.7817,339,10029.687};
 			azimut=-121;
 			id=5;
 			side="EMPTY";
 			vehicle="ACE_Truck5tRefuel";
 			skill=0.60000002;
+			init="this addweaponcargo [""ACRE_PRC148"",2]; this addweaponcargo [""ACRE_PRC119"",2];";
 		};
 		class Item5
 		{
-			position[]={4888.3135,339,10064.173};
+			position[]={4915.0171,339,10023.989};
 			azimut=-121;
 			id=6;
 			side="EMPTY";
 			vehicle="ACE_Truck5tRepair";
 			skill=0.60000002;
+			init="this addweaponcargo [""ACRE_PRC148"",2]; this addweaponcargo [""ACRE_PRC119"",2];";
 		};
 		class Item6
 		{
-			position[]={4891.8359,339,10058.769};
+			position[]={4918.5396,339,10018.585};
 			azimut=-121;
 			id=7;
 			side="EMPTY";
 			vehicle="ACE_Truck5tMG";
 			skill=0.60000002;
+			init="this addweaponcargo [""ACRE_PRC148"",2]; this addweaponcargo [""ACRE_PRC119"",2];";
 		};
 		class Item7
 		{
-			position[]={4728.4121,339,10202.9};
-			azimut=240;
+			position[]={4756.7197,339,10204.016};
+			azimut=60;
 			id=23;
 			side="EMPTY";
-			vehicle="ACE_BandageBoxWest";
+			vehicle="HMMWV";
 			skill=0.60000002;
+			init="this addweaponcargo [""ACRE_PRC148"",2]; this addweaponcargo [""ACRE_PRC119"",2];";
 		};
 		class Item8
 		{
-			position[]={4756.7197,339,10204.016};
+			position[]={4760.2969,339,10197.637};
 			azimut=60;
 			id=24;
 			side="EMPTY";
 			vehicle="HMMWV";
 			skill=0.60000002;
+			init="this addweaponcargo [""ACRE_PRC148"",2]; this addweaponcargo [""ACRE_PRC119"",2];";
 		};
 		class Item9
 		{
-			position[]={4760.2969,339,10197.637};
-			azimut=60;
-			id=25;
-			side="EMPTY";
-			vehicle="HMMWV";
-			skill=0.60000002;
-		};
-		class Item10
-		{
-			position[]={4875.8174,339,10086.344};
+			position[]={4902.521,339,10046.16};
 			azimut=-121;
-			id=26;
+			id=25;
 			side="EMPTY";
 			vehicle="HMMWV_Armored";
 			skill=0.60000002;
+			init="this addweaponcargo [""ACRE_PRC148"",2]; this addweaponcargo [""ACRE_PRC119"",2];";
 		};
-		class Item11
+		class Item10
 		{
 			position[]={4743.0547,339,10211.131};
 			azimut=240;
-			id=27;
+			id=26;
 			side="EMPTY";
 			vehicle="ACE_WeaponBox_Launchers_RU";
 			skill=0.60000002;
 			init="this addweaponcargo [""ACE_RPOM"", 10];";
 		};
-		class Item12
+		class Item11
 		{
 			position[]={4745.7446,339,10212.563};
 			azimut=240;
-			id=28;
+			id=27;
 			side="EMPTY";
 			vehicle="ACE_MagazineBox_Launchers_RU";
 			skill=0.60000002;
 			init="this addMagazineCargo [""ACE_AT13TB"", 15]";
 		};
-		class Item13
+		class Item12
 		{
-			position[]={4793.2358,339,10222.067};
+			position[]={4884.6973,339,10073.176};
 			azimut=-121;
-			id=32;
+			id=31;
 			side="EMPTY";
 			vehicle="AH6J_EP1";
 			leader=1;
 			skill=0.2;
 		};
-		class Item14
+		class Item13
 		{
 			position[]={4858.7241,339,10113.511};
 			azimut=-121;
-			id=33;
+			id=32;
 			side="EMPTY";
 			vehicle="UH1H_TK_GUE_EP1";
 			skill=0.2;
+			init="this addweaponcargo [""ACRE_PRC148"",2]; this addweaponcargo [""ACRE_PRC119"",2];";
+		};
+		class Item14
+		{
+			position[]={4728.7803,339,10231.477};
+			azimut=240;
+			id=33;
+			side="EMPTY";
+			vehicle="ACE_Tbox_US";
+			skill=0.60000002;
 		};
 		class Item15
 		{
-			position[]={4728.4521,339,10231.585};
+			position[]={4731.1465,339,10232.876};
 			azimut=240;
 			id=34;
 			side="EMPTY";
@@ -522,7 +539,7 @@ class Mission
 		};
 		class Item16
 		{
-			position[]={4730.709,339,10232.812};
+			position[]={4733.3984,339,10234.123};
 			azimut=240;
 			id=35;
 			side="EMPTY";
@@ -531,36 +548,36 @@ class Mission
 		};
 		class Item17
 		{
-			position[]={4733.0913,339,10234.035};
+			position[]={4832.9219,339.08075,10210.154};
 			azimut=240;
 			id=36;
-			side="EMPTY";
-			vehicle="ACE_Tbox_US";
-			skill=0.60000002;
-		};
-		class Item18
-		{
-			position[]={4829.8062,339.08075,10212.19};
-			azimut=240;
-			id=37;
 			side="EMPTY";
 			vehicle="ACE_CSW_Box_M2";
 			leader=1;
 			skill=0.33333331;
 		};
-		class Item19
+		class Item18
 		{
-			position[]={4827.8633,339.08075,10211.053};
+			position[]={4831.001,339.08075,10209.081};
 			azimut=240;
-			id=38;
+			id=37;
 			side="EMPTY";
 			vehicle="ACE_CSW_Box_Mk19";
 			leader=1;
 			skill=0.33333331;
 		};
+		class Item19
+		{
+			position[]={4834.4473,339.08075,10212.771};
+			azimut=240;
+			id=38;
+			side="EMPTY";
+			vehicle="ACE_Tbox_556x45Belt";
+			skill=0.60000002;
+		};
 		class Item20
 		{
-			position[]={4831.1064,339.08075,10214.685};
+			position[]={4835.7402,339.08075,10213.479};
 			azimut=240;
 			id=39;
 			side="EMPTY";
@@ -569,16 +586,16 @@ class Mission
 		};
 		class Item21
 		{
-			position[]={4832.646,339.08075,10215.604};
+			position[]={4835.6743,339.08075,10210.615};
 			azimut=240;
 			id=40;
 			side="EMPTY";
-			vehicle="ACE_Tbox_556x45Belt";
+			vehicle="ACE_Tbox_556x45STANAG";
 			skill=0.60000002;
 		};
 		class Item22
 		{
-			position[]={4832.5366,339.08075,10212.587};
+			position[]={4836.9736,339.08075,10211.354};
 			azimut=240;
 			id=41;
 			side="EMPTY";
@@ -587,16 +604,16 @@ class Mission
 		};
 		class Item23
 		{
-			position[]={4833.8359,339.08075,10213.326};
+			position[]={4837.6245,339.08075,10214.557};
 			azimut=240;
 			id=42;
 			side="EMPTY";
-			vehicle="ACE_Tbox_556x45STANAG";
+			vehicle="ACE_Tbox_762x51Belt";
 			skill=0.60000002;
 		};
 		class Item24
 		{
-			position[]={4834.4648,339.08075,10216.66};
+			position[]={4839.021,339.08075,10215.326};
 			azimut=240;
 			id=43;
 			side="EMPTY";
@@ -605,16 +622,16 @@ class Mission
 		};
 		class Item25
 		{
-			position[]={4835.9053,339.08075,10217.407};
+			position[]={4838.9038,339.08075,10212.312};
 			azimut=240;
 			id=44;
 			side="EMPTY";
-			vehicle="ACE_Tbox_762x51Belt";
+			vehicle="ACE_Tbox_545x39Magazine";
 			skill=0.60000002;
 		};
 		class Item26
 		{
-			position[]={4835.7661,339.08075,10214.283};
+			position[]={4840.3174,339.08075,10213.081};
 			azimut=240;
 			id=45;
 			side="EMPTY";
@@ -623,16 +640,16 @@ class Mission
 		};
 		class Item27
 		{
-			position[]={4837.2236,339.08075,10215.248};
+			position[]={4841.2251,339.08075,10215.249};
 			azimut=240;
 			id=46;
 			side="EMPTY";
-			vehicle="ACE_Tbox_545x39Magazine";
+			vehicle="ACE_Tbox_762x54Belt";
 			skill=0.60000002;
 		};
 		class Item28
 		{
-			position[]={4838.0874,339.08075,10217.309};
+			position[]={4842.5962,339.08075,10216.007};
 			azimut=240;
 			id=47;
 			side="EMPTY";
@@ -641,12 +658,28 @@ class Mission
 		};
 		class Item29
 		{
-			position[]={4839.502,339.08075,10218.132};
+			position[]={4691.0098,339,10204.757};
 			azimut=240;
 			id=48;
 			side="EMPTY";
-			vehicle="ACE_Tbox_762x54Belt";
+			vehicle="MASH";
 			skill=0.60000002;
+		};
+		class Item30
+		{
+			position[]={4730.7319,339,10213.34};
+			id=49;
+			side="EMPTY";
+			vehicle="FlagCarrierRU";
+			skill=0.2;
+		};
+		class Item31
+		{
+			position[]={4718.2358,339,10206.479};
+			id=50;
+			side="EMPTY";
+			vehicle="FlagCarrierUSArmy_EP1";
+			skill=0.2;
 		};
 	};
 	class Markers
@@ -1380,13 +1413,13 @@ class Mission
 		};
 		class Item113
 		{
-			position[]={4722.6938,339,10199.947};
+			position[]={4721.5547,339,10200.574};
 			name="ammocrate1";
 			type="Empty";
 		};
 		class Item114
 		{
-			position[]={4734.3511,339,10205.922};
+			position[]={4734.3511,339,10206.777};
 			name="ammocrate2";
 			type="Empty";
 		};
@@ -1612,7 +1645,7 @@ class Mission
 		};
 		class Item149
 		{
-			position[]={7071.8057,293.98999,7680.376};
+			position[]={10204.011,59.64603,4043.4219};
 			name="truck2";
 			type="Empty";
 		};
