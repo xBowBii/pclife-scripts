@@ -42,9 +42,12 @@ switch (rusEra) do
 		ammoCrateRus addWeaponCargo ["ACE_gr1",5];
 		ammoCrateRus addWeaponCargo ["ACE_AK74M_GL_1P29",5];
 		ammoCrateRus addWeaponCargo ["ACE_SVD_Bipod",2];
+		ammoCrateRus addWeaponCargo ["Saiga12K", 5];
 
 		ammoCrateRus addMagazineCargo ["20Rnd_9x39_SP5_VSS",30];
 		ammoCrateRus addMagazineCargo ["ACE_20Rnd_9x39_B_OC14",50];
+		ammoCrateRus addMagazineCargo ["8Rnd_B_Saiga12_Pellets",60];
+		ammoCrateRus addMagazineCargo ["8Rnd_B_Saiga12_74Slug",60];
 	};
 	case 3:
 	{
@@ -79,11 +82,6 @@ switch (rusEra) do
 
 ammoCrateRus addWeaponCargo ["ACE_APS",5];
 ammoCrateRus addWeaponCargo ["ACE_TT",5];
-
-ammoCrateRus addWeaponCargo ["Saiga12K", 5];
-
-ammoCrateRus addMagazineCargo ["8Rnd_B_Saiga12_Pellets",60];
-ammoCrateRus addMagazineCargo ["8Rnd_B_Saiga12_74Slug",60];
 
 ammoCrateRus addMagazineCargo ["ACE_20Rnd_9x18_APS",60];
 ammoCrateRus addMagazineCargo ["ACE_8Rnd_762x25_B_Tokarev",60];
