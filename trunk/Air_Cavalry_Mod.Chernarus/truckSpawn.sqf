@@ -40,32 +40,32 @@ if (_rand <= 0.7) then {
 
 sleep 0.1;
 
-_truck = "V3S_Gue" createVehicle (getMarkerPos _point);
-_tempSoldier1 moveInDriver _truck;
-_tempSoldier2 moveInCargo _truck;
-_tempSoldier3 moveInCargo _truck;
-_tempSoldier4 moveInCargo _truck;
-_tempSoldier5 moveInCargo _truck;
-_tempSoldier6 moveInCargo _truck;
-_tempSoldier7 moveInCargo _truck;
-_tempSoldier8 moveInCargo _truck;
-_tempSoldier9 moveInCargo _truck;
-_tempSoldier10 moveInCargo _truck;
+	_truck = createVehicle ["V3S_Gue", getMarkerPos _point, [], 0, "FORM"];
+	_tempSoldier1 moveInDriver _truck;
+	_tempSoldier2 moveInCargo _truck;
+	_tempSoldier3 moveInCargo _truck;
+	_tempSoldier4 moveInCargo _truck;
+	_tempSoldier5 moveInCargo _truck;
+	_tempSoldier6 moveInCargo _truck;
+	_tempSoldier7 moveInCargo _truck;
+	_tempSoldier8 moveInCargo _truck;
+	_tempSoldier9 moveInCargo _truck;
+	_tempSoldier10 moveInCargo _truck;
 
-wp = _myGroup addwaypoint [getMarkerPos _dest, 0];
-wp setWaypointType "SAD";
-wp setWaypointSpeed "FULL";
+	wp = _myGroup addwaypoint [getMarkerPos _dest, 0];
+	wp setWaypointType "SAD";
+	wp setWaypointSpeed "FULL";
 
 	_myGroup2 = createGroup east;
 	_tempSoldier01 = _myGroup2 createUnit ["GUE_Commander",getMarkerPos _point,[],0.8,"Sergeant"];
 	_tempSoldier02 = _myGroup2 createUnit ["GUE_Soldier_GL",getMarkerPos _point,[],0.6,"Private"];
 
-	_zu = "Ural_ZU23_Gue" createVehicle (getMarkerPos _point);
+	_zu = createVehicle ["Ural_ZU23_Gue", getMarkerPos _point, [], 0, "FORM"];
 	_tempSoldier01 moveInDriver _zu;
 	_tempSoldier02 moveInGunner _zu;
 
-wp1 = _myGroup2 addwaypoint [getMarkerPos _dest, 0];
-wp1 setWaypointType "SAD";
-wp1 setWaypointSpeed "FULL";
+	 wp1 = _myGroup2 addwaypoint [getMarkerPos _dest, 0];
+	 wp1 setWaypointType "SAD";
+	 wp1 setWaypointSpeed "FULL";
 };
 };
