@@ -43,7 +43,6 @@ switch (usEra) do
 		ammoCrateUs addWeaponCargo ["ACE_M16A4_CCO_GL_UP",5];
 		ammoCrateUs addWeaponCargo ["M40A3",2];
 		ammoCrateUs addWeaponCargo ["ACE_M4_ACOG",5];
-		ammoCrateUs addWeaponCargo ["ACE_Mk12mod1_SD",5];
 		ammoCrateUs addWeaponCargo ["ACE_M4_AIM_GL_UP",5];
 		ammoCrateUs addWeaponCargo ["ACE_SOC_M4A1",5];
 		ammoCrateUs addWeaponCargo ["ACE_M4_Eotech",5];
@@ -59,13 +58,12 @@ switch (usEra) do
 
 	case 3:
 	{
-
 		ammoCrateUs addWeaponCargo ["ACE_SOC_M4A1_Eotech",5];
 		ammoCrateUs addWeaponCargo ["ACE_SOC_M4A1_Eotech_4x",5];
 		ammoCrateUs addWeaponCargo ["ACE_SOC_M4A1_RCO_GL_UP",5];
 		ammoCrateUs addWeaponCargo ["DMR",2];
 		ammoCrateUs addWeaponCargo ["ACE_SOC_M4A1_SHORTDOT",5];
-		ammoCrateUs addWeaponCargo ["ACE_TAC50_SD",2];
+		ammoCrateUs addWeaponCargo ["ACE_TAC50",2];
 		ammoCrateUs addWeaponCargo ["ACE_G36A2_Bipod",5];
 		ammoCrateUs addWeaponCargo ["ACE_G36K",5];
 		ammoCrateUs addWeaponCargo ["M249_m145_EP1",2];
@@ -78,6 +76,7 @@ switch (usEra) do
 		ammoCrateUs addWeaponCargo ["ACE_HK417_Shortdot",5];
 		ammoCrateUs addWeaponCargo ["ACE_HK417_micro",5];
 		ammoCrateUs addWeaponCargo ["ACE_HK417_Eotech_4x",5];
+		ammoCrateUs addWeaponCargo ["ACE_M1014_Eotech", 5];
 
 		ammoCrateUs addMagazineCargo ["ACE_5Rnd_127x99_B_TAC50",20];
 		ammoCrateUs addMagazineCargo ["ACE_5Rnd_127x99_T_TAC50",20];
@@ -85,6 +84,8 @@ switch (usEra) do
 		ammoCrateUs addMagazineCargo ["ACE_20Rnd_762x51_T_DMR",60];
 		ammoCrateUs addMagazineCargo ["ACE_20Rnd_762x51_B_HK417",60];
 		ammoCrateUs addMagazineCargo ["ACE_20Rnd_762x51_SB_HK417",60];
+		ammoCrateUs addMagazineCargo ["8Rnd_B_Beneli_Pellets",60];
+		ammoCrateUs addMagazineCargo ["8Rnd_B_Beneli_74Slug",60];
 
 		ammoCrateUs addWeaponCargo ["ACE_YardAge450",2];
 		ammoCrateUs addWeaponCargo ["ACE_Rangefinder_OD",2];
@@ -102,10 +103,6 @@ ammoCrateUs addWeaponCargo ["ACE_Glock17",5];
 ammoCrateUs addWeaponCargo ["M9",5];
 ammoCrateUs addWeaponCargo ["Colt1911",5];
 
-ammoCrateUs addWeaponCargo ["ACE_M1014_Eotech", 5];
-ammoCrateUs addMagazineCargo ["8Rnd_B_Beneli_Pellets",60];
-ammoCrateUs addMagazineCargo ["8Rnd_B_Beneli_74Slug",60];
-
 ammoCrateUs addMagazineCargo ["ACE_12Rnd_45ACP_USP",60];
 ammoCrateUs addMagazineCargo ["ACE_15Rnd_9x19_P226",60];
 ammoCrateUs addMagazineCargo ["ACE_15Rnd_9x19_P8",60];
@@ -116,7 +113,6 @@ ammoCrateUs addMagazineCargo ["7Rnd_45ACP_1911",60];
 
 
 ammoCrateUs addMagazineCargo ["30Rnd_556x45_Stanag",60];
-ammoCrateUs addMagazineCargo ["30Rnd_556x45_StanagSD",60];
 //ammoCrateUs addMagazineCargo ["ACE_30Rnd_556x45_S_Stanag",60];
 ammoCrateUs addMagazineCargo ["100Rnd_762x51_M240",60];
 ammoCrateUs addMagazineCargo ["ACE_30Rnd_556x45_S_G36",60];
