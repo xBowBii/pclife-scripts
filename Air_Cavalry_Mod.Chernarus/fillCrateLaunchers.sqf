@@ -31,3 +31,6 @@ ammoCrateLaunchers addMagazineCargo ["PG7V",10];
 ammoCrateLaunchers addMagazineCargo ["PG7VL",10];
 ammoCrateLaunchers addMagazineCargo ["PG7VR",10];
 ammoCrateLaunchers addMagazineCargo ["ACE_TBG7V",10];
+ammoCrateLaunchers addMagazineCargo ["ACE_SMAW_Spotting",50];
+
+
