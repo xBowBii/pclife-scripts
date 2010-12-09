@@ -46,7 +46,6 @@ switch (rusEra) do
 
 		ammoCrateRus addMagazineCargo ["20Rnd_9x39_SP5_VSS",30];
 		ammoCrateRus addMagazineCargo ["ACE_20Rnd_9x39_B_OC14",50];
-		ammoCrateRus addMagazineCargo ["8Rnd_B_Saiga12_Pellets",60];
 		ammoCrateRus addMagazineCargo ["8Rnd_B_Saiga12_74Slug",60];
 	};
 	case 3:
@@ -72,26 +71,26 @@ switch (rusEra) do
 		ammoCrateRus addWeaponCargo ["AK_107_pso",5];
 		ammoCrateRus addWeaponCargo ["ACE_AK103_PSO",5];
 		ammoCrateRus addWeaponCargo ["ACE_SVD_Bipod",2];
+		ammoCrateRus addWeaponCargo ["Saiga12K", 5];
 
+		ammoCrateRus addMagazineCargo ["8Rnd_B_Saiga12_Pellets",60];
 		ammoCrateRus addMagazineCargo ["20Rnd_9x39_SP5_VSS",40];
 		ammoCrateRus addMagazineCargo ["5Rnd_127x108_KSVK",20];
 		ammoCrateRus addMagazineCargo ["ACE_20Rnd_9x39_B_OC14",60];
 	};
-
 };
 
 ammoCrateRus addWeaponCargo ["ACE_APS",5];
 ammoCrateRus addWeaponCargo ["ACE_TT",5];
 
+ammoCrateRus addWeaponCargo ["Binocular",10];
+ammoCrateRus addWeaponCargo ["ACE_Earplugs",10];
+ammoCrateRus addWeaponCargo ["ACE_GlassesLHD_glasses",10];
+ammoCrateRus addWeaponCargo ["ACE_GlassesTactical",10];
+ammoCrateRus addWeaponCargo ["ACE_Rucksack_RD90",10];
+
 ammoCrateRus addMagazineCargo ["ACE_20Rnd_9x18_APS",60];
 ammoCrateRus addMagazineCargo ["ACE_8Rnd_762x25_B_Tokarev",60];
-
-ammoCrateRus addMagazineCargo ["ACE_1Rnd_HE_GP25P",20];
-ammoCrateRus addMagazineCargo ["1Rnd_HE_GP25",20];
-ammoCrateRus addMagazineCargo ["1Rnd_SmokeRed_GP25",20];
-
-//ammoCrateRus addMagazineCargo ["ACE_1Rnd_CS_GP25",20];
-
 
 ammoCrateRus addMagazineCargo ["ACE_30Rnd_762x39_S_AK47",60];
 ammoCrateRus addMagazineCargo ["ACE_75Rnd_762x39_B_AK47",60];
@@ -103,12 +102,11 @@ ammoCrateRus addMagazineCargo ["ACE_75Rnd_545x39_T_RPK",60];
 ammoCrateRus addMagazineCargo ["10Rnd_762x54_SVD",30];
 ammoCrateRus addMagazineCargo ["ACE_10Rnd_762x54_T_SVD",30];
 ammoCrateRus addMagazineCargo ["100Rnd_762x54_PK",40];
+
+ammoCrateRus addMagazineCargo ["ACE_1Rnd_HE_GP25P",20];
+ammoCrateRus addMagazineCargo ["1Rnd_HE_GP25",20];
+ammoCrateRus addMagazineCargo ["1Rnd_SmokeRed_GP25",20];
 ammoCrateRus addMagazineCargo ["HandGrenade_West", 50];
-ammoCrateRus addWeaponCargo ["Binocular",10];
-ammoCrateRus addWeaponCargo ["ACE_Earplugs",10];
-ammoCrateRus addWeaponCargo ["ACE_GlassesLHD_glasses",10];
-ammoCrateRus addWeaponCargo ["ACE_GlassesTactical",10];
-ammoCrateRus addWeaponCargo ["ACE_Rucksack_RD90",10];
 ammoCrateRus addMagazinecargo ["SmokeShell", 10];
 ammoCrateRus addMagazinecargo ["SmokeShellBlue", 10];
 ammoCrateRus addMagazinecargo ["SmokeShellGreen", 10];
