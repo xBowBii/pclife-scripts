@@ -59,7 +59,6 @@ switch (specEra) do
 		ammoCrateSpec addMagazineCargo ["ACE_20Rnd_9x39_B_OC14",60];
 		ammoCrateSpec addMagazineCargo ["ACE_5Rnd_127x99_S_TAC50",20];
 	};
-
 };
 
 ammoCrateSpec addWeaponCargo ["ACE_USPSD",5];

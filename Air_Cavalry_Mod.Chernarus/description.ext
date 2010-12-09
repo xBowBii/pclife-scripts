@@ -5,7 +5,6 @@ class Header
  	maxPlayers = 12;
 };
 
-
 respawn = "BASE";
 respawnDelay = 60;
 disabledAI = 1;

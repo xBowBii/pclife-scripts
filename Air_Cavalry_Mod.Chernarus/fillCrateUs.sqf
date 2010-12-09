@@ -33,7 +33,6 @@ switch (usEra) do
 		ammoCrateUs addMagazineCargo ["20Rnd_762x51_DMR",60];
 		ammoCrateUs addMagazineCargo ["ACE_20Rnd_762x51_T_DMR",60];
 	};
-
 	case 2:
 	{
 
@@ -50,12 +49,12 @@ switch (usEra) do
 		ammoCrateUs addWeaponCargo ["ACE_G36K_iron",5];
 		ammoCrateUs addWeaponCargo ["ACE_M249Para_M145",2];
 		ammoCrateUs addWeaponCargo ["M60A4_EP1",2];
+		ammoCrateUs addWeaponCargo ["ACE_M1014_Eotech", 5];
+		ammoCrateUs addMagazineCargo ["8Rnd_B_Beneli_74Slug",60];
 
 		ammoCrateUs addMagazineCargo ["5Rnd_762x51_M24",20];
 		ammoCrateUs addMagazineCargo ["ACE_5Rnd_762x51_T_M24",20];
-
 	};
-
 	case 3:
 	{
 		ammoCrateUs addWeaponCargo ["ACE_SOC_M4A1_Eotech",5];
@@ -85,14 +84,11 @@ switch (usEra) do
 		ammoCrateUs addMagazineCargo ["ACE_20Rnd_762x51_B_HK417",60];
 		ammoCrateUs addMagazineCargo ["ACE_20Rnd_762x51_SB_HK417",60];
 		ammoCrateUs addMagazineCargo ["8Rnd_B_Beneli_Pellets",60];
-		ammoCrateUs addMagazineCargo ["8Rnd_B_Beneli_74Slug",60];
 
 		ammoCrateUs addWeaponCargo ["ACE_YardAge450",2];
 		ammoCrateUs addWeaponCargo ["ACE_Rangefinder_OD",2];
 		ammoCrateUs addMagazineCargo ["ACE_Battery_Rangefinder",10];
-
 	};
-
 };
 
 ammoCrateUs addWeaponCargo ["ACE_USP",5];
@@ -103,6 +99,14 @@ ammoCrateUs addWeaponCargo ["ACE_Glock17",5];
 ammoCrateUs addWeaponCargo ["M9",5];
 ammoCrateUs addWeaponCargo ["Colt1911",5];
 
+
+ammoCrateUs addWeaponCargo ["Binocular",10];
+ammoCrateUs addWeaponCargo ["ACE_Earplugs",10];
+ammoCrateUs addWeaponCargo ["ACE_GlassesLHD_glasses",10];
+ammoCrateUs addWeaponCargo ["ACE_GlassesTactical",10];
+ammoCrateUs addWeaponCargo ["ACE_Rucksack_MOLLE_Brown",10];
+ammoCrateUs addweaponcargo ["ACE_M122TripodProxy", 1];
+
 ammoCrateUs addMagazineCargo ["ACE_12Rnd_45ACP_USP",60];
 ammoCrateUs addMagazineCargo ["ACE_15Rnd_9x19_P226",60];
 ammoCrateUs addMagazineCargo ["ACE_15Rnd_9x19_P8",60];
@@ -111,7 +115,6 @@ ammoCrateUs addMagazineCargo ["ACE_33Rnd_9x19_G18",60];
 ammoCrateUs addMagazineCargo ["15Rnd_9x19_M9",60];
 ammoCrateUs addMagazineCargo ["7Rnd_45ACP_1911",60];
 
-
 ammoCrateUs addMagazineCargo ["30Rnd_556x45_Stanag",60];
 //ammoCrateUs addMagazineCargo ["ACE_30Rnd_556x45_S_Stanag",60];
 ammoCrateUs addMagazineCargo ["100Rnd_762x51_M240",60];
@@ -119,16 +122,10 @@ ammoCrateUs addMagazineCargo ["ACE_30Rnd_556x45_S_G36",60];
 ammoCrateUs addMagazineCargo ["200Rnd_556x45_M249",60];
 ammoCrateUs addMagazineCargo ["ACE_200Rnd_556x45_T_M249",60];
 ammoCrateUs addMagazineCargo ["ACE_100Rnd_556x45_T_M249",60];
+
 ammoCrateUs addMagazineCargo ["1Rnd_HE_M203",20];
 ammoCrateUs addMagazineCargo ["1Rnd_SmokeRed_M203",20];
-
 ammoCrateUs addMagazineCargo ["HandGrenade_West", 50];
-ammoCrateUs addWeaponCargo ["Binocular",10];
-ammoCrateUs addWeaponCargo ["ACE_Earplugs",10];
-ammoCrateUs addWeaponCargo ["ACE_GlassesLHD_glasses",10];
-ammoCrateUs addWeaponCargo ["ACE_GlassesTactical",10];
-ammoCrateUs addWeaponCargo ["ACE_Rucksack_MOLLE_Brown",10];
-ammoCrateUs addweaponcargo ["ACE_M122TripodProxy", 1];
 ammoCrateUs addMagazinecargo ["SmokeShell", 10];
 ammoCrateUs addMagazinecargo ["SmokeShellBlue", 10];
 ammoCrateUs addMagazinecargo ["SmokeShellGreen", 10];
