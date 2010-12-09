@@ -7,7 +7,6 @@ if (isServer) then {
 clearWeaponCargo ammoCrateLaunchers;
 clearMagazineCargo ammoCrateLaunchers;
 
-
 ammoCrateLaunchers addWeaponCargo ["RPG7V",5];
 ammoCrateLaunchers addWeaponCargo ["ACE_RPG7V_PGO7",5];
 ammoCrateLaunchers addWeaponCargo ["ACE_RPG27",10];
@@ -32,5 +31,3 @@ ammoCrateLaunchers addMagazineCargo ["PG7VL",10];
 ammoCrateLaunchers addMagazineCargo ["PG7VR",10];
 ammoCrateLaunchers addMagazineCargo ["ACE_TBG7V",10];
 ammoCrateLaunchers addMagazineCargo ["ACE_SMAW_Spotting",50];
-
-

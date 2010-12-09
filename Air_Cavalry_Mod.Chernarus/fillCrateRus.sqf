@@ -5,6 +5,7 @@ if (isServer) then {
 	ammoCrateRus = createVehicle ["USVehicleBox", getMarkerPos _ruspoint, [], 0, "FORM"];
 	publicVariable "ammoCrateRus";
 	publicVariable "rusEra";
+	player sidechat format["Rus era = %1",rusEra];
 };
 
 clearWeaponCargo ammoCrateRus;
