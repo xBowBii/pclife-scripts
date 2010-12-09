@@ -13,6 +13,11 @@ if(isServer) then
 		_wp setWaypointBehaviour "AWARE";
 		_wp setWaypointCombatMode "RED";
 	};
+	_wpadd = _forestGroup addwaypoint [getMarkerPos _point, 0];
+	_wpadd setWaypointType "MOVE";
+	_wpadd setWaypointSpeed "LIMITED";
+	_wpadd setWaypointBehaviour "AWARE";
+	_wpadd setWaypointCombatMode "RED";
 	_wpCycle = _forestGroup addwaypoint [getMarkerPos _point, 0];
 	_wpCycle setWaypointType "CYCLE";
 };
