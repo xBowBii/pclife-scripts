@@ -1,7 +1,7 @@
 if (isServer) then {
 	_specpoint = _this select 0;
 	specEra = random 3;
-	specEra = ceil rusEra;
+	specEra = ceil specEra;
 	ammoCrateSpec = createVehicle ["USVehicleBox", getMarkerPos _specpoint, [], 0, "FORM"];
 	publicVariable "ammoCrateSpec";
 	publicVariable "specEra";
