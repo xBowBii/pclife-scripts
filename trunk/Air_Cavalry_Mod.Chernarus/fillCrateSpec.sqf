@@ -5,6 +5,7 @@ if (isServer) then {
 	ammoCrateSpec = createVehicle ["USVehicleBox", getMarkerPos _specpoint, [], 0, "FORM"];
 	publicVariable "ammoCrateSpec";
 	publicVariable "specEra";
+	player sidechat format["Spec era = %1",specEra];
 };
 
 clearWeaponCargo ammoCrateSpec;
