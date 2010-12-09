@@ -50,8 +50,9 @@ switch (usEra) do
 		ammoCrateUs addWeaponCargo ["ACE_M249Para_M145",2];
 		ammoCrateUs addWeaponCargo ["M60A4_EP1",2];
 		ammoCrateUs addWeaponCargo ["ACE_M1014_Eotech", 5];
-		ammoCrateUs addMagazineCargo ["8Rnd_B_Beneli_74Slug",60];
+		ammoCrateUs addWeaponCargo ["M4SPR", 2];
 
+		ammoCrateUs addMagazineCargo ["8Rnd_B_Beneli_74Slug",60];
 		ammoCrateUs addMagazineCargo ["5Rnd_762x51_M24",20];
 		ammoCrateUs addMagazineCargo ["ACE_5Rnd_762x51_T_M24",20];
 	};
