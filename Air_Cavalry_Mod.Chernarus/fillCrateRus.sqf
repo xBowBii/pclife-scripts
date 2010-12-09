@@ -60,6 +60,7 @@ switch (rusEra) do
 		ammoCrateRus addWeaponCargo ["ACE_AK104_Kobra",5];
 		ammoCrateRus addWeaponCargo ["ACE_AK105",5];
 		ammoCrateRus addWeaponCargo ["ACE_AK105_1P29",5];
+		ammoCrateRus addWeaponCargo ["ACE_AK105_Kobra",5];
 		ammoCrateRus addWeaponCargo ["ACE_AK104_Kobra",5];
 		ammoCrateRus addWeaponCargo ["ACE_AK103",5];
 		ammoCrateRus addWeaponCargo ["ACE_AK103_1P29",5];
