@@ -1,6 +1,7 @@
 sleep 1;
 if (isServer) then {
 	_randName = random 5;
+	player globalchat format ["City random is: %1", _randName];
 	_randName = ceil _randName;
 	_point = format ["city%1", _randName];
 	taskpoint = _point;
