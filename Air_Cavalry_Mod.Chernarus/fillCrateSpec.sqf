@@ -80,3 +80,5 @@ ammoCrateSpec addMagazineCargo ["ACE_30Rnd_762x39_SD_AK47",60];
 ammoCrateSpec addMagazineCargo ["30Rnd_545x39_AKSD",60];
 ammoCrateSpec addMagazineCargo ["ACE_20Rnd_762x51_S_M110",60];
 ammoCrateSpec addMagazineCargo ["ACE_30Rnd_9x19_S_MP5",60];
+
+sleep 1;

@@ -131,3 +131,5 @@ ammoCrateUs addMagazinecargo ["SmokeShellOrange", 10];
 ammoCrateUs addMagazinecargo ["SmokeShellPurple", 10];
 ammoCrateUs addMagazinecargo ["SmokeShellRed", 10];
 ammoCrateUs addMagazinecargo ["SmokeShellYellow", 10];
+
+sleep 1;
