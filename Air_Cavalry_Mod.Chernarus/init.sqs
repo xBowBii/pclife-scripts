@@ -1,13 +1,7 @@
 execVM "briefing.sqf"
-sleep 1
-execVM "chooseObjective.sqf"
-sleep 1
 ["ammocrate1"] execVM "fillCrateUs.sqf"
-sleep 0.5
 ["ammocrate2"] execVM "fillCrateRus.sqf"
-sleep 0.5
 ["ammocrate3"] execVM "fillCrateLaunchers.sqf"
-sleep 0.5
 ["ammocrate4"] execVM "fillCrateSpec.sqf"
-
+execVM "chooseObjective.sqf"
 ace_wounds_prevtime = 300

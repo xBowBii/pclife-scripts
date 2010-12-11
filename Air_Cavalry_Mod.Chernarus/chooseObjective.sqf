@@ -1,3 +1,4 @@
+sleep 1;
 if (isServer) then {
 	_randName = random 5;
 	_randName = ceil _randName;
