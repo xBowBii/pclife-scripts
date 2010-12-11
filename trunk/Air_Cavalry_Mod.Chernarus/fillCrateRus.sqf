@@ -119,3 +119,5 @@ ammoCrateRus addMagazinecargo ["SmokeShellOrange", 10];
 ammoCrateRus addMagazinecargo ["SmokeShellPurple", 10];
 ammoCrateRus addMagazinecargo ["SmokeShellRed", 10];
 ammoCrateRus addMagazinecargo ["SmokeShellYellow", 10];
+
+sleep 1;
