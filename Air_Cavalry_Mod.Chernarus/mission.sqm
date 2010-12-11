@@ -665,7 +665,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=392;
+		items=428;
 		class Item0
 		{
 			position[]={4768.6821,339,10168.352};
@@ -1548,7 +1548,7 @@ class Mission
 		};
 		class Item136
 		{
-			position[]={10200.428,60.416901,4047.2681};
+			position[]={10201.042,60.410976,4047.3132};
 			name="truck2";
 			type="Empty";
 		};
@@ -3170,6 +3170,234 @@ class Mission
 			a=150;
 			b=100;
 			angle=10.8446;
+		};
+		class Item392
+		{
+			position[]={10119.039,244.99001,5474.1016};
+			name="city11";
+			type="Empty";
+		};
+		class Item393
+		{
+			position[]={10223.481,64.313004,4068.3538};
+			name="truck11";
+			type="Empty";
+		};
+		class Item394
+		{
+			position[]={10210.711,61.635124,4055.9565};
+			name="city11a1";
+			type="Empty";
+		};
+		class Item395
+		{
+			position[]={8551.0107,356.4538,6648.0093};
+			name="city11a2";
+			type="Empty";
+		};
+		class Item396
+		{
+			position[]={10027.829,261.06903,5686.9126};
+			name="city11d1";
+			type="Empty";
+		};
+		class Item397
+		{
+			position[]={10129.87,236.48135,5291.4717};
+			name="city11d2";
+			type="Empty";
+		};
+		class Item398
+		{
+			position[]={10373.302,250.33736,5496.0728};
+			name="city11d3";
+			type="Empty";
+		};
+		class Item399
+		{
+			position[]={10294.346,259.95645,5747.1167};
+			name="city11d4";
+			type="Empty";
+		};
+		class Item400
+		{
+			position[]={9880.5498,254.67105,5469.1162};
+			name="city11d5";
+			type="Empty";
+		};
+		class Item401
+		{
+			position[]={10097.28,245,5447.7876};
+			name="city11p1";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=120;
+			b=80;
+			angle=88.215103;
+		};
+		class Item402
+		{
+			position[]={10213.602,237.01357,5526.4893};
+			name="city11p2";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=60;
+			b=110;
+			angle=70.288597;
+		};
+		class Item403
+		{
+			position[]={10148.31,245.36914,5645.2065};
+			name="city11p3";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=75;
+			b=120;
+			angle=70.288597;
+		};
+		class Item404
+		{
+			position[]={10259.465,224.01308,5407.2979};
+			name="city11f1";
+			type="Empty";
+		};
+		class Item405
+		{
+			position[]={10373.082,196.82339,5149.0151};
+			name="city11f1w1";
+			type="Empty";
+		};
+		class Item406
+		{
+			position[]={10507.967,207.34564,4879.5903};
+			name="city11f1w2";
+			type="Empty";
+		};
+		class Item407
+		{
+			position[]={10269.222,256.36255,4869.0581};
+			name="city11f1w3";
+			type="Empty";
+		};
+		class Item408
+		{
+			position[]={9967.2773,160.99088,4904.168};
+			name="city11f1w4";
+			type="Empty";
+		};
+		class Item409
+		{
+			position[]={10099.997,222.51273,5198.0488};
+			name="city11f1w5";
+			type="Empty";
+		};
+		class Item410
+		{
+			position[]={9915.0098,213.50893,5137.7202};
+			name="city11f2";
+			type="Empty";
+		};
+		class Item411
+		{
+			position[]={9673.4551,246.9987,5452.2437};
+			name="city11f2w1";
+			type="Empty";
+		};
+		class Item412
+		{
+			position[]={9726.3945,307.61591,5814.1313};
+			name="city11f2w2";
+			type="Empty";
+		};
+		class Item413
+		{
+			position[]={9333.8691,276.71744,5758.7769};
+			name="city11f2w3";
+			type="Empty";
+		};
+		class Item414
+		{
+			position[]={9260.9014,130.28357,5059.2759};
+			name="city11f2w4";
+			type="Empty";
+		};
+		class Item415
+		{
+			position[]={9676.0723,118.95854,4860.4971};
+			name="city11f2w5";
+			type="Empty";
+		};
+		class Item416
+		{
+			position[]={9387.9033,338.44116,6051.5195};
+			name="city11f3";
+			type="Empty";
+		};
+		class Item417
+		{
+			position[]={9156.2754,316.13159,6375.1587};
+			name="city11f3w1";
+			type="Empty";
+		};
+		class Item418
+		{
+			position[]={8849.915,295.85681,6726.9268};
+			name="city11f3w2";
+			type="Empty";
+		};
+		class Item419
+		{
+			position[]={9372.8613,228.35149,6791.0283};
+			name="city11f3w3";
+			type="Empty";
+		};
+		class Item420
+		{
+			position[]={9449.4424,235.76982,6421.2568};
+			name="city11f3w4";
+			type="Empty";
+		};
+		class Item421
+		{
+			position[]={9626.2197,274.75177,6241.7988};
+			name="city11f3w5";
+			type="Empty";
+		};
+		class Item422
+		{
+			position[]={9934.8379,272.10794,6192.7207};
+			name="city11f4";
+			type="Empty";
+		};
+		class Item423
+		{
+			position[]={10128.81,294.43991,6054.1699};
+			name="city11f4w1";
+			type="Empty";
+		};
+		class Item424
+		{
+			position[]={10458.617,244.39508,6178.4976};
+			name="city11f4w2";
+			type="Empty";
+		};
+		class Item425
+		{
+			position[]={10352.608,223.1573,6585.2207};
+			name="city11f4w3";
+			type="Empty";
+		};
+		class Item426
+		{
+			position[]={9966.8848,203.77646,6521.6636};
+			name="city11f4w4";
+			type="Empty";
+		};
+		class Item427
+		{
+			position[]={9716.9404,228.54506,6373.9058};
+			name="city11f4w5";
+			type="Empty";
 		};
 	};
 	class Sensors
