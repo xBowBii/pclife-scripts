@@ -1,6 +1,6 @@
 if (isServer) then {
 	_laupoint = _this select 0;
-	ammoCrateLaunchers = createVehicle ["USVehicleBox", getMarkerPos _laupoint, [], 0, "FORM"];
+	ammoCrateLaunchers = createVehicle ["SpecialWeaponsBox", getMarkerPos _laupoint, [], 0, "FORM"];
 	publicVariable "ammoCrateLaunchers";
 };
 

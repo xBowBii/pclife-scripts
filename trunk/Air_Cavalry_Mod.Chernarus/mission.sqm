@@ -25,7 +25,9 @@ class Mission
 		"CAAir_E_UH1H_EP1",
 		"CABuildings",
 		"camisc_e",
-		"warfarebuildings"
+		"warfarebuildings",
+		"ace_sys_magazines",
+		"ace_anims_reload"
 	};
 	addOnsAuto[]=
 	{

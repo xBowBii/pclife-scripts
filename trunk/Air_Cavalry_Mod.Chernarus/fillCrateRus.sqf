@@ -2,7 +2,7 @@ if (isServer) then {
 	_ruspoint = _this select 0;
 	rusEra = random 3;
 	rusEra = ceil rusEra;
-	ammoCrateRus = createVehicle ["USVehicleBox", getMarkerPos _ruspoint, [], 0, "FORM"];
+	ammoCrateRus = createVehicle ["RUVehicleBox", getMarkerPos _ruspoint, [], 0, "FORM"];
 	publicVariable "ammoCrateRus";
 	publicVariable "rusEra";
 	player sidechat format["Rus era = %1",rusEra];
