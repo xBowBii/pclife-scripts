@@ -15,11 +15,13 @@ if (isServer) then {
 			for "_x" from 1 to 4 do {
 				_point = format ["city1p%1", _x];
 				_null = [_point, _rand] execVM "spawnSquad.sqf";
+				sleep 0.1;
 			};
-			_null = ["city1f1",5] execVM "createForestPatrol.sqf";
-			_null = ["city1f2",5] execVM "createForestPatrol.sqf";
-			_null = ["city1f3",5] execVM "createForestPatrol.sqf";
-			_null = ["city1f4",5] execVM "createForestPatrol.sqf";
+			for "_i" from 1 to 4 do {
+				_point = format ["city1f%1", _i];
+				_null = [_point, 5] execVM "createForestPatrol.sqf";
+				sleep 0.1;
+			};
 			_null = ["city1", 4, 445, 445, 280, 285] execVM "createFortification.sqf";
 			_truckTrigger = createTrigger["EmptyDetector",getMarkerPos "city1"];
 			_truckTrigger setTriggerArea[300,300,0,false];
@@ -37,11 +39,13 @@ if (isServer) then {
 			for "_x" from 1 to 4 do {
 				_point = format ["city2p%1", _x];
 				_null = [_point, _rand] execVM "spawnSquad.sqf";
+				sleep 0.1;
 			};
-			_null = ["city2f1",5] execVM "createForestPatrol.sqf";
-			_null = ["city2f2",5] execVM "createForestPatrol.sqf";
-			_null = ["city2f3",5] execVM "createForestPatrol.sqf";
-			_null = ["city2f4",5] execVM "createForestPatrol.sqf";
+			for "_i" from 1 to 4 do {
+				_point = format ["city2f%1", _i];
+				_null = [_point, 5] execVM "createForestPatrol.sqf";
+				sleep 0.1;
+			};
 			_null = ["city2", 8, 125, 125, 195, 195, 340, 310, 25, 25] execVM "createFortification.sqf";
 			_truckTrigger = createTrigger["EmptyDetector",getMarkerPos "city2"];
 			_truckTrigger setTriggerArea[300,300,0,false];
@@ -59,11 +63,13 @@ if (isServer) then {
 			for "_x" from 1 to 4 do {
 				_point = format ["city3p%1", _x];
 				_null = [_point, _rand] execVM "spawnSquad.sqf";
+				sleep 0.1;
 			};
-			_null = ["city3f1",5] execVM "createForestPatrol.sqf";
-			_null = ["city3f2",5] execVM "createForestPatrol.sqf";
-			_null = ["city3f3",5] execVM "createForestPatrol.sqf";
-			_null = ["city3f4",5] execVM "createForestPatrol.sqf";
+			for "_i" from 1 to 4 do {
+				_point = format ["city3f%1", _i];
+				_null = [_point, 5] execVM "createForestPatrol.sqf";
+				sleep 0.1;
+			};
 			_null = ["city3", 6, 40, 35, 115, 115, 160, 160] execVM "createFortification.sqf";
 			_truckTrigger = createTrigger["EmptyDetector",getMarkerPos "city3"];
 			_truckTrigger setTriggerArea[300,300,0,false];
@@ -81,11 +87,13 @@ if (isServer) then {
 			for "_x" from 1 to 4 do {
 				_point = format ["city4p%1", _x];
 				_null = [_point, _rand] execVM "spawnSquad.sqf";
+				sleep 0.1;
 			};
-			_null = ["city4f1",5] execVM "createForestPatrol.sqf";
-			_null = ["city4f2",5] execVM "createForestPatrol.sqf";
-			_null = ["city4f3",5] execVM "createForestPatrol.sqf";
-			_null = ["city4f4",5] execVM "createForestPatrol.sqf";
+			for "_i" from 1 to 4 do {
+				_point = format ["city4f%1", _i];
+				_null = [_point, 5] execVM "createForestPatrol.sqf";
+				sleep 0.1;
+			};
 			_null = ["city4", 9, 155, 140, 330, 330, 200, 165, 275, 245, 225] execVM "createFortification.sqf";
 			_truckTrigger = createTrigger["EmptyDetector",getMarkerPos "city4"];
 			_truckTrigger setTriggerArea[300,300,0,false];
