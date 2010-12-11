@@ -23,6 +23,7 @@ switch (specEra) do
 		ammoCrateSpec addWeaponCargo ["ACE_SOC_M4A1_SD_9",5];
 		ammoCrateSpec addWeaponCargo ["M4A1_AIM_SD_camo",5];
 		ammoCrateSpec addWeaponCargo ["ACE_M4SPR_SD",2];
+		ammoCrateSpec addWeaponCargo ["AKS_74_UN_kobra",5];
 	};
 	case 2:
 	{
@@ -70,8 +71,12 @@ ammoCrateSpec addMagazineCargo ["15Rnd_9x19_M9SD",60];
 ammoCrateSpec addMagazineCargo ["ACE_12Rnd_45ACP_USPSD",60];
 ammoCrateSpec addMagazineCargo ["ACE_20Rnd_9x18_APSB",60];
 
+ammoCrateUs addMagazineCargo ["1Rnd_HE_M203",20];
+ammoCrateUs addMagazineCargo ["1Rnd_SmokeRed_M203",20];
 ammoCrateSpec addMagazineCargo ["ACE_25Rnd_1143x23_S_UMP45",60];
+ammoCrateSpec addMagazineCargo ["30Rnd_556x45_G36SD",60];
 ammoCrateSpec addMagazineCargo ["30Rnd_556x45_StanagSD",60];
 ammoCrateSpec addMagazineCargo ["ACE_30Rnd_762x39_SD_AK47",60];
+ammoCrateSpec addMagazineCargo ["30Rnd_545x39_AKSD",60];
 ammoCrateSpec addMagazineCargo ["ACE_20Rnd_762x51_S_M110",60];
 ammoCrateSpec addMagazineCargo ["ACE_30Rnd_9x19_S_MP5",60];
