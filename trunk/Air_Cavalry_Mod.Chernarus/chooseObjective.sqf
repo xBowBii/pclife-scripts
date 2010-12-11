@@ -140,7 +140,7 @@ if (isServer) then {
 			_winTrigger = createTrigger["EmptyDetector",getMarkerPos "city6"];
 			_winTrigger setTriggerArea[600,600,0,false];
 			_winTrigger setTriggerActivation["ANY","PRESENT",false];
-			_winTrigger setTriggerStatements["({side _x==resistance} count thislist == 0) AND ({_x in thislist} count units group player >= 1)", "enemyDown = 1; [-2, {_null = [] execVM _this}, 'task2.sqf'] call CBA_fnc_globalExecute; for '_x' from 1 to 3 do {_montblanc = format ['city5a%1', _x];_null = ['city6', _montblanc] execVM 'spawnAttackers.sqf';};", ""];
+			_winTrigger setTriggerStatements["({side _x==resistance} count thislist == 0) AND ({_x in thislist} count units group player >= 1)", "enemyDown = 1; [-2, {_null = [] execVM _this}, 'task2.sqf'] call CBA_fnc_globalExecute; for '_x' from 1 to 3 do {_montblanc = format ['city6a%1', _x];_null = ['city6', _montblanc] execVM 'spawnAttackers.sqf';};", ""];
 		};
 	};
 };
