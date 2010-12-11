@@ -1,7 +1,7 @@
 sleep 1;
 if (isServer) then {
 	_randName = random 6;
-	player globalchat format ["City random is: %1", _randName];
+	player globalchat format["City random is: %1", _randName];
 	_randName = ceil _randName;
 	_point = format ["city%1", _randName];
 	taskpoint = _point;
@@ -118,7 +118,7 @@ if (isServer) then {
 			_winTrigger = createTrigger["EmptyDetector",getMarkerPos "city5"];
 			_winTrigger setTriggerArea[600,600,0,false];
 			_winTrigger setTriggerActivation["ANY","PRESENT",false];
-			_winTrigger setTriggerStatements["({side _x==resistance} count thislist == 0) AND ({_x in thislist} count units group player >= 1)", "enemyDown = 1; [-2, {_null = [] execVM _this}, 'task2.sqf'] call CBA_fnc_globalExecute; for '_x' from 1 to 3 do {_montblanc = format ['city5a%1', _x];_null = ['city5', _montblanc] execVM 'spawnAttackers.sqf';};", ""];
+			_winTrigger setTriggerStatements["({side _x==resistance} count thislist == 0) AND ({_x in thislist} count units group player >= 1)", "enemyDown = 1; [-2, {_null = [] execVM _this}, 'task2.sqf'] call CBA_fnc_globalExecute; for '_x' from 1 to 4 do {_montblanc = format ['city5a%1', _x];_null = ['city5', _montblanc] execVM 'spawnAttackers.sqf';};", ""];
 		};
 		case 6:
 		{
