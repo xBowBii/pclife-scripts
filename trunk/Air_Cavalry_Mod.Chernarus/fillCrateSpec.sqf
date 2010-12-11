@@ -11,6 +11,8 @@ if (isServer) then {
 clearWeaponCargo ammoCrateSpec;
 clearMagazineCargo ammoCrateSpec;
 
+waitUntil {specEra != 0};
+
 switch (specEra) do
 {
 	case 1:

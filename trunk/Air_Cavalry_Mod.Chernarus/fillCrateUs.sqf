@@ -11,6 +11,8 @@ if (isServer) then {
 clearWeaponCargo ammoCrateUs;
 clearMagazineCargo ammoCrateUs;
 
+waitUntil {usEra != 0};
+
 switch (usEra) do
 {
 	case 1:
