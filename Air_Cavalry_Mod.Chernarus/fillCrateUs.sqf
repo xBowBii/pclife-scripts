@@ -68,7 +68,8 @@ switch (usEra) do
 		ammoCrateUs addWeaponCargo ["ACE_G36A2_Bipod",5];
 		ammoCrateUs addWeaponCargo ["ACE_G36K",5];
 		ammoCrateUs addWeaponCargo ["M249_m145_EP1",2];
-		ammoCrateUs addWeaponCargo ["ACE_M240G_M145",5];
+		ammoCrateUs addWeaponCargo ["ACE_M240G_M145",2];
+		ammoCrateUs addWeaponCargo ["Mk_48",2];
 		ammoCrateUs addWeaponCargo ["ACE_HK416_D10",5];
 		ammoCrateUs addWeaponCargo ["ACE_HK416_D10_AIM",5];
 		ammoCrateUs addWeaponCargo ["ACE_HK416_D14",5];
@@ -82,7 +83,7 @@ switch (usEra) do
 		ammoCrateUs addMagazineCargo ["ACE_5Rnd_127x99_B_TAC50",20];
 		ammoCrateUs addMagazineCargo ["ACE_5Rnd_127x99_T_TAC50",20];
 		ammoCrateUs addMagazineCargo ["20Rnd_762x51_DMR",30];
-		ammoCrateUs addMagazineCargo ["ACE_20Rnd_762x51_T_DMR",60];
+		ammoCrateUs addMagazineCargo ["ACE_20Rnd_762x51_T_DMR",30];
 		ammoCrateUs addMagazineCargo ["ACE_20Rnd_762x51_B_HK417",60];
 		ammoCrateUs addMagazineCargo ["ACE_20Rnd_762x51_SB_HK417",60];
 		ammoCrateUs addMagazineCargo ["8Rnd_B_Beneli_Pellets",60];
@@ -98,9 +99,6 @@ ammoCrateUs addWeaponCargo ["ACE_P226",5];
 ammoCrateUs addWeaponCargo ["ACE_P8",5];
 ammoCrateUs addWeaponCargo ["ACE_Glock18",5];
 ammoCrateUs addWeaponCargo ["ACE_Glock17",5];
-ammoCrateUs addWeaponCargo ["M9",5];
-ammoCrateUs addWeaponCargo ["Colt1911",5];
-
 
 ammoCrateUs addWeaponCargo ["Binocular",10];
 ammoCrateUs addWeaponCargo ["ACE_Earplugs",10];
@@ -114,8 +112,6 @@ ammoCrateUs addMagazineCargo ["ACE_15Rnd_9x19_P226",60];
 ammoCrateUs addMagazineCargo ["ACE_15Rnd_9x19_P8",60];
 ammoCrateUs addMagazineCargo ["17Rnd_9x19_glock17",60];
 ammoCrateUs addMagazineCargo ["ACE_33Rnd_9x19_G18",60];
-ammoCrateUs addMagazineCargo ["15Rnd_9x19_M9",60];
-ammoCrateUs addMagazineCargo ["7Rnd_45ACP_1911",60];
 
 ammoCrateUs addMagazineCargo ["30Rnd_556x45_Stanag",60];
 //ammoCrateUs addMagazineCargo ["ACE_30Rnd_556x45_S_Stanag",60];
