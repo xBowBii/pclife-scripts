@@ -127,7 +127,7 @@ if (isServer) then {
 				_null = [_point] execVM "spawnSquad.sqf";
 				sleep 0.1;
 			};
-			for "_i" from 1 to 4 do {
+			for "_i" from 1 to 5 do {
 				_point = format ["city6f%1", _i];
 				_null = [_point, 5] execVM "createForestPatrol.sqf";
 				sleep 0.1;
