@@ -665,7 +665,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=195;
+		items=226;
 		class Item0
 		{
 			position[]={4768.6821,339,10168.352};
@@ -1914,6 +1914,200 @@ class Mission
 		{
 			position[]={5095.7754,344.53064,7961.6807};
 			name="city5f5w5";
+			type="Empty";
+		};
+		class Item195
+		{
+			position[]={12055.898,6.1145573,3488.009};
+			name="city6";
+			type="Empty";
+		};
+		class Item196
+		{
+			position[]={10214.419,5.9737926,2125.6953};
+			name="truck6";
+			type="Empty";
+		};
+		class Item197
+		{
+			position[]={12276.349,5.6688223,3527.8013};
+			name="city6d1";
+			type="Empty";
+		};
+		class Item198
+		{
+			position[]={11885.688,6.1718583,3473.812};
+			name="city6d2";
+			type="Empty";
+		};
+		class Item199
+		{
+			position[]={12027.203,11.624466,3746.4084};
+			name="city6d3";
+			type="Empty";
+		};
+		class Item200
+		{
+			position[]={12061.188,6.0795732,3495.2122};
+			name="city6p1";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=160;
+			b=80;
+			angle=172.01801;
+		};
+		class Item201
+		{
+			position[]={12052.492,4.6237159,3650.8809};
+			name="city6p2";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=60;
+			b=80;
+			angle=172.01801;
+		};
+		class Item202
+		{
+			position[]={12183.201,50.848492,3654.6899};
+			name="city6f1";
+			type="Empty";
+		};
+		class Item203
+		{
+			position[]={12507.842,28.267277,3700.2732};
+			name="city6f1w1";
+			type="Empty";
+		};
+		class Item204
+		{
+			position[]={12450.608,111.18098,4018.8694};
+			name="city6f1w2";
+			type="Empty";
+		};
+		class Item205
+		{
+			position[]={12308.349,185.21919,3973.1277};
+			name="city6f1w3";
+			type="Empty";
+		};
+		class Item206
+		{
+			position[]={12197.585,118.29358,4022.8555};
+			name="city6f1w4";
+			type="Empty";
+		};
+		class Item207
+		{
+			position[]={12052.595,50.51627,3865.7383};
+			name="city6f1w5";
+			type="Empty";
+		};
+		class Item208
+		{
+			position[]={11939.556,10.446732,3604.7734};
+			name="city6f2";
+			type="Empty";
+		};
+		class Item209
+		{
+			position[]={11731.646,53.922493,3548.0713};
+			name="city6f2w1";
+			type="Empty";
+		};
+		class Item210
+		{
+			position[]={11618.672,148.37396,3745.3618};
+			name="city6f2w2";
+			type="Empty";
+		};
+		class Item211
+		{
+			position[]={11610.521,101.03568,3907.4395};
+			name="city6f2w3";
+			type="Empty";
+		};
+		class Item212
+		{
+			position[]={11777.254,70.981842,3923.3689};
+			name="city6f2w4";
+			type="Empty";
+		};
+		class Item213
+		{
+			position[]={11851.594,73.408997,3709.9063};
+			name="city6f2w5";
+			type="Empty";
+		};
+		class Item214
+		{
+			position[]={11917.509,4.8895512,3426.6165};
+			name="city6f3";
+			type="Empty";
+		};
+		class Item215
+		{
+			position[]={11551.252,1.965416,3343.2944};
+			name="city6f3w1";
+			type="Empty";
+		};
+		class Item216
+		{
+			position[]={11274.143,3.8298469,3232.1531};
+			name="city6f3w2";
+			type="Empty";
+		};
+		class Item217
+		{
+			position[]={11243.161,6.5919671,3281.6228};
+			name="city6f3w3";
+			type="Empty";
+		};
+		class Item218
+		{
+			position[]={11354.27,6,3346.7834};
+			name="city6f3w4";
+			type="Empty";
+		};
+		class Item219
+		{
+			position[]={11815.149,6,3476.5989};
+			name="city6f3w5";
+			type="Empty";
+		};
+		class Item220
+		{
+			position[]={12289.147,3.4810772,3474.3523};
+			name="city6f4";
+			type="Empty";
+		};
+		class Item221
+		{
+			position[]={12470.638,5.9337955,3515.6616};
+			name="city6f4w1";
+			type="Empty";
+		};
+		class Item222
+		{
+			position[]={12659.642,5.6421065,3568.906};
+			name="city6f4w2";
+			type="Empty";
+		};
+		class Item223
+		{
+			position[]={12798.793,4.9483991,3656.8286};
+			name="city6f4w3";
+			type="Empty";
+		};
+		class Item224
+		{
+			position[]={12762.127,5.8552003,3689.0947};
+			name="city6f4w4";
+			type="Empty";
+		};
+		class Item225
+		{
+			position[]={12309.078,5.6862183,3548.0317};
+			name="city6f4w5";
 			type="Empty";
 		};
 	};
