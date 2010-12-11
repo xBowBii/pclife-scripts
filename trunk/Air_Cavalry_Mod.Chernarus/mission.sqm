@@ -665,7 +665,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=226;
+		items=233;
 		class Item0
 		{
 			position[]={4768.6821,339,10168.352};
@@ -2108,6 +2108,48 @@ class Mission
 		{
 			position[]={12309.078,5.6862183,3548.0317};
 			name="city6f4w5";
+			type="Empty";
+		};
+		class Item226
+		{
+			position[]={10279.528,5.5839696,2147.2869};
+			name="city6a1";
+			type="Empty";
+		};
+		class Item227
+		{
+			position[]={13456.73,6.1218505,6240.7637};
+			name="city6a2";
+			type="Empty";
+		};
+		class Item228
+		{
+			position[]={12693.383,179.66388,4399.4292};
+			name="city6a3";
+			type="Empty";
+		};
+		class Item229
+		{
+			position[]={8077.1157,347.06201,7061.2407};
+			name="city5a1";
+			type="Empty";
+		};
+		class Item230
+		{
+			position[]={8130.3706,348.62146,6991.7085};
+			name="city5a2";
+			type="Empty";
+		};
+		class Item231
+		{
+			position[]={4802.8735,268.00735,6793.7964};
+			name="city5a3";
+			type="Empty";
+		};
+		class Item232
+		{
+			position[]={6617.2505,322.66763,5964.1196};
+			name="city5a4";
 			type="Empty";
 		};
 	};
