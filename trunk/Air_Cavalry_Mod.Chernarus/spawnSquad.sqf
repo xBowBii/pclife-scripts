@@ -24,7 +24,7 @@ switch (_rand) do
 
 			_tempSoldier13 = _vehicleGroup createUnit ["GUE_Soldier_Crew",getMarkerPos _point,[],0.6,"Sergeant"];
 			_tempSoldier14 = _vehicleGroup createUnit ["GUE_Soldier_Crew",getMarkerPos _point,[],0.6,"Private"];
-			_pwnmachine  = createVehicle ["BRDM2_Gue", getMarkerPos _point, [], 0, "FORM"];
+			_pwnmachine  = createVehicle ["BRDM2_Gue", getMarkerPos _point, [], 50, "FORM"];
 			_tempSoldier13 moveInDriver _pwnmachine;
 			_tempSoldier14 moveInGunner _pwnmachine;
 
@@ -55,7 +55,7 @@ switch (_rand) do
 
 			_tempSoldier13 = _vehicleGroup createUnit ["GUE_Soldier_3",getMarkerPos _point,[],0.6,"Sergeant"];
 			_tempSoldier14 = _vehicleGroup createUnit ["GUE_Soldier_1",getMarkerPos _point,[],0.6,"Private"];
-			_pwnmachine  = createVehicle ["Offroad_SPG9_Gue", getMarkerPos _point, [], 0, "FORM"];
+			_pwnmachine  = createVehicle ["Offroad_SPG9_Gue", getMarkerPos _point, [], 50, "FORM"];
 			_tempSoldier13 moveInDriver _pwnmachine;
 			_tempSoldier14 moveInGunner _pwnmachine;
 
@@ -86,7 +86,7 @@ switch (_rand) do
 
 			_tempSoldier13 = _vehicleGroup createUnit ["GUE_Soldier_3",getMarkerPos _point,[],0.6,"Sergeant"];
 			_tempSoldier14 = _vehicleGroup createUnit ["GUE_Soldier_1",getMarkerPos _point,[],0.6,"Private"];
-			_pwnmachine  = createVehicle ["Pickup_PK_GUE", getMarkerPos _point, [], 0, "FORM"];
+			_pwnmachine  = createVehicle ["Pickup_PK_GUE", getMarkerPos _point, [], 50, "FORM"];
 			_tempSoldier13 moveInDriver _pwnmachine;
 			_tempSoldier14 moveInGunner _pwnmachine;
 
