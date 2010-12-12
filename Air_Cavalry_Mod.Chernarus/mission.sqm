@@ -27,7 +27,8 @@ class Mission
 		"camisc_e",
 		"warfarebuildings",
 		"ace_sys_magazines",
-		"ace_anims_reload"
+		"ace_anims_reload",
+		"caweapons_ammoboxes"
 	};
 	addOnsAuto[]=
 	{
@@ -48,6 +49,7 @@ class Mission
 		"warfarebuildings",
 		"camisc3",
 		"camisc_e",
+		"caweapons_ammoboxes",
 		"chernarus"
 	};
 	randomSeed=10023652;
@@ -379,7 +381,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=30;
+		items=31;
 		class Item0
 		{
 			position[]={4809.7969,339,10196.692};
@@ -662,10 +664,19 @@ class Mission
 			vehicle="FlagCarrierUSA_EP1";
 			skill=0.2;
 		};
+		class Item30
+		{
+			position[]={4741.6821,339,10210.707};
+			id=49;
+			side="EMPTY";
+			vehicle="SpecialWeaponsBox";
+			skill=0.60000002;
+			init="_null = [] execVM ""fillCrateLaunchers.sqf"";";
+		};
 	};
 	class Markers
 	{
-		items=428;
+		items=427;
 		class Item0
 		{
 			position[]={4768.6821,339,10168.352};
@@ -1644,59 +1655,53 @@ class Mission
 		};
 		class Item152
 		{
-			position[]={4742.4897,339,10211.748};
+			position[]={4747.2617,339,10214.585};
 			name="ammocrate3";
 			type="Empty";
 		};
 		class Item153
 		{
-			position[]={4747.2617,339,10214.585};
-			name="ammocrate4";
-			type="Empty";
-		};
-		class Item154
-		{
 			position[]={6066.8232,300.99924,7769.4307};
 			name="city5";
 			type="Empty";
 		};
-		class Item155
+		class Item154
 		{
 			position[]={6398.6318,286.43893,7503.2676};
 			name="city5d1";
 			type="Empty";
 		};
-		class Item156
+		class Item155
 		{
 			position[]={6355.2202,289.37994,7459.5669};
 			name="city5d2";
 			type="Empty";
 		};
-		class Item157
+		class Item156
 		{
 			position[]={5979.0278,312.18552,7616.1675};
 			name="city5d3";
 			type="Empty";
 		};
-		class Item158
+		class Item157
 		{
 			position[]={5938.3657,307.94281,8008.6924};
 			name="city5d4";
 			type="Empty";
 		};
-		class Item159
+		class Item158
 		{
 			position[]={6205.1079,342.66833,8011.7173};
 			name="city5d5";
 			type="Empty";
 		};
-		class Item160
+		class Item159
 		{
 			position[]={8448.6895,350.73541,6768.8145};
 			name="truck5";
 			type="Empty";
 		};
-		class Item161
+		class Item160
 		{
 			position[]={6318.4229,301.01056,7736.3062};
 			name="city5p1";
@@ -1706,7 +1711,7 @@ class Mission
 			b=120;
 			angle=36.500599;
 		};
-		class Item162
+		class Item161
 		{
 			position[]={6249.3901,293.20975,7550.5566};
 			name="city5p2";
@@ -1716,7 +1721,7 @@ class Mission
 			b=100;
 			angle=36.500599;
 		};
-		class Item163
+		class Item162
 		{
 			position[]={6090.1826,300.98999,7751.436};
 			name="city5p3";
@@ -1726,7 +1731,7 @@ class Mission
 			b=120;
 			angle=36.500599;
 		};
-		class Item164
+		class Item163
 		{
 			position[]={6022.7842,311.86716,7946.5986};
 			name="city5p4";
@@ -1736,217 +1741,217 @@ class Mission
 			b=180;
 			angle=-106.79751;
 		};
-		class Item165
+		class Item164
 		{
 			position[]={6162.207,321.27603,7175.6729};
 			name="city5f1";
 			type="Empty";
 		};
-		class Item166
+		class Item165
 		{
 			position[]={5928.7744,329.79443,6774.2495};
 			name="city5f1w1";
 			type="Empty";
 		};
-		class Item167
+		class Item166
 		{
 			position[]={6134.4614,322.14203,6472.3809};
 			name="city5f1w2";
 			type="Empty";
 		};
-		class Item168
+		class Item167
 		{
 			position[]={6382.2056,384.50522,6601.9785};
 			name="city5f1w3";
 			type="Empty";
 		};
-		class Item169
+		class Item168
 		{
 			position[]={6637.1177,352.86761,6742.8779};
 			name="city5f1w4";
 			type="Empty";
 		};
-		class Item170
+		class Item169
 		{
 			position[]={6555.9082,320.88565,7118.2441};
 			name="city5f1w5";
 			type="Empty";
 		};
-		class Item171
+		class Item170
 		{
 			position[]={6567.3975,321.66342,7118.6069};
 			name="city5f2";
 			type="Empty";
 		};
-		class Item172
+		class Item171
 		{
 			position[]={6842.8652,315.60883,7084.9775};
 			name="city5f2w1";
 			type="Empty";
 		};
-		class Item173
+		class Item172
 		{
 			position[]={7100.7295,271.66418,7016.1235};
 			name="city5f2w2";
 			type="Empty";
 		};
-		class Item174
+		class Item173
 		{
 			position[]={7113.9297,262.26901,7291.4468};
 			name="city5f2w3";
 			type="Empty";
 		};
-		class Item175
+		class Item174
 		{
 			position[]={6841.1782,273.70279,7384.2168};
 			name="city5f2w4";
 			type="Empty";
 		};
-		class Item176
+		class Item175
 		{
 			position[]={6560.6807,283.30734,7462.9834};
 			name="city5f2w5";
 			type="Empty";
 		};
-		class Item177
+		class Item176
 		{
 			position[]={6320.418,322.28262,7910.4668};
 			name="city5f3";
 			type="Empty";
 		};
-		class Item178
+		class Item177
 		{
 			position[]={6480.1001,312.40869,7846.105};
 			name="city5f3w1";
 			type="Empty";
 		};
-		class Item179
+		class Item178
 		{
 			position[]={6887.8252,301.3772,7989.2148};
 			name="city5f3w2";
 			type="Empty";
 		};
-		class Item180
+		class Item179
 		{
 			position[]={6953.8921,319.40512,8278.9092};
 			name="city5f3w3";
 			type="Empty";
 		};
-		class Item181
+		class Item180
 		{
 			position[]={6544.4019,368.66907,8469.918};
 			name="city5f3w4";
 			type="Empty";
 		};
-		class Item182
+		class Item181
 		{
 			position[]={6128.0361,350.26611,8149.9951};
 			name="city5f3w5";
 			type="Empty";
 		};
-		class Item183
+		class Item182
 		{
 			position[]={5941.6147,322.11237,8179.9331};
 			name="city5f4";
 			type="Empty";
 		};
-		class Item184
+		class Item183
 		{
 			position[]={6013.8799,323.17087,8365.3242};
 			name="city5f4w1";
 			type="Empty";
 		};
-		class Item185
+		class Item184
 		{
 			position[]={6099.3354,337.50784,8772.0781};
 			name="city5f4w2";
 			type="Empty";
 		};
-		class Item186
+		class Item185
 		{
 			position[]={5984.1919,331.48535,8903.1416};
 			name="city5f4w3";
 			type="Empty";
 		};
-		class Item187
+		class Item186
 		{
 			position[]={6366.8301,363.3074,8825.9688};
 			name="city5f4w4";
 			type="Empty";
 		};
-		class Item188
+		class Item187
 		{
 			position[]={6045.3438,326.58301,8354.1816};
 			name="city5f4w5";
 			type="Empty";
 		};
-		class Item189
+		class Item188
 		{
 			position[]={5356.2554,328.29532,7866.3667};
 			name="city5f5";
 			type="Empty";
 		};
-		class Item190
+		class Item189
 		{
 			position[]={5582.0776,311.67673,7682.2979};
 			name="city5f5w1";
 			type="Empty";
 		};
-		class Item191
+		class Item190
 		{
 			position[]={5516.8286,320.32043,7074.332};
 			name="city5f5w2";
 			type="Empty";
 		};
-		class Item192
+		class Item191
 		{
 			position[]={5295.4849,324.89117,7401.2666};
 			name="city5f5w3";
 			type="Empty";
 		};
-		class Item193
+		class Item192
 		{
 			position[]={4820.7065,337.92239,7448.0073};
 			name="city5f5w4";
 			type="Empty";
 		};
-		class Item194
+		class Item193
 		{
 			position[]={5095.7754,344.53064,7961.6807};
 			name="city5f5w5";
 			type="Empty";
 		};
-		class Item195
+		class Item194
 		{
 			position[]={12055.898,6.1145573,3488.009};
 			name="city6";
 			type="Empty";
 		};
-		class Item196
+		class Item195
 		{
 			position[]={10166.256,5.9998579,2112.228};
 			name="truck6";
 			type="Empty";
 		};
-		class Item197
+		class Item196
 		{
 			position[]={12276.349,5.6688223,3527.8013};
 			name="city6d1";
 			type="Empty";
 		};
-		class Item198
+		class Item197
 		{
 			position[]={11885.688,6.1718583,3473.812};
 			name="city6d2";
 			type="Empty";
 		};
-		class Item199
+		class Item198
 		{
 			position[]={12027.203,11.624466,3746.4084};
 			name="city6d3";
 			type="Empty";
 		};
-		class Item200
+		class Item199
 		{
 			position[]={12061.188,6.0795732,3495.2122};
 			name="city6p1";
@@ -1956,7 +1961,7 @@ class Mission
 			b=80;
 			angle=172.01801;
 		};
-		class Item201
+		class Item200
 		{
 			position[]={12052.492,4.6237159,3650.8809};
 			name="city6p2";
@@ -1966,283 +1971,283 @@ class Mission
 			b=80;
 			angle=172.01801;
 		};
-		class Item202
+		class Item201
 		{
 			position[]={12183.201,50.848492,3654.6899};
 			name="city6f1";
 			type="Empty";
 		};
-		class Item203
+		class Item202
 		{
 			position[]={12507.842,28.267277,3700.2732};
 			name="city6f1w1";
 			type="Empty";
 		};
-		class Item204
+		class Item203
 		{
 			position[]={12450.608,111.18098,4018.8694};
 			name="city6f1w2";
 			type="Empty";
 		};
-		class Item205
+		class Item204
 		{
 			position[]={12308.349,185.21919,3973.1277};
 			name="city6f1w3";
 			type="Empty";
 		};
-		class Item206
+		class Item205
 		{
 			position[]={12197.585,118.29358,4022.8555};
 			name="city6f1w4";
 			type="Empty";
 		};
-		class Item207
+		class Item206
 		{
 			position[]={12052.595,50.51627,3865.7383};
 			name="city6f1w5";
 			type="Empty";
 		};
-		class Item208
+		class Item207
 		{
 			position[]={11939.556,10.446732,3604.7734};
 			name="city6f2";
 			type="Empty";
 		};
-		class Item209
+		class Item208
 		{
 			position[]={11731.646,53.922493,3548.0713};
 			name="city6f2w1";
 			type="Empty";
 		};
-		class Item210
+		class Item209
 		{
 			position[]={11618.672,148.37396,3745.3618};
 			name="city6f2w2";
 			type="Empty";
 		};
-		class Item211
+		class Item210
 		{
 			position[]={11610.521,101.03568,3907.4395};
 			name="city6f2w3";
 			type="Empty";
 		};
-		class Item212
+		class Item211
 		{
 			position[]={11777.254,70.981842,3923.3689};
 			name="city6f2w4";
 			type="Empty";
 		};
-		class Item213
+		class Item212
 		{
 			position[]={11851.594,73.408997,3709.9063};
 			name="city6f2w5";
 			type="Empty";
 		};
-		class Item214
+		class Item213
 		{
 			position[]={11917.509,4.8895512,3426.6165};
 			name="city6f3";
 			type="Empty";
 		};
-		class Item215
+		class Item214
 		{
 			position[]={11551.252,1.965416,3343.2944};
 			name="city6f3w1";
 			type="Empty";
 		};
-		class Item216
+		class Item215
 		{
 			position[]={11274.143,3.8298469,3232.1531};
 			name="city6f3w2";
 			type="Empty";
 		};
-		class Item217
+		class Item216
 		{
 			position[]={11243.161,6.5919671,3281.6228};
 			name="city6f3w3";
 			type="Empty";
 		};
-		class Item218
+		class Item217
 		{
 			position[]={11354.27,6,3346.7834};
 			name="city6f3w4";
 			type="Empty";
 		};
-		class Item219
+		class Item218
 		{
 			position[]={11815.149,6,3476.5989};
 			name="city6f3w5";
 			type="Empty";
 		};
-		class Item220
+		class Item219
 		{
 			position[]={12289.147,3.4810772,3474.3523};
 			name="city6f4";
 			type="Empty";
 		};
-		class Item221
+		class Item220
 		{
 			position[]={12470.638,5.9337955,3515.6616};
 			name="city6f4w1";
 			type="Empty";
 		};
-		class Item222
+		class Item221
 		{
 			position[]={12659.642,5.6421065,3568.906};
 			name="city6f4w2";
 			type="Empty";
 		};
-		class Item223
+		class Item222
 		{
 			position[]={12798.793,4.9483991,3656.8286};
 			name="city6f4w3";
 			type="Empty";
 		};
-		class Item224
+		class Item223
 		{
 			position[]={12762.127,5.8552003,3689.0947};
 			name="city6f4w4";
 			type="Empty";
 		};
-		class Item225
+		class Item224
 		{
 			position[]={12309.078,5.6862183,3548.0317};
 			name="city6f4w5";
 			type="Empty";
 		};
-		class Item226
+		class Item225
 		{
 			position[]={10333.627,5.79,2157.5591};
 			name="city6a1";
 			type="Empty";
 		};
-		class Item227
+		class Item226
 		{
 			position[]={13458.801,6.1487808,6239.1709};
 			name="city6a2";
 			type="Empty";
 		};
-		class Item228
+		class Item227
 		{
 			position[]={12695.18,179.63721,4400.3276};
 			name="city6a3";
 			type="Empty";
 		};
-		class Item229
+		class Item228
 		{
 			position[]={8073.877,347.05688,7059.0142};
 			name="city5a1";
 			type="Empty";
 		};
-		class Item230
+		class Item229
 		{
 			position[]={8114.1748,348.04816,7011.3457};
 			name="city5a2";
 			type="Empty";
 		};
-		class Item231
+		class Item230
 		{
 			position[]={4851.7544,267.76208,6783.6812};
 			name="city5a3";
 			type="Empty";
 		};
-		class Item232
+		class Item231
 		{
 			position[]={6617.2505,322.66763,5964.1196};
 			name="city5a4";
 			type="Empty";
 		};
-		class Item233
+		class Item232
 		{
 			position[]={13328.242,70.373146,3240.8818};
 			name="city6f5";
 			type="Empty";
 		};
-		class Item234
+		class Item233
 		{
 			position[]={13481.615,71.967667,3339.2817};
 			name="city6f5w1";
 			type="Empty";
 		};
-		class Item235
+		class Item234
 		{
 			position[]={13465.844,19.888033,3485.1699};
 			name="city6f5w2";
 			type="Empty";
 		};
-		class Item236
+		class Item235
 		{
 			position[]={13323.644,25.586121,3344.5642};
 			name="city6f5w3";
 			type="Empty";
 		};
-		class Item237
+		class Item236
 		{
 			position[]={13045.502,29.021841,3213.3005};
 			name="city6f5w4";
 			type="Empty";
 		};
-		class Item238
+		class Item237
 		{
 			position[]={13208.24,14.43548,3098.9146};
 			name="city6f5w5";
 			type="Empty";
 		};
-		class Item239
+		class Item238
 		{
 			position[]={8612.9893,189.26981,11871.709};
 			name="city7";
 			type="Empty";
 		};
-		class Item240
+		class Item239
 		{
 			position[]={9685.4277,83.150719,13564.496};
 			name="truck7";
 			type="Empty";
 		};
-		class Item241
+		class Item240
 		{
 			position[]={8452.6563,161.45868,12073.426};
 			name="city7d1";
 			type="Empty";
 		};
-		class Item242
+		class Item241
 		{
 			position[]={8734.6104,196.41425,11886.396};
 			name="city7d2";
 			type="Empty";
 		};
-		class Item243
+		class Item242
 		{
 			position[]={8665.9541,196.50905,11837.362};
 			name="city7d3";
 			type="Empty";
 		};
-		class Item244
+		class Item243
 		{
 			position[]={8300.1836,318.33115,10586.586};
 			name="city7a1";
 			type="Empty";
 		};
-		class Item245
+		class Item244
 		{
 			position[]={8305.8633,323.16278,10512.442};
 			name="city7a2";
 			type="Empty";
 		};
-		class Item246
+		class Item245
 		{
 			position[]={9729.4072,116.07892,13404.549};
 			name="city7a3";
 			type="Empty";
 		};
-		class Item247
+		class Item246
 		{
 			position[]={8497.5742,170.98039,11978.363};
 			name="city7d4";
 			type="Empty";
 		};
-		class Item248
+		class Item247
 		{
 			position[]={8528.9326,178.80638,11921.613};
 			name="city7p1";
@@ -2252,7 +2257,7 @@ class Mission
 			b=100;
 			angle=339.27792;
 		};
-		class Item249
+		class Item248
 		{
 			position[]={8619.2734,181.04913,11980.48};
 			name="city7p2";
@@ -2262,7 +2267,7 @@ class Mission
 			b=80;
 			angle=339.27802;
 		};
-		class Item250
+		class Item249
 		{
 			position[]={8666.4805,195.03337,11856.917};
 			name="city7p3";
@@ -2272,7 +2277,7 @@ class Mission
 			b=55;
 			angle=339.27802;
 		};
-		class Item251
+		class Item250
 		{
 			position[]={8507.1543,167.07538,12048.829};
 			name="city7p4";
@@ -2282,223 +2287,223 @@ class Mission
 			b=55;
 			angle=449.68848;
 		};
-		class Item252
+		class Item251
 		{
 			position[]={8822.4766,174.35789,12088.636};
 			name="city7f1";
 			type="Empty";
 		};
-		class Item253
+		class Item252
 		{
 			position[]={8817.1914,149.90706,12263.776};
 			name="city7f1w1";
 			type="Empty";
 		};
-		class Item254
+		class Item253
 		{
 			position[]={8771.6914,126.02332,12467.336};
 			name="city7f1w2";
 			type="Empty";
 		};
-		class Item255
+		class Item254
 		{
 			position[]={8553.7637,119.76781,12481.705};
 			name="city7f1w3";
 			type="Empty";
 		};
-		class Item256
+		class Item255
 		{
 			position[]={8535.8018,149.07332,12249.408};
 			name="city7f1w4";
 			type="Empty";
 		};
-		class Item257
+		class Item256
 		{
 			position[]={8545.1162,165.09048,12141.542};
 			name="city7f1w5";
 			type="Empty";
 		};
-		class Item258
+		class Item257
 		{
 			position[]={8402.9102,151.65607,12274.618};
 			name="city7f2";
 			type="Empty";
 		};
-		class Item259
+		class Item258
 		{
 			position[]={8252.5381,134.65213,12281.951};
 			name="city7f2w";
 			type="Empty";
 		};
-		class Item260
+		class Item259
 		{
 			position[]={8025.0996,126.7871,12428.837};
 			name="city7f2w2";
 			type="Empty";
 		};
-		class Item261
+		class Item260
 		{
 			position[]={7645.9194,115.95573,12525.96};
 			name="city7f2w3";
 			type="Empty";
 		};
-		class Item262
+		class Item261
 		{
 			position[]={7866.0562,117.92301,12740.604};
 			name="city7f2w4";
 			type="Empty";
 		};
-		class Item263
+		class Item262
 		{
 			position[]={8436.4453,115.84626,12531.569};
 			name="city7f2w5";
 			type="Empty";
 		};
-		class Item264
+		class Item263
 		{
 			position[]={8878.4199,173.24205,12072.87};
 			name="city7f3";
 			type="Empty";
 		};
-		class Item265
+		class Item264
 		{
 			position[]={9309.5039,208.89973,12123.022};
 			name="city7f3w1";
 			type="Empty";
 		};
-		class Item266
+		class Item265
 		{
 			position[]={9487.0215,231.06374,12008.9};
 			name="city7f3w2";
 			type="Empty";
 		};
-		class Item267
+		class Item266
 		{
 			position[]={9311.7197,224.3526,11741.206};
 			name="city7f3w3";
 			type="Empty";
 		};
-		class Item268
+		class Item267
 		{
 			position[]={9279.3154,201.11687,11974.77};
 			name="city7f3w4";
 			type="Empty";
 		};
-		class Item269
+		class Item268
 		{
 			position[]={9117.3086,174.30006,12078.725};
 			name="city7f3w5";
 			type="Empty";
 		};
-		class Item270
+		class Item269
 		{
 			position[]={8682.5313,202.90434,11769.366};
 			name="city7f4";
 			type="Empty";
 		};
-		class Item271
+		class Item270
 		{
 			position[]={8494.8711,190.60555,11813.918};
 			name="city7f4w1";
 			type="Empty";
 		};
-		class Item272
+		class Item271
 		{
 			position[]={8211.3555,165.1983,11870.621};
 			name="city7f4w2";
 			type="Empty";
 		};
-		class Item273
+		class Item272
 		{
 			position[]={8196.5049,170.80209,11677.562};
 			name="city7f4w3";
 			type="Empty";
 		};
-		class Item274
+		class Item273
 		{
 			position[]={8423.8555,194.55487,11607.025};
 			name="city7f4w4";
 			type="Empty";
 		};
-		class Item275
+		class Item274
 		{
 			position[]={8594.9219,206.04956,11745.058};
 			name="city7f4w5";
 			type="Empty";
 		};
-		class Item276
+		class Item275
 		{
 			position[]={9433.3223,304.03995,8818.1064};
 			name="city8";
 			type="Empty";
 		};
-		class Item277
+		class Item276
 		{
 			position[]={9948.9746,205.00946,7973.2896};
 			name="truck8";
 			type="Empty";
 		};
-		class Item278
+		class Item277
 		{
 			position[]={9937.0293,277.30844,8833.2188};
 			name="city8d1";
 			type="Empty";
 		};
-		class Item279
+		class Item278
 		{
 			position[]={9911.9502,282.66077,8735.043};
 			name="city8d2";
 			type="Empty";
 		};
-		class Item280
+		class Item279
 		{
 			position[]={9467.1758,304.03174,8772.3418};
 			name="city8d3";
 			type="Empty";
 		};
-		class Item281
+		class Item280
 		{
 			position[]={9482.4238,310.06665,8937.3105};
 			name="city8d4";
 			type="Empty";
 		};
-		class Item282
+		class Item281
 		{
 			position[]={9196.8418,345.34299,8913.9385};
 			name="city8d5";
 			type="Empty";
 		};
-		class Item283
+		class Item282
 		{
 			position[]={9253.8369,343.02942,8912.5488};
 			name="city8d6";
 			type="Empty";
 		};
-		class Item284
+		class Item283
 		{
 			position[]={9148.9053,331.5181,8831.2334};
 			name="city8d7";
 			type="Empty";
 		};
-		class Item285
+		class Item284
 		{
 			position[]={9990.6953,200.98148,7947.2598};
 			name="city8a1";
 			type="Empty";
 		};
-		class Item286
+		class Item285
 		{
 			position[]={9662.3301,239.78252,9832.0898};
 			name="city8a2";
 			type="Empty";
 		};
-		class Item287
+		class Item286
 		{
 			position[]={8627.0996,341.79813,7702.7085};
 			name="city8a3";
 			type="Empty";
 		};
-		class Item288
+		class Item287
 		{
 			position[]={9818.9941,289.40213,8804.2354};
 			name="city8p1";
@@ -2507,7 +2512,7 @@ class Mission
 			a=100;
 			b=100;
 		};
-		class Item289
+		class Item288
 		{
 			position[]={9398.2207,320.70676,8906.0811};
 			name="city8p2";
@@ -2517,7 +2522,7 @@ class Mission
 			b=80;
 			angle=195.05998;
 		};
-		class Item290
+		class Item289
 		{
 			position[]={9616.4863,300.922,8849.2305};
 			name="city8p3";
@@ -2526,7 +2531,7 @@ class Mission
 			a=100;
 			b=100;
 		};
-		class Item291
+		class Item290
 		{
 			position[]={9477.5781,303.97324,8818.3066};
 			name="city8p4";
@@ -2535,211 +2540,211 @@ class Mission
 			a=100;
 			b=100;
 		};
-		class Item292
+		class Item291
 		{
 			position[]={9490.9131,325.2948,9105.1816};
 			name="city8f1";
 			type="Empty";
 		};
-		class Item293
+		class Item292
 		{
 			position[]={9549.8828,323.67627,9362.1797};
 			name="city8f1w1";
 			type="Empty";
 		};
-		class Item294
+		class Item293
 		{
 			position[]={9067.3818,312.27927,9658.2764};
 			name="city8f1w3";
 			type="Empty";
 		};
-		class Item295
+		class Item294
 		{
 			position[]={9077.4834,378.50211,9340.2217};
 			name="city8f1w4";
 			type="Empty";
 		};
-		class Item296
+		class Item295
 		{
 			position[]={9321.4043,359.55252,9154.8213};
 			name="city8f1w5";
 			type="Empty";
 		};
-		class Item297
+		class Item296
 		{
 			position[]={9175.3965,275.83936,8581.4717};
 			name="city8f2";
 			type="Empty";
 		};
-		class Item298
+		class Item297
 		{
 			position[]={9368.4619,261.05402,8461.584};
 			name="city8f2w1";
 			type="Empty";
 		};
-		class Item299
+		class Item298
 		{
 			position[]={9404.2744,203.1362,8136.1758};
 			name="city8f2w2";
 			type="Empty";
 		};
-		class Item300
+		class Item299
 		{
 			position[]={9209.6523,223.47437,8123.7227};
 			name="city8f2w3";
 			type="Empty";
 		};
-		class Item301
+		class Item300
 		{
 			position[]={8857.7754,290.15591,8167.3184};
 			name="city8f2w4";
 			type="Empty";
 		};
-		class Item302
+		class Item301
 		{
 			position[]={9003.7686,275.89178,8351.5625};
 			name="city8f2w5";
 			type="Empty";
 		};
-		class Item303
+		class Item302
 		{
 			position[]={9919.7051,275.62579,8546.8418};
 			name="city8f3";
 			type="Empty";
 		};
-		class Item304
+		class Item303
 		{
 			position[]={9731.5703,224.54874,8303.9521};
 			name="city8f3w1";
 			type="Empty";
 		};
-		class Item305
+		class Item304
 		{
 			position[]={9736.2432,195.78958,8042.4951};
 			name="city8f3w2";
 			type="Empty";
 		};
-		class Item306
+		class Item305
 		{
 			position[]={9981.4629,219.51801,8035.5898};
 			name="city8f3w3";
 			type="Empty";
 		};
-		class Item307
+		class Item306
 		{
 			position[]={10214.167,260.05023,8215.6299};
 			name="city8f3w4";
 			type="Empty";
 		};
-		class Item308
+		class Item307
 		{
 			position[]={10149.256,276.32291,8508.3477};
 			name="city8f3w5";
 			type="Empty";
 		};
-		class Item309
+		class Item308
 		{
 			position[]={9820.3037,287.17917,8919.8643};
 			name="city8f4";
 			type="Empty";
 		};
-		class Item310
+		class Item309
 		{
 			position[]={9808.7842,278.24207,9058.9492};
 			name="city8f4w1";
 			type="Empty";
 		};
-		class Item311
+		class Item310
 		{
 			position[]={10311.437,230.9109,8950.96};
 			name="city8f4w2";
 			type="Empty";
 		};
-		class Item312
+		class Item311
 		{
 			position[]={10149.854,207.84564,9107.1816};
 			name="city8f4w3";
 			type="Empty";
 		};
-		class Item313
+		class Item312
 		{
 			position[]={10144.953,198.31522,9211.2852};
 			name="city8f4w4";
 			type="Empty";
 		};
-		class Item314
+		class Item313
 		{
 			position[]={9560.8223,310.22198,9176.9414};
 			name="city8f4w5";
 			type="Empty";
 		};
-		class Item315
+		class Item314
 		{
 			position[]={9297.1387,333.36969,9508.4365};
 			name="city8f1w2";
 			type="Empty";
 		};
-		class Item316
+		class Item315
 		{
 			position[]={3084.2815,298.98001,7984.9697};
 			name="city9";
 			type="Empty";
 		};
-		class Item317
+		class Item316
 		{
 			position[]={2375.6074,266.26096,9170.5059};
 			name="truck9";
 			type="Empty";
 		};
-		class Item318
+		class Item317
 		{
 			position[]={2304.446,263.44659,9256.2266};
 			name="city9a1";
 			type="Empty";
 		};
-		class Item319
+		class Item318
 		{
 			position[]={4200.1021,289.87164,7250.833};
 			name="city9a2";
 			type="Empty";
 		};
-		class Item320
+		class Item319
 		{
 			position[]={2732.0781,356.48358,6655.3042};
 			name="city9a3";
 			type="Empty";
 		};
-		class Item321
+		class Item320
 		{
 			position[]={3212.3347,287.64798,8176.2266};
 			name="city9d1";
 			type="Empty";
 		};
-		class Item322
+		class Item321
 		{
 			position[]={2956.8633,330.55164,7684.8706};
 			name="city9d2";
 			type="Empty";
 		};
-		class Item323
+		class Item322
 		{
 			position[]={2998.0481,298.98001,8039.1943};
 			name="city9d3";
 			type="Empty";
 		};
-		class Item324
+		class Item323
 		{
 			position[]={3257.5249,299.01001,7964.8755};
 			name="city9d4";
 			type="Empty";
 		};
-		class Item325
+		class Item324
 		{
 			position[]={3093.9741,293.99969,8115.7852};
 			name="city9d5";
 			type="Empty";
 		};
-		class Item326
+		class Item325
 		{
 			position[]={2953.7546,313.80786,7884.8062};
 			name="city9p1";
@@ -2749,7 +2754,7 @@ class Mission
 			b=80;
 			angle=-64.871048;
 		};
-		class Item327
+		class Item326
 		{
 			position[]={3052.3879,319.79135,7732.5254};
 			name="city9p2";
@@ -2759,7 +2764,7 @@ class Mission
 			b=80;
 			angle=-64.871002;
 		};
-		class Item328
+		class Item327
 		{
 			position[]={3147.5745,301.35587,7888.7061};
 			name="city9p3";
@@ -2769,7 +2774,7 @@ class Mission
 			b=100;
 			angle=-64.871002;
 		};
-		class Item329
+		class Item328
 		{
 			position[]={3180.9858,298.31104,8058.0405};
 			name="city9p4";
@@ -2779,349 +2784,349 @@ class Mission
 			b=120;
 			angle=-64.871002;
 		};
-		class Item330
+		class Item329
 		{
 			position[]={2798.2417,346.02676,7729.7964};
 			name="city9f1";
 			type="Empty";
 		};
-		class Item331
+		class Item330
 		{
 			position[]={2545.8508,344.24557,7978.3228};
 			name="city9f1w1";
 			type="Empty";
 		};
-		class Item332
+		class Item331
 		{
 			position[]={2150.835,323.58289,8625.8184};
 			name="city9f1w2";
 			type="Empty";
 		};
-		class Item333
+		class Item332
 		{
 			position[]={2014.2635,333.892,8265.5859};
 			name="city9f1w3";
 			type="Empty";
 		};
-		class Item334
+		class Item333
 		{
 			position[]={2323.0352,343.95416,8212.1465};
 			name="city9f1w4";
 			type="Empty";
 		};
-		class Item335
+		class Item334
 		{
 			position[]={2416.0623,361.46548,7786.5967};
 			name="city9f1w5";
 			type="Empty";
 		};
-		class Item336
+		class Item335
 		{
 			position[]={3167.2478,279.72049,8412.3457};
 			name="city9f2";
 			type="Empty";
 		};
-		class Item337
+		class Item336
 		{
 			position[]={2713.8379,272.46298,8816.5566};
 			name="city9f2w1";
 			type="Empty";
 		};
-		class Item338
+		class Item337
 		{
 			position[]={2525.5898,267.86713,8984.2695};
 			name="city9f2w2";
 			type="Empty";
 		};
-		class Item339
+		class Item338
 		{
 			position[]={2671.2727,283.27298,9046.7549};
 			name="city9f2w3";
 			type="Empty";
 		};
-		class Item340
+		class Item339
 		{
 			position[]={2978.6157,274.17407,9071.3027};
 			name="city9f2w4";
 			type="Empty";
 		};
-		class Item341
+		class Item340
 		{
 			position[]={3128.1819,284.86902,8933.4453};
 			name="city9f2w5";
 			type="Empty";
 		};
-		class Item342
+		class Item341
 		{
 			position[]={2881.083,360.59232,7022.4443};
 			name="city9f3";
 			type="Empty";
 		};
-		class Item343
+		class Item342
 		{
 			position[]={3274.7346,357.98749,6822.1938};
 			name="city9f3w1";
 			type="Empty";
 		};
-		class Item344
+		class Item343
 		{
 			position[]={3659.1128,335.36578,6677.126};
 			name="city9f3w2";
 			type="Empty";
 		};
-		class Item345
+		class Item344
 		{
 			position[]={3918.0903,314.27405,6897.7368};
 			name="city9f3w3";
 			type="Empty";
 		};
-		class Item346
+		class Item345
 		{
 			position[]={3235.4966,342.7959,7446.0806};
 			name="city9f3w4";
 			type="Empty";
 		};
-		class Item347
+		class Item346
 		{
 			position[]={2942.9756,334.17551,7218.1587};
 			name="city9f3w5";
 			type="Empty";
 		};
-		class Item348
+		class Item347
 		{
 			position[]={2778.3535,208.99681,5375.2705};
 			name="city10";
 			type="Empty";
 		};
-		class Item349
+		class Item348
 		{
 			position[]={4262.7163,245.13553,4814.3589};
 			name="truck10";
 			type="Empty";
 		};
-		class Item350
+		class Item349
 		{
 			position[]={1665.6125,144.00452,3916.9995};
 			name="city10a1";
 			type="Empty";
 		};
-		class Item351
+		class Item350
 		{
 			position[]={1680.1403,143.99001,3878.1152};
 			name="city10a2";
 			type="Empty";
 		};
-		class Item352
+		class Item351
 		{
 			position[]={4362.3701,232.76038,4673.9111};
 			name="city10a3";
 			type="Empty";
 		};
-		class Item353
+		class Item352
 		{
 			position[]={4359.1489,235.26605,4700.834};
 			name="city10a4";
 			type="Empty";
 		};
-		class Item354
+		class Item353
 		{
 			position[]={2509.646,193.99071,5010.5254};
 			name="city10d1";
 			type="Empty";
 		};
-		class Item355
+		class Item354
 		{
 			position[]={2630.188,198.01454,5238.5229};
 			name="city10d2";
 			type="Empty";
 		};
-		class Item356
+		class Item355
 		{
 			position[]={2674.6077,229.6769,5742.7778};
 			name="city10d3";
 			type="Empty";
 		};
-		class Item357
+		class Item356
 		{
 			position[]={3017.6094,236.03175,5498.9985};
 			name="city10d4";
 			type="Empty";
 		};
-		class Item358
+		class Item357
 		{
 			position[]={3009.3923,237.28706,5589.7158};
 			name="city10d5";
 			type="Empty";
 		};
-		class Item359
+		class Item358
 		{
 			position[]={2924.8333,225.82228,5254.2681};
 			name="city10d6";
 			type="Empty";
 		};
-		class Item360
+		class Item359
 		{
 			position[]={2818.1836,213.19482,5194.9082};
 			name="city10d7";
 			type="Empty";
 		};
-		class Item361
+		class Item360
 		{
 			position[]={2744.126,198.45792,5116.2715};
 			name="city10d8";
 			type="Empty";
 		};
-		class Item362
+		class Item361
 		{
 			position[]={2662.8672,208.77829,5419.3384};
 			name="city10d9";
 			type="Empty";
 		};
-		class Item363
+		class Item362
 		{
 			position[]={2422.2686,221.76093,5550.0786};
 			name="city10f1";
 			type="Empty";
 		};
-		class Item364
+		class Item363
 		{
 			position[]={1777.9528,218.39545,5604.5952};
 			name="city10f1w1";
 			type="Empty";
 		};
-		class Item365
+		class Item364
 		{
 			position[]={1408.8086,155.43114,5453.6143};
 			name="city10f1w2";
 			type="Empty";
 		};
-		class Item366
+		class Item365
 		{
 			position[]={1759.2518,154.67467,5095.3003};
 			name="city10f1w3";
 			type="Empty";
 		};
-		class Item367
+		class Item366
 		{
 			position[]={1916.1469,174.53754,5291.7744};
 			name="city10f1w4";
 			type="Empty";
 		};
-		class Item368
+		class Item367
 		{
 			position[]={2254.9341,182.58879,5324.9595};
 			name="city10f1w5";
 			type="Empty";
 		};
-		class Item369
+		class Item368
 		{
 			position[]={2764.386,319.50009,6300.1221};
 			name="city10f2";
 			type="Empty";
 		};
-		class Item370
+		class Item369
 		{
 			position[]={3161.0022,297.67029,6073.8247};
 			name="city10f2w1";
 			type="Empty";
 		};
-		class Item371
+		class Item370
 		{
 			position[]={3465.6987,308.4025,5732.8081};
 			name="city10f2w2";
 			type="Empty";
 		};
-		class Item372
+		class Item371
 		{
 			position[]={3898.6392,339.54214,5645.7725};
 			name="city10f2w3";
 			type="Empty";
 		};
-		class Item373
+		class Item372
 		{
 			position[]={3426.6436,336.24564,6217.5156};
 			name="city10f2w4";
 			type="Empty";
 		};
-		class Item374
+		class Item373
 		{
 			position[]={2804.3469,360.51941,6476.2251};
 			name="city10f2w5";
 			type="Empty";
 		};
-		class Item375
+		class Item374
 		{
 			position[]={2960.4631,264.71683,4664.9424};
 			name="city10f3";
 			type="Empty";
 		};
-		class Item376
+		class Item375
 		{
 			position[]={2561.3784,236.28004,4669.6162};
 			name="city10f3w1";
 			type="Empty";
 		};
-		class Item377
+		class Item376
 		{
 			position[]={2552.0371,273.99664,4481.2222};
 			name="city10f3w2";
 			type="Empty";
 		};
-		class Item378
+		class Item377
 		{
 			position[]={2503.2295,194.60614,4115.3135};
 			name="city10f3w3";
 			type="Empty";
 		};
-		class Item379
+		class Item378
 		{
 			position[]={2679.7695,257.41794,4074.1699};
 			name="city10f3w4";
 			type="Empty";
 		};
-		class Item380
+		class Item379
 		{
 			position[]={2936.5164,275.78928,4455.9971};
 			name="city10f3w5";
 			type="Empty";
 		};
-		class Item381
+		class Item380
 		{
 			position[]={3044.1052,248.61162,5371.6484};
 			name="city10f4";
 			type="Empty";
 		};
-		class Item382
+		class Item381
 		{
 			position[]={3440.1411,277.72833,5142.3423};
 			name="city10f4w1";
 			type="Empty";
 		};
-		class Item383
+		class Item382
 		{
 			position[]={3585.7246,261.34055,5013.7197};
 			name="city10f4w2";
 			type="Empty";
 		};
-		class Item384
+		class Item383
 		{
 			position[]={3833.6829,279.98346,5342.7314};
 			name="city10f4w3";
 			type="Empty";
 		};
-		class Item385
+		class Item384
 		{
 			position[]={3569.8318,280.3259,5230.7319};
 			name="city10f4w4";
 			type="Empty";
 		};
-		class Item386
+		class Item385
 		{
 			position[]={3164.3752,259.41946,5458.5947};
 			name="city10f4w5";
 			type="Empty";
 		};
-		class Item387
+		class Item386
 		{
 			position[]={2570.9233,194.02797,5130.1016};
 			name="city10p1";
@@ -3131,7 +3136,7 @@ class Mission
 			b=80;
 			angle=-38.183224;
 		};
-		class Item388
+		class Item387
 		{
 			position[]={2673.3933,199.59171,5005.9395};
 			name="city10p2";
@@ -3141,7 +3146,7 @@ class Mission
 			b=100;
 			angle=-38.183201;
 		};
-		class Item389
+		class Item388
 		{
 			position[]={2823.5691,211.73831,5241.8345};
 			name="city10p3";
@@ -3151,7 +3156,7 @@ class Mission
 			b=90;
 			angle=-79.9002;
 		};
-		class Item390
+		class Item389
 		{
 			position[]={2680.0579,199.62181,5293.8486};
 			name="city10p4";
@@ -3161,7 +3166,7 @@ class Mission
 			b=90;
 			angle=-75.755325;
 		};
-		class Item391
+		class Item390
 		{
 			position[]={2746.4104,210.83961,5477.3267};
 			name="city10p5";
@@ -3171,61 +3176,61 @@ class Mission
 			b=100;
 			angle=10.8446;
 		};
-		class Item392
+		class Item391
 		{
 			position[]={10119.039,244.99001,5474.1016};
 			name="city11";
 			type="Empty";
 		};
-		class Item393
+		class Item392
 		{
 			position[]={10223.481,64.313004,4068.3538};
 			name="truck11";
 			type="Empty";
 		};
-		class Item394
+		class Item393
 		{
 			position[]={10210.711,61.635124,4055.9565};
 			name="city11a1";
 			type="Empty";
 		};
-		class Item395
+		class Item394
 		{
 			position[]={8551.0107,356.4538,6648.0093};
 			name="city11a2";
 			type="Empty";
 		};
-		class Item396
+		class Item395
 		{
 			position[]={10027.829,261.06903,5686.9126};
 			name="city11d1";
 			type="Empty";
 		};
-		class Item397
+		class Item396
 		{
 			position[]={10129.87,236.48135,5291.4717};
 			name="city11d2";
 			type="Empty";
 		};
-		class Item398
+		class Item397
 		{
 			position[]={10373.302,250.33736,5496.0728};
 			name="city11d3";
 			type="Empty";
 		};
-		class Item399
+		class Item398
 		{
 			position[]={10294.346,259.95645,5747.1167};
 			name="city11d4";
 			type="Empty";
 		};
-		class Item400
+		class Item399
 		{
 			position[]={9880.5498,254.67105,5469.1162};
 			name="city11d5";
 			type="Empty";
 		};
-		class Item401
+		class Item400
 		{
 			position[]={10097.28,245,5447.7876};
 			name="city11p1";
@@ -3235,7 +3240,7 @@ class Mission
 			b=80;
 			angle=88.215103;
 		};
-		class Item402
+		class Item401
 		{
 			position[]={10213.602,237.01357,5526.4893};
 			name="city11p2";
@@ -3245,7 +3250,7 @@ class Mission
 			b=110;
 			angle=70.288597;
 		};
-		class Item403
+		class Item402
 		{
 			position[]={10148.31,245.36914,5645.2065};
 			name="city11p3";
@@ -3255,145 +3260,145 @@ class Mission
 			b=120;
 			angle=70.288597;
 		};
-		class Item404
+		class Item403
 		{
 			position[]={10259.465,224.01308,5407.2979};
 			name="city11f1";
 			type="Empty";
 		};
-		class Item405
+		class Item404
 		{
 			position[]={10373.082,196.82339,5149.0151};
 			name="city11f1w1";
 			type="Empty";
 		};
-		class Item406
+		class Item405
 		{
 			position[]={10507.967,207.34564,4879.5903};
 			name="city11f1w2";
 			type="Empty";
 		};
-		class Item407
+		class Item406
 		{
 			position[]={10269.222,256.36255,4869.0581};
 			name="city11f1w3";
 			type="Empty";
 		};
-		class Item408
+		class Item407
 		{
 			position[]={9967.2773,160.99088,4904.168};
 			name="city11f1w4";
 			type="Empty";
 		};
-		class Item409
+		class Item408
 		{
 			position[]={10099.997,222.51273,5198.0488};
 			name="city11f1w5";
 			type="Empty";
 		};
-		class Item410
+		class Item409
 		{
 			position[]={9915.0098,213.50893,5137.7202};
 			name="city11f2";
 			type="Empty";
 		};
-		class Item411
+		class Item410
 		{
 			position[]={9673.4551,246.9987,5452.2437};
 			name="city11f2w1";
 			type="Empty";
 		};
-		class Item412
+		class Item411
 		{
 			position[]={9726.3945,307.61591,5814.1313};
 			name="city11f2w2";
 			type="Empty";
 		};
-		class Item413
+		class Item412
 		{
 			position[]={9333.8691,276.71744,5758.7769};
 			name="city11f2w3";
 			type="Empty";
 		};
-		class Item414
+		class Item413
 		{
 			position[]={9260.9014,130.28357,5059.2759};
 			name="city11f2w4";
 			type="Empty";
 		};
-		class Item415
+		class Item414
 		{
 			position[]={9676.0723,118.95854,4860.4971};
 			name="city11f2w5";
 			type="Empty";
 		};
-		class Item416
+		class Item415
 		{
 			position[]={9387.9033,338.44116,6051.5195};
 			name="city11f3";
 			type="Empty";
 		};
-		class Item417
+		class Item416
 		{
 			position[]={9156.2754,316.13159,6375.1587};
 			name="city11f3w1";
 			type="Empty";
 		};
-		class Item418
+		class Item417
 		{
 			position[]={8849.915,295.85681,6726.9268};
 			name="city11f3w2";
 			type="Empty";
 		};
-		class Item419
+		class Item418
 		{
 			position[]={9372.8613,228.35149,6791.0283};
 			name="city11f3w3";
 			type="Empty";
 		};
-		class Item420
+		class Item419
 		{
 			position[]={9449.4424,235.76982,6421.2568};
 			name="city11f3w4";
 			type="Empty";
 		};
-		class Item421
+		class Item420
 		{
 			position[]={9626.2197,274.75177,6241.7988};
 			name="city11f3w5";
 			type="Empty";
 		};
-		class Item422
+		class Item421
 		{
 			position[]={9934.8379,272.10794,6192.7207};
 			name="city11f4";
 			type="Empty";
 		};
-		class Item423
+		class Item422
 		{
 			position[]={10128.81,294.43991,6054.1699};
 			name="city11f4w1";
 			type="Empty";
 		};
-		class Item424
+		class Item423
 		{
 			position[]={10458.617,244.39508,6178.4976};
 			name="city11f4w2";
 			type="Empty";
 		};
-		class Item425
+		class Item424
 		{
 			position[]={10352.608,223.1573,6585.2207};
 			name="city11f4w3";
 			type="Empty";
 		};
-		class Item426
+		class Item425
 		{
 			position[]={9966.8848,203.77646,6521.6636};
 			name="city11f4w4";
 			type="Empty";
 		};
-		class Item427
+		class Item426
 		{
 			position[]={9716.9404,228.54506,6373.9058};
 			name="city11f4w5";
