@@ -671,7 +671,7 @@ class Mission
 			side="EMPTY";
 			vehicle="SpecialWeaponsBox";
 			skill=0.60000002;
-			init="_null = [] execVM ""fillCrateLaunchers.sqf"";";
+			init="_null = this execVM ""fillCrateLaunchers.sqf"";";
 		};
 	};
 	class Markers
