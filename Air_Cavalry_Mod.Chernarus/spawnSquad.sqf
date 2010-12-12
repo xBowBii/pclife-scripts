@@ -2,6 +2,7 @@ if(isServer) then
 {
 _point = _this select 0;
 _myGroup = createGroup east;
+_myGroup2 = createGroup east;
 _vehicleGroup = createGroup east;
 _rand = random 3;
 _rand = ceil _rand;
@@ -15,12 +16,13 @@ switch (_rand) do
 			_tempSoldier4 = _myGroup createUnit ["GUE_Soldier_AR",getMarkerPos _point,[],0.6,"Private"];
 			_tempSoldier5 = _myGroup createUnit ["GUE_Soldier_AT",getMarkerPos _point,[],0.6,"Private"];
 			_tempSoldier6 = _myGroup createUnit ["GUE_Soldier_GL",getMarkerPos _point,[],0.6,"Private"];
-			_tempSoldier7 = _myGroup createUnit ["GUE_Soldier_2",getMarkerPos _point,[],0.6,"Private"];
-			_tempSoldier8 = _myGroup createUnit ["GUE_Soldier_3",getMarkerPos _point,[],0.6,"Private"];
-			_tempSoldier9 = _myGroup createUnit ["GUE_Soldier_AT",getMarkerPos _point,[],0.6,"Private"];
-			_tempSoldier10 = _myGroup createUnit ["GUE_Soldier_GL",getMarkerPos _point,[],0.6,"Private"];
-			_tempSoldier11 = _myGroup createUnit ["GUE_Soldier_2",getMarkerPos _point,[],0.6,"Private"];
-			_tempSoldier12 = _myGroup createUnit ["GUE_Soldier_3",getMarkerPos _point,[],0.6,"Private"];
+
+			_tempSoldier12 = _myGroup2 createUnit ["GUE_Commander",getMarkerPos _point,[],0.8,"Sergeant"];
+			_tempSoldier7 = _myGroup2 createUnit ["GUE_Soldier_2",getMarkerPos _point,[],0.6,"Private"];
+			_tempSoldier8 = _myGroup2 createUnit ["GUE_Soldier_3",getMarkerPos _point,[],0.6,"Private"];
+			_tempSoldier9 = _myGroup2 createUnit ["GUE_Soldier_AT",getMarkerPos _point,[],0.6,"Private"];
+			_tempSoldier10 = _myGroup2 createUnit ["GUE_Soldier_GL",getMarkerPos _point,[],0.6,"Private"];
+			_tempSoldier11 = _myGroup2 createUnit ["GUE_Soldier_2",getMarkerPos _point,[],0.6,"Private"];
 
 			_tempSoldier13 = _vehicleGroup createUnit ["GUE_Soldier_Crew",getMarkerPos _point,[],0.6,"Sergeant"];
 			_tempSoldier14 = _vehicleGroup createUnit ["GUE_Soldier_Crew",getMarkerPos _point,[],0.6,"Private"];
@@ -46,12 +48,13 @@ switch (_rand) do
 			_tempSoldier4 = _myGroup createUnit ["GUE_Soldier_AR",getMarkerPos _point,[],0.6,"Private"];
 			_tempSoldier5 = _myGroup createUnit ["GUE_Soldier_AA",getMarkerPos _point,[],0.6,"Private"];
 			_tempSoldier6 = _myGroup createUnit ["GUE_Soldier_GL",getMarkerPos _point,[],0.6,"Private"];
-			_tempSoldier7 = _myGroup createUnit ["GUE_Soldier_2",getMarkerPos _point,[],0.6,"Private"];
-			_tempSoldier8 = _myGroup createUnit ["GUE_Soldier_3",getMarkerPos _point,[],0.6,"Private"];
-			_tempSoldier9 = _myGroup createUnit ["GUE_Soldier_AT",getMarkerPos _point,[],0.6,"Private"];
-			_tempSoldier10 = _myGroup createUnit ["GUE_Soldier_GL",getMarkerPos _point,[],0.6,"Private"];
-			_tempSoldier11 = _myGroup createUnit ["GUE_Soldier_2",getMarkerPos _point,[],0.6,"Private"];
-			_tempSoldier12 = _myGroup createUnit ["GUE_Soldier_3",getMarkerPos _point,[],0.6,"Private"];
+
+			_tempSoldier12 = _myGroup2 createUnit ["GUE_Commander",getMarkerPos _point,[],0.8,"Sergeant"];
+			_tempSoldier7 = _myGroup2 createUnit ["GUE_Soldier_2",getMarkerPos _point,[],0.6,"Private"];
+			_tempSoldier8 = _myGroup2 createUnit ["GUE_Soldier_3",getMarkerPos _point,[],0.6,"Private"];
+			_tempSoldier9 = _myGroup2 createUnit ["GUE_Soldier_AT",getMarkerPos _point,[],0.6,"Private"];
+			_tempSoldier10 = _myGroup2 createUnit ["GUE_Soldier_GL",getMarkerPos _point,[],0.6,"Private"];
+			_tempSoldier11 = _myGroup2 createUnit ["GUE_Soldier_2",getMarkerPos _point,[],0.6,"Private"];
 
 			_tempSoldier13 = _vehicleGroup createUnit ["GUE_Soldier_3",getMarkerPos _point,[],0.6,"Sergeant"];
 			_tempSoldier14 = _vehicleGroup createUnit ["GUE_Soldier_1",getMarkerPos _point,[],0.6,"Private"];
@@ -77,12 +80,13 @@ switch (_rand) do
 			_tempSoldier4 = _myGroup createUnit ["GUE_Soldier_2",getMarkerPos _point,[],0.6,"Private"];
 			_tempSoldier5 = _myGroup createUnit ["GUE_Soldier_AT",getMarkerPos _point,[],0.6,"Private"];
 			_tempSoldier6 = _myGroup createUnit ["GUE_Soldier_GL",getMarkerPos _point,[],0.6,"Private"];
-			_tempSoldier7 = _myGroup createUnit ["GUE_Soldier_GL",getMarkerPos _point,[],0.6,"Private"];
-			_tempSoldier8 = _myGroup createUnit ["GUE_Soldier_3",getMarkerPos _point,[],0.6,"Private"];
-			_tempSoldier9 = _myGroup createUnit ["GUE_Soldier_AT",getMarkerPos _point,[],0.6,"Private"];
-			_tempSoldier10 = _myGroup createUnit ["GUE_Soldier_GL",getMarkerPos _point,[],0.6,"Private"];
-			_tempSoldier11 = _myGroup createUnit ["GUE_Soldier_2",getMarkerPos _point,[],0.6,"Private"];
-			_tempSoldier12 = _myGroup createUnit ["GUE_Soldier_3",getMarkerPos _point,[],0.6,"Private"];
+
+			_tempSoldier12 = _myGroup2 createUnit ["GUE_Commander",getMarkerPos _point,[],0.8,"Sergeant"];
+			_tempSoldier7 = _myGroup2 createUnit ["GUE_Soldier_GL",getMarkerPos _point,[],0.6,"Private"];
+			_tempSoldier8 = _myGroup2 createUnit ["GUE_Soldier_3",getMarkerPos _point,[],0.6,"Private"];
+			_tempSoldier9 = _myGroup2 createUnit ["GUE_Soldier_AT",getMarkerPos _point,[],0.6,"Private"];
+			_tempSoldier10 = _myGroup2 createUnit ["GUE_Soldier_GL",getMarkerPos _point,[],0.6,"Private"];
+			_tempSoldier11 = _myGroup2 createUnit ["GUE_Soldier_2",getMarkerPos _point,[],0.6,"Private"];
 
 			_tempSoldier13 = _vehicleGroup createUnit ["GUE_Soldier_3",getMarkerPos _point,[],0.6,"Sergeant"];
 			_tempSoldier14 = _vehicleGroup createUnit ["GUE_Soldier_1",getMarkerPos _point,[],0.6,"Private"];
@@ -102,4 +106,5 @@ switch (_rand) do
 		};
 	};
 _null = [leader _myGroup, _point,"random"] execVM "UPS.sqf";
+_null = [leader _myGroup2, _point,"random"] execVM "UPS.sqf";
 };
