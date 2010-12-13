@@ -1,4 +1,8 @@
 sleep 1;
+_null = ["ammocrate1"] execVM "fillCrateUs.sqf";
+_null = ["ammocrate2"] execVM "fillCrateRus.sqf";
+_null = ["ammocrate3"] execVM "fillCrateSpec.sqf";
+// AND NOW FUCKING CRATES IN FUCKING CHOOSE OBJECTIVE SCRIPT
 if (isServer) then {
 	_randName = (ceil random 11);
 	_point = format ["city%1", _randName];
