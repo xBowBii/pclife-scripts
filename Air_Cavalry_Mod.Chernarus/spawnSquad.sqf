@@ -10,8 +10,8 @@ switch (_rand) do
 	{
 		case 1:
 		{
-			_myGroup = [getMarkerPos _point, EAST, ["GUE_Commander", "GUE_Soldier_Medic", "GUE_Soldier_MG", "GUE_Soldier_AR", "GUE_Soldier_AT", "GUE_Soldier_GL"],[],[],[0.85, 0.8, 0.6, 0.5, 0.75, 0.7],[],[],0] call BIS_fnc_spawnGroup;
-			_myGroup2 = [getMarkerPos _point, EAST, ["GUE_Commander", "GUE_Soldier_2", "GUE_Soldier_3", "GUE_Soldier_AT", "GUE_Soldier_GL", "GUE_Soldier_2"],[],[],[0.9, 0.8, 0.65, 0.5, 0.55, 0.7],[],[],0] call BIS_fnc_spawnGroup;
+			_myGroup = [getMarkerPos _point, EAST, ["GUE_Commander", "GUE_Soldier_Medic", "GUE_Soldier_MG", "GUE_Soldier_AR", "GUE_Soldier_AT", "GUE_Soldier_GL"],[],[],[0.8, 0.75, 0.6, 0.5, 0.7, 0.55],[],[],0] call BIS_fnc_spawnGroup;
+			_myGroup2 = [getMarkerPos _point, EAST, ["GUE_Commander", "GUE_Soldier_2", "GUE_Soldier_3", "GUE_Soldier_AT", "GUE_Soldier_GL", "GUE_Soldier_2"],[],[],[0.8, 0.7, 0.65, 0.5, 0.55, 0.7],[],[],0] call BIS_fnc_spawnGroup;
 
 			_tempSoldier13 = _vehicleGroup createUnit ["GUE_Soldier_Crew",getMarkerPos _point,[],0.6,"Sergeant"];
 			_tempSoldier14 = _vehicleGroup createUnit ["GUE_Soldier_Crew",getMarkerPos _point,[],0.6,"Private"];
@@ -21,8 +21,8 @@ switch (_rand) do
 		};
 		case 2:
 		{
-			_myGroup = [getMarkerPos _point, EAST, ["GUE_Commander", "GUE_Soldier_Medic", "GUE_Soldier_AT", "GUE_Soldier_AR", "GUE_Soldier_AA", "GUE_Soldier_GL"],[],[],[0.85, 0.8, 0.6, 0.5, 0.75, 0.7],[],[],0] call BIS_fnc_spawnGroup;
-			_myGroup2 = [getMarkerPos _point, EAST, ["GUE_Commander", "GUE_Soldier_2", "GUE_Soldier_3", "GUE_Soldier_AT", "GUE_Soldier_GL", "GUE_Soldier_2"],[],[],[0.87, 0.7, 0.6, 0.65, 0.75, 0.55],[],[],0] call BIS_fnc_spawnGroup;
+			_myGroup = [getMarkerPos _point, EAST, ["GUE_Commander", "GUE_Soldier_Medic", "GUE_Soldier_AT", "GUE_Soldier_AR", "GUE_Soldier_AA", "GUE_Soldier_GL"],[],[],[0.8, 0.76, 0.6, 0.5, 0.72, 0.7],[],[],0] call BIS_fnc_spawnGroup;
+			_myGroup2 = [getMarkerPos _point, EAST, ["GUE_Commander", "GUE_Soldier_2", "GUE_Soldier_3", "GUE_Soldier_AT", "GUE_Soldier_GL", "GUE_Soldier_2"],[],[],[0.8, 0.7, 0.6, 0.65, 0.7, 0.55],[],[],0] call BIS_fnc_spawnGroup;
 
 			_tempSoldier13 = _vehicleGroup createUnit ["GUE_Soldier_3",getMarkerPos _point,[],0.6,"Sergeant"];
 			_tempSoldier14 = _vehicleGroup createUnit ["GUE_Soldier_1",getMarkerPos _point,[],0.6,"Private"];
@@ -32,8 +32,8 @@ switch (_rand) do
 		};
 		case 3:
 		{
-			_myGroup = [getMarkerPos _point, EAST, ["GUE_Commander", "GUE_Soldier_Sniper", "GUE_Soldier_MG", "GUE_Soldier_2", "GUE_Soldier_AT", "GUE_Soldier_GL"],[],[],[0.85, 0.8, 0.6, 0.5, 0.75, 0.7],[],[],0] call BIS_fnc_spawnGroup;
-			_myGroup2 = [getMarkerPos _point, EAST, ["GUE_Commander", "GUE_Soldier_GL", "GUE_Soldier_3", "GUE_Soldier_AT", "GUE_Soldier_GL", "GUE_Soldier_2"],[],[],[0.82, 0.7, 0.6, 0.6, 0.75, 0.7],[],[],0] call BIS_fnc_spawnGroup;
+			_myGroup = [getMarkerPos _point, EAST, ["GUE_Commander", "GUE_Soldier_Sniper", "GUE_Soldier_MG", "GUE_Soldier_2", "GUE_Soldier_AT", "GUE_Soldier_GL"],[],[],[0.8, 0.75, 0.6, 0.5, 0.65, 0.7],[],[],0] call BIS_fnc_spawnGroup;
+			_myGroup2 = [getMarkerPos _point, EAST, ["GUE_Commander", "GUE_Soldier_GL", "GUE_Soldier_3", "GUE_Soldier_AT", "GUE_Soldier_GL", "GUE_Soldier_2"],[],[],[0.82, 0.7, 0.6, 0.6, 0.65, 0.7],[],[],0] call BIS_fnc_spawnGroup;
 			
 			_tempSoldier13 = _vehicleGroup createUnit ["GUE_Soldier_3",getMarkerPos _point,[],0.6,"Sergeant"];
 			_tempSoldier14 = _vehicleGroup createUnit ["GUE_Soldier_1",getMarkerPos _point,[],0.6,"Private"];
