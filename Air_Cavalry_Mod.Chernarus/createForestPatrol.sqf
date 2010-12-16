@@ -2,10 +2,7 @@ if(isServer) then
 {
 	_point = _this select 0;
 	_amount = _this select 1;
-	_forestGroup = createGroup east;
-	_forestSoldier1 = _forestGroup createUnit ["GUE_Commander",getMarkerPos _point,[],0.8,"Sergeant"];
-	_forestSoldier2 = _forestGroup createUnit ["GUE_Soldier_GL",getMarkerPos _point,[],0.6,"Private"];
-	_forestSoldier2 = _forestGroup createUnit ["GUE_Soldier_2",getMarkerPos _point,[],0.6,"Private"];
+	_forestGroup = [getMarkerPos _point, EAST, ["GUE_Commander", "GUE_Soldier_GL", "GUE_Soldier_2"],[],[],[0.8, 0.65, 0.5],[],[],0] call BIS_fnc_spawnGroup;
 	for "_x" from 1 to _amount do {
 		_wp = _forestGroup addwaypoint [getMarkerPos format ["%1w%2",_point,_x],1];
 		_wp setWaypointType "MOVE";
