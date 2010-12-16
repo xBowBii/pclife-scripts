@@ -33,8 +33,6 @@ switch (rusEra) do
 	};
 	case 2:
 	{
-		ammoCrateRus addWeaponCargo ["ACE_Val_Kobra",5];
-		ammoCrateRus addWeaponCargo ["VSS_vintorez",2];
 		ammoCrateRus addWeaponCargo ["ACE_AK74M",5];
 		ammoCrateRus addWeaponCargo ["ACE_AK74M_GL",5];
 		ammoCrateRus addWeaponCargo ["ACE_AK74M_GL_PSO",5];
