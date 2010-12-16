@@ -3,7 +3,7 @@ class Mission
 {
 	addOns[]=
 	{
-		"fallujah",
+		"fallujah_v1_0",
 		"cacharacters_e",
 		"camisc3",
 		"camisc_e",
@@ -51,7 +51,7 @@ class Mission
 		"CAMisc",
 		"castructures_e_misc_misc_garbage",
 		"CATracked",
-		"fallujah"
+		"fallujah_v1_0"
 	};
 	randomSeed=6653349;
 	class Intel
