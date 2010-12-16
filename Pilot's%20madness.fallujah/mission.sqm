@@ -6939,11 +6939,11 @@ class Intro
 {
 	addOns[]=
 	{
-		"fallujah"
+		"fallujah_v1_0"
 	};
 	addOnsAuto[]=
 	{
-		"fallujah"
+		"fallujah_v1_0"
 	};
 	randomSeed=8201573;
 	class Intel
@@ -6961,11 +6961,11 @@ class OutroWin
 {
 	addOns[]=
 	{
-		"fallujah"
+		"fallujah_v1_0"
 	};
 	addOnsAuto[]=
 	{
-		"fallujah"
+		"fallujah_v1_0"
 	};
 	randomSeed=9558361;
 	class Intel
@@ -6983,11 +6983,11 @@ class OutroLoose
 {
 	addOns[]=
 	{
-		"fallujah"
+		"fallujah_v1_0"
 	};
 	addOnsAuto[]=
 	{
-		"fallujah"
+		"fallujah_v1_0"
 	};
 	randomSeed=6564454;
 	class Intel
