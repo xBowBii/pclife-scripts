@@ -72,7 +72,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=12;
+		items=14;
 		class Item0
 		{
 			side="LOGIC";
@@ -396,6 +396,44 @@ class Mission
 					vehicle="FunctionsManager";
 					leader=1;
 					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item12
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					presence=0;
+					position[]={621.45282,385.16528,11841.704};
+					azimut=180;
+					id=51;
+					side="GUER";
+					vehicle="GUE_Soldier_1";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item13
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					presence=0;
+					position[]={622.83148,383.54504,11813.294};
+					azimut=180;
+					id=52;
+					side="EAST";
+					vehicle="Ins_Soldier_1";
+					leader=1;
 					skill=0.60000002;
 				};
 			};
