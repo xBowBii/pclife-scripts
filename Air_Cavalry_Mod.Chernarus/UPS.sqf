@@ -32,7 +32,7 @@ if (!isServer) exitWith {};
 	
 // how far opfors should move away if they're under attack
 // set this to 200-300, when using the script in open areas (rural surroundings)
-#define SAFEDIST 75
+#define SAFEDIST 100
 
 // how close unit has to be to target to generate a new one 
 #define CLOSEENOUGH 10
@@ -513,6 +513,7 @@ if (_exit) exitWith {
 
 // ***********************************************************************************************************
 // ************************************************ MAIN LOOP ************************************************
+
 _loop=true;
 _currcycle=_cycle;
 while {_loop} do {
