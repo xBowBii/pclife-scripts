@@ -1,12 +1,10 @@
 if(isServer) then
 {
-//player globalchat "Truckspawn activated";
 _point = _this select 1;
 _dest = _this select 0;
 _rand = random 1;
 if (_rand <= 0.7) then {
-	//player globalchat "you're really fucking dead!";
-	_myGroup = createGroup resistance;
+/*	_myGroup = createGroup resistance;
 	_tempSoldier1 = _myGroup createUnit ["GUE_Commander",getMarkerPos _point,[],0.8,"Sergeant"];
 	_tempSoldier2 = _myGroup createUnit ["GUE_Soldier_Medic",getMarkerPos _point,[],0.6,"Private"];
 	_tempSoldier3 = _myGroup createUnit ["GUE_Soldier_MG",getMarkerPos _point,[],0.6,"Private"];
@@ -17,31 +15,18 @@ if (_rand <= 0.7) then {
 	_tempSoldier8 = _myGroup createUnit ["GUE_Soldier_3",getMarkerPos _point,[],0.6,"Private"];
 	_tempSoldier9 = _myGroup createUnit ["GUE_Soldier_2",getMarkerPos _point,[],0.6,"Private"];
 	_tempSoldier10 = _myGroup createUnit ["GUE_Soldier_3",getMarkerPos _point,[],0.6,"Private"];
+*/
+	_myGroup = [getMarkerPos _point, EAST, ["GUE_Commander", "GUE_Soldier_Medic", "GUE_Soldier_MG", "GUE_Soldier_AR", "GUE_Soldier_AT", "GUE_Soldier_GL", "GUE_Soldier_2", "GUE_Soldier_3", "GUE_Soldier_2", "GUE_Soldier_AR", "GUE_Soldier_AT"],[],[],[0.8, 0.75, 0.6, 0.5, 0.7, 0.55, 0.6, 0.65, 0.6, 0.7, 0.64],[],[],0] call BIS_fnc_spawnGroup;
 
-	removeAllWeapons _tempSoldier7;
-	for "_x" from 1 to 6 do {_tempSoldier7 addMagazine "30Rnd_762x39_AK47"};
-	_tempSoldier7 addWeapon "ACE_AKM";
-	_tempSoldier7 addMagazine "HandGrenade_West";
-
-	removeAllWeapons _tempSoldier8;
-	for "_x" from 1 to 6 do {_tempSoldier8 addMagazine "30Rnd_762x39_AK47"};
-	_tempSoldier8 addWeapon "ACE_AKM";
-	_tempSoldier8 addMagazine "HandGrenade_West";
-
-	removeAllWeapons _tempSoldier9;
-	for "_x" from 1 to 6 do {_tempSoldier9 addMagazine "30Rnd_762x39_AK47"};
-	_tempSoldier9 addWeapon "ACE_AKM";
-	_tempSoldier9 addMagazine "HandGrenade_West";
-
-	removeAllWeapons _tempSoldier10;
-	for "_x" from 1 to 6 do {_tempSoldier10 addMagazine "30Rnd_762x39_AK47"};
-	_tempSoldier10 addWeapon "ACE_AKM";
-	_tempSoldier10 addMagazine "HandGrenade_West";
-
-sleep 0.1;
+	sleep 0.1;
 
 	_truck = createVehicle ["V3S_Gue", getMarkerPos _point, [], 0, "FORM"];
-	_tempSoldier1 moveInDriver _truck;
+	_driver = _driverGroup createUnit ["GUE_Soldier_2",getMarkerPos _point,[],0.6,"Private"];
+	sleep 0.1;
+	_driver moveInDriver _truck;
+	{_x moveincargo _truck} foreach units _myGroup;
+
+/*	_tempSoldier1 moveInDriver _truck;
 	_tempSoldier2 moveInCargo _truck;
 	_tempSoldier3 moveInCargo _truck;
 	_tempSoldier4 moveInCargo _truck;
@@ -51,8 +36,8 @@ sleep 0.1;
 	_tempSoldier8 moveInCargo _truck;
 	_tempSoldier9 moveInCargo _truck;
 	_tempSoldier10 moveInCargo _truck;
-
-	wp = _myGroup addwaypoint [getMarkerPos _dest, 0];
+*/
+	wp = _driverGroup addwaypoint [getMarkerPos _dest, 0];
 	wp setWaypointType "SAD";
 	wp setWaypointSpeed "FULL";
 
@@ -67,5 +52,5 @@ sleep 0.1;
 	 wp1 = _myGroup2 addwaypoint [getMarkerPos _dest, 0];
 	 wp1 setWaypointType "SAD";
 	 wp1 setWaypointSpeed "FULL";
-};
+	};
 };
