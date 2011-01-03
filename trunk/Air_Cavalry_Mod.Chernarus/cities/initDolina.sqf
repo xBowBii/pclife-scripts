@@ -1,11 +1,11 @@
 	for "_x" from 1 to 4 do {
 		_point = format ["city1p%1", _x];
-		_null = [_point] execVM "spawnSquad.sqf";
+		_null = [_point] call compile preprocessFileLineNumbers "spawnSquad.sqf";
 		sleep 0.1;
 	};
 	for "_i" from 1 to 4 do {
 		_point = format ["city1f%1", _i];
-		_null = [_point, 5] execVM "createForestPatrol.sqf";
+		_null = [_point, 5] call compile preprocessFileLineNumbers "createForestPatrol.sqf";
 		sleep 0.1;
 	};
 	_null = ["city1", 2, 445, 285] execVM "createFortification.sqf";
