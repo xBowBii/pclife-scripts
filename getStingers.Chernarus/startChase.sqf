@@ -1,13 +1,13 @@
 player globalchat "chase incoming!";
 if (!isServer) exitWith{};
-//sleep 60;
+sleep 6;
 
 chase1 = createGroup west;
 _tempSoldier11 = chase1 createUnit ["USMC_Soldier_TL",getMarkerPos "chase_start",[],0.8,"Sergeant"];
 _tempSoldier12 = chase1 createUnit ["USMC_Soldier_MG",getMarkerPos "chase_start",[],0.7,"Private"];
 _tempSoldier13 = chase1 createUnit ["US_Soldier_LAT_EP1",getMarkerPos "chase_start",[],0.6,"Private"];
 _tempSoldier14 = chase1 createUnit ["US_Soldier_EP1",getMarkerPos "chase_start",[],0.6,"Private"];
-_killedEH = _tempSoldier11 addEventHandler ["killed", {_this exec "callReinforcements.sqf"}];
+_killedEH = _tempSoldier11 addEventHandler ["killed", {reinforced=1; _this exec "callReinforcements.sqf"}];
 
 _hmmv1 = createVehicle ["HMMWV_MK19_DES_EP1", getMarkerPos "chase_start", [], 10, "FORM"];
 sleep 0.5;
@@ -28,7 +28,7 @@ _tempSoldier21 moveInDriver _hmmv2;
 _tempSoldier22 moveInGunner _hmmv2;
 _tempSoldier23 moveInCargo _hmmv2;
 _tempSoldier24 moveInCargo _hmmv2;
-_killedEH = _tempSoldier21 addEventHandler ["killed", {_this exec "callReinforcements.sqf"}];
+_killedEH = _tempSoldier21 addEventHandler ["killed", {reinforced=1; _this exec "callReinforcements.sqf"}];
 
 chase3 = createGroup west;
 _tempSoldier31 = chase3 createUnit ["USMC_Soldier_TL",getMarkerPos "chase_start",[],0.8,"Sergeant"];
@@ -41,7 +41,7 @@ _tempSoldier37 = chase3 createUnit ["US_Soldier_EP1",getMarkerPos "chase_start",
 _tempSoldier38 = chase3 createUnit ["USMC_Soldier_GL",getMarkerPos "chase_start",[],0.7,"Private"];
 _tempSoldier39 = chase3 createUnit ["USMC_Soldier_GL",getMarkerPos "chase_start",[],0.6,"Private"];
 _tempSoldier310 = chase3 createUnit ["USMC_Soldier_Medic",getMarkerPos "chase_start",[],0.6,"Private"];
-_killedEH = _tempSoldier31 addEventHandler ["killed", {_this exec "callReinforcements.sqf"}];
+_killedEH = _tempSoldier31 addEventHandler ["killed", {reinforced=1; _this exec "callReinforcements.sqf"}];
 
 _hmmv3 = createVehicle ["ACE_Truck5tMG", getMarkerPos "chase_start", [], 10, "FORM"];
 sleep 0.5;
@@ -62,13 +62,6 @@ _wp setWaypointType "MOVE";
 _wp setWaypointBehaviour "AWARE";
 _wp setWaypointCombatMode "RED";
 _wp setWaypointSpeed "FULL";
-/*_wp2 = chase1 addWaypoint [getMarkerPos "theBaseEntry", 0];
-_wp2 setWaypointStatements ["getPos stingerTruck in enemyFobInside", "player globalchat 'troops moving to base!';_wp3 = chase1 addWaypoint [getMarkerPos 'theBase', 0]; _wp3 setWaypointType 'SAD';"];
-_wp2 setWaypointType "GETOUT";
-_wp2 setWaypointBehaviour "AWARE";
-_wp2 setWaypointCombatMode "RED";
-_wp2 setWaypointSpeed "FULL";
-*/
 
 _wp = chase2 addWaypoint [getMarkerPos "theBaseEntry", 0];
 _wp setWaypointStatements ["getPos stingerTruck in enemyFobInside", "player globalchat 'troops moving to base!';_wp2 = chase2 addWaypoint [getMarkerPos 'theBaseEntry', 0]; _wp2 setWaypointType 'GETOUT'; _wp3 = chase2 addWaypoint [getMarkerPos 'theBase', 0]; _wp3 setWaypointType 'SAD'; _wp3 setWaypointCombatMode 'RED';"];
@@ -76,13 +69,6 @@ _wp setWaypointType "MOVE";
 _wp setWaypointBehaviour "AWARE";
 _wp setWaypointCombatMode "RED";
 _wp setWaypointSpeed "FULL";
-/*_wp2 = chase2 addWaypoint [getMarkerPos "theBaseEntry", 0];
-_wp2 setWaypointStatements ["getPos stingerTruck in enemyFobInside", "_wp3 = chase2 addWaypoint [getMarkerPos 'theBase', 0]; _wp3 setWaypointType 'SAD';"];
-_wp2 setWaypointType "GETOUT";
-_wp2 setWaypointBehaviour "AWARE";
-_wp2 setWaypointCombatMode "RED";
-_wp2 setWaypointSpeed "FULL";
-*/
 
 _wp = chase3 addWaypoint [getMarkerPos "theBaseEntry", 0];
 _wp setWaypointStatements ["getPos stingerTruck in enemyFobInside", "player globalchat 'troops moving to base!';_wp2 = chase3 addWaypoint [getMarkerPos 'theBaseEntry', 0]; _wp2 setWaypointType 'GETOUT'; _wp3 = chase3 addWaypoint [getMarkerPos 'theBase', 0]; _wp3 setWaypointType 'SAD'; _wp3 setWaypointCombatMode 'RED';"];
@@ -90,10 +76,3 @@ _wp setWaypointType "MOVE";
 _wp setWaypointBehaviour "AWARE";
 _wp setWaypointCombatMode "RED";
 _wp setWaypointSpeed "FULL";
-/*_wp2 = chase3 addWaypoint [getMarkerPos "theBaseEntry", 0];
-_wp2 setWaypointStatements ["getPos stingerTruck in enemyFobInside", "_wp3 = chase3 addWaypoint [getMarkerPos 'theBase', 0]; _wp3 setWaypointType 'SAD';"];
-_wp2 setWaypointType "GETOUT";
-_wp2 setWaypointBehaviour "AWARE";
-_wp2 setWaypointCombatMode "RED";
-_wp2 setWaypointSpeed "FULL";
-*/

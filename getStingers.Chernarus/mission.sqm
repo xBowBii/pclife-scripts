@@ -20,12 +20,9 @@ class Mission
 		"chernarus",
 		"cacharacters2",
 		"cacharacters_e",
-		"CAWheeled_E",
-		"acex_ru_c_weapon",
 		"ace_sys_wounds",
 		"acex_veh_mah6",
 		"acex_veh_5ton",
-		"acre_sys_prc343",
 		"warfxpe"
 	};
 	addOnsAuto[]=
@@ -47,8 +44,6 @@ class Mission
 		"ind_tank",
 		"acex_usnavy_sys_repair",
 		"acex_veh_gmv",
-		"CAWheeled_E",
-		"acex_ru_c_weapon",
 		"acex_veh_mah6",
 		"chernarus"
 	};
@@ -788,7 +783,7 @@ class Mission
 				class Item0
 				{
 					position[]={2065.9353,250.62755,10261.928};
-					id=726;
+					id=723;
 					side="LOGIC";
 					vehicle="ACE_Wounds_Logic";
 					leader=1;
@@ -806,7 +801,7 @@ class Mission
 				class Item0
 				{
 					position[]={2065.2319,249.21054,10224.614};
-					id=727;
+					id=724;
 					side="LOGIC";
 					vehicle="ACE_Wounds_EveryoneMedic";
 					leader=1;
@@ -825,7 +820,7 @@ class Mission
 				{
 					position[]={12009.696,66.569748,8823.3789};
 					azimut=283.46399;
-					id=730;
+					id=727;
 					side="CIV";
 					vehicle="CIV_EuroMan01_EP1";
 					leader=1;
@@ -867,7 +862,7 @@ class Mission
 				{
 					position[]={11923.619,59.472107,9008.877};
 					azimut=45.643101;
-					id=728;
+					id=725;
 					side="GUER";
 					vehicle="GUE_Soldier_2";
 					player="PLAY CDG";
@@ -888,7 +883,7 @@ class Mission
 				{
 					position[]={11931.87,58.914852,9009.7588};
 					azimut=45.643101;
-					id=729;
+					id=726;
 					side="GUER";
 					vehicle="GUE_Commander";
 					player="PLAY CDG";
@@ -909,7 +904,7 @@ class Mission
 					position[]={13460.519,5.8841114,6393.2852};
 					azimut=177.05446;
 					special="NONE";
-					id=734;
+					id=731;
 					side="WEST";
 					vehicle="US_Soldier_EP1";
 					player="PLAY CDG";
@@ -929,7 +924,7 @@ class Mission
 					position[]={13467.326,5.8898158,6393.3311};
 					azimut=177.054;
 					special="NONE";
-					id=735;
+					id=732;
 					side="WEST";
 					vehicle="US_Soldier_EP1";
 					player="PLAY CDG";
@@ -941,7 +936,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=700;
+		items=697;
 		class Item0
 		{
 			position[]={12040.359,62.784641,8828.7012};
@@ -3556,7 +3551,7 @@ class Mission
 		class Item229
 		{
 			position[]={11959.103,66.233002,8958.8965};
-			azimut=345.85843;
+			azimut=345.858;
 			special="FLY";
 			id=230;
 			side="EMPTY";
@@ -8814,63 +8809,32 @@ class Mission
 		};
 		class Item694
 		{
-			position[]={11927.172,58.724995,9012.0322};
-			azimut=83.134003;
-			special="NONE";
-			id=723;
+			position[]={12137.282,50.98439,8765.2178};
+			azimut=277.4711;
+			special="FLY";
+			id=728;
 			side="EMPTY";
-			vehicle="UAZ_Unarmed_UN_EP1";
+			vehicle="Fort_RazorWire";
 			leader=1;
 			skill=1;
 		};
 		class Item695
 		{
-			position[]={11920.871,59.050785,9011.6055};
-			azimut=45.643101;
-			id=724;
-			side="EMPTY";
-			vehicle="ACE_WeaponBox_CDF";
-			leader=1;
-			skill=0.60000002;
-		};
-		class Item696
-		{
-			position[]={11916.09,59.371994,9010.7646};
-			azimut=45.643101;
-			id=725;
-			side="EMPTY";
-			vehicle="ACE_WeaponBox_Launchers_CDF";
-			leader=1;
-			skill=0.60000002;
-		};
-		class Item697
-		{
-			position[]={12137.282,50.98439,8765.2178};
-			azimut=277.4711;
-			special="FLY";
-			id=731;
-			side="EMPTY";
-			vehicle="Fort_RazorWire";
-			leader=1;
-			skill=1;
-		};
-		class Item698
-		{
 			position[]={12113.079,53.87075,8768.7207};
 			azimut=455.14444;
 			special="FLY";
-			id=732;
+			id=729;
 			side="EMPTY";
 			vehicle="Fort_RazorWire";
 			leader=1;
 			skill=1;
 		};
-		class Item699
+		class Item696
 		{
 			position[]={13464.267,6.0588293,6378.2319};
 			azimut=355;
 			special="NONE";
-			id=733;
+			id=730;
 			side="EMPTY";
 			vehicle="ACE_AH6_GAU19";
 			leader=1;
@@ -8879,7 +8843,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=16;
+		items=17;
 		class Item0
 		{
 			position[]={12021.858,64.265167,8779.5898};
@@ -8995,6 +8959,12 @@ class Mission
 		{
 			position[]={11996.524,68.436874,8827.4141};
 			name="theBaseEntry";
+			type="Empty";
+		};
+		class Item16
+		{
+			position[]={11938.522,158.98367,12718.775};
+			name="reinforcement_start";
 			type="Empty";
 		};
 	};
