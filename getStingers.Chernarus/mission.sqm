@@ -23,7 +23,9 @@ class Mission
 		"ace_sys_wounds",
 		"acex_veh_mah6",
 		"acex_veh_5ton",
-		"warfxpe"
+		"warfxpe",
+		"CAWheeled2_V3S",
+		"acex_c_weapon"
 	};
 	addOnsAuto[]=
 	{
@@ -45,6 +47,8 @@ class Mission
 		"acex_usnavy_sys_repair",
 		"acex_veh_gmv",
 		"acex_veh_mah6",
+		"CAWheeled2_V3S",
+		"acex_c_weapon",
 		"chernarus"
 	};
 	randomSeed=14183324;
@@ -839,8 +843,8 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={11926.811,58.163868,9015.1758};
-					azimut=45.643101;
+					position[]={11949.183,57.581955,9010.8174};
+					azimut=150.67599;
 					id=722;
 					side="GUER";
 					vehicle="GUE_Soldier_AA";
@@ -921,12 +925,12 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={13467.326,5.8898158,6393.3311};
+					position[]={13466.839,5.8697391,6395.0317};
 					azimut=177.054;
 					special="NONE";
 					id=732;
 					side="WEST";
-					vehicle="US_Soldier_EP1";
+					vehicle="US_Soldier_HAT_EP1";
 					player="PLAY CDG";
 					leader=1;
 					skill=1;
@@ -936,7 +940,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=697;
+		items=699;
 		class Item0
 		{
 			position[]={12040.359,62.784641,8828.7012};
@@ -8831,7 +8835,7 @@ class Mission
 		};
 		class Item696
 		{
-			position[]={13464.267,6.0588293,6378.2319};
+			position[]={13465.482,6.0317516,6380.4102};
 			azimut=355;
 			special="NONE";
 			id=730;
@@ -8840,10 +8844,28 @@ class Mission
 			leader=1;
 			skill=1;
 		};
+		class Item697
+		{
+			position[]={12373.653,97.089035,10869.765};
+			azimut=202.88239;
+			id=733;
+			side="EMPTY";
+			vehicle="V3S_Civ";
+			skill=0.60000002;
+		};
+		class Item698
+		{
+			position[]={13463.243,5.8009157,6400.8652};
+			azimut=-2.2271574;
+			id=734;
+			side="EMPTY";
+			vehicle="ACE_WeaponBox_Launchers_BIS_US";
+			skill=0.60000002;
+		};
 	};
 	class Markers
 	{
-		items=17;
+		items=24;
 		class Item0
 		{
 			position[]={12021.858,64.265167,8779.5898};
@@ -8963,8 +8985,74 @@ class Mission
 		};
 		class Item16
 		{
-			position[]={11938.522,158.98367,12718.775};
+			position[]={11717.146,162.07339,12638.274};
 			name="reinforcement_start";
+			type="Empty";
+		};
+		class Item17
+		{
+			position[]={12359.914,96.98735,10845.163};
+			name="start_point";
+			type="Empty";
+		};
+		class Item18
+		{
+			position[]={6225.6816,301.05377,7714.519};
+			name="delivery_point";
+			type="Empty";
+		};
+		class Item19
+		{
+			position[]={9587.2422,302.27289,8836.0479};
+			name="gorka";
+			text="US forces";
+			markerType="ELLIPSE";
+			type="Empty";
+			colorName="ColorRed";
+			fillName="DiagGrid";
+			a=350;
+			b=160;
+		};
+		class Item20
+		{
+			position[]={10662.861,210.92302,8013.9785};
+			name="polyana";
+			text="US forces";
+			markerType="ELLIPSE";
+			type="Empty";
+			colorName="ColorRed";
+			fillName="DiagGrid";
+			a=220;
+			b=180;
+		};
+		class Item21
+		{
+			position[]={13399.098,5.1682763,6200.3208};
+			name="sol";
+			text="US forces";
+			markerType="ELLIPSE";
+			type="Empty";
+			colorName="ColorRed";
+			fillName="DiagGrid";
+			a=220;
+			b=180;
+		};
+		class Item22
+		{
+			position[]={12133.988,158.89999,12654.989};
+			name="gorka_1";
+			text="US forces";
+			markerType="ELLIPSE";
+			type="Empty";
+			colorName="ColorRed";
+			fillName="DiagGrid";
+			a=550;
+			b=260;
+		};
+		class Item23
+		{
+			position[]={11838.556,146.30629,12358.527};
+			name="chase_start2";
 			type="Empty";
 		};
 	};
@@ -9056,7 +9144,7 @@ class Mission
 		{
 			position[]={12116.435,53.661549,8746.7021};
 			a=200;
-			b=185;
+			b=195;
 			angle=8;
 			rectangular=1;
 			activationBy="ANY";
