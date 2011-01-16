@@ -72,7 +72,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=14;
+		items=15;
 		class Item0
 		{
 			side="LOGIC";
@@ -144,6 +144,7 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.33333331;
+					text="ft1lead";
 					init="removeallweapons this; this addweapon ""M16A2GL""; for ""_i"" from 1 to 6 do {this addmagazine ""30Rnd_556x45_Stanag""}; for ""_i"" from 1 to 4 do {this addmagazine ""HandGrenade_West""}; for ""_i"" from 1 to 6 do {this addmagazine ""1Rnd_HE_M203""}; this addmagazine ""1Rnd_SmokeRed_M203""; this addmagazine ""1Rnd_SmokeGreen_M203""; this removeweapon ""ACRE_PRC343""; this removeweapon ""ItemRadio""; _remove = [this] call acre_api_fnc_getCurrentRadio; this removeweapon ""_remove""; this addweapon ""ACRE_PRC148""; this addweapon ""ACRE_PRC119""; this addweapon ""ACE_DAGR""; this removeweapon ""ItemGPS""; this removeweapon ""ACE_Broken_GPS""; this removeweapon ""NVGoggles""; this removeweapon ""ACE_BrokenNVGoggles"";";
 				};
 				class Item1
@@ -201,6 +202,7 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.33333331;
+					text="ft2lead";
 					init="removeallweapons this; this addweapon ""M16A2GL""; for ""_i"" from 1 to 6 do {this addmagazine ""30Rnd_556x45_Stanag""}; for ""_i"" from 1 to 4 do {this addmagazine ""HandGrenade_West""}; for ""_i"" from 1 to 6 do {this addmagazine ""1Rnd_HE_M203""}; this addmagazine ""1Rnd_SmokeRed_M203""; this addmagazine ""1Rnd_SmokeGreen_M203""; this removeweapon ""ACRE_PRC343""; this removeweapon ""ItemRadio""; _remove = [this] call acre_api_fnc_getCurrentRadio; this removeweapon ""_remove""; this addweapon ""ACRE_PRC148""; this addweapon ""ACRE_PRC119""; this addweapon ""ACE_DAGR""; this removeweapon ""ItemGPS""; this removeweapon ""ACE_Broken_GPS""; this removeweapon ""NVGoggles""; this removeweapon ""ACE_BrokenNVGoggles"";";
 				};
 				class Item1
@@ -435,6 +437,33 @@ class Mission
 					vehicle="Ins_Soldier_1";
 					leader=1;
 					skill=0.60000002;
+				};
+			};
+		};
+		class Item14
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={580.30115,392.93817,11833.399};
+					id=53;
+					side="GUER";
+					vehicle="GUE_Soldier_Sniper";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.46666664;
+				};
+				class Item1
+				{
+					position[]={583.30115,392.16217,11828.399};
+					id=54;
+					side="GUER";
+					vehicle="GUE_Soldier_Scout";
+					rank="CORPORAL";
+					skill=0.33333331;
 				};
 			};
 		};
@@ -3487,6 +3516,7 @@ class Mission
 			activationBy="WEST";
 			interruptable=1;
 			age="UNKNOWN";
+			name="baseTrigger";
 			expCond="this && enemyDown == 1;";
 			expActiv="_null = [] execVM ""mission_done.sqf"";";
 			class Effects
