@@ -1,0 +1,114 @@
+---- 07/23/2010   version 0.9 beta
+
+
+---- 08/xx/2010   version 1.0
+- FIXED: indestructible cache at "destroy cache" mission
+- FIXED: IEDs not defusable
+- FIXED: convoy in "stop convoy" mission does not get waypoints at all
+- FIXED: rallypoint markers disappear for no reason sometimes
+- FIXED: injury System lets you die two times at once sometimes
+- CHANGED: improved enemy presence in "escort the truck" mission
+- CHANGED: missions now take place at locations closer to each other
+- CHANGED: removed the two closest locations to the base
+- CHANGED: moved all assets a bit closer to the respawn position
+- CHANGED: increased overall amount of enemies.
+- ADDED: now two versions: TFOR S (southern airfield) and TFOR N (northern airfield)
+- ADDED: automatic removal of rallypoints after a mission
+- ADDED: mission "relieve ambushed friendly forces"
+- ADDED: FOPs/FARPs as additional respawn and resupply points
+- ADDED: CH-47 Helicopter can lift cars
+- ADDED: notifications of how many lives remain for the team
+- ADDED: medic tent, HMMWV ambulances, MEV MH60
+- ADDED: ammo truck can load and unload ammoboxes at vehicle Service Points
+
+
+---- 08/19/2010   version 1.01
+- FIXED: enemy reinforcements remain at their spawn position
+- FIXED: mission "investigate -> destroy firebase" does not check for deathcount
+- FIXED: cache at "destroy cache" mission fails to set position into a house
+- FIXED: parameter for disabling advanced vehicles (tank, apc) does not work
+- FIXED: enemy snipes you out of vehicles easily
+- FIXED: enemy reinforcements spawn inside the AO when no player is near
+- CHANGED: adjusted enemy strength
+- CHANGED: locked enemy air vehicles
+- CHANGED: position of IEDs relative to the road now varies a bit; detonation radius of IEDs increased
+- CHANGED: UH-60M can load ammoboxes, too.
+- ADDED: mission "mark a fuel dump with an IR-Strobe"
+- ADDED: KSK Machinegunner to recruitable units
+- ADDED: ACE2 edition by Morgan (aka Jack)
+
+
+---- 08/20/2010   version 1.02  !HOTFIX!
+- FIXED: marking fuel dump in resp. mission does not work sometimes.
+
+
+---- 11/12/2010   version 1.03
+- FIXED: dragging screws up the first aid system
+- FIXED: player remains in full health after getting kicked out of a destroyed vehicle by the first aid system
+- FIXED: convoy in "stop convoy" task sometimes spawns inside rocks / below groundlevel
+- FIXED: sometimes AI recruits spawn inside barracks and get stuck
+- CHANGED: merged both the missions "destroy scud" and "destroy AA radar"
+- CHANGED: changed truck type in "bringtruck" task to ammotruck (makes more sense somehow :-)
+- CHANGED: first aid system: red blurring instead of black fadeouts when becoming unconscious.
+- CHANGED: rallypoints: You must be at least 500m away from the current FOB to deploy a rallypoint.
+- CHANGED: fob: Ammobox with complete content at FOPs
+- CHANGED: misc: M2A2 to M2A3; added values to parameter for daytime; loadingscreen slideshow
+- ADDED: possibility to equip with many kinds of backpacks by using a simple list menu
+- ADDED: parameter to choose between 1. FOPs & Rallypoints, 2. FOPs only, 3. none of them
+- ADDED: possibility to save loadout at ammocrates (incl. backpacks and -content)
+- ADDED: killing civilians increases the deathcount
+- ADDED: BAF edition, Zargabad edition
+- ADDED: 3 additional tasks
+- ADDED: pilots can drop loaded ammunition now while airborne (actual supply drops with parachutes and stuff...)
+- ADDED: commander role; commander has access to UAV; can grant/decline supply drops; non-commanding players can request supply drops when a commander is ingame
+- ADDED: commander also can construct several useful things like additional barracks, command post, field hospital...
+- ADDED: parameter to restrict artillery construction to commander
+- ADDED: hide an enemy heli park somewhere on the map; destroy it in order to cut enemy air patrols
+- ADDED: own AI now tracked on map if markersystem enabled
+
+
+---- 12/25/2010   version 1.04
+- FIXED: Civilian deathcounter does not work anymore with patch 1.56
+- FIXED: enemy officer in "capture officer" mission glitches inside hesco and dies
+- CHANGED: improved reliability of AI bomber
+- CHANGED: reduced radial blur a bit when in agony
+- CHANGED: Outro cam now considering players in vehicles and on buildings
+- ADDED: SADARM and DPICM rounds to artillery
+- ADDED: dynamic weather
+- ADDED: Chernarus edition
+
+
+---- 04/22/2011   version 1.05
+- FIXED: initialization bug with creating the MHQ esp. on locally hosted game
+- FIXED: AI bomber now reliably attacks marked target
+- FIXED: shorter days make dynamic weahter look like a slide show
+- FIXED: automatic removal of sidearm of recruited AI to avoid the well known "stuck bug"
+- FIXED: air vehicles crash during outro
+- FIXED: dragged person remains attached to dragger when dragger goes down
+- CHANGED: artillery entirely restricted to commander now, but does not affect recruitment anymore
+- CHANGED: reworked loadout presets feature; you can now equip your AI using this dialog
+- CHANGED: IEDs now either wreck objects or PMC IED objects
+- CHANGED: a civilian killed by friendlies costs 2 lives now
+- CHANGED: reworked damage handler of injury system to merge both damage tolerance and revive chance parameter
+- CHANGED: updated UPSMON to 5.0.7
+- ADDED: ammobox with access to presets to the commander assets
+- ADDED: current ACE equipment and ACE backpacks support (enable it setting ACE flag in config.sqf)
+- ADDED: PMC weapons (enable it setting PMC flag in config.sqf)
+- ADDED: dynamic respawn time
+- ADDED: 2 additional mission tasks
+- ADDED: IEDs a bit more challenging now
+- ADDED: Snipers camping on higher positions around the mission objective
+
+
+---- 06/22/2011   version 1.06
+- FIXED: spawned reinforcement units do not move in sometimes
+- FIXED: "CYCLE" as first waypointtype for air patrols
+- FIXED: loadout presets not taking a unit's gear capacity into account when equipping
+- CHANGED: improved algorithms to search for potential IED and camp spawn positions;
+- CHANGED: replaced UPSMON by a more lightweight patrol script
+- CHANGED: removed "stop convoy" task
+- CHANGED: improved the resupply system, can now also be used by service points deployed by commander
+- ADDED: 2 min. time delay between tasks (can be adjusted in config)
+- ADDED: dynamic number enemies at encampments; static weapons to the camps; enhanced behavior of enemies at camps
+- ADDED: hints to the loading screen
+- ADDED: High Command to the commander role. Damn right.
