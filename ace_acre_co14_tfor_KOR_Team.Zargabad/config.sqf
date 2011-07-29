@@ -15,24 +15,24 @@ tfor_PMC = false;  // add PMC equipment
 tfor_max_players = 14;
 
 //Миссия
-tfor_artifunds = 5;
-tfor_maxnumber_airpatrols = 2;
-tfor_maxnumber_footpatrols = 3;
-tfor_maxnumber_camps = 10;
+tfor_artifunds = 1;
+tfor_maxnumber_airpatrols = 4;
+tfor_maxnumber_footpatrols = 20;
+tfor_maxnumber_camps = 20;
 tfor_civilian_deathcosts = 2.0;
 tfor_advanced_aircraft_list = ["Plane","AH64D_EP1","A10_US_EP1"];
 tfor_advanced_vehicle_list = ["Tank"];
 
-tfor_min_amount_armor = 0; // min amount enemy armor (1 player)
-tfor_max_amount_armor = 2; // max amount enemy armor (max players)
-tfor_min_amount_apc = 0;   // min amount enemy apc (1 player)
-tfor_max_amount_apc = 2;   // max amount enemy apc (max players)
-tfor_min_amount_car = 1;   // min amount enemy car (1 player)
-tfor_max_amount_car = 3;   // max amount enemy car (max players)
-tfor_min_amount_aa = 1;    // min amount enemy aa (1 player)
-tfor_max_amount_aa = 2;    // max amount enemy aa (max players)
-tfor_min_amount_inf = 2;   // min amount enemy inf (1 player), in groups; NOTE: MUST BE AT LEAST 2
-tfor_max_amount_inf = 8;  // max amount enemy inf (max players), in groups
+tfor_min_amount_armor = 2; // min amount enemy armor (1 player)
+tfor_max_amount_armor = 4; // max amount enemy armor (max players)
+tfor_min_amount_apc = 2;   // min amount enemy apc (1 player)
+tfor_max_amount_apc = 5;   // max amount enemy apc (max players)
+tfor_min_amount_car = 2;   // min amount enemy car (1 player)
+tfor_max_amount_car = 6;   // max amount enemy car (max players)
+tfor_min_amount_aa = 2;    // min amount enemy aa (1 player)
+tfor_max_amount_aa = 7;    // max amount enemy aa (max players)
+tfor_min_amount_inf = 5;   // min amount enemy inf (1 player), in groups; NOTE: MUST BE AT LEAST 2
+tfor_max_amount_inf = 10;  // max amount enemy inf (max players), in groups
 /*****/
 
 /** Сайды **/
@@ -86,7 +86,7 @@ tfor_west_special = ["US_Delta_Force_AR_EP1","US_Delta_Force_Air_Controller_EP1"
 /****/
 
 /*** Разное ***/
-tfor_missiondelay = 300;
+tfor_missiondelay = 600;
 
 tfor_artitype = "M119_US_EP1";
 
@@ -116,7 +116,7 @@ tfor_commander_assets = [
 	["USVehicleBox_EP1","Support",1],
 	["Stinger_Pod_US_EP1","Defense",1]
 ];
-tfor_commanderfunds = 10;
+tfor_commanderfunds = 1;
 
 tfor_mhqtype = "M1133_MEV_EP1";
 /******/

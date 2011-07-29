@@ -11,11 +11,8 @@ _weapons = [
         "ACE_AKMS",
         "ACE_AKMS_SD",
         "BAF_L85A2_UGL_ACOG",
-		"BAF_L110A1_Aim",
 		"BAF_L85A2_UGL_Holo",
-		"BAF_LRR_scoped_W",
-		
-        "ACE_AK74M",
+		"ACE_AK74M",
         "ACE_AK74M_1P78",
         "ACE_AK74M_GL",
         "ACE_AK74M_GL_1P78",
@@ -33,8 +30,7 @@ _weapons = [
         "ACE_AK74M_SD_PSO",
         "ACE_AK74M_SD_TWS",
         "ACE_AK74M_SD_NSPU",
-        "AKS_74_U",
-                
+        "AKS_74_U",                
         "ACE_AKS74_GP25",
         "ACE_AKS74P",
         "ACE_AKS74P_1P29",
@@ -59,13 +55,11 @@ _weapons = [
         "ACE_AK105",
         "ACE_AK105_1P29",
         "ACE_AK105_Kobra",
-        "ACE_AK105_PSO",
-        
+        "ACE_AK105_PSO",        
         "AK_107_GL_kobra",
         "AK_107_GL_pso",
         "AK_107_kobra",
-        "AK_107_pso",
-        
+        "AK_107_pso",        
         "ACE_gr1",
         "ACE_gr1sd",
         "ACE_gr1sdsp",
@@ -78,6 +72,7 @@ _weapons = [
         "ACE_oc14sp",
         "ACE_Val_Kobra",
         "ACE_Val_PSO",
+		"Mk13_EP1",
 //WEST
         "ACE_G36A1_AG36A1_D_UP",
         "ACE_G36A1_AG36A1_UP",
@@ -88,11 +83,9 @@ _weapons = [
         "ACE_G36K_EOTech",
         "ACE_G36K_EOTech_D",
         "G36C_camo",
-        "G36_C_SD_eotech",
- 
+        "G36_C_SD_eotech", 
         "ACE_G3A3",
-        "ACE_G3A3_RSAS",
-        
+        "ACE_G3A3_RSAS",        
         "Sa58V_EP1",
         "Sa58V_RCO_EP1",
         "Sa58V_CCO_EP1",
@@ -117,13 +110,11 @@ _weapons = [
         "ACE_HK417_Shortdot",
         "M14_EP1",
         "ACE_M14_ACOG",
-        
+        "BAF_L85A2_RIS_CWS",
         "Saiga12K",
         "ACE_M1014_Eotech",
         "ACE_SPAS12",
-        "ACE_m16a2_scope",
         "ACE_m16a2gl_scope_UP",
-        "ACE_M16A2GL_UP",
         "ACE_M16A4_ACG_GL_UP",
         "ACE_M16A4_CCO_GL_UP",        
         "ACE_M16A4_GL_UP",
@@ -146,8 +137,7 @@ _weapons = [
         "ACE_M4A1_GL_SD_UP",
         "ACE_M4A1_GL_UP",
         "ACE_M4A1_RCO2_GL_UP",
-        "ACE_M4A1_RCO_GL",
-        
+        "ACE_M4A1_RCO_GL",        
         "M4A3_RCO_GL_EP1",
         "M4A3_CCO_EP1",
         "ACE_SOC_M4A1_Aim",
@@ -185,8 +175,7 @@ _magazines = [
         "8Rnd_B_Saiga12_74Slug",
         "8Rnd_B_Saiga12_Pellets",
         "ACE_8Rnd_12Ga_Buck00",
-        "ACE_8Rnd_12Ga_Buck00_Saiga12",
-        
+        "ACE_8Rnd_12Ga_Buck00_Saiga12",        
         //east
         "20Rnd_9x39_SP5_VSS",
         "30Rnd_545x39_AK",
@@ -203,8 +192,7 @@ _magazines = [
         "1Rnd_Smoke_GP25",
         "1Rnd_SmokeRed_GP25",
         "ACE_SSRed_GP25",
-        "ACE_SSWhite_GP25",
-        
+        "ACE_SSWhite_GP25",        
         //west
         "20Rnd_556x45_Stanag",
         "30Rnd_556x45_Stanag",
@@ -226,18 +214,12 @@ _magazines = [
         "ACE_20Rnd_762x51_SB_HK417",
         "ACE_20Rnd_762x51_T_HK417",
         "ACE_1Rnd_HE_M203",
+		"1Rnd_SmokeGreen_M203",
         "1Rnd_Smoke_M203",
         "1Rnd_SmokeRed_M203",
         "ACE_SSRed_M203",
         "ACE_SSWhite_M203",
-		"5Rnd_86x70_L115A1",
-		"200Rnd_556x45_L110A1",
-		"100Rnd_556x45_M249",
-		"BAF_ied_v4",
-		"BAF_ied_v3",
-		"BAF_ied_v2",
-		"BAF_ied_v1"
-		
+		"100Rnd_556x45_M249"		
 ];
 
 tfor_loadable_magazines = _magazines;

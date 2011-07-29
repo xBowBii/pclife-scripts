@@ -54,7 +54,7 @@ if((_vec emptyPositions "driver") > 0) then {
 // Cleanup
 _Grp spawn {
 	_units = units _this;
-	_hidetime = 30;
+	_hidetime = 120;
 
 	While{({alive _x} count _units) > 0} do{sleep 20};
 	{

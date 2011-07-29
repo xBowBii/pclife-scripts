@@ -8,6 +8,7 @@ if (isServer) then {
 
 _weapons = [
         "ACE_M249_PIP_ACOG",
+		"BAF_L110A1_Aim",
         "ACE_RPK",
         "ACE_RPK74M",
         "ACE_RPK74M_1P29",
@@ -38,6 +39,7 @@ _magazines = [
         "200Rnd_556x45_M249",
         "ACE_100Rnd_556x45_T_M249",
         "ACE_200Rnd_556x45_T_M249",
+		"200Rnd_556x45_L110A1",
         "100Rnd_762x54_PK",
         "75Rnd_545x39_RPK",
         "100Rnd_556x45_BetaCMag",
@@ -62,9 +64,9 @@ while {alive mgBox} do {
     } foreach _weapons;
 
     {
-      mgBox addMagazineCargo [_x, 10];
+      mgBox addMagazineCargo [_x, 20];
     } foreach _magazines;
 
     // restock time.
-    sleep 3600;
+    sleep 1800;
 }; 

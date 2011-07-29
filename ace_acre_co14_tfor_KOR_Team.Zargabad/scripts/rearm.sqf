@@ -27,12 +27,12 @@ if(isNil "BON_REARM_GETCALLERSEAT") exitWith{hint "Невозможно попо
 
 	_dmge = getDammage (vehicle _unit);
 
-	_repairtime = (_dmge*60) max 1;
+	_repairtime = (_dmge*380) max 1;
 	_repairvalue_per_step = _dmge/_repairtime;
 
 	_unit vehicleChat "Ремонт...";
 
-	while{_unit distance _pos < 2.75 && getPos _unit select 2 < 0.5 && damage _unit > 0 && _caller == _unit call BON_REARM_GETCALLERSEAT} do {
+	while{_unit distance _pos < 4.75 && getPos _unit select 2 < 0.5 && damage _unit > 0 && _caller == _unit call BON_REARM_GETCALLERSEAT} do {
 		_unit setDamage ((damage vehicle _unit) - _repairvalue_per_step);
 		sleep 1;
 	};
@@ -41,7 +41,7 @@ if(isNil "BON_REARM_GETCALLERSEAT") exitWith{hint "Невозможно попо
 	_unit setVariable ["bon_rearm_repairing",nil];
 };
 
-//Перевооружение
+//Перезаправка
 [_unit,_pos,_caller] spawn {
 
 	_unit = _this select 0;
@@ -53,17 +53,17 @@ if(isNil "BON_REARM_GETCALLERSEAT") exitWith{hint "Невозможно попо
 
 	_fuel_to_fill = 1 - (fuel _unit);
 
-	_refueltime = 1 max (_fuel_to_fill*60);
+	_refueltime = 1 max (_fuel_to_fill*120);
 	_refuelvalue_per_step = _fuel_to_fill/_refueltime;
 
-	_unit vehicleChat "Перевооружение...";
+	_unit vehicleChat "Заправка...";
 
-	while{_unit distance _pos < 2.75 && getPos _unit select 2 < 0.5 && fuel _unit < 0.99 && _caller == _unit call BON_REARM_GETCALLERSEAT} do {
+	while{_unit distance _pos < 4.75 && getPos _unit select 2 < 0.5 && fuel _unit < 0.99 && _caller == _unit call BON_REARM_GETCALLERSEAT} do {
 		_unit setFuel (fuel _unit) + _refuelvalue_per_step;
 		sleep 1;
 	};
-	if(fuel _unit >= 0.99) then {_unit vehicleChat "Перевооружение выполнена!"}
-	else{_unit vehicleChat "Перевооружение отменена."};
+	if(fuel _unit >= 0.99) then {_unit vehicleChat "Заправка выполнена!"}
+	else{_unit vehicleChat "Заправка отменена."};
 	_unit setVariable ["bon_rearm_refueling",nil];
 };
 
@@ -77,7 +77,7 @@ if(isNil "BON_REARM_GETCALLERSEAT") exitWith{hint "Невозможно попо
 	if(not isNil {_unit getVariable "bon_rearm_rearming"}) exitWith{};
 	_unit setVariable ["bon_rearm_rearming",true];
 
-	_reload_timefactor = 10; // seconds each mag requires when refilling
+	_reload_timefactor = 45; // seconds each mag requires when refilling
 
 	_turretcount = count (configFile >> "CfgVehicles" >> typeof _unit >> "turrets");
 
@@ -114,13 +114,13 @@ if(isNil "BON_REARM_GETCALLERSEAT") exitWith{hint "Невозможно попо
 			_unit vehicleChat format["Перевооружение %1...",_displayname];
 
 			_time = time;
-			while{time - _time < _reload_timefactor && _unit distance _pos < 2.75 && getPos _unit select 2 < 0.5 && _caller == _unit call BON_REARM_GETCALLERSEAT} do{sleep 1};
+			while{time - _time < _reload_timefactor && _unit distance _pos < 4.75 && getPos _unit select 2 < 0.5 && _caller == _unit call BON_REARM_GETCALLERSEAT} do{sleep 1};
 			if(time - _time < _reload_timefactor) exitWith{};
 			_unit addMagazine _x;
 		} foreach _magazines_to_fill;
 	};
 
-	if(_unit distance _pos < 2.75 && getPos _unit select 2 < 0.5 && _caller == _unit call BON_REARM_GETCALLERSEAT) then {
+	if(_unit distance _pos < 4.75 && getPos _unit select 2 < 0.5 && _caller == _unit call BON_REARM_GETCALLERSEAT) then {
 		_unit vehicleChat "Перевооружение выполнено!"
 	}
 	else {_unit vehicleChat "Перевооружение отменено."};
