@@ -15,6 +15,22 @@
 // incorrect mapping please make a ticket for us!
 class acre_sys_core
 {
+	class Interact 
+	{
+		key = 16; 
+		shift = 1;
+		ctrl = 0;
+		alt = 1;
+	};
+	
+	class InteractSelf 
+	{
+		key = 18; 
+		shift = 1;
+		ctrl = 0;
+		alt = 1;
+	};
+
 	class PTTRadio	// Talk over radio
 	{
 		key = 33;  	// CAPSLOCK (please unbind from your normal PTT key)
@@ -51,21 +67,14 @@ class acre_sys_list
 {
 	class Forward	// Move forward through your radios
 	{
-		key = 46;  	// ctrl-shift-c
+		key = 30;  	// ctrl-shift-a
 		shift = 1;
 		ctrl = 1;
 		alt = 0;
 	};
 	class Backward	 // Move backwards through your radios
 	{
-		key = 46;  	// alt-shift-c
-		shift = 1;
-		ctrl = 0;
-		alt = 1;
-	};
-	class OpenList	 // Open radio list
-	{
-		key = 47;  	// ctrl-shift-v
+		key = 31;  	// ctrl-shift-s
 		shift = 1;
 		ctrl = 1;
 		alt = 0;

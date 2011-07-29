@@ -60,18 +60,14 @@ TO ENABLE: Remove the "//" in front of the #define to change your desired hud fe
 //----------
 //EXAMPLE:
 //--------
-//class Identity
-//{
-//	name = "John Doe";
-//};
+//#define ACE_IDENTITY John Doe
 //
 //
 //
 //
 ////////--E D I T below THIS LINE--//////////*/
-class Identity {
-name = "Dominges";
-};
+
+#define ACE_IDENTITY Dominges
 
 
 /*//////////////////////////////////////////////
@@ -82,7 +78,8 @@ FEATURES: Ruckless disables models with built-in Rucksacks on the models.
 TO RE-ENABLE the original models: please uncomment the define line below
 ----------
 //////////////////////////////////////////////*/
-//#define ACE_DISABLE_RUCKLESS
+
+#define ACE_DISABLE_RUCKLESS
 
 
 /*//////////////////////////////////////////////
@@ -94,8 +91,53 @@ TO ENABLE: Remove the "//" in front of the #define to change your desired hud fe
 ----------
 //////////////////////////////////////////////*/
 
-#define ACE_BALLTRACERS
+//#define ACE_BALLTRACERS
 
+
+/*//////////////////////////////////////////////
+CONFIG SETTING FOR : ACE 2 MOD - Customface
+--------------------
+FEATURES: You can select a camo face for your character
+---------
+TO ENABLE: Remove the "//" in front of the #define and write the name of an existing camo face.
+----------
+//////////////////////////////////////////////*/
+
+// #define ACE_CUSTOMFACE Default
+
+
+/*//////////////////////////////////////////////
+CONFIG SETTING FOR : ACE 2 MOD - ACE Compass
+--------------------
+FEATURES: Alternative compass
+---------
+TO ENABLE: Remove the "//" in front of the #define to change to the new compass. To disable, think vice versa.
+----------
+//////////////////////////////////////////////*/
+
+//#define ACE_COMPASS
+
+/*//////////////////////////////////////////////
+CONFIG SETTING FOR : ACE 2 MOD - ACE Animated reticles
+--------------------
+FEATURES: Animated reticles
+---------
+TO ENABLE: Remove the "//" in front of the #define to change to the new scripted reticles. To disable, think vice versa.
+----------
+//////////////////////////////////////////////*/
+
+#define ACE_RETICLES
+
+/*//////////////////////////////////////////////
+CONFIG SETTING FOR : ACE 2 MOD - ACE Scripted Grenade Throwing
+--------------------
+FEATURES: Scripted genade throwing
+---------
+TO ENABLE: Remove the "//" in front of the #define to change to the new scripted reticles. To disable, think vice versa.
+----------
+//////////////////////////////////////////////*/
+
+#define ACE_GRENADETHROW
 
 //////////////////////////////////////
 // DONT EDIT BELOW HERE !!!!!! ///////
@@ -103,4 +145,5 @@ TO ENABLE: Remove the "//" in front of the #define to change your desired hud fe
 //////////////////////////////////////
 //////////////////////////////////////
 
-ACE_CLIENTSIDE_CONFIG_VER = 9; //DO NOT EDIT
+ACE_CLIENTSIDE_CONFIG_VER = 13; //DO NOT EDIT
+#define ACE_CUSTOMFACE Default
