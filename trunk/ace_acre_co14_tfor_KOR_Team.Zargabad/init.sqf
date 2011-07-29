@@ -1,6 +1,6 @@
 // by Bon_Inf*
 
-startLoadingScreen ["Расстановка..."];
+startLoadingScreen ["Подгрузка инициализации..."];
 
 
 #include "config.sqf"
@@ -14,21 +14,21 @@ if(isNil "paramsArray") then{
     paramsArray = [
         11, // Time of Day
         0, // ACRE radios
-        3,  // max. missions
+        15,  // max. missions
         16, // max death per mission
-        7,  // Enemy Skill
-        1,  // Number enemy Inf
+        10,  // Enemy Skill
+        2,  // Number enemy Inf
         1,  // Number enemy Vecs
         1,  // MHQ respawn
         0,  // Time speedup
         2,  // Marker system
-        10,  // ieds
+        25, // ieds
         15, // Dynamic Respawndelay
         2,  // rallypoints, fobs
         0,  // Ambient Civilians,
         1,  // Dynamic Weather,
         2,  // enemy Patrols
-        0,  // enemy AA
+        1,  // enemy AA
         1,  // enemy Camps
         1,  // enemy reinf
         1,  // advanced aircraft
@@ -76,11 +76,6 @@ if(not isDedicated) then{WaitUntil{not isNull player}};
 [] execFSM "fsm\vehicledrivercheck.fsm";
 
 if(tfor_dynamic_weather == 1) then {[] execFSM "fsm\dynamicweather.fsm"};
-
-_gate_r = createVehicle ["Land_Wall_Gate_Ind2Rail_R", getMarkerPos "gate_r", [], 0, "CAN_COLLIDE"];
-_gate_r setDir 90;
-_gate_l = createVehicle ["Land_Wall_Gate_Ind2Rail_L", getMarkerPos "gate_l", [], 0, "CAN_COLLIDE"];
-_gate_l setDir 90;
 
 [] execVM "initserver.sqf";
 [] execVM "initplayer.sqf";

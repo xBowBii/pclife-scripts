@@ -45,4 +45,14 @@ if(tfor_enemy_camps == 1) then{[] execVM "scripts\enemy_camps.sqf"};
 // use this rarely
 "tfor_exec_remotecode" addPublicVariableEventHandler {call compile (_this select 1)};
 
+_gate_r = createVehicle ["Land_Wall_Gate_Ind2Rail_R", getMarkerPos "gate_r", [], 0, "CAN_COLLIDE"];
+_gate_r setDir 90;
+_gate_l = createVehicle ["Land_Wall_Gate_Ind2Rail_L", getMarkerPos "gate_l", [], 0, "CAN_COLLIDE"];
+_gate_l setDir 90;
+
+//Περο obj
+respawnObjects = compile loadFile "scripts\respawnObjects.sqf";
+respawnObjects = compile preprocessFile "scripts\respawnObjects.sqf";
+
+
 [] execVM "scripts\missions\missionmanager.sqf";

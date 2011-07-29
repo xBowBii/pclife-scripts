@@ -4,7 +4,7 @@ tfor_lastrespawn_time = time;
 
 TFOR_SET_RESPAWNDELAY = {
 
-	_max_delay = 240; //max. resp delay
+	_max_delay = 180; //max. resp delay
 
 	_time_alive = time - tfor_lastrespawn_time;
 

@@ -10,7 +10,7 @@ player disableConversation true;
 [player,tfor_markersystem] execFSM "fsm\markersystem.fsm";
 if(tfor_rallypoints > 0) then{[] execVM "bon_rallypoints\init.sqf"};
 
-//Разделить разрузку коробок
+//ОСновная кривая коробка
 //_ammo = tfor_ammobox createVehicleLocal getMarkerPos "ammoboxes";
 //_ammo allowDamage false;
 //[_ammo] execVM "scripts\ammocrate_filler.sqf";
@@ -21,8 +21,6 @@ if(tfor_rallypoints > 0) then{[] execVM "bon_rallypoints\init.sqf"};
 	waitUntil {!isNull (findDisplay 46)};
 	(findDisplay 46) displayAddEventHandler ["KeyDown","_this call func_keyspressed"];
 	(findDisplay 46) displayAddEventHandler ["KeyUp","_this call func_keysreleased"];
-
-
 
 /**
 * if(typeof player in tfor_commanders) then {
@@ -40,10 +38,7 @@ if(tfor_rallypoints > 0) then{[] execVM "bon_rallypoints\init.sqf"};
 *};
 **/
 
-
 [] execVM "scripts\player_respawn.sqf";
-
-
 
 "tfor_commandchat" addPublicVariableEventHandler {player commandChat (_this select 1)};
 "tfor_sidechat" addPublicVariableEventHandler {[playerSide,"HQ"] sideChat (_this select 1)};
@@ -54,7 +49,6 @@ if(tfor_rallypoints > 0) then{[] execVM "bon_rallypoints\init.sqf"};
 		hintSilent parseText format["<t size='1.25' font='Zeppelin33' color='#ff0000'>%1 жизней осталось.</t>",floor (tfor_max_death_per_mission - (_this select 1))];
 	};
 };
-
 
 if(not isServer) then {
 	WaitUntil{not isNil "tfor_currentmission"};

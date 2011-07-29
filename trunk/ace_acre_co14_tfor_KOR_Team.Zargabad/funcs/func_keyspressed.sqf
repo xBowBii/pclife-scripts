@@ -10,7 +10,7 @@ if(_button in actionKeys "NetworkStats" && if(isNil "tfor_deathcount_shown") the
         tfor_deathcount_shown = true;
 };
 
-(time + 2) spawn 
+(time + 1) spawn 
     { 
         while {time < _this} do 
         { 

@@ -274,7 +274,7 @@ class FSM
        "" \n
        "_resupply_condition = ""count nearestObjects [_target,['Base_WarfareBVehicleServicePoint'],10] > 0"";" \n
        "if(driver _vehicle == _unit) then {" \n
-       "	_resupply = _vehicle addAction [""<t color='#FFFFFF'>Resupply</t>"",""scripts\rearm.sqf"",[],99,true,true,"""",_resupply_condition];" \n
+       "	_resupply = _vehicle addAction [""<t color='#FFFFFF'>Техсервис</t>"",""scripts\rearm.sqf"",[],99,true,true,"""",_resupply_condition];" \n
        "};" \n
        "" \n
        "if(driver _vehicle == _unit && typeOf _vehicle in tfor_vehicles_canload_ammo) then {" \n
