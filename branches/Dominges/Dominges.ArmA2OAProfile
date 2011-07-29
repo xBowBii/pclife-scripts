@@ -74,7 +74,7 @@ keyZoomContIn[]={524299};
 keyZoomContOut[]={524293};
 keyZeroingUp[]={201};
 keyZeroingDown[]={209};
-keyLookAround[]={56};
+keyLookAround[]={};
 keyLookAroundToggle[]={55,312};
 keyLookLeftDown[]={79,262405};
 keyLookDown[]={80,262404};
@@ -93,7 +93,7 @@ keyPrevChannel[]={51};
 keyNextChannel[]={52};
 keyChat[]={53};
 keyVoiceOverNet[]={314};
-keyPushToTalk[]={58};
+keyPushToTalk[]={};
 keyPushToTalkAll[]={};
 keyPushToTalkSide[]={};
 keyPushToTalkCommand[]={};
@@ -104,12 +104,12 @@ keyNetworkStats[]={23};
 keyNetworkPlayers[]={25};
 keyDSInterface[]={905969689};
 keySelectAll[]={41};
-keyTurbo[]={};
+keyTurbo[]={56};
 keyVehicleTurbo[]={42};
 keyWalk[]={};
 keyHoldBreath[]={65537};
-keySalute[]={43};
-keySitDown[]={40};
+keySalute[]={43,313};
+keySitDown[]={40,287};
 keySurrender[]={};
 keyGetOver[]={47};
 keyAimUp[]={1048578};
@@ -131,15 +131,15 @@ keyHeliLeft[]={1048576};
 keyHeliRight[]={1048577};
 keyHeliCyclicLeft[]={30,203,196872};
 keyHeliCyclicRight[]={32,205,196864};
-keyHeliRudderLeft[]={45,211};
-keyHeliRudderRight[]={46,207};
+keyHeliRudderLeft[]={45,211,196877};
+keyHeliRudderRight[]={46,207,196869};
 keyHeliForward[]={17,200,1048579,196873};
 keyHeliBack[]={31,208,1048578,196865};
 keyHeliFastForward[]={18};
 keyAutoHover[]={299};
 keyAutoHoverCancel[]={43};
-keyHeliThrottlePos[]={};
-keyHeliThrottleNeg[]={};
+keyHeliThrottlePos[]={196878};
+keyHeliThrottleNeg[]={196870};
 keySeagullUp[]={16,1048579,196865};
 keySeagullDown[]={44,1048578,196873};
 keySeagullForward[]={17,200};
@@ -170,7 +170,7 @@ keyHeliManualFire[]={40};
 keyTurnIn[]={45,46};
 keyTurnOut[]={44};
 keyCancelAction[]={};
-keyCommandWatch[]={56};
+keyCommandWatch[]={};
 keyTeamSwitch[]={20};
 keyTeamSwitchPrev[]={21};
 keyTeamSwitchNext[]={22};
@@ -242,9 +242,9 @@ keyUser20[]={};
 revMouse=0;
 mouseSmoothing=30;
 joystickSensitivity[]={0.5,0.5,0.5,0.5,0.5,0.5,1,1,0.5,0.5,0.5,0.5,0.5,0.5,1,1};
-anisoFilter=4;
+anisoFilter=2;
 TexQuality=3;
-TexMemory=3;
+TexMemory=4;
 useWBuffer=0;
 tripleHead=0;
 class Difficulties
@@ -274,6 +274,11 @@ class Difficulties
 			DeathMessages=1;
 			NetStats=1;
 			VonID=1;
+			ExtendetInfoType=1;
+			RoughLanding=1;
+			WindEnabled=0;
+			AutoTrimEnabled=1;
+			StressDamageEnabled=0;
 		};
 		skillFriendly=0.98500001;
 		skillEnemy=0.995;
@@ -305,6 +310,11 @@ class Difficulties
 			DeathMessages=1;
 			NetStats=1;
 			VonID=1;
+			ExtendetInfoType=1;
+			RoughLanding=0;
+			WindEnabled=1;
+			AutoTrimEnabled=0;
+			StressDamageEnabled=1;
 		};
 		skillFriendly=0.98500001;
 		skillEnemy=0.995;
@@ -328,6 +338,7 @@ class Difficulties
 			DeathMessages=1;
 			NetStats=1;
 			VonID=0;
+			ExtendetInfoType=0;
 		};
 		skillFriendly=0.98500001;
 		skillEnemy=0.995;
@@ -356,11 +367,11 @@ shadowQuality=4;
 maxSamplesPlayed=64;
 class Identity
 {
-	face="Face11_EP1";
+	face="Face03";
 	glasses="None";
-	speaker="Male02";
+	speaker="Male04";
 	squad="";
-	pitch=0.99999988;
+	pitch=0.99936926;
 };
 class ModLauncherList
 {
@@ -368,9 +379,9 @@ class ModLauncherList
 browsingSource="Internet";
 class Filter
 {
-	serverName="";
+	serverName="opex";
 	missionType="";
-	missionName="warfare";
+	missionName="";
 	maxPing=0;
 	minPlayers=0;
 	maxPlayers=0;
@@ -379,13 +390,13 @@ class Filter
 	battleyeRequired=0;
 	expansions=1;
 };
-lastMPMission="CO 12 Air Cavalry Mod";
+lastMPMission="Example";
 class MainMap
 {
 	class Compass
 	{
 		inBack=0;
-		position[]={-0.078312859,-0.044122033,0.2};
+		position[]={-0.075404152,-0.044849209,0.2};
 		positionBack[]={0.0051562451,0,0.1};
 	};
 	class Watch
@@ -397,8 +408,8 @@ class MainMap
 	class WalkieTalkie
 	{
 		inBack=0;
-		position[]={0.093636662,-0.038821734,0.25};
-		positionBack[]={0.27680561,-0.13857237,0.625};
+		position[]={0.093636647,-0.038821731,0.25};
+		positionBack[]={0.27680561,-0.13857235,0.625};
 	};
 	class GPS2
 	{
@@ -407,8 +418,8 @@ class MainMap
 		positionBack[]={0.012374995,0,0.12};
 	};
 };
-difficulty="regular";
-lastSPMission="E08: Бенчмарк";
+difficulty="veteran";
+lastSPMission="Benchmark 01";
 activeKeys[]=
 {
 	"BIS_SPB1",
@@ -436,11 +447,17 @@ activeKeys[]=
 	"BIS_CE5B",
 	"BIS_CE6",
 	"BIS_SOM_INFO_HINT_1",
-	"BIS_MPA_timesPlayed1"
+	"BIS_MPA_timesPlayed1",
+	"BIS_SOM_INFO_HINT_2"
 };
 armoryPoints=125;
 difficultyMP="regular";
-currentCampaign="Campaigns\phcampaign";
+currentCampaign="ca\missions\campaign";
+lastCampaignMission=".";
+teamSwitchOffsetX=0;
+teamSwitchOffsetY=0;
+useExtendetInfoType=1;
+useImperialSystem=0;
 class JoysticksList
 {
 	class Joystick1
@@ -449,19 +466,125 @@ class JoysticksList
 		name="Logitech Force 3D Pro USB";
 		offset=256;
 		isXInput=0;
-		mode="Disable";
+		sensitivity[]={0.49999994,0.49999994,0.49999994,0.49999994,1,1,1,1,0.49999994,0.49999994,0.49999994,0.49999994,1,1,1,1};
+		mode="Custom";
 	};
 };
-lastCampaignMission="Eagle wing";
+keyActionFreeLook[]={65536,131072};
+keyLiteUnitInfoToggle[]={-1660944349};
+keyLookShiftLeftCont[]={524291};
+keyLookShiftRightCont[]={524297};
+keyLookShiftUpCont[]={524292};
+keyLookShiftDownCont[]={};
+keyLookShiftForwardCont[]={524299};
+keyLookShiftBackCont[]={};
+keyLookRollLeftCont[]={524290};
+keyLookRollRightCont[]={524296};
+keyLookShiftLeft[]={};
+keyLookShiftRight[]={};
+keyLookShiftUp[]={486539465};
+keyLookShiftDown[]={486539473};
+keyLookShiftForward[]={};
+keyLookShiftBack[]={};
+keyLookRollLeft[]={486539280};
+keyLookRollRight[]={486539282};
+keyLookShiftCenter[]={486539340};
+keyFreeHeadMove[]={29};
+keyHelicopterTrimOn[]={};
+keyHelicopterTrimOff[]={};
+class ProfileVariables
+{
+	items=5;
+	slots=15;
+	class Item0
+	{
+		name="gui_bcg_rgb_a";
+		class data
+		{
+			class type
+			{
+				type[]=
+				{
+					"SCALAR"
+				};
+			};
+			value=0.80000001;
+		};
+		readOnly=0;
+	};
+	class Item1
+	{
+		name="gui_bcg_rgb_b";
+		class data
+		{
+			class type
+			{
+				type[]=
+				{
+					"SCALAR"
+				};
+			};
+			value=0.88620001;
+		};
+		readOnly=0;
+	};
+	class Item2
+	{
+		name="gui_bcg_rgb_r";
+		class data
+		{
+			class type
+			{
+				type[]=
+				{
+					"SCALAR"
+				};
+			};
+			value=0.38429999;
+		};
+		readOnly=0;
+	};
+	class Item3
+	{
+		name="gui_bcg_rgb_preset";
+		class data
+		{
+			class type
+			{
+				type[]=
+				{
+					"STRING"
+				};
+			};
+			value="PresetTakeOn";
+		};
+		readOnly=0;
+	};
+	class Item4
+	{
+		name="gui_bcg_rgb_g";
+		class data
+		{
+			class type
+			{
+				type[]=
+				{
+					"SCALAR"
+				};
+			};
+			value=0.70190001;
+		};
+		readOnly=0;
+	};
+};
+preferredObjectViewDistance=1000.0001;
 mouseSensitivityX=1;
 mouseSensitivityY=1;
-floatingZoneArea=0.16;
-teamSwitchOffsetX=0;
-teamSwitchOffsetY=0;
+floatingZoneArea=0.17093985;
 headBob=0;
-sceneComplexity=310000;
-viewDistance=1000;
-terrainGrid=3.125;
+sceneComplexity=350000;
+viewDistance=1000.0001;
+terrainGrid=12.5;
 volumeCD=6.5;
 volumeFX=6.5;
 volumeSpeech=6.5;
