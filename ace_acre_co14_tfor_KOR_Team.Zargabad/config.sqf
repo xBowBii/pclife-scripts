@@ -17,22 +17,22 @@ tfor_max_players = 14;
 //Миссия
 tfor_artifunds = 1;
 tfor_maxnumber_airpatrols = 2;
-tfor_maxnumber_footpatrols = 8;
+tfor_maxnumber_footpatrols = 10;
 tfor_maxnumber_camps = 10;
 tfor_civilian_deathcosts = 2.0;
 tfor_advanced_aircraft_list = ["Plane","AH1Z"];
 tfor_advanced_vehicle_list = ["Tank"];
 
 tfor_min_amount_armor = 0; // min amount enemy armor (1 player)
-tfor_max_amount_armor = 2; // max amount enemy armor (max players)
+tfor_max_amount_armor = 3; // max amount enemy armor (max players)
 tfor_min_amount_apc = 1;   // min amount enemy apc (1 player)
 tfor_max_amount_apc = 3;   // max amount enemy apc (max players)
 tfor_min_amount_car = 1;   // min amount enemy car (1 player)
 tfor_max_amount_car = 4;   // max amount enemy car (max players)
 tfor_min_amount_aa = 1;    // min amount enemy aa (1 player)
 tfor_max_amount_aa = 3;    // max amount enemy aa (max players)
-tfor_min_amount_inf = 4;   // min amount enemy inf (1 player), in groups; NOTE: MUST BE AT LEAST 2
-tfor_max_amount_inf = 10;  // max amount enemy inf (max players), in groups
+tfor_min_amount_inf = 3;   // min amount enemy inf (1 player), in groups; NOTE: MUST BE AT LEAST 2
+tfor_max_amount_inf = 7;  // max amount enemy inf (max players), in groups
 /*****/
 
 /** Сайды **/
