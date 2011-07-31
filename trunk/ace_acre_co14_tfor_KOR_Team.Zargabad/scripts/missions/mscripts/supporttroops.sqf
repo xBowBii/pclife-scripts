@@ -1,4 +1,4 @@
-// by Bon_Inf*
+﻿// by Bon_Inf*
 
 if(not isServer) exitWith{};
 
@@ -38,10 +38,10 @@ _marker setMarkerText "Встретится с отрядом!";
 
 
 
-_rand_inf = (5 + (round random 2)) * tfor_amount_enemyinfantry;
-_rand_car = (3 + (round random 2)) * tfor_amount_enemyinfantry;
+_rand_inf = (3 + (round random 2)) * tfor_amount_enemyinfantry;
+_rand_car = (2 + (round random 2)) * tfor_amount_enemyinfantry;
 _rand_apc = (1 + (round random 2)) * tfor_amount_enemytanks;
-_rand_tank = (1 + (round random 1)) * tfor_amount_enemytanks;
+_rand_tank = (0 + (round random 1)) * tfor_amount_enemytanks;
 
 _spawned_friendly_units = [];
 _spawned_enemy_units = [];

@@ -94,14 +94,14 @@ class Mission
 		"ace_c_vehicle",
 		"CAWheeled2_TowingTractor",
 		"CAWheeled_E_SCUD",
-		"cawheeled_e_suv",
 		"CAWheeled",
 		"CAWheeled2_MMT",
 		"CAWheeled_E_Old_moto",
 		"CAWheeled2_VWGolf",
 		"CAWheeled3_TT650",
 		"ca_modules_silvie",
-		"ca_modules_clouds"
+		"ca_modules_clouds",
+		"acex_veh_mah6"
 	};
 	addOnsAuto[]=
 	{
@@ -129,10 +129,10 @@ class Mission
 		"CAWheeled_E_ATV",
 		"CAWheeled_E_stryker",
 		"cawheeled_e_hmmwv",
-		"CAAir_E_AH64D",
+		"CAAir",
 		"casigns_e",
 		"CAWheeled_E_LandRover",
-		"CAAir_E_AH6J",
+		"acex_veh_mah6",
 		"acex_veh_m1",
 		"CATracked_E_M2A2_Bradley",
 		"caweapons_baf",
@@ -156,9 +156,7 @@ class Mission
 		"acex_c_weapon",
 		"acre_sys_radio",
 		"ace_c_weapon",
-		"cawheeled_e_suv",
 		"CAWheeled2_MMT",
-		"CAWheeled",
 		"CAWheeled_E_Old_moto",
 		"zargabad"
 	};
@@ -2412,7 +2410,7 @@ class Mission
 				class Item0
 				{
 					position[]={5127.7808,69.593079,955.40869};
-					id=909;
+					id=908;
 					side="LOGIC";
 					vehicle="BIS_clouds_Logic";
 					leader=1;
@@ -2431,7 +2429,7 @@ class Mission
 				{
 					position[]={4934.686,66.740906,775.66302};
 					azimut=262.061;
-					id=910;
+					id=909;
 					side="WEST";
 					vehicle="BAF_crewman_DDPM";
 					leader=1;
@@ -2450,7 +2448,7 @@ class Mission
 				{
 					position[]={4709.6187,63.6348,973.28314};
 					azimut=114.192;
-					id=911;
+					id=910;
 					side="WEST";
 					vehicle="BAF_crewman_DDPM";
 					leader=1;
@@ -2469,7 +2467,7 @@ class Mission
 				{
 					position[]={4790.5386,66.035492,723.9895};
 					azimut=-205.98129;
-					id=912;
+					id=911;
 					side="WEST";
 					vehicle="Stinger_Pod_US_EP1";
 					leader=1;
@@ -2488,7 +2486,7 @@ class Mission
 				{
 					position[]={4958.252,66.688919,829.59485};
 					azimut=-272.66135;
-					id=914;
+					id=913;
 					side="WEST";
 					vehicle="Stinger_Pod_US_EP1";
 					leader=1;
@@ -2902,7 +2900,7 @@ class Mission
 			azimut=180;
 			id=42;
 			side="EMPTY";
-			vehicle="AH64D_EP1";
+			vehicle="AH1Z";
 			skill=0.60000002;
 			init="_resp = [this,2700] execFSM ""fsm\vehicle_lifecycle.fsm""";
 		};
@@ -3132,7 +3130,7 @@ class Mission
 			azimut=180;
 			id=70;
 			side="EMPTY";
-			vehicle="AH6J_EP1";
+			vehicle="ACE_AH6J_DAGR_FLIR";
 			skill=0.60000002;
 			init="_resp = [this,1800] execFSM ""fsm\vehicle_lifecycle.fsm""";
 		};
@@ -5561,7 +5559,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CamoNetB_NATO_EP1";
 			skill=0.60000002;
-			init="_resp = [this,60] execFSM ""fsm\vehicle_lifecycle.fsm""";
+			init="this addEventHandler [""killed"",""[_this select 0, 60] spawn respawnObjects;""]";
 		};
 		class Item339
 		{
@@ -5696,7 +5694,6 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_psi_bouda";
 			skill=0.60000002;
-			init="_resp = [this,60] execFSM ""fsm\vehicle_lifecycle.fsm""";
 		};
 		class Item353
 		{
@@ -5737,7 +5734,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CamoNetVar_NATO";
 			skill=0.60000002;
-			init="_resp = [this,60] execFSM ""fsm\vehicle_lifecycle.fsm""";
+			init="this addEventHandler [""killed"",""[_this select 0, 60] spawn respawnObjects;""]";
 		};
 		class Item357
 		{
@@ -5785,12 +5782,11 @@ class Mission
 		class Item362
 		{
 			position[]={4704.3491,64.433937,891.47748};
-			azimut=180.22903;
+			azimut=180.229;
 			id=393;
 			side="EMPTY";
 			vehicle="Land_Bowl_EP1";
 			skill=0.60000002;
-			init="_resp = [this,60] execFSM ""fsm\vehicle_lifecycle.fsm""";
 		};
 		class Item363
 		{
@@ -6038,7 +6034,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_GuardShed";
 			skill=0.60000002;
-			init="_resp = [this,30] execFSM ""fsm\vehicle_lifecycle.fsm""; this allowDamage false";
+			init="this allowDamage false";
 		};
 		class Item390
 		{
@@ -6047,7 +6043,6 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_psi_bouda";
 			skill=0.60000002;
-			init="_resp = [this,60] execFSM ""fsm\vehicle_lifecycle.fsm""";
 		};
 		class Item391
 		{
@@ -6068,7 +6063,6 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Bowl_EP1";
 			skill=0.60000002;
-			init="_resp = [this,60] execFSM ""fsm\vehicle_lifecycle.fsm""";
 		};
 		class Item393
 		{
@@ -6804,7 +6798,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CamoNetB_NATO_EP1";
 			skill=0.60000002;
-			init="this addEventHandler [""killed"",""[_this select 0, 60] spawn respawnObjects;""]; this allowDamage false";
+			init="this allowDamage false";
 		};
 		class Item470
 		{
@@ -10035,62 +10029,62 @@ class Mission
 		};
 		class Item811
 		{
-			position[]={4708.5396,64.969154,769.48975};
-			azimut=-18;
-			id=904;
-			side="EMPTY";
-			vehicle="SUV_UN_EP1";
-			skill=0.60000002;
-			init="_resp = [this,1200] execFSM ""fsm\vehicle_lifecycle.fsm""";
-		};
-		class Item812
-		{
 			position[]={4721.4932,64.996231,784.24677};
 			azimut=450.3205;
-			id=905;
+			id=904;
 			side="EMPTY";
 			vehicle="MMT_Civ";
 			skill=0.60000002;
 		};
-		class Item813
+		class Item812
 		{
-			position[]={4696.7915,64.20256,890.47461};
-			azimut=-179.95132;
-			id=906;
+			position[]={4695.4414,64.166504,890.71338};
+			azimut=-187.98477;
+			id=905;
 			side="EMPTY";
-			vehicle="datsun1_civil_1_open";
+			vehicle="LandRover_TK_CIV_EP1";
 			skill=0.60000002;
 			init="_resp = [this,800] execFSM ""fsm\vehicle_lifecycle.fsm""";
 		};
-		class Item814
+		class Item813
 		{
 			position[]={4721.3853,65.020638,781.7619};
 			azimut=450.3205;
-			id=907;
+			id=906;
 			side="EMPTY";
 			vehicle="Old_moto_TK_Civ_EP1";
 			skill=0.60000002;
 		};
-		class Item815
+		class Item814
 		{
 			position[]={4721.3018,65.034546,779.3855};
 			azimut=450.3205;
-			id=908;
+			id=907;
 			side="EMPTY";
 			vehicle="MMT_USMC";
 			skill=0.60000002;
 		};
-		class Item816
+		class Item815
 		{
 			position[]={4961.9512,66.71637,829.75208};
 			azimut=98.319893;
 			special="FLY";
-			id=913;
+			id=912;
 			side="EMPTY";
 			vehicle="Land_fort_artillery_nest_EP1";
 			leader=1;
 			lock="LOCKED";
 			skill=0.46666664;
+		};
+		class Item816
+		{
+			position[]={4699.4277,64.23587,891.46729};
+			azimut=-179.02834;
+			id=914;
+			side="EMPTY";
+			vehicle="LandRover_TK_CIV_EP1";
+			skill=0.60000002;
+			init="_resp = [this,800] execFSM ""fsm\vehicle_lifecycle.fsm""";
 		};
 	};
 	class Markers
@@ -10533,7 +10527,7 @@ class Mission
 			repeating=1;
 			interruptable=1;
 			age="UNKNOWN";
-			idVehicle=910;
+			idVehicle=909;
 			expActiv="pilotsidit2 switchMove ""NavigationHeli""";
 			class Effects
 			{
