@@ -29,8 +29,8 @@ tfor_min_amount_apc = 1;   // min amount enemy apc (1 player)
 tfor_max_amount_apc = 3;   // max amount enemy apc (max players)
 tfor_min_amount_car = 1;   // min amount enemy car (1 player)
 tfor_max_amount_car = 4;   // max amount enemy car (max players)
-tfor_min_amount_aa = 1;    // min amount enemy aa (1 player)
-tfor_max_amount_aa = 3;    // max amount enemy aa (max players)
+tfor_min_amount_aa = 2;    // min amount enemy aa (1 player)
+tfor_max_amount_aa = 4;    // max amount enemy aa (max players)
 tfor_min_amount_inf = 3;   // min amount enemy inf (1 player), in groups; NOTE: MUST BE AT LEAST 2
 tfor_max_amount_inf = 7;  // max amount enemy inf (max players), in groups
 /*****/
