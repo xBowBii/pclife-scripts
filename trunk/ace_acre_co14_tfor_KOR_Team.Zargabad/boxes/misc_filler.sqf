@@ -57,11 +57,11 @@ _weapons = [
         "Sa61_EP1",
         "UZI_EP1",
         "UZI_SD_EP1",
-		"ACE_MugLite",
-		"ACE_GlassesGasMask_RU",
-		"ACE_KeyCuffs",
-		"ACE_SpottingScope",
-		"revolver_gold_EP1"
+        "ACE_MugLite",
+        "ACE_GlassesGasMask_RU",
+        "ACE_KeyCuffs",
+        "ACE_SpottingScope",
+        "revolver_gold_EP1"
 ];
 
 _magazines = [
@@ -123,15 +123,15 @@ _magazines = [
         "ACE_M2SLAM_M",
         "ACE_M4SLAM_M",
         "ACE_OSM4_M",
-		"BAF_ied_v4",
-		"BAF_ied_v3",
-		"BAF_ied_v2",
-		"BAF_ied_v1",
+        "BAF_ied_v4",
+        "BAF_ied_v3",
+        "BAF_ied_v2",
+        "BAF_ied_v1",
         "ACE_TripFlare_M",
         "IR_Strobe_Marker",
         "IR_Strobe_Target",
         "Laserbatteries",
-		"6Rnd_45ACP"
+        "6Rnd_45ACP"
 ];
 
 tfor_loadable_magazines = _magazines;

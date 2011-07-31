@@ -1,27 +1,4 @@
 
-ПЕРЕВОД!
+Перевод?
 
-ace_sys_wounds_no_rpunish = true; ace_wounds_prevtime = 600; ace_sys_wounds_auto_assist_any = true; ace_sys_wounds_leftdam = 0.5; 
-
-
-
-
-Бёрд с Флиром +
-
-Канаты добавить в верты !
-
-Передвинуть ящик со снайперками +
-
-15 магазинов для пулеметов +
-
-Ворота?
-
-Убарть Гражданских ?
-
-Погода ?
-
-Боты на вышках, андед +
-
-Сделать мед хаммеры лечебными ?
-
-Газ маски +
+ace_sys_wounds_no_rpunish = true; ace_wounds_prevtime = 600; ace_sys_wounds_auto_assist_any = true; ace_sys_wounds_leftdam = 0.5;
