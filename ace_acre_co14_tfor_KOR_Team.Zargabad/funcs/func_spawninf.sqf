@@ -48,9 +48,9 @@ for "_j" from 1 to _strength do {
 // Cleanup
 _Grp spawn {
 	_units = units _this;
-	_hidetime = 300;
+	_hidetime = 240;
 
-	While{({alive _x} count _units) > 0} do{sleep 5};
+	While{({alive _x} count _units) > 0} do{sleep 15};
 
 	sleep _hidetime;
 	{

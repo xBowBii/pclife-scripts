@@ -6,7 +6,7 @@ if (isServer) then {
 };
 
 _weapons = [
-	    "ACE_Rucksack_EAST",
+        "ACE_Rucksack_EAST",
         "ACE_Rucksack_MOLLE_ACU",
         "ACE_Rucksack_MOLLE_ACU_Medic",
         "ACE_Rucksack_MOLLE_Brown",
