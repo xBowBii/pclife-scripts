@@ -1,4 +1,4 @@
-// by Bon_Inf*
+﻿// by Bon_Inf*
 /**
 *
 * You can easily change this version from BLUFOR to OPFOR by changing the types
@@ -16,22 +16,22 @@ tfor_max_players = 14;
 
 //Миссия
 tfor_artifunds = 1;
-tfor_maxnumber_airpatrols = 4;
-tfor_maxnumber_footpatrols = 20;
-tfor_maxnumber_camps = 20;
+tfor_maxnumber_airpatrols = 2;
+tfor_maxnumber_footpatrols = 8;
+tfor_maxnumber_camps = 10;
 tfor_civilian_deathcosts = 2.0;
-tfor_advanced_aircraft_list = ["Plane","AH64D_EP1","A10_US_EP1"];
+tfor_advanced_aircraft_list = ["Plane","AH1Z"];
 tfor_advanced_vehicle_list = ["Tank"];
 
-tfor_min_amount_armor = 2; // min amount enemy armor (1 player)
-tfor_max_amount_armor = 4; // max amount enemy armor (max players)
-tfor_min_amount_apc = 2;   // min amount enemy apc (1 player)
-tfor_max_amount_apc = 5;   // max amount enemy apc (max players)
-tfor_min_amount_car = 2;   // min amount enemy car (1 player)
-tfor_max_amount_car = 6;   // max amount enemy car (max players)
-tfor_min_amount_aa = 2;    // min amount enemy aa (1 player)
-tfor_max_amount_aa = 7;    // max amount enemy aa (max players)
-tfor_min_amount_inf = 5;   // min amount enemy inf (1 player), in groups; NOTE: MUST BE AT LEAST 2
+tfor_min_amount_armor = 0; // min amount enemy armor (1 player)
+tfor_max_amount_armor = 2; // max amount enemy armor (max players)
+tfor_min_amount_apc = 1;   // min amount enemy apc (1 player)
+tfor_max_amount_apc = 3;   // max amount enemy apc (max players)
+tfor_min_amount_car = 1;   // min amount enemy car (1 player)
+tfor_max_amount_car = 4;   // max amount enemy car (max players)
+tfor_min_amount_aa = 1;    // min amount enemy aa (1 player)
+tfor_max_amount_aa = 3;    // max amount enemy aa (max players)
+tfor_min_amount_inf = 4;   // min amount enemy inf (1 player), in groups; NOTE: MUST BE AT LEAST 2
 tfor_max_amount_inf = 10;  // max amount enemy inf (max players), in groups
 /*****/
 
