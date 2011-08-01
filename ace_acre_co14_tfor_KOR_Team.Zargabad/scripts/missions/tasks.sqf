@@ -1,4 +1,4 @@
-// by Bon_Inf*
+﻿// by Bon_Inf*
 // executed by initSideMissions.sqf, publicVariableEventHandler "SideObjective"
 
 WaitUntil{not isNull player || isServer};
@@ -17,7 +17,7 @@ _marker = ["ELLIPSE","",[250,250],""];
 if(not isNil "tfor_currenttask") then {
 	if(_statelastmission == "SUCCESS") then {
 		tfor_currenttask setTaskState "SUCCEEDED";
-		taskhint ["Задача выполнена.\nХорошая работа, ожидайте дальнейших указов или вернитесь на базу!", [0.6, 0.839, 0.47, 1], "taskDone"];
+		taskhint ["Задача выполнена.\nХорошая работа, ожидайте дальнейших призаков или вернитесь на базу!", [0.6, 0.839, 0.47, 1], "taskDone"];
 	};
 	if(_statelastmission == "FAIL") then{
 		tfor_currenttask setTaskState "FAILED";
@@ -25,7 +25,7 @@ if(not isNil "tfor_currenttask") then {
 	};
 
 	tfor_waitfornewtask = player createSimpleTask ["Mission"];
-	tfor_waitfornewtask setSimpleTaskDescription ["Ожидание след задания.","Ожидание след задания.",""];
+	tfor_waitfornewtask setSimpleTaskDescription ["Ожидание следующего задания.","Ожидание следующего задания.",""];
 	sleep tfor_missiondelay;
 	player removeSimpleTask tfor_waitfornewtask;
 };
@@ -73,48 +73,48 @@ switch _mission do {
 	case "defendcamp" : {
 		tfor_currenttask = player createSimpleTask ["Mission"];
 		tfor_currenttask setSimpleTaskDescription [format["Что-то происходит в %1. Осмотрите местность.",text _location],format["Проверить %1",text _location],format["Проверить %1",text _location]];
-		taskhint [format["Новое задание:\nОсмотреть эту зону %1", text _location], [0.87451, 0.84314, 0.64706, 1], "taskNew"];
+		taskhint [format["Новое задание:\nОсмотреть эту зону в %1", text _location], [0.87451, 0.84314, 0.64706, 1], "taskNew"];
 		_marker = ["ICON","hd_unknown",[1,1]," Осмотрется"];
 	};
 	case "captureofficer" : {
 		tfor_currenttask = player createSimpleTask ["Mission"];
 		tfor_currenttask setSimpleTaskDescription [format["Захватите командующего войсками в %1 и доставте его на вашу базу. Миссия считается проваленной, если он умрет.",text _location],format["Захватите офицера в %1",text _location],format["Офицер в %1",text _location]];
-		taskhint [format["Новое задание:\nЗахватите вражеского офицера %1", text _location], [0.87451, 0.84314, 0.64706, 1], "taskNew"];
+		taskhint [format["Новое задание:\nЗахватите вражеского офицера в %1", text _location], [0.87451, 0.84314, 0.64706, 1], "taskNew"];
 	};
 	case "destroyfirebase" : {
 		tfor_currenttask = player createSimpleTask ["Mission"];
 		tfor_currenttask setSimpleTaskDescription [format["Что-то происходит в %1. Осмотрите местность.",text _location],format["Осмотреть %1",text _location],format["Осмотреть %1",text _location]];
-		taskhint [format["Новое задание:\nОсмотреть эту зону %1", text _location], [0.87451, 0.84314, 0.64706, 1], "taskNew"];
+		taskhint [format["Новое задание:\nОсмотреть эту зону в %1", text _location], [0.87451, 0.84314, 0.64706, 1], "taskNew"];
 		_marker = ["ICON","hd_unknown",[1,1]," Осмотрется"];
 	};
 	case "relievesquad" : {
 		tfor_currenttask = player createSimpleTask ["Mission"];
 		tfor_currenttask setSimpleTaskDescription [format["Союзный отряд попал в засаду %1 и был атакован вражескими войсками. Как можно быстрее поддержите их огнем.",text _location],format["Защитить отряд в %1",text _location],format["Отряд в %1",text _location]];
-		taskhint [format["Новое задание:\nПомогите зажатому отряду %1", text _location], [0.87451, 0.84314, 0.64706, 1], "taskNew"];
+		taskhint [format["Новое задание:\nПомогите зажатому отряду в %1", text _location], [0.87451, 0.84314, 0.64706, 1], "taskNew"];
 		_marker = ["ICON","hd_dot",[1,1]," Помочь отряду"];
 	};
 	case "markfueldump" : {
 		tfor_currenttask = player createSimpleTask ["Mission"];
 		tfor_currenttask setSimpleTaskDescription [format["Топливный склад врага мыл обнаружен в %1. Ваша задача отметить его спомощью %2 или чем-то ещё для артилерии.",text _location,getText (configFile >> "CfgMagazines" >> tfor_markfueldump_markerobjects select 0 >> "displayname")],format["Пометить топливный склад в %1",text _location],format["топливный склад в %1",text _location]];
-		taskhint [format["Новое задание:\nПометить топливный склад %1", text _location], [0.87451, 0.84314, 0.64706, 1], "taskNew"];
+		taskhint [format["Новое задание:\nПометить топливный склад в %1", text _location], [0.87451, 0.84314, 0.64706, 1], "taskNew"];
 		_marker = ["ICON","hd_destroy",[1,1]," Метку на бак"];
 	};
 	case "airattack" : {
 		tfor_currenttask = player createSimpleTask ["Mission"];
 		tfor_currenttask setSimpleTaskDescription [format["Что-то происходит в %1. Осмотреть эту зону.",text _location],format["Разведать %1",text _location],format["Разведать %1",text _location]];
-		taskhint [format["Новое задание:\nОсмотреть эту зону %1", text _location], [0.87451, 0.84314, 0.64706, 1], "taskNew"];
+		taskhint [format["Новое задание:\nОсмотреть эту зону в %1", text _location], [0.87451, 0.84314, 0.64706, 1], "taskNew"];
 		_marker = ["ICON","hd_unknown",[1,1]," Разведать"];
 	};
 	case "tankattack" : {
 		tfor_currenttask = player createSimpleTask ["Mission"];
-		tfor_currenttask setSimpleTaskDescription [format["Что-то происходит в %1. Осмотреть эту зону.",text _location],format["Осмотрется %1",text _location],format["Осмотрется %1",text _location]];
+		tfor_currenttask setSimpleTaskDescription [format["Что-то происходит в %1. Осмотреть эту зону.",text _location],format["Осмотрется в %1",text _location],format["Осмотрется в %1",text _location]];
 		taskhint [format["Новое задание:\nЧто-то происходит в %1", text _location], [0.87451, 0.84314, 0.64706, 1], "taskNew"];
 		_marker = ["ICON","hd_unknown",[1,1]," Проверить"];
 	};
 	case "destroycamps" : {
 		tfor_currenttask = player createSimpleTask ["Mission"];
 		tfor_currenttask setSimpleTaskDescription [format["Вражеские силы заняли %1, осмотреть обноруженные вражеские лагеря. Ваша задача атаковать и зачистить врагов вокруг лагерей %1, при подавлении %2ern должны оказатся тут %1.",text _location,tfor_enemy_side],format["Уничтожить лагеря в %1",text _location],format["лагеря в %1",text _location]];
-		taskhint [format["Новое задание:\nУничтожить военные лагеря %1", text _location], [0.87451, 0.84314, 0.64706, 1], "taskNew"];
+		taskhint [format["Новое задание:\nУничтожить военные лагеря в %1", text _location], [0.87451, 0.84314, 0.64706, 1], "taskNew"];
 	};
 	case "supporttroops" : {
 		tfor_currenttask = player createSimpleTask ["Mission"];

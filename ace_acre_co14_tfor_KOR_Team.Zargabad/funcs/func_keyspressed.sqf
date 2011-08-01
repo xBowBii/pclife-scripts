@@ -1,4 +1,4 @@
-//func_keyspressed.sqf
+﻿//func_keyspressed.sqf
 private ['_handled','_button','_dlg'];
 
 _handled = false;
@@ -10,7 +10,7 @@ if(_button in actionKeys "NetworkStats" && if(isNil "tfor_deathcount_shown") the
         tfor_deathcount_shown = true;
 };
 
-(time + 1) spawn 
+(time + 2) spawn 
     { 
         while {time < _this} do 
         { 
