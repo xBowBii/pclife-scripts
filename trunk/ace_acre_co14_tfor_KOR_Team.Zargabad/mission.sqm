@@ -10605,7 +10605,7 @@ class Mission
 			age="UNKNOWN";
 			name="repair1";
 			expCond="getPos (thislist select 0) select 2 < 2;";
-			expActiv="_null = [""servicePoint"",8] execVM ""rearm.sqf"";";
+			expActiv="_null = [""servicePoint"",8,thisTrigger] execVM ""rearm.sqf"";";
 			class Effects
 			{
 			};
@@ -10621,7 +10621,7 @@ class Mission
 			age="UNKNOWN";
 			name="repair2";
 			expCond="getPos (thislist select 0) select 2 < 2;";
-			expActiv="_null = [""servicePoint2"",8] execVM ""rearm.sqf"";";
+			expActiv="_null = [""servicePoint2"",8,thisTrigger] execVM ""rearm.sqf"";";
 			class Effects
 			{
 			};

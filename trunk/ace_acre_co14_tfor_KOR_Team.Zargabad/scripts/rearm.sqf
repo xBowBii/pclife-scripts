@@ -24,7 +24,7 @@ _activeTrigger setTriggerArea [0,0,0,false];
     _unit setVelocity [0, 0, 0];
     _dmge = getDammage _unit;
     
-    _repairtime = (_dmge*60) max 1;
+    _repairtime = (_dmge*150) max 1;
     _repairvalue_per_step = _dmge/_repairtime;
     
 
@@ -47,7 +47,7 @@ _activeTrigger setTriggerArea [0,0,0,false];
 
     _fuel_to_fill = 1 - (fuel _unit);
 
-    _refueltime = 1 max (_fuel_to_fill*60);
+    _refueltime = 1 max (_fuel_to_fill*150);
     _refuelvalue_per_step = _fuel_to_fill/_refueltime;
 
     _unit vehicleChat "Заправка...";
@@ -67,7 +67,7 @@ _activeTrigger setTriggerArea [0,0,0,false];
     _point = _this select 1;
     _radius = _this select 2;
 
-    _reload_timefactor = 5; // seconds each step requires when refilling
+    _reload_timefactor = 12; // seconds each step requires when refilling
     _unit vehicleChat "Перевооружение: сейчас боезапас будет выгружен, проверен и пополнен.";
     _loadedAmmo = 0;
     while{_unit distance getMarkerPos _point <= _radius && getPos _unit select 2 < 1 && _loadedAmmo < 1} do {
