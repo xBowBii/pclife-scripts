@@ -15,7 +15,7 @@ EnemiesSpawned = false;
 
 /************************************* create radar *************************************/
 _radar = tfor_destroyradarscud_radartype createVehicle position _location;
-[_radar] execVM "scripts\c4only.sqf";
+//[_radar] execVM "scripts\c4only.sqf";
 
 _isFlat_radar = [position _radar,_size] call getFlatArea;
 _radar setPos _isFlat_radar;

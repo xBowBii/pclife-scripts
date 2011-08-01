@@ -132,7 +132,7 @@ tfor_destroyfirebase_artitype = "D30_TK_INS_EP1"; // <- note: dyno firebase_0.sq
 /*****/
 
 /***destroyradarscud***/
-tfor_destroyradarscud_radartype = "TK_WarfareBAntiAirRadar_Base_EP1";
+tfor_destroyradarscud_radartype = "Ins_WarfareBArtilleryRadar";
 tfor_destroyradarscud_scudtype = "MAZ_543_SCUD_TK_EP1";
 /******/
 
