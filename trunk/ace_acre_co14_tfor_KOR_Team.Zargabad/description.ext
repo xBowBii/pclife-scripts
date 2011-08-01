@@ -1,0 +1,236 @@
+﻿#include "bon_settings\dialog\Common.hpp"
+//#include "bon_loadoutpresets\dialog\LoadoutPreset.hpp"
+//#include "bon_recruit_units\dialog\recruitment.hpp"
+#include "bon_settings\dialog\bon_Settings.hpp"
+//#include "bon_artillery\dialog\Artillery.hpp"
+#include "bon_rallypoints\dialog\Spawn.hpp"
+//#include "bon_getbackpack\dialog\getbackpack.hpp"
+//#include "bon_supplydrop\dialog\supply.hpp"
+
+
+class Header
+{
+	gameType=Coop;
+	minPlayers=1;
+	maxPlayers=14;
+};
+
+
+#include "loadscreen.hpp"
+loadScreen = __EVAL(_loadscreenpicture select round random (count _loadscreenpicture - 1));
+onLoadMission = __EVAL(_loadscreentext select round random (count _loadscreentext - 1));
+onLoadMissionTime = false;
+
+
+disabledAI=1;
+
+respawn=3;
+respawnDelay=15;
+respawnDialog=true;
+
+debriefing=false;
+showGPS=true;
+briefing=false;
+
+
+
+
+class CfgSounds
+{
+ sounds[] = {};
+class reggaeSound {
+                name = "reggaeSound";
+                sound[] = {"\reggae.ogg", 0.18, 1.000000};
+                titles[] = {};
+        };
+};
+
+
+
+
+//class CfgRadio {
+//	#include "bon_lasertargeting\cfgRadio.sqf"
+//};
+
+
+
+
+class Params {
+    //paramsArray[0]
+    class tfor_daytime {
+        title="Время дня";
+        values[]={0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23};
+        default=4;
+        texts[]={"0000","0100","0200","0300","0400","0500","0600","0700","0800","0900","1000","1100","1200","1300","1400","1500","1600","1700","1800","1900","2000","2100","2200","2300"};
+    };
+    //paramsArray[1]
+    class tfor_acre_radios {
+        title="ACRE рации";
+        values[]={0,1};
+        default=1;
+        texts[]={"Не доступны","Доступны"};
+    };
+    
+    //paramsArray[2]
+    class tfor_maxmissions {
+        title="Макс. Выполненых/Проваленых заданий";
+        values[]={1,2,3,15};
+        default=15;
+        texts[]={"1","2","3","Весь набор"};
+    };
+    //paramsArray[3]
+    class tfor_max_death_per_mission {
+        title="Макс. Смертей за период игры";
+        values[]={999999,24,16,8};
+        default=999999;
+        texts[]={"Не ограничено","24 - Просто","16 - Норма","8 - Сложно"};
+    };
+    //paramsArray[4]
+    class tfor_enemy_skill {
+        title="Уровень врага";
+        values[]={2,7,10,20};
+        default=10;
+        texts[]={"Дятлы","Норма","Элита","Настройки Серва"};
+    };
+    //paramsArray[5]
+    class tfor_number_inf {
+        title="Количество вражеских войск";
+        values[]={1,2};
+        default=2;
+        texts[]={"Норма","Много"};
+    };
+    //paramsArray[6]
+    class tfor_number_vec {
+        title="Количество вражеской техники";
+        values[]={0,1,2};
+        default=1;
+        texts[]={"Нету","Норма","Много"};
+    };
+    //paramsArray[7]
+    class tfor_mhqrespawn {
+        title="Воскрешение на базе";
+        values[]={0,1};
+        default=1;
+        texts[]={"Выключено","Включено"};
+    };
+    //paramsArray[8]
+    class tfor_skiptime {
+        title="Установки цикла суток";
+        values[]={0,12,6};
+        default=0;
+        texts[]={"24 часа","12 часов","6 часов"};
+    };
+    //paramsArray[9]
+    class tfor_markersystem {
+        title="Метки на карте";
+        values[]={0,2};
+        default=0;
+        texts[]={"Выкл","Вкл"};
+    };
+    //paramsArray[10]
+    class tfor_ieds {
+        title="Фугасы";
+        values[]={0,5,10,15,20,25,30};
+        default=30;
+        texts[]={"Нет","5","10","15","20","25","30"};
+    };
+    //paramsArray[11]
+    class tfor_dynamic_respawn {
+        title="Время возрождения";
+        values[]={1,60,120};
+        default=1;
+        texts[]={"Динамически","1 Минута","2 Минуты"};
+    };
+    //paramsArray[12]
+    class tfor_rallypoints {
+        title="Лагеря и посты возрождения";
+        values[]={0,1,2};
+        default=0;
+        texts[]={"Выкл! - Не включать!","Только посты","Смешано"};
+    };
+    //paramsArray[13]
+    class tfor_ambient_civs {
+        title="Гражданские";
+        values[]={0,1};
+        default=0;
+        texts[]={"Выкл","Вкл"};
+    };
+    //paramsArray[14]
+    class tfor_dynamic_weather {
+        title="Динамическая погода";
+        values[]={0,1};
+        default=0;
+        texts[]={"Выкл","Вкл"};
+    };
+    //paramsArray[15]
+    class tfor_enemy_patrols {
+        title="Вражеские патрули";
+        values[]={0,1,2};
+        default=2;
+        texts[]={"Нет","Пешие","Пешелётные"};
+    };
+    //paramsArray[16]
+    class tfor_enemy_aa {
+        title="Вражеские ПВО";
+        values[]={0,1};
+        default=1;
+        texts[]={"Выкл","Вкл"};
+    };
+    //paramsArray[17]
+    class tfor_enemy_camps {
+        title="Вражеские лагеря";
+        values[]={0,1};
+        default=1;
+        texts[]={"Выкл","Вкл"};
+    };
+    //paramsArray[18]
+    class tfor_enemy_reinforcements {
+        title="Вражеские подкрепления";
+        values[]={0,1};
+        default=1;
+        texts[]={"Выкл","Вкл"};
+    };
+    //paramsArray[19]
+    class tfor_adv_aircraft {
+        title="Доп Авиация на базе";
+        values[]={0,1};
+        default=1;
+        texts[]={"Не доступна","Доступна"};
+    };
+    //paramsArray[20]
+    class tfor_adv_vehicles {
+        title="Доп Техника на базе";
+        values[]={0,1};
+        default=1;
+        texts[]={"Не доступна","Доступна"};
+    };
+};
+
+class RscTitles {
+	class IntroDialog {
+		idd = 0;
+		duration=3;
+		name="IntroText";
+		movingEnable = false; 
+		objects[] = {};
+		controls[] = { IntroPicture, IntroText };
+
+		class IntroText : HW_RscText {
+			style="16+2+512";
+			lineSpacing=0.950000;
+			colorBackground[] = { 1, 1, 1, 0 };
+			colorText[] = { 1, 1, 1, 1 };
+			x = 0.975; y = 0.955;
+			w = 0.25; h = 0.2;
+			sizeEx = 0.025;
+			text = "www.takistan-force.net   serveraaanet.ucoz.ru";
+		};
+
+		class IntroPicture : HW_RscPicture {
+			idc = 0;
+			x = 1; y = 0.8;
+			w = 0.2; h = 0.25;
+			text = "tfor.paa";
+		};
+	};
+};
