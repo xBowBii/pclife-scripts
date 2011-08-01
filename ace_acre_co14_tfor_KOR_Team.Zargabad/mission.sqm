@@ -165,7 +165,7 @@ class Mission
 	class Intel
 	{
 		briefingName="ACE/ROST COOP 14 Z-FORCE-KOR v1.06 Teamplay";
-		briefingDescription="от Bon_Inf* ACE/ACRE KOR Teamplay от Kol9yN и Operator";
+		briefingDescription="от Bon_Inf* ACE/ACRE KOR Teamplay от Kol9yN и Operator&Ko";
 		startWeather=0;
 		startFog=0.14172351;
 		forecastWeather=0;
@@ -5678,7 +5678,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CamoNetVar_NATO";
 			skill=0.60000002;
-			init="_resp = [this,60] execFSM ""fsm\vehicle_lifecycle.fsm""";
+			init="this addEventHandler [""killed"",""[_this select 0, 60] spawn respawnObjects;""]";
 		};
 		class Item356
 		{
@@ -5979,7 +5979,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_GuardShed";
 			skill=0.60000002;
-			init="_resp = [this,30] execFSM ""fsm\vehicle_lifecycle.fsm""; this allowDamage false";
+			init="this allowDamage false";
 		};
 		class Item389
 		{
@@ -10068,7 +10068,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=16;
+		items=18;
 		class Item0
 		{
 			position[]={4687.7896,64.204628,868.71643};
@@ -10214,10 +10214,22 @@ class Mission
 			a=1.5;
 			b=1.5;
 		};
+		class Item16
+		{
+			position[]={4713.5234,63.794022,966.90625};
+			name="servicePoint2";
+			type="Empty";
+		};
+		class Item17
+		{
+			position[]={4923.5117,66.626221,778.02441};
+			name="servicePoint";
+			type="Empty";
+		};
 	};
 	class Sensors
 	{
-		items=24;
+		items=26;
 		class Item0
 		{
 			position[]={5136.1699,69.631927,937.02368};
@@ -10578,6 +10590,38 @@ class Mission
 			age="UNKNOWN";
 			expActiv="rem1 switchMove ""zevl7_c0start""";
 			expDesactiv="rem1 switchMove ""ActsPercSnonWnonDnon_assembling""";
+			class Effects
+			{
+			};
+		};
+		class Item24
+		{
+			position[]={4923.4019,66.624382,778.22607};
+			a=8;
+			b=8;
+			activationBy="WEST";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			name="repair1";
+			expCond="getPos (thislist select 0) select 2 < 2;";
+			expActiv="_null = [""servicePoint"",8] execVM ""rearm.sqf"";";
+			class Effects
+			{
+			};
+		};
+		class Item25
+		{
+			position[]={4713.521,63.793865,966.91553};
+			a=8;
+			b=8;
+			activationBy="WEST";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			name="repair2";
+			expCond="getPos (thislist select 0) select 2 < 2;";
+			expActiv="_null = [""servicePoint2"",8] execVM ""rearm.sqf"";";
 			class Effects
 			{
 			};
