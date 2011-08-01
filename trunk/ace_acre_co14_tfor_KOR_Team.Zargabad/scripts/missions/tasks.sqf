@@ -17,7 +17,7 @@ _marker = ["ELLIPSE","",[250,250],""];
 if(not isNil "tfor_currenttask") then {
 	if(_statelastmission == "SUCCESS") then {
 		tfor_currenttask setTaskState "SUCCEEDED";
-		taskhint ["Задача выполнена.\nХорошая работа, ожидайте дальнейших призаков или вернитесь на базу!", [0.6, 0.839, 0.47, 1], "taskDone"];
+		taskhint ["Задача выполнена.\nХорошая работа, ожидайте дальнейших приказов или вернитесь на базу!", [0.6, 0.839, 0.47, 1], "taskDone"];
 	};
 	if(_statelastmission == "FAIL") then{
 		tfor_currenttask setTaskState "FAILED";
