@@ -1,4 +1,4 @@
-#include "bon_settings\dialog\Common.hpp"
+﻿#include "bon_settings\dialog\Common.hpp"
 //#include "bon_loadoutpresets\dialog\LoadoutPreset.hpp"
 //#include "bon_recruit_units\dialog\recruitment.hpp"
 #include "bon_settings\dialog\bon_Settings.hpp"
@@ -171,7 +171,7 @@ class Params {
     };
     //paramsArray[16]
     class tfor_enemy_aa {
-        title="Вражеские ПВО бойцы";
+        title="Вражеские ПВО";
         values[]={0,1};
         default=1;
         texts[]={"Выкл","Вкл"};
@@ -220,10 +220,10 @@ class RscTitles {
 			lineSpacing=0.950000;
 			colorBackground[] = { 1, 1, 1, 0 };
 			colorText[] = { 1, 1, 1, 1 };
-			x = 0.975; y = 0.955;
+			x = 0.975; y = 0.855;
 			w = 0.25; h = 0.2;
 			sizeEx = 0.025;
-			text = "www.takistan-force.net";
+			text = "www.takistan-force.net, serveraaanet.ucoz.ru";
 		};
 
 		class IntroPicture : HW_RscPicture {

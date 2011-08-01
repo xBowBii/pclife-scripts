@@ -35,7 +35,7 @@ tfor_min_amount_inf = 3;   // min amount enemy inf (1 player), in groups; NOTE: 
 tfor_max_amount_inf = 7;  // max amount enemy inf (max players), in groups
 /*****/
 
-/** Сайды **/
+/** Стороны **/
 tfor_friendly_side = west;
 tfor_enemy_side = east;
 
@@ -49,7 +49,7 @@ tfor_west_armor = ["M2A2_EP1","ACE_M1A1HC_TUSK_CSAMM_DESERT"];
 tfor_west_apc = ["M1126_ICV_mk19_EP1","M1126_ICV_M2_EP1","M1128_MGS_EP1","M1135_ATGMV_EP1"];
 tfor_west_aa = ["HMMWV_Avenger_DES_EP1"];
 tfor_west_car = ["HMMWV_M1151_M2_DES_EP1","HMMWV_M998_crows_MK19_DES_EP1","HMMWV_TOW_DES_EP1","HMMWV_M998_crows_M2_DES_EP1","HMMWV_M998A2_SOV_DES_EP1","LandRover_Special_CZ_EP1"];
-tfor_west_air = ["AH64D_EP1","UH60M_EP1"];
+tfor_west_air = ["AH1Z","UH60M_EP1"];
 
 // TK army
 tfor_east_inf = ["TK_Soldier_AA_EP1","TK_Soldier_AAT_EP1","TK_Soldier_AMG_EP1",
@@ -88,7 +88,7 @@ tfor_west_special = ["US_Delta_Force_AR_EP1","US_Delta_Force_Air_Controller_EP1"
 /*** Разное ***/
 tfor_missiondelay = 600;
 
-tfor_artitype = "M119_US_EP1";
+//tfor_artitype = "M119_US_EP1";
 
 tfor_ammobox = "USVehicleBox_EP1"; // <- the thing at base
 
@@ -108,15 +108,15 @@ enableEngineArtillery false; // dis/en BIS art comp
 // assets the commander can build;
 // form: [type,category,costs];
 // category can be either: Commandpost,Support,Defense
-tfor_commander_assets = [
-	["US_WarfareBUAVterminal_Base_EP1","Commandpost",1],
-	["US_WarfareBBarracks_Base_EP1","Support",1],
-	["US_WarfareBFieldhHospital_EP1","Support",1],
-	["US_WarfareBVehicleServicePoint_Base_EP1","Support",1],
-	["USVehicleBox_EP1","Support",1],
-	["Stinger_Pod_US_EP1","Defense",1]
-];
-tfor_commanderfunds = 1;
+//tfor_commander_assets = [
+	//["US_WarfareBUAVterminal_Base_EP1","Commandpost",1],
+	//["US_WarfareBBarracks_Base_EP1","Support",1],
+	//["US_WarfareBFieldhHospital_EP1","Support",1],
+	//["US_WarfareBVehicleServicePoint_Base_EP1","Support",1],
+	//["USVehicleBox_EP1","Support",1],
+	//["Stinger_Pod_US_EP1","Defense",1]
+//];
+//tfor_commanderfunds = 1;
 
 tfor_mhqtype = "M1133_MEV_EP1";
 /******/
