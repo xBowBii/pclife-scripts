@@ -165,7 +165,7 @@ class Mission
 	class Intel
 	{
 		briefingName="ACE/ROST COOP 14 Z-FORCE-KOR v1.06 Teamplay";
-		briefingDescription="от Bon_Inf* ACE/ACRE KOR Teamplay от Kol9yN и Operator&Ko";
+		briefingDescription="от Bon_Inf* ACE/ACRE KOR Teamplay от Kol9yN и Operator&Co";
 		startWeather=0;
 		startFog=0.14172351;
 		forecastWeather=0;
