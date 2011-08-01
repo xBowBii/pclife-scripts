@@ -272,11 +272,6 @@ class FSM
        "	hintSilent format[""Only a %1 can operate this vehicle."",_allowed_driver];" \n
        "};" \n
        "" \n
-       "_resupply_condition = ""count nearestObjects [_target,['Base_WarfareBVehicleServicePoint'],10] > 0"";" \n
-       "if(driver _vehicle == _unit) then {" \n
-       "	_resupply = _vehicle addAction [""<t color='#FFFFFF'>Техсервис</t>"",""scripts\rearm.sqf"",[],99,true,true,"""",_resupply_condition];" \n
-       "};" \n
-       "" \n
        "if(driver _vehicle == _unit && typeOf _vehicle in tfor_vehicles_canload_ammo) then {" \n
        "	_loadammo = _vehicle addAction [""<t color='#668AFF'>Load Ammo</t>"",""scripts\ammobox_load.sqf"",[],1,false,true,"""",_resupply_condition + "" || count nearestObjects [position _target,[tfor_loadable_boxtype],5] > 0"" ];" \n
        "	_unloadammo = _vehicle addAction [""Unload Ammo"",""scripts\ammobox_unload.sqf"",[],1,false,true,"""",""_target getVariable 'tfor_ammoloaded'""];" \n
