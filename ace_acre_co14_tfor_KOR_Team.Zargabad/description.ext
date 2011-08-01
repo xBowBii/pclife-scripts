@@ -220,10 +220,10 @@ class RscTitles {
 			lineSpacing=0.950000;
 			colorBackground[] = { 1, 1, 1, 0 };
 			colorText[] = { 1, 1, 1, 1 };
-			x = 0.975; y = 0.855;
+			x = 0.975; y = 0.955;
 			w = 0.25; h = 0.2;
 			sizeEx = 0.025;
-			text = "www.takistan-force.net, serveraaanet.ucoz.ru";
+			text = "www.takistan-force.net   serveraaanet.ucoz.ru";
 		};
 
 		class IntroPicture : HW_RscPicture {
