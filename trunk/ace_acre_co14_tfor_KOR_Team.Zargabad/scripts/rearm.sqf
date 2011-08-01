@@ -1,11 +1,13 @@
-﻿//rearm.sqf
+﻿//rearm sqf. Should be called as: _null = ["servicePoint":Marker,repair radius:Number,thisTrigger] execVM "rearm.sqf";
 // by Bon_Inf*. Dirty fixes by Operator.
 
 _point = _this select 0;
 _radius = _this select 1;
+_activeTrigger = _this select 2;
 
 _unit = ObjNull;
 _minDistance = _radius +1;
+_activeTrigger setTriggerArea [0,0,0,false];
 
 {
   _unitDistance = _x distance getMarkerPos _point;
@@ -73,6 +75,6 @@ _minDistance = _radius +1;
     _unit setVehicleAmmo _loadedAmmo;
         sleep _reload_timefactor;
     };
-    if(_loadedAmmo == 0) then {_unit vehicleChat "Боезапас пополнен!";};    
+    if(_loadedAmmo == 0) then {_unit vehicleChat "Боезапас пополнен!";};
 };
-
+_activeTrigger setTriggerArea [8,8,0,false];
