@@ -173,7 +173,7 @@ _weapons = [
 
 _magazines = [
         "8Rnd_B_Beneli_74Slug",
-        "8Rnd_B_Beneli_Pellets"
+        "8Rnd_B_Beneli_Pellets",
         "8Rnd_B_Saiga12_74Slug",
         "8Rnd_B_Saiga12_Pellets",
         "ACE_8Rnd_12Ga_Buck00",
