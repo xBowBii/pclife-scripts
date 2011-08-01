@@ -2348,7 +2348,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={4709.6187,63.6348,973.28314};
+					position[]={4706.2788,63.577114,977.37494};
 					azimut=114.192;
 					id=904;
 					side="WEST";
@@ -5336,7 +5336,7 @@ class Mission
 		};
 		class Item320
 		{
-			position[]={4706.749,63.652355,969.65222};
+			position[]={4703.4092,63.603893,973.74402};
 			azimut=197.08701;
 			id=343;
 			side="EMPTY";
@@ -6769,7 +6769,7 @@ class Mission
 		};
 		class Item471
 		{
-			position[]={4702.9434,63.691135,962.41455};
+			position[]={4699.6035,63.651413,966.50635};
 			azimut=127.08727;
 			id=523;
 			side="EMPTY";
@@ -9966,8 +9966,8 @@ class Mission
 		};
 		class Item809
 		{
-			position[]={4713.6611,63.800224,966.90576};
-			azimut=19.319628;
+			position[]={4710.689,63.674397,970.82178};
+			azimut=12.603498;
 			id=899;
 			side="EMPTY";
 			vehicle="Sr_border";
@@ -10148,7 +10148,7 @@ class Mission
 		};
 		class Item8
 		{
-			position[]={4706.6313,63.657593,968.99237};
+			position[]={4703.2915,63.605721,973.08417};
 			name="VehicleService_1";
 			text="Доп сервис";
 			type="Strongpoint";
@@ -10216,7 +10216,7 @@ class Mission
 		};
 		class Item16
 		{
-			position[]={4713.5234,63.794022,966.90625};
+			position[]={4710.5557,63.67421,970.81201};
 			name="servicePoint2";
 			type="Empty";
 		};
@@ -10520,7 +10520,7 @@ class Mission
 			interruptable=1;
 			age="UNKNOWN";
 			name="landing";
-			expCond="(getPos (thislist select 0) select 2 > 3) && (getPos (thislist select 0) select 2 < 10)";
+			expCond="(getPos (thislist select 0) select 2 > 3) && (getPos (thislist select 0) select 2 < 14)";
 			expActiv="pilotmashet switchMove ""NavigationHeli""";
 			expDesactiv="pilotmashet switchMove ""zevl4_c0start""";
 			class Effects
@@ -10581,7 +10581,7 @@ class Mission
 		};
 		class Item23
 		{
-			position[]={4713.0313,63.770168,967.24756};
+			position[]={4710.0635,63.667858,971.15332};
 			a=5;
 			b=5;
 			activationBy="WEST";
@@ -10612,9 +10612,10 @@ class Mission
 		};
 		class Item25
 		{
-			position[]={4713.521,63.793865,966.91553};
+			position[]={4711.4644,63.679646,970.60107};
 			a=8;
 			b=8;
+			angle=12.2839;
 			activationBy="WEST";
 			repeating=1;
 			interruptable=1;
