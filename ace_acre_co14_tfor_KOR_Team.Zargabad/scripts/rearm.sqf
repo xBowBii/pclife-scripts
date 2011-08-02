@@ -28,15 +28,17 @@ _activeTrigger setTriggerArea [0,0,0,false];
     
 
     _unit vehicleChat "**Ремонт начат. Заглушить двигатели!";
+    _unit engineOn false;
 
-    while{_unit distance getMarkerPos _point <= _radius && getPos _unit select 2 < 0.3 && damage _unit > 0} do {    
+    while{_unit distance getMarkerPos _point <= _radius && getPos _unit select 2 < 0.3 && isEngineOn _unit == false && damage _unit > 0} do {    
         _unit setDamage ((damage _unit) - _repairvalue_per_step);
         sleep 1;
     };
     if(damage _unit == 0) then {_unit vehicleChat "**Ремонт выполнен!"}
     else{_unit vehicleChat "**Ремонт отменен."};
 };
-//Заправка (Установить слипы 5-10сек между секциями)
+sleep 5;
+//Заправка
 [_unit, _point, _radius] spawn {
     _unit = _this select 0;
     _point = _this select 1;
@@ -48,31 +50,37 @@ _activeTrigger setTriggerArea [0,0,0,false];
     _refuelvalue_per_step = _fuel_to_fill/_refueltime;
 
     _unit vehicleChat "**Заправка...";
+    sleep 5;
+    _unit engineOn false;
 
-    while{_unit distance getMarkerPos _point <= _radius && getPos _unit select 2 < 1 && fuel _unit < 0.99} do {
+    while{_unit distance getMarkerPos _point <= _radius && getPos _unit select 2 < 1 && isEngineOn _unit == false && fuel _unit < 0.99} do {
         _unit setFuel (fuel _unit) + _refuelvalue_per_step;
         sleep 1;
     };
     if(fuel _unit >= 0.99) then {_unit vehicleChat "**Заправка окончена!"}
     else{_unit vehicleChat "**Заправка отменена."};
 };
-//Боезапас (Установить слипы 5-10сек между секциями), нельзя ставить значение меньше чем 0.5, иначе не реармятся парные ракеты и слоты у танков
+sleep 10;
+//Боезапас Нельзя ставить значение меньше чем 0.5, иначе не реармятся парные ракеты и слоты у танков
 [_unit, _point, _radius] spawn {
     _unit = _this select 0;
     _point = _this select 1;
     _radius = _this select 2;
+    
+    _unit engineOn false;
 
-    _reload_timefactor = 60; // seconds each step requires when refilling
+    _reload_timefactor = 12; // seconds each step requires when refilling
     _unit vehicleChat "**Перевооружение: боезапас будет выгружен и заново пополнен.";
+    sleep 5;
     _loadedAmmo = 0;
-    while{_unit distance getMarkerPos _point <= _radius && getPos _unit select 2 < 1 && _loadedAmmo < 1} do {
-    _loadedAmmo = _loadedAmmo + 0.5;
-    _unit setVehicleAmmo _loadedAmmo;
-        sleep _reload_timefactor;
+    while{_unit distance getMarkerPos _point <= _radius && getPos _unit select 2 < 1 && isEngineOn _unit == false && _loadedAmmo < 1} do {
+      _loadedAmmo = _loadedAmmo + 0.1;
+      _unit setVehicleAmmo 0;
+      _unit setVehicleAmmo _loadedAmmo;
+      sleep _reload_timefactor;
     };
-	//Наверное нужно \/ == 1 ?!
-    if(_loadedAmmo == 0) then {_unit vehicleChat "**Боезапас пополнен!";};
-	_unit vehicleChat "**Обслуживание окончено. Освободите техсервис!!!";
+    if(_loadedAmmo == 1) then {_unit vehicleChat "**Боезапас пополнен!";};
+	_unit vehicleChat "**Обслуживание окончено. Освободите техсервис!";
 };
 _activeTrigger setTriggerArea [8,8,0,false];
 
