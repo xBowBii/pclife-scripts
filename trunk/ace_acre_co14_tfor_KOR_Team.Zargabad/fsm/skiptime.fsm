@@ -1,0 +1,125 @@
+/*%FSM<COMPILE "C:\Games\Steam\steamapps\common\arma 2\Tools\FSM Editor Personal Edition\scriptedFSM.cfg, skiptime">*/
+/*%FSM<HEAD>*/
+/*
+item0[] = {"start",0,250,-258.712280,-264.799255,-214.197327,-235.535110,0.000000,"start"};
+item1[] = {"fast_time",4,218,-98.662277,-274.581726,-19.364550,-227.257507,0.000000,"fast time"};
+item2[] = {"skip_time",2,250,-104.013321,-183.612030,-14.013351,-133.612030,0.000000,"skip time"};
+item3[] = {"normal_time",4,218,-280.601746,-190.301010,-197.290955,-141.638794,0.000000,"normal time"};
+item4[] = {"_",-1,250,-241.137131,-201.003357,-214.381271,-201.003357,0.000000,""};
+item5[] = {"exit",1,250,-259.197388,-93.979942,-216.688934,-66.722427,0.000000,"exit"};
+item6[] = {"sleep_120",4,4314,-104.013397,-105.351196,-14.013378,-55.351173,0.000000,"sleep 120"};
+version=1;
+class LayoutItems
+{
+	class Item4
+	{
+		class ItemInfo
+		{
+			FontFace="Arial";
+			FontHeight=10;
+			lStyle=1;
+		};
+	};
+};
+link0[] = {0,1};
+link1[] = {0,3};
+link2[] = {1,2};
+link3[] = {2,6};
+link4[] = {3,5};
+link5[] = {6,2};
+globals[] = {0.000000,0,0,0,0,640,480,1,8,6316128,1,-300.000000,300.000000,300.000000,-300.000000,897,592,1};
+window[] = {0,-1,-1,-1,-1,787,50,1310,50,1,915};
+*//*%FSM</HEAD>*/
+class FSM
+{
+  fsmName = "skiptime";
+  class States
+  {
+    /*%FSM<STATE "start">*/
+    class start
+    {
+      name = "start";
+      init = /*%FSM<STATEINIT""">*/"private ['_skipvalue'];" \n
+       "" \n
+       "_hours = _this select 0;" \n
+       "" \n
+       "switch _hours do {" \n
+       "	case 12 : {_skipvalue = 2};" \n
+       "	case 6 : {_skipvalue = 6};" \n
+       "	default {_skipvalue = 0; _hours = 0;};" \n
+       "};" \n
+       "" \n
+       "_year = date select 0;" \n
+       "_month = date select 1;" \n
+       "_day = date select 2;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "normal_time">*/
+        class normal_time
+        {
+          priority = 0.000000;
+          to="exit";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_hours == 0"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "fast_time">*/
+        class fast_time
+        {
+          priority = 0.000000;
+          to="skip_time";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_hours != 0"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "skip_time">*/
+    class skip_time
+    {
+      name = "skip_time";
+      init = /*%FSM<STATEINIT""">*/"_hour = date select 3;" \n
+       "_minute = (date select 4) + _skipvalue;" \n
+       "" \n
+       "setDate [_year,_month,_day,_hour,_minute];" \n
+       "" \n
+       "_timenow = time;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "sleep_120">*/
+        class sleep_120
+        {
+          priority = 0.000000;
+          to="skip_time";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time - _timenow > 120"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "exit">*/
+    class exit
+    {
+      name = "exit";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+  };
+  initState="start";
+  finalStates[] =
+  {
+    "exit",
+  };
+};
+/*%FSM</COMPILE>*/
