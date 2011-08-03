@@ -1,4 +1,4 @@
-//rearm sqf. Should be called as: _null = ["servicePoint":Marker,repair radius:Number,thisTrigger] execVM "rearm.sqf";
+﻿//rearm sqf. Should be called as: _null = ["servicePoint":Marker,repair radius:Number,thisTrigger] execVM "rearm.sqf";
 // by Bon_Inf*. Dirty fixes by Operator.
 
 _point = _this select 0;
@@ -16,7 +16,7 @@ _activeTrigger setTriggerArea [0,0,0,false];
 
 //Ремонт
 [_unit, _point, _radius] spawn {
-    _unit = _this select 0;
+  _unit = _this select 0;
     _point = _this select 1;
     _radius = _this select 2;
 
@@ -26,77 +26,75 @@ _activeTrigger setTriggerArea [0,0,0,false];
     _repairtime = (_dmge*240) max 1;
     _repairvalue_per_step = _dmge/_repairtime;
     
+    _unit vehicleChat "Начинаем ремонт. Двигатель должен быть выключен.";
+    sleep 10;
+  _unit engineOn false;
 
-    _unit vehicleChat "**Ремонт начат. Заглушить двигатели!";
-    _unit engineOn false;
-
-    while{_unit distance getMarkerPos _point <= _radius && getPos _unit select 2 < 0.5 && damage _unit > 0} do {    
+    while{_unit distance getMarkerPos _point <= _radius && !(isEngineOn _unit) && getPos _unit select 2 < 1 && damage _unit > 0} do {    
         _unit setDamage ((damage _unit) - _repairvalue_per_step);
         sleep 1;
     };
-    if(damage _unit == 0) then {_unit vehicleChat "**Ремонт выполнен!"}
-    else{_unit vehicleChat "**Ремонт отменен."};
+    if(damage _unit == 0) then {_unit vehicleChat "Ремонт выполнен!"}
+    else{_unit vehicleChat "Ремонт отменен."};
 };
-sleep 5;
+
 //Заправка
 [_unit, _point, _radius] spawn {
+  
     _unit = _this select 0;
     _point = _this select 1;
     _radius = _this select 2;
 
+    sleep 12;
     _fuel_to_fill = 1 - (fuel _unit);
 
-    _refueltime = 1 max (_fuel_to_fill*150);
+    _refueltime = 1 max (_fuel_to_fill*210);
     _refuelvalue_per_step = _fuel_to_fill/_refueltime;
 
-    _unit vehicleChat "**Заправка...";
-    sleep 5;
+    _unit vehicleChat "Заправка...";
     _unit engineOn false;
 
-    while{_unit distance getMarkerPos _point <= _radius && getPos _unit select 2 < 0.5 && fuel _unit < 0.99} do {
+    while{_unit distance getMarkerPos _point <= _radius && !(isEngineOn _unit) && getPos _unit select 2 < 1 && fuel _unit < 0.99} do {
         _unit setFuel (fuel _unit) + _refuelvalue_per_step;
         sleep 1;
     };
-    if(fuel _unit >= 0.99) then {_unit vehicleChat "**Заправка окончена!"}
-    else{_unit vehicleChat "**Заправка отменена."};
+    if(fuel _unit >= 0.99) then {_unit vehicleChat "Бак полностью заправлен!"}
+    else{_unit vehicleChat "Заправка отменена."};
 };
-sleep 10;
-//Боезапас Нельзя ставить значение меньше чем 0.5, иначе не реармятся парные ракеты и слоты у танков
+
+//Боезапас
 [_unit, _point, _radius] spawn {
     _unit = _this select 0;
     _point = _this select 1;
-    _radius = _this select 2;
+    _radius = _this select 2;    
     
-    _unit engineOn false;
+    sleep 14;
+    _unit engineOn false;    
 
-    _reload_timefactor = 12; // seconds each step requires when refilling
-    _unit vehicleChat "**Перевооружение: боезапас будет выгружен и заново пополнен.";
-    _loadedAmmo = 0;
-    while{_unit distance getMarkerPos _point <= _radius && getPos _unit select 2 < 0.5 && _loadedAmmo < 1} do {
-      _loadedAmmo = _loadedAmmo + 0.1;
-      _unit setVehicleAmmo 0;
-      _unit setVehicleAmmo _loadedAmmo;
-      sleep _reload_timefactor;
-    };
-    if(_loadedAmmo == 1) then {_unit vehicleChat "**Боезапас пополнен!";};
-	_unit vehicleChat "**Обслуживание окончено. Освободите техсервис!";
+    _usualMagReloadTime = 25; // seconds each step requires when refilling for non-turret magazines
+    _turretMagReloadTime = 12;
+    _unit vehicleChat "Перевооружение: сейчас боезапас будет выгружен, проверен и пополнен. Это займёт некоторое время.";
+    sleep 2;
+    _currentAmmo = 0;
+    _unit setVehicleAmmo 0;
+    //Let's fill non-turret magazines - static pylons for helicopters for example.
+    _magazines = getArray (configFile >> "CfgVehicles" >> typeof _unit >> "magazines");
+  {_unit addMagazine _x;sleep _usualMagReloadTime;_currentAmmo = _currentAmmo + 1;} foreach _magazines;
+  
+  //checking, if vehicle have gunturret
+    _turretMagazines = getArray (((configFile >> "CfgVehicles" >> typeof _unit >> "turrets") select 0) >> "magazines");
+    if (count _turretMagazines > 0) then {    
+      {
+      if (!(isEngineOn _unit) && (_unit distance getMarkerPos _point <= _radius)) then {
+        _currentAmmo = _currentAmmo + 1;
+        _unit addMagazine _x;
+        sleep _turretMagReloadTime;
+        };
+      } foreach _turretMagazines;
+  };
+
+    if (_currentAmmo == (count _magazines + count _turretMagazines)) then {_unit vehicleChat "Боезапас пополнен!";}
+    else{_unit vehicleChat "Перезарядка отменена."};
 };
 _activeTrigger setTriggerArea [8,8,0,false];
 
-
-
-//ТУДУ - глушение двигателя во время начала обслуживания или дизмаунт всех изнутри и закрытие техники до полного ремонта! (это возможно)
-
-//Где-то ошибка в конце, не выводится сообщение об окончании перезарядки наверное ( должно быть  if(_loadedAmmo == 1)  )
-
-// на Танке, Страйкере, и Бредли пополняется только один набор ракет/пулеметов/гранат
-
-//Паузы между секциями для вывода сообщений и сообщение об окончании полного ремонта
-
-//Отлавливать первичный размер и форму триггера, по окончанию скрипта выставлять параметри триггера на изначалые (для квадратных, овальных, плюшевых)
-
-//Сделано - увеличел количество армед юнит пер степ + время речарджа(смотри выше), уменьшил высору срабатывания, реарм в воздухе - пичаль
-
-//Сократил размер сообщений в чате, процесс стал более понятен
-
-//При таких параметрах работает всё ок как у вертов так и у техники, проверил...
