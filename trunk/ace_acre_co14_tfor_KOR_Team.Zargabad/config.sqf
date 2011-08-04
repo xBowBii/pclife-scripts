@@ -100,7 +100,7 @@ tfor_commanders = ["US_Soldier_Officer_EP1","BAF_Soldier_Officer_MTP"];
 tfor_choppers_can_lift = ["CH_47F_EP1","CH_47F_BAF"];
 tfor_rallypoint_type = "Misc_Backpackheap_EP1";
 tfor_mobileuavterminals = ["HMMWV_M1035_DES_EP1"];
-tfor_vehicles_canload_ammo = ["MtvrReammo_DES_EP1","UH60M_EP1","BAF_Merlin_HC3_D"];
+//tfor_vehicles_canload_ammo = ["MtvrReammo_DES_EP1","UH60M_EP1","BAF_Merlin_HC3_D"];
 tfor_loadable_boxtype = "USBasicWeapons_EP1";
 
 enableEngineArtillery false; // dis/en BIS art comp
