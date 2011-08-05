@@ -513,7 +513,7 @@
   // ==============================================================
   // Choose if the "Backblast FX" feature should be used.
   // True / False, default is True
-    // GL4_Local set [77, False];
+     GL4_Local set [77, False];
 
     // Backblast FX Flash:
     // Choose if the "Backblast FX Flash" feature should be used.
