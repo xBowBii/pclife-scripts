@@ -252,7 +252,7 @@ class Mission
 					vehicle="Sportswoman3";
 					leader=1;
 					skill=0.60000002;
-					init="this switchmove ""ActsPercMstpSnonWnonDnon_DancingDuoIvan"";";
+					init="this switchmove ""ActsPercMstpSnonWnonDnon_DancingStefan"";";
 				};
 			};
 		};
@@ -283,13 +283,13 @@ class Mission
 				class Item0
 				{
 					position[]={6115.2051,130.44653,5133.3081};
-					azimut=-98.252357;
+					azimut=-98.252403;
 					id=142;
 					side="CIV";
 					vehicle="Sportswoman3";
 					leader=1;
 					skill=0.60000002;
-					init="this switchmove ""ActsPercMstpSnonWnonDnon_DancingDuoIvan"";";
+					init="this switchmove ""ActsPercMstpSnonWnonDnon_DancingStefan"";";
 				};
 			};
 		};
@@ -302,13 +302,13 @@ class Mission
 				class Item0
 				{
 					position[]={6119.043,130.17883,5135.9146};
-					azimut=37.634754;
+					azimut=37.6348;
 					id=143;
 					side="CIV";
 					vehicle="Sportswoman3";
 					leader=1;
 					skill=0.60000002;
-					init="this switchmove ""ActsPercMstpSnonWnonDnon_DancingDuoIvan"";";
+					init="this switchmove ""ActsPercMstpSnonWnonDnon_DancingStefan"";";
 				};
 			};
 		};
@@ -327,7 +327,7 @@ class Mission
 					vehicle="Sportswoman3";
 					leader=1;
 					skill=0.60000002;
-					init="this switchmove ""ActsPercMstpSnonWnonDnon_DancingDuoIvan"";";
+					init="this switchmove ""ActsPercMstpSnonWnonDnon_DancingStefan"";";
 				};
 			};
 		};
