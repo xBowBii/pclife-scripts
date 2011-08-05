@@ -242,7 +242,7 @@ keyUser20[]={};
 revMouse=0;
 mouseSmoothing=30;
 joystickSensitivity[]={0.5,0.5,0.5,0.5,0.5,0.5,1,1,0.5,0.5,0.5,0.5,0.5,0.5,1,1};
-anisoFilter=2;
+anisoFilter=4;
 TexQuality=3;
 TexMemory=4;
 useWBuffer=0;
@@ -379,7 +379,7 @@ class ModLauncherList
 browsingSource="Internet";
 class Filter
 {
-	serverName="opex";
+	serverName="rostov";
 	missionType="";
 	missionName="";
 	maxPing=0;
@@ -390,7 +390,7 @@ class Filter
 	battleyeRequired=0;
 	expansions=1;
 };
-lastMPMission="Example";
+lastMPMission="BAF/USA vs TK_GUE ACE MSO v3.43";
 class MainMap
 {
 	class Compass
@@ -407,7 +407,7 @@ class MainMap
 	};
 	class WalkieTalkie
 	{
-		inBack=0;
+		inBack=1;
 		position[]={0.093636647,-0.038821731,0.25};
 		positionBack[]={0.27680561,-0.13857235,0.625};
 	};
@@ -419,7 +419,7 @@ class MainMap
 	};
 };
 difficulty="veteran";
-lastSPMission="Benchmark 01";
+lastSPMission="WOO - Shapur - BAF Coop";
 activeKeys[]=
 {
 	"BIS_SPB1",
@@ -454,8 +454,6 @@ armoryPoints=125;
 difficultyMP="regular";
 currentCampaign="ca\missions\campaign";
 lastCampaignMission=".";
-teamSwitchOffsetX=0;
-teamSwitchOffsetY=0;
 useExtendetInfoType=1;
 useImperialSystem=0;
 class JoysticksList
@@ -577,19 +575,21 @@ class ProfileVariables
 		readOnly=0;
 	};
 };
-preferredObjectViewDistance=1000.0001;
+preferredObjectViewDistance=2500;
 mouseSensitivityX=1;
 mouseSensitivityY=1;
 floatingZoneArea=0.17093985;
+teamSwitchOffsetX=0;
+teamSwitchOffsetY=0;
 headBob=0;
 sceneComplexity=350000;
-viewDistance=1000.0001;
+viewDistance=2500;
 terrainGrid=12.5;
-volumeCD=6.5;
-volumeFX=6.5;
-volumeSpeech=6.5;
-volumeVoN=6.5;
-vonRecThreshold=0.029999999;
+volumeCD=5.8059149;
+volumeFX=5.846982;
+volumeSpeech=5.8059149;
+volumeVoN=5.8059149;
+vonRecThreshold=0.1690814;
 gamma=1;
 brightness=1;
 fovTop=0.75;

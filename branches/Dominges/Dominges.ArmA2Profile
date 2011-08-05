@@ -344,7 +344,7 @@ shadowQuality=4;
 browsingSource="Internet";
 class Filter
 {
-	serverName="EVO";
+	serverName="";
 	missionType="";
 	missionName="";
 	maxPing=0;
@@ -355,7 +355,7 @@ class Filter
 	battleyeRequired=0;
 };
 difficultyMP="veteran";
-lastMPMission="Evo: RED V0.96 Final";
+lastMPMission="Доминация 2! Спецназ + AI";
 class MainMap
 {
 	class Compass
@@ -399,7 +399,7 @@ mouseSensitivityY=1;
 floatingZoneArea=0.076197341;
 headBob=0;
 sceneComplexity=350000;
-viewDistance=1000;
+viewDistance=2500;
 terrainGrid=12.5;
 volumeCD=6.5;
 volumeFX=6.5;
