@@ -246,7 +246,7 @@ class Mission
 				class Item0
 				{
 					position[]={6103.2329,129.57506,5147.8687};
-					azimut=132.97141;
+					azimut=132.97099;
 					id=140;
 					side="CIV";
 					vehicle="Sportswoman3";
@@ -282,7 +282,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={6116.6533,130.39725,5134.104};
+					position[]={6115.2051,130.44653,5133.3081};
 					azimut=-98.252357;
 					id=142;
 					side="CIV";
@@ -301,7 +301,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={6120.2739,129.97298,5137.9419};
+					position[]={6119.043,130.17883,5135.9146};
 					azimut=37.634754;
 					id=143;
 					side="CIV";
@@ -320,8 +320,8 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={6108.0977,129.62393,5151.6289};
-					azimut=132.97141;
+					position[]={6107.6631,129.54919,5152.4258};
+					azimut=132.97099;
 					id=141;
 					side="CIV";
 					vehicle="Sportswoman3";
@@ -1642,12 +1642,13 @@ class Mission
 		items=3;
 		class Item0
 		{
-			position[]={6115.3525,129.77377,5145.7915};
-			a=15;
-			b=15;
-			angle=50.8209;
+			position[]={6124.2109,129.49144,5152.877};
+			a=8;
+			b=3;
+			angle=-133.10649;
 			rectangular=1;
 			activationBy="CIV";
+			activationType="CIV D";
 			interruptable=1;
 			age="UNKNOWN";
 			expActiv="if (isServer) then {[-2, {player sideChat _this}, format [""Player %1 finished first!"", name (thislist select 0)]] call CBA_fnc_globalExecute;};";
