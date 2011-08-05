@@ -1,0 +1,3 @@
+respawn = "INSTANT";
+respawnDelay = 5;
+disabledAI = 1;
