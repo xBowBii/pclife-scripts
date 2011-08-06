@@ -31,8 +31,9 @@ _repaired = [_unit, _point, _radius] spawn {
     _repairvalue_per_step = _dmge/_repairtime;
     
     _unit vehicleChat "Начинаем ремонт. Двигатель должен быть выключен.";
-    sleep 10;
+    sleep 5;
   _unit engineOn false;
+    sleep 5;
 
     while{_unit distance getMarkerPos _point <= _radius && !(isEngineOn _unit) && getPos _unit select 2 < 1 && damage _unit > 0} do {    
         _unit setDamage ((damage _unit) - _repairvalue_per_step);
@@ -75,8 +76,8 @@ _rearmed = [_unit, _point, _radius] spawn {
     sleep 20;
     _unit engineOn false;
 
-    _usualMagReloadTime = 5; // seconds each step requires when refilling
-    _turretMagReloadTime = 2;
+    _usualMagReloadTime = 25; // seconds each step requires when refilling
+    _turretMagReloadTime = 12;
     _unit vehicleChat "Перевооружение: сейчас боезапас будет выгружен, проверен и пополнен. Это займёт некоторое время.";
     sleep 2;
     _currentAmmo = 0;
