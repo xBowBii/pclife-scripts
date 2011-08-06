@@ -493,7 +493,7 @@
     // Description: If the "Burning FX Player" feature is used then a player will get dammage if the player is too close to any kind of burning object.
     // Warning: If a player is very close to a burning object ( Car, Tank, House, Camp Fire ) then the player will start burning too.
     // True / False, default is True
-      // GL4_Local set [74, False];
+       GL4_Local set [74, False];
 
   // ==============================================================
   // GL4 Crew FX:
