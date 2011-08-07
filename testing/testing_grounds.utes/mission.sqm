@@ -1,0 +1,725 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"cacharacters_e",
+		"utes",
+		"camisc3",
+		"CASounds",
+		"acex_c_weapon",
+		"CAMisc",
+		"acex_ru_c_weapon",
+		"catracked_e_t55",
+		"acex_veh_btr70",
+		"camisc_e",
+		"CAWheeled_E_Volha",
+		"acex_veh_stryker",
+		"ca_modules_functions",
+		"cawheeled_e_btr40",
+		"CAWheeled_E_SCUD",
+		"cacharacters2",
+		"caair_e_an2",
+		"camisc_e_wf",
+		"acex_ru_veh_brdm",
+		"CAAir_E_AH6J",
+		"CAAir"
+	};
+	addOnsAuto[]=
+	{
+		"cacharacters_e",
+		"catracked_e_t55",
+		"acex_veh_stryker",
+		"ca_modules_functions",
+		"cawheeled_e_btr40",
+		"cacharacters2",
+		"camisc3",
+		"acex_ru_c_weapon",
+		"CAMisc",
+		"camisc_e",
+		"CAWheeled_E_Volha",
+		"CAWheeled_E_SCUD",
+		"acex_ru_veh_brdm",
+		"CAAir",
+		"caair_e_an2",
+		"camisc_e_wf",
+		"CAAir_E_AH6J",
+		"utes"
+	};
+	randomSeed=520897;
+	class Intel
+	{
+		resistanceWest=0;
+		resistanceEast=1;
+		startWeather=0.39999998;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=14;
+		minute=20;
+	};
+	class Groups
+	{
+		items=11;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3402.1169,19,3607.9868};
+					azimut=352.50601;
+					id=0;
+					side="WEST";
+					vehicle="CZ_Soldier_SL_DES_EP1";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.60000002;
+					init="removeallweapons this; removeAllWeapons this; removeBackpack this; _null = this addaction [""Spawn patrol"",""gen_patrol.sqf""]; _null = this addaction [""Get coords"",""coords.sqf""]; _null = this addaction [""Test waiting"",""waitscript.sqf""];_null = this addaction [""Annihilate everything"",""bomb.sqf""];";
+				};
+			};
+		};
+		class Item1
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3450.8115,19,3622.3977};
+					id=1;
+					side="WEST";
+					vehicle="CZ_Soldier_SL_DES_EP1";
+					leader=1;
+					skill=0.60000002;
+					init="This setPos [ getPos this select 0, getPos this select 1, (getPos this select 2) +20]; this setunitpos""up""; this addEventHandler [""killed"", ""this removeAllEventHandlers 'killed'; _null=[-40] spawn checkScore;""];";
+				};
+			};
+		};
+		class Item2
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3454.8909,19,3616.8516};
+					id=3;
+					side="WEST";
+					vehicle="CZ_Soldier_SL_DES_EP1";
+					leader=1;
+					skill=0.60000002;
+					init="this switchMove ""sitUnarm_L_killingFly""; this disableAI ""AUTOTARGET""; this disableAI ""TARGET""; this disableAI ""ANIM""; this disableAI ""MOVE""; this addEventHandler [""killed"", ""this removeAllEventHandlers 'killed'; _null=[-40] spawn checkScore;""];";
+				};
+			};
+		};
+		class Item3
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4003.6331,19,3603.2366};
+					azimut=320;
+					id=11;
+					side="EAST";
+					vehicle="T55_TK_EP1";
+					leader=1;
+					skill=0.60000002;
+					fuel=0;
+					ammo=0;
+					init="this addEventHandler [""killed"", ""this removeAllEventHandlers 'killed'; _null=[300] spawn checkScore;""];";
+				};
+			};
+		};
+		class Item4
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3463.1235,19,3622.1169};
+					azimut=180;
+					id=12;
+					side="WEST";
+					vehicle="CZ_Soldier_DES_EP1";
+					leader=1;
+					skill=0.60000002;
+					init="removeAllWeapons this; this switchMove ""sitUnarm_R_talking""; this setpos [(getpos this select 0)+1,getpos this select 1,(getpos this select 2)+2]; this addEventHandler [""killed"", ""this removeAllEventHandlers 'killed'; _null=[-40] spawn checkScore;""];";
+				};
+			};
+		};
+		class Item5
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3799.5691,19,3622.6885};
+					azimut=350;
+					id=15;
+					side="WEST";
+					vehicle="ACE_Stryker_ICV_M2_D";
+					leader=1;
+					skill=0.60000002;
+					ammo=0;
+					init="this addEventHandler [""killed"", ""this removeAllEventHandlers 'killed'; _null=[200] spawn checkScore;""];";
+				};
+			};
+		};
+		class Item6
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3429.4788,19,3635.3057};
+					id=16;
+					side="LOGIC";
+					vehicle="FunctionsManager";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item7
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3898.353,19,3608.7808};
+					azimut=340;
+					id=17;
+					side="EAST";
+					vehicle="BTR40_MG_TK_INS_EP1";
+					leader=1;
+					skill=0.60000002;
+					fuel=0.23706311;
+					ammo=0;
+					init="this addEventHandler [""killed"", ""this removeAllEventHandlers 'killed'; _null=[100] spawn checkScore;""];";
+				};
+			};
+		};
+		class Item8
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3438.1563,19,3605.6235};
+					azimut=83.9468;
+					id=19;
+					side="WEST";
+					vehicle="CZ_Soldier_MG_DES_EP1";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="removeallweapons this; removeAllWeapons this; removeBackpack this; this addEventHandler [""killed"", ""this removeAllEventHandlers 'killed'; _null=[-40] spawn checkScore;""];";
+				};
+			};
+		};
+		class Item9
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3432.6133,19,3607.3115};
+					azimut=95;
+					id=26;
+					side="WEST";
+					vehicle="FR_AR";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="removeallweapons this; removeAllWeapons this; removeBackpack this; this addEventHandler [""killed"", ""this removeAllEventHandlers 'killed'; _null=[-40] spawn checkScore;""];";
+				};
+			};
+		};
+		class Item10
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3492.2095,19,3610.2881};
+					id=33;
+					side="WEST";
+					vehicle="USMC_Soldier_Pilot";
+					leader=1;
+					skill=0.60000002;
+					text="pilot";
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=23;
+		class Item0
+		{
+			position[]={3450.8384,23.903809,3622.6133};
+			id=2;
+			side="EMPTY";
+			vehicle="Land_Ind_IlluminantTower";
+			skill=0.60000002;
+		};
+		class Item1
+		{
+			position[]={3469.2397,19,3599.4417};
+			azimut=90.386597;
+			id=4;
+			side="EMPTY";
+			vehicle="ZavoraAnim";
+			skill=0.60000002;
+			text="the_gate";
+			init="this animate [""bargate"",1]; this addeventhandler [""hit"", {hint ""yahoo!"";deleteVehicle triggerOpen}];";
+		};
+		class Item2
+		{
+			position[]={3430.7253,19,3598.5842};
+			azimut=190;
+			id=5;
+			side="EMPTY";
+			vehicle="ACE_WeaponBox_RU";
+			skill=0.60000002;
+			text="rifleBox";
+		};
+		class Item3
+		{
+			position[]={3462.1685,19,3599.4995};
+			azimut=340;
+			id=6;
+			side="EMPTY";
+			vehicle="Radio";
+			skill=0.60000002;
+			init="playMusic ""EP1_Track01""";
+		};
+		class Item4
+		{
+			position[]={3433.8792,19,3598.5173};
+			azimut=190;
+			id=7;
+			side="EMPTY";
+			vehicle="ACE_WeaponBox_RU";
+			skill=0.60000002;
+			text="mgBox";
+		};
+		class Item5
+		{
+			position[]={3437.4353,19,3598.5173};
+			azimut=190;
+			id=8;
+			side="EMPTY";
+			vehicle="ACE_WeaponBox_RU";
+			skill=0.60000002;
+			text="sniperBox";
+		};
+		class Item6
+		{
+			position[]={3440.3872,19,3598.3828};
+			azimut=190;
+			id=9;
+			side="EMPTY";
+			vehicle="ACE_WeaponBox_RU";
+			skill=0.60000002;
+			text="launcherBox";
+		};
+		class Item7
+		{
+			position[]={3443.2056,19,3598.4502};
+			azimut=190;
+			id=10;
+			side="EMPTY";
+			vehicle="ACE_WeaponBox_RU";
+			skill=0.60000002;
+			text="miscBox";
+		};
+		class Item8
+		{
+			position[]={3465.2744,19,3621.8438};
+			id=13;
+			side="EMPTY";
+			vehicle="Land_Misc_Cargo1E_EP1";
+			skill=0.60000002;
+		};
+		class Item9
+		{
+			position[]={3429.7837,19,3602.24};
+			azimut=269.44199;
+			id=14;
+			side="EMPTY";
+			vehicle="Volha_2_TK_CIV_EP1";
+			skill=0.60000002;
+			health=0.48115283;
+			fuel=0.44416958;
+		};
+		class Item10
+		{
+			position[]={3763.2957,19,3545.3892};
+			azimut=-307.97754;
+			id=18;
+			side="EMPTY";
+			vehicle="MAZ_543_SCUD_TK_EP1";
+			skill=0.60000002;
+		};
+		class Item11
+		{
+			position[]={3434.8076,19,3581.7573};
+			azimut=80;
+			id=20;
+			side="EMPTY";
+			vehicle="Land_CamoNet_EAST_EP1";
+			skill=0.60000002;
+			init="this addEventHandler [""killed"",""[_this select 0, 5] spawn respawnObjects;""];";
+		};
+		class Item12
+		{
+			position[]={3600.0112,18.908772,3569.1218};
+			azimut=91.252785;
+			id=21;
+			side="EMPTY";
+			vehicle="TargetEpopup";
+			skill=0.60000002;
+		};
+		class Item13
+		{
+			position[]={3599.9885,18.924913,3572.4919};
+			azimut=91.06356;
+			id=22;
+			side="EMPTY";
+			vehicle="TargetEpopup";
+			skill=0.60000002;
+		};
+		class Item14
+		{
+			position[]={3599.9529,18.959282,3575.9287};
+			azimut=88.56881;
+			id=23;
+			side="EMPTY";
+			vehicle="TargetEpopup";
+			skill=0.60000002;
+		};
+		class Item15
+		{
+			position[]={3800.5803,18.938564,3573.8569};
+			azimut=90.768074;
+			id=24;
+			side="EMPTY";
+			vehicle="TargetEpopup";
+			skill=0.60000002;
+		};
+		class Item16
+		{
+			position[]={3800.551,18.906931,3570.6938};
+			azimut=91.39183;
+			id=25;
+			side="EMPTY";
+			vehicle="TargetEpopup";
+			skill=0.60000002;
+		};
+		class Item17
+		{
+			position[]={3400.1707,19,3612.1838};
+			azimut=250;
+			id=27;
+			side="EMPTY";
+			vehicle="ACE_BRDM2_RU";
+			skill=0.60000002;
+			health=0.98412579;
+			fuel=0.96563399;
+			ammo=0.6475777;
+		};
+		class Item18
+		{
+			position[]={3371.8035,19,3619.6648};
+			azimut=260;
+			id=28;
+			side="EMPTY";
+			vehicle="AH1Z";
+			skill=0.60000002;
+			health=0.70305264;
+			fuel=0.79181248;
+			ammo=0.34061643;
+		};
+		class Item19
+		{
+			position[]={3350.0005,18.927748,3572.7756};
+			azimut=89.04277;
+			id=29;
+			side="EMPTY";
+			vehicle="An2_TK_EP1";
+			skill=0.60000002;
+		};
+		class Item20
+		{
+			position[]={3333.0183,19,3610.9875};
+			azimut=95;
+			id=30;
+			side="EMPTY";
+			vehicle="HeliH";
+			skill=0.60000002;
+		};
+		class Item21
+		{
+			position[]={3314.1858,19,3611.5039};
+			azimut=-0.053612806;
+			id=31;
+			side="EMPTY";
+			vehicle="TK_GUE_WarfareBHeavyFactory_Base_EP1";
+			skill=0.60000002;
+		};
+		class Item22
+		{
+			position[]={3371.425,19,3602.7942};
+			azimut=282.039;
+			id=32;
+			side="EMPTY";
+			vehicle="AH6J_EP1";
+			skill=0.60000002;
+			health=0.88796914;
+			fuel=0.79181248;
+			ammo=0.34061643;
+		};
+	};
+	class Markers
+	{
+		items=14;
+		class Item0
+		{
+			position[]={3489.7576,19,3609.7844};
+			name="markr";
+			markerType="RECTANGLE";
+			type="Empty";
+			fillName="Border";
+			a=10;
+			b=10;
+			drawBorder=1;
+		};
+		class Item1
+		{
+			position[]={3456.7954,19,3610.2505};
+			name="gate_l";
+			type="Empty";
+		};
+		class Item2
+		{
+			position[]={3464.8904,19,3610.3262};
+			name="gate_r";
+			type="Empty";
+		};
+		class Item3
+		{
+			position[]={3558.5818,18.752926,3687.5435};
+			name="patrol";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=50;
+			b=50;
+		};
+		class Item4
+		{
+			position[]={3600.1699,19,3607.6763};
+			name="point";
+			type="Empty";
+		};
+		class Item5
+		{
+			position[]={4099.9824,19,3602.5222};
+			name="rose";
+			type="Empty";
+		};
+		class Item6
+		{
+			position[]={3429.9631,18.930105,3573.0112};
+			name="spawnMHeli";
+			type="Empty";
+		};
+		class Item7
+		{
+			position[]={3471.1504,18.925444,3572.5452};
+			name="spawnAHeli";
+			type="Empty";
+		};
+		class Item8
+		{
+			position[]={3513.115,18.92078,3572.0789};
+			name="spawnTHeli";
+			type="Empty";
+		};
+		class Item9
+		{
+			position[]={3555.3901,18.918999,3571.9006};
+			name="spawnAir";
+			type="Empty";
+		};
+		class Item10
+		{
+			position[]={3332.9714,19,3610.3972};
+			name="servicePoint";
+			type="Empty";
+		};
+		class Item11
+		{
+			position[]={5123.9019,0.16848339,3606.3625};
+			name="start_point";
+			type="Empty";
+		};
+		class Item12
+		{
+			position[]={3745.6133,19,3607.1975};
+			name="launch_Point";
+			type="Empty";
+		};
+		class Item13
+		{
+			position[]={27.654257,-99,3799.937};
+			name="finish_point";
+			type="Empty";
+		};
+	};
+	class Sensors
+	{
+		items=3;
+		class Item0
+		{
+			position[]={3468.8811,19,3599.3777};
+			a=8;
+			b=5;
+			rectangular=1;
+			activationBy="WEST";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			name="triggerOpen";
+			expActiv="hint ""you're here""; the_gate animate [""bargate"",0];";
+			expDesactiv="the_gate animate [""bargate"",1];";
+			class Effects
+			{
+			};
+		};
+		class Item1
+		{
+			position[]={3332.1667,19,3611.208};
+			a=8;
+			b=8;
+			activationBy="WEST";
+			repeating=1;
+			age="UNKNOWN";
+			name="repairTrigger";
+			expCond="getPos (thislist select 0) select 2 < 2";
+			expActiv="_null = [""servicePoint"",8,thisTrigger] execVM ""rearm.sqf"";";
+			class Effects
+			{
+			};
+		};
+		class Item2
+		{
+			position[]={3383.27,19,3598.3506};
+			a=3;
+			b=3;
+			activationBy="WEST";
+			repeating=1;
+			timeoutMin=1;
+			timeoutMid=1;
+			timeoutMax=1;
+			interruptable=1;
+			age="UNKNOWN";
+			name="koleso";
+			expCond="count (nearestObjects [getPos koleso, [""ACE_Spare_Tyre"", ""ACE_Spare_Tyre_HD"", ""ACE_Spare_Tyre_HDAPC""], 5]) < 10";
+			expActiv="player globalchat ""Tyre trigger activated!"";_null = createVehicle [""ACE_Spare_Tyre"", getPos koleso, [], 5, ""FORM""];_null = createVehicle [""ACE_Spare_Tyre_HD"", getPos koleso, [], 5, ""FORM""]; _null = createVehicle [""ACE_Spare_Tyre_HDAPC"", getPos koleso, [], 5, ""FORM""];";
+			class Effects
+			{
+			};
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"utes"
+	};
+	addOnsAuto[]=
+	{
+		"utes"
+	};
+	randomSeed=1958241;
+	class Intel
+	{
+		startWeather=0.40000001;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=14;
+		minute=20;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"utes"
+	};
+	addOnsAuto[]=
+	{
+		"utes"
+	};
+	randomSeed=2477021;
+	class Intel
+	{
+		startWeather=0.40000001;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=14;
+		minute=20;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"utes"
+	};
+	addOnsAuto[]=
+	{
+		"utes"
+	};
+	randomSeed=837777;
+	class Intel
+	{
+		startWeather=0.40000001;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=14;
+		minute=20;
+	};
+};

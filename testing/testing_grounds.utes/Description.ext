@@ -1,0 +1,9 @@
+class CfgSounds
+{
+  sounds[] = {};
+  class rageMusic {
+		name = "";
+		sound[] = {"CfgMusic>>EP1_Track02", 0.2, 1.000000};
+		titles[] = {};
+	};
+};

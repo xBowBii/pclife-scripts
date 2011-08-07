@@ -1,0 +1,1 @@
+player globalchat format["X coord: %1; Y coord: %2",getPos player select 0,getPos player select 1];
