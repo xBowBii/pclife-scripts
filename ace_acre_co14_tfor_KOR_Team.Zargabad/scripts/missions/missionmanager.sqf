@@ -6,8 +6,7 @@ private ["_partitionsize","_location"];
 
 #include "mm_funcs.sqf"
 
-
-tfor_missions = ["insurgency","clearlocation","searchcache","destroyradarscud","rescuepilot"/*,"stopconvoy"*/,"bringtruck","defendcamp","destroyfirebase","captureofficer","relievesquad","markfueldump","airattack","tankattack","supporttroops","destroycamps"] call getArrayPermutation;
+//tfor_missions = ["insurgency","clearlocation","searchcache","destroyradarscud","rescuepilot","bringtruck","defendcamp","destroyfirebase","captureofficer","relievesquad","markfueldump","airattack","tankattack","supporttroops","destroycamps"] call getArrayPermutation;
 
 tfor_locations = nearestLocations [getMarkerPos format["respawn_%1",tfor_friendly_side],["Name","NameVillage","NameCity","NameCityCapital"],20000];
 {if(surfaceiswater [position _x select 0, position _x select 1]) then {tfor_locations = tfor_locations - [_x]}} foreach tfor_locations;
@@ -88,8 +87,6 @@ for "_i" from 1 to (count tfor_locations) min (tfor_maxmissions*2) do {
 		publicVariable "tfor_endmission_fail";
 	};
 };
-
-
 
 // can only become true if you ran out of locations :
 if(not tfor_endmission_success && not tfor_endmission_fail) then {
