@@ -60,7 +60,7 @@ class Params {
     class tfor_daytime {
         title="Время дня";
         values[]={0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23};
-        default=4;
+        default=6;
         texts[]={"0000","0100","0200","0300","0400","0500","0600","0700","0800","0900","1000","1100","1200","1300","1400","1500","1600","1700","1800","1900","2000","2100","2200","2300"};
     };
     //paramsArray[1]
@@ -223,7 +223,7 @@ class RscTitles {
 			x = 0.975; y = 0.955;
 			w = 0.25; h = 0.2;
 			sizeEx = 0.025;
-			text = "www.takistan-force.net   serveraaanet.ucoz.ru";
+			text = "www.takistan-force.net www.serveraaanet.ucoz.ru";
 		};
 
 		class IntroPicture : HW_RscPicture {
