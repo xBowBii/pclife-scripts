@@ -14,7 +14,7 @@ _activeTrigger setTriggerArea [0,0,0,false]; //uncomment this line
   if (_unitDistance < _minDistance) then {_unit = _x; _minDistance = _unitDistance};
 } foreach nearestObjects [getMarkerPos _point, ["Car", "Tank"], _radius];
 
-if(not isNil {_unit getVariable "repair_spam_protection"}) exitWith {sleep 2; _activeTrigger setTriggerArea [8,8,0,false];_unit vehiclechat "Сервис сейчас недоступен...";}; //uncomment this line
+if(not isNil {_unit getVariable "repair_spam_protection"}) exitWith {sleep 2; _activeTrigger setTriggerArea [5,5,0,false];_unit vehiclechat "Сервис сейчас недоступен...";}; //uncomment this line
 //if(not isNil {_unit getVariable "repair_spam_protection"}) exitWith {sleep 3; _unit vehiclechat "Сервис сейчас недоступен...";}; //comment this line
 //_activeTrigger setTriggerArea [0,0,0,false]; //comment this line
 
@@ -23,8 +23,9 @@ _repaired = [_unit, _point, _radius] spawn {
   _unit = _this select 0;
     _point = _this select 1;
     _radius = _this select 2;
-  
-  	//Dummies Bat Cave...
+	sleep 0.1;
+  _unit vehicleChat "Этот сервис предназначен только для Техники!";
+	//Dummies Bat Cave...
 	_unit setVelocity [0, 0, 0];
 	_unit action ["engineOff",_unit];
 	_unit setVelocity [0, 0, 0];
@@ -35,13 +36,18 @@ _repaired = [_unit, _point, _radius] spawn {
 	_unit setVelocity [0, 0, 0];
 	sleep 0.1;
 	_unit setVelocity [0, 0, 0];
+	_unit action ["engineOff",_unit];
+	_unit engineOn false;
   
 	_dmge = getDammage _unit;
     _repairtime = (_dmge*240) max 1;
     _repairvalue_per_step = _dmge/_repairtime;
-    
-    _unit vehicleChat "Ремонт начат. Двигатель должен быть выключен!";
+	
 	sleep 1;
+    _unit vehicleChat "Не двигайтесь и не заводите технику до окончания полного цикла обслуживания!";
+	sleep 3;
+    _unit vehicleChat "Ремонт начат.";
+	sleep 2;
 	while{_unit distance getMarkerPos _point <= _radius && !(isEngineOn _unit) && getPos _unit select 2 < 0.5 && damage _unit > 0} do {    
         _unit setDamage ((damage _unit) - _repairvalue_per_step);
         sleep 1;
