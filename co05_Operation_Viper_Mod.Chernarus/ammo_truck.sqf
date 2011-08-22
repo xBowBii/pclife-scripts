@@ -1,48 +1,9 @@
 clearweaponcargo _this;
 clearmagazinecargo _this;
 
-//WEAPNZ
-//AR
-_this addWeaponCargo ["ACE_RPK",2];
-_this addWeaponCargo ["ACE_RPK74M_1P29",2];
-
-//MACHINEGUNZ
-_this addWeaponCargo ["M249",2];
-
-//Pistols
-_this addWeaponCargo ["ACE_Flaregun",2];
-_this addWeaponCargo ["ACE_Glock17",2];
-_this addWeaponCargo ["ACE_USPSD",2];
-
-//Rifles
-_this addWeaponCargo ["ACE_AK103_Kobra",2];
-_this addWeaponCargo ["ACE_AK105",2];
-_this addWeaponCargo ["ACE_AK74M",2];
-_this addWeaponCargo ["ACE_AKM_GL",2];
-_this addWeaponCargo ["AKS_74_kobra",2];
-_this addWeaponCargo ["M16A4",2];
-_this addWeaponCargo ["M4A1_Aim",2];
-
 //Rucks
 _this addWeaponCargo ["ACE_Rucksack_RD90",3];
 _this addWeaponCargo ["ACE_VTAC_RUSH72",3];
-
-//Sniper rifles
-_this addWeaponCargo ["VSS_vintorez",2];
-
-//SMG
-_this addWeaponCargo ["ACE_UMP45_SD",2];
-_this addWeaponCargo ["bizon_silenced",2];
-_this addWeaponCargo ["MP5A5",2];
-
-//Launchers
-_this addWeaponCargo ["Igla",1];
-_this addWeaponCargo ["Javelin",1];
-_this addWeaponCargo ["M136",4];
-_this addWeaponCargo ["MetisLauncher",1];
-_this addWeaponCargo ["RPG18",4];
-_this addWeaponCargo ["RPG7V",2];
-_this addWeaponCargo ["ACE_RPG27",4];
 
 //items
 _this addWeaponCargo ["Binocular",4];
@@ -57,17 +18,36 @@ _this addMagazineCargo ["ACE_Morphine",50];
 _this addMagazineCargo ["ACE_Epinephrine",50];
 
 //AMMO//
-
-_this addMagazineCargo ["ACE_30Rnd_545x39_S_AK",100];
 _this addMagazineCargo ["30Rnd_545x39_AKSD",100];
-_this addMagazineCargo ["ACE_30Rnd_762x39_S_AK47",100];
-_this addMagazineCargo ["ACE_30Rnd_762x39_SD_AK47",100];
-_this addMagazineCargo ["ACE_75Rnd_762x39_S_AK47",100];
-_this addMagazineCargo ["ACE_40Rnd_762x39_T_AK47",100];
-_this addMagazineCargo ["ACE_30Rnd_762x39_T_AK47",100];
-_this addMagazineCargo ["ACE_75Rnd_545x39_S_RPK",100];
-_this addMagazineCargo ["ACE_75Rnd_545x39_T_RPK",100];
 _this addMagazineCargo ["ACE_30Rnd_545x39_T_AK",100];
+_this addMagazineCargo ["ACE_30Rnd_545x39_S_AK",100];
+_this addMagazineCargo ["ACE_30Rnd_545x39_AP_S_AK",100];
+_this addMagazineCargo ["ACE_30Rnd_545x39_AP_AK",100];
+_this addMagazineCargo ["ACE_30Rnd_545x39_EP_AK",100];
+_this addMagazineCargo ["ACE_30Rnd_545x39_EP_S_AK",100];
+
+_this addMagazineCargo ["ACE_30Rnd_762x39_S_AK47",100];
+_this addMagazineCargo ["ACE_30Rnd_762x39_AP_S_AK47",100];
+_this addMagazineCargo ["ACE_30Rnd_762x39_AP_AK47",100];
+_this addMagazineCargo ["ACE_30Rnd_762x39_SD_AK47",100];
+_this addMagazineCargo ["ACE_30Rnd_762x39_T_AK47",100];
+
+_this addMagazineCargo ["ACE_40Rnd_762x39_S_AK47",100];
+_this addMagazineCargo ["ACE_40Rnd_762x39_B_AK47",100];
+_this addMagazineCargo ["ACE_40Rnd_762x39_AP_AK47",100];
+_this addMagazineCargo ["ACE_40Rnd_762x39_AP_S_AK47",100];
+_this addMagazineCargo ["ACE_40Rnd_762x39_T_AK47",100];
+
+_this addMagazineCargo ["ACE_75Rnd_545x39_S_RPK",100];
+_this addMagazineCargo ["ACE_45Rnd_545x39_B_AK",100];
+_this addMagazineCargo ["ACE_45Rnd_545x39_S_AK",100];
+_this addMagazineCargo ["ACE_45Rnd_545x39_AP_S_AK",100];
+_this addMagazineCargo ["ACE_45Rnd_545x39_AP_AK",100];
+_this addMagazineCargo ["ACE_45Rnd_545x39_EP_AK",100];
+_this addMagazineCargo ["ACE_45Rnd_545x39_EP_S_AK",100];
+_this addMagazineCargo ["ACE_75Rnd_545x39_T_RPK",100];
+_this addMagazineCargo ["ACE_45Rnd_545x39_AP_AK",100];
+
 _this addMagazineCargo ["ACE_20Rnd_762x51_SB_M110",100];
 _this addMagazineCargo ["ACE_5Rnd_127x99_S_TAC50",100];
 _this addMagazineCargo ["ACE_25Rnd_1143x23_S_UMP45",100];
@@ -121,4 +101,3 @@ _this addMagazineCargo ["TimeBomb",25];
 _this addMagazineCargo ["PipeBomb",25];
 _this addMagazineCargo ["Mine",5];
 _this addMagazineCargo ["MineE",5];
-

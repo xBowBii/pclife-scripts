@@ -35,10 +35,26 @@ _this addWeaponCargo ["ACE_AK104_Kobra",2];
 _this addWeaponCargo ["ACE_AK105",2];
 _this addWeaponCargo ["ACE_AK105_1P29",2];
 _this addWeaponCargo ["ACE_AK105_Kobra",2];
+
 _this addWeaponCargo ["ACE_AK74M",2];
-_this addWeaponCargo ["ACE_AK74M_1P29",2];
-_this addWeaponCargo ["ACE_AK74M_GL_Kobra",2];
+_this addWeaponCargo ["ACE_AK74M_Kobra",2];
 _this addWeaponCargo ["ACE_AK74M_PSO",2];
+_this addWeaponCargo ["ACE_AK74M_1P78",2];
+_this addWeaponCargo ["ACE_AK74M_TWS",2];
+_this addWeaponCargo ["ACE_AK74M_NSPU",2];
+_this addWeaponCargo ["ACE_AK74M_GL",2];
+_this addWeaponCargo ["ACE_AK74M_GL_Kobra",2];
+_this addWeaponCargo ["ACE_AK74M_GL_PSO",2];
+_this addWeaponCargo ["ACE_AK74M_GL_1P78",2];
+_this addWeaponCargo ["ACE_AK74M_GL_TWS",2];
+_this addWeaponCargo ["ACE_AK74M_GL_NSPU",2];
+_this addWeaponCargo ["ACE_AK74M_SD",2];
+_this addWeaponCargo ["ACE_AK74M_SD_Kobra",2];
+_this addWeaponCargo ["ACE_AK74M_SD_PSO",2];
+_this addWeaponCargo ["ACE_AK74M_SD_1P78",2];
+_this addWeaponCargo ["ACE_AK74M_SD_TWS",2];
+_this addWeaponCargo ["ACE_AK74M_SD_NSPU",2];
+
 _this addWeaponCargo ["ACE_Val_Kobra",2];
 _this addWeaponCargo ["ACE_oc14sd",2];
 _this addWeaponCargo ["ACE_oc14glsp",2];
@@ -126,17 +142,36 @@ _this addWeaponCargo ["ACE_GlassesLHD_glasses",8];
 _this addWeaponCargo ["ACE_GlassesSpecial",4];
 
 //AMMO//
-
-_this addMagazineCargo ["ACE_30Rnd_545x39_S_AK",100];
 _this addMagazineCargo ["30Rnd_545x39_AKSD",100];
-_this addMagazineCargo ["ACE_30Rnd_762x39_S_AK47",100];
-_this addMagazineCargo ["ACE_30Rnd_762x39_SD_AK47",100];
-_this addMagazineCargo ["ACE_75Rnd_762x39_S_AK47",100];
-_this addMagazineCargo ["ACE_40Rnd_762x39_T_AK47",100];
-_this addMagazineCargo ["ACE_30Rnd_762x39_T_AK47",100];
-_this addMagazineCargo ["ACE_75Rnd_545x39_S_RPK",100];
-_this addMagazineCargo ["ACE_75Rnd_545x39_T_RPK",100];
 _this addMagazineCargo ["ACE_30Rnd_545x39_T_AK",100];
+_this addMagazineCargo ["ACE_30Rnd_545x39_S_AK",100];
+_this addMagazineCargo ["ACE_30Rnd_545x39_AP_S_AK",100];
+_this addMagazineCargo ["ACE_30Rnd_545x39_AP_AK",100];
+_this addMagazineCargo ["ACE_30Rnd_545x39_EP_AK",100];
+_this addMagazineCargo ["ACE_30Rnd_545x39_EP_S_AK",100];
+
+_this addMagazineCargo ["ACE_30Rnd_762x39_S_AK47",100];
+_this addMagazineCargo ["ACE_30Rnd_762x39_AP_S_AK47",100];
+_this addMagazineCargo ["ACE_30Rnd_762x39_AP_AK47",100];
+_this addMagazineCargo ["ACE_30Rnd_762x39_SD_AK47",100];
+_this addMagazineCargo ["ACE_30Rnd_762x39_T_AK47",100];
+
+_this addMagazineCargo ["ACE_40Rnd_762x39_S_AK47",100];
+_this addMagazineCargo ["ACE_40Rnd_762x39_B_AK47",100];
+_this addMagazineCargo ["ACE_40Rnd_762x39_AP_AK47",100];
+_this addMagazineCargo ["ACE_40Rnd_762x39_AP_S_AK47",100];
+_this addMagazineCargo ["ACE_40Rnd_762x39_T_AK47",100];
+
+_this addMagazineCargo ["ACE_75Rnd_545x39_S_RPK",100];
+_this addMagazineCargo ["ACE_45Rnd_545x39_B_AK",100];
+_this addMagazineCargo ["ACE_45Rnd_545x39_S_AK",100];
+_this addMagazineCargo ["ACE_45Rnd_545x39_AP_S_AK",100];
+_this addMagazineCargo ["ACE_45Rnd_545x39_AP_AK",100];
+_this addMagazineCargo ["ACE_45Rnd_545x39_EP_AK",100];
+_this addMagazineCargo ["ACE_45Rnd_545x39_EP_S_AK",100];
+_this addMagazineCargo ["ACE_75Rnd_545x39_T_RPK",100];
+_this addMagazineCargo ["ACE_45Rnd_545x39_AP_AK",100];
+
 _this addMagazineCargo ["ACE_20Rnd_762x51_SB_M110",100];
 _this addMagazineCargo ["ACE_5Rnd_127x99_S_TAC50",100];
 _this addMagazineCargo ["ACE_25Rnd_1143x23_S_UMP45",100];
