@@ -25,7 +25,7 @@ if(isServer) then
 		_tempSoldier7 moveInCargo _truck;
 		_tempSoldier8 moveInCargo _truck;
 
-		wp = _myGroup addwaypoint [position player];
+		wp = _myGroup addwaypoint [position player, 0];
 		wp setWaypointType "SAD";
 		wp setWaypointSpeed "FULL";
 	};
