@@ -479,7 +479,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=1;
 					text="unit3";
-					init="Grp1 = Group this; {_x moveincargo C} ForEach units group this; removeallweapons this; for ""_i"" from 1 to 6 do {this addmagazine ""64Rnd_9x19_SD_Bizon""}; this addweapon ""bizon_silenced""; this addmagazine ""SmokeShell""; this addEventHandler ['killed', {(_this select 0) execVM 'removebody.sqf'}];";
+					init="Grp1 = Group this; {_x moveincargo C} ForEach units group this; removeallweapons this; for ""_i"" from 1 to 6 do {this addmagazine ""64Rnd_9x19_SD_Bizon""}; this addweapon ""bizon_silenced""; this addmagazine ""SmokeShell""; this addweapon ""RPG18""; this addEventHandler ['killed', {(_this select 0) execVM 'removebody.sqf'}];";
 				};
 				class Item1
 				{
