@@ -1,6 +1,6 @@
-ace_wounds_prevtime = 300;
+ace_wounds_prevtime = 120;
 
-ace_sys_wounds_no_rpunish = true;
+ace_sys_wounds_no_rpunish = false;
 
 if ( (!isServer) && (player != player) ) then
 {

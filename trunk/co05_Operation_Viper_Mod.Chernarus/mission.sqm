@@ -79,7 +79,7 @@ class Mission
 		year=2010;
 		month=11;
 		day=15;
-		hour=15;
+		hour=17;
 		minute=0;
 	};
 	class Groups
@@ -523,7 +523,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.97556728;
 					text="unit2";
-					init="removeallweapons this; for ""_i"" from 1 to 6 do {this addmagazine ""64Rnd_9x19_SD_Bizon""}; this addweapon ""bizon_silenced""; this addmagazine ""SmokeShell"";";
+					init="removeallweapons this; for ""_i"" from 1 to 6 do {this addmagazine ""64Rnd_9x19_SD_Bizon""}; this addweapon ""bizon_silenced""; this addmagazine ""SmokeShell""; this addmagazine ""ACE_Medkit""; this addmagazine ""ACE_Medkit""; ";
 				};
 				class Item3
 				{
@@ -3487,7 +3487,7 @@ class Mission
 		};
 		class Item10
 		{
-			position[]={320.33414,66.801788,2006.8101};
+			position[]={491.01324,44.509491,2027.348};
 			azimut=75;
 			special="NONE";
 			id=19;
@@ -3498,7 +3498,7 @@ class Mission
 		};
 		class Item11
 		{
-			position[]={327.67795,64.046356,2012.0789};
+			position[]={498.35709,45.857265,2032.6168};
 			azimut=88.332397;
 			special="NONE";
 			id=20;
@@ -4972,7 +4972,7 @@ class Mission
 		};
 		class Item16
 		{
-			position[]={319.43655,68.907043,1981.8694};
+			position[]={490.11566,39.008671,2002.4073};
 			name="Supp_3";
 			text="Resupply";
 			type="mil_arrow";
@@ -5384,7 +5384,7 @@ class Mission
 			interruptable=1;
 			age="UNKNOWN";
 			expCond="not alive AA";
-			expActiv="T3 setTaskState ""SUCCEEDED""; null = [objNull,ObjNull,T3, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";hint""Team Viper advance to Artillery Com Alpha and execute fire mission,grid ref 036 - 131"";three=true;publicVariable ""three"";deleteMarker ""AA"";player setCurrenttask T4; _null = [""abrams1"", ""abrams2"", 275, 240] execVM ""abramsspawn.sqf""; _null = [""trucks""] execVM ""truckspawn.sqf""; sleep 2; _null = [""trucks""] execVM ""truckspawn.sqf"";";
+			expActiv="T3 setTaskState ""SUCCEEDED""; null = [objNull,ObjNull,T3, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";hint""Team Viper advance to Artillery Com Alpha and execute fire mission,grid ref 036 - 131"";three=true;publicVariable ""three"";deleteMarker ""AA"";player setCurrenttask T4; _null = [""abrams1"", ""abrams2"", 275, 240] execVM ""abramsspawn.sqf""; for ""_t"" from 1 to 2 do {_null = [""trucks""] execVM ""truckspawn.sqf""};";
 			class Effects
 			{
 			};
@@ -5400,7 +5400,7 @@ class Mission
 			interruptable=1;
 			age="UNKNOWN";
 			expCond="(not alive arty) AND (not alive arty1) AND (not alive arty2) AND (not alive arty3)";
-			expActiv="T4 setTaskState ""SUCCEEDED""; null = [objNull,ObjNull,T4, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";four=true;publicVariable ""four"";deleteMarker ""arty"";player setCurrenttask T5; _null = [""balota1""] execVM ""groupups.sqf""; _null = [""balota1_1""] execVM ""groupups.sqf""; _null = [""trucks""] execVM ""truckspawn.sqf""; sleep 2; _null = [""trucks""] execVM ""truckspawn.sqf"";";
+			expActiv="T4 setTaskState ""SUCCEEDED""; null = [objNull,ObjNull,T4, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";four=true;publicVariable ""four"";deleteMarker ""arty"";player setCurrenttask T5; _null = [""balota1""] execVM ""groupups.sqf""; _null = [""balota1_1""] execVM ""groupups.sqf""; for ""_t"" from 1 to 2 do {_null = [""trucks""] execVM ""truckspawn.sqf""};";
 			class Effects
 			{
 			};
@@ -5491,7 +5491,7 @@ class Mission
 			interruptable=1;
 			age="UNKNOWN";
 			expCond="not alive President";
-			expActiv="T1 setTaskState ""SUCCEEDED""; null = [objNull,objNull,T1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";one=true;publicVariable ""one"";deleteMarker ""President"";player setCurrenttask T2; _null = [""bridgegroup1""] execVM ""bridgegroup.sqf""; _null = [""bridgegroup2""] execVM ""bridgegroup.sqf""; _null = [""bridgepk1"", 220] execVM ""bridgepk.sqf""; _null = [""trucks""] execVM ""truckspawn.sqf""; sleep 2; _null = [""trucks""] execVM ""truckspawn.sqf"";";
+			expActiv="T1 setTaskState ""SUCCEEDED""; null = [objNull,objNull,T1, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";one=true;publicVariable ""one"";deleteMarker ""President"";player setCurrenttask T2; _null = [""bridgegroup1""] execVM ""bridgegroup.sqf""; _null = [""bridgegroup2""] execVM ""bridgegroup.sqf""; _null = [""bridgepk1"", 220] execVM ""bridgepk.sqf""; for ""_t"" from 1 to 2 do {_null = [""trucks""] execVM ""truckspawn.sqf""};";
 			class Effects
 			{
 			};
@@ -5507,7 +5507,7 @@ class Mission
 			interruptable=1;
 			age="UNKNOWN";
 			expCond="not alive hq";
-			expActiv="T5 setTaskState ""SUCCEEDED""; null = [objNull,ObjNull,T5, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";five=true;publicVariable ""five"";deleteMarker ""hq"";player setCurrenttask T6; _null = [""trucks""] execVM ""truckspawn.sqf""; sleep 2; _null = [""trucks""] execVM ""truckspawn.sqf"";";
+			expActiv="T5 setTaskState ""SUCCEEDED""; null = [objNull,ObjNull,T5, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";five=true;publicVariable ""five"";deleteMarker ""hq"";player setCurrenttask T6; for ""_t"" from 1 to 2 do {_null = [""trucks""] execVM ""truckspawn.sqf""};";
 			class Effects
 			{
 			};
@@ -6222,7 +6222,7 @@ class Mission
 			interruptable=1;
 			age="UNKNOWN";
 			expCond="not alive nearestObject [bridgeMonitor,""House""];";
-			expActiv="T2 setTaskState ""SUCCEEDED""; null = [objNull,objNull,T2, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";two=true;publicVariable ""two"";deleteMarker ""bridge"";player setCurrenttask T3; _null = [""kamenka1""] execVM ""groupups.sqf""; _null = [""kamenka1_1""] execVM ""groupups.sqf""; _null = [""kamenka1_2""] execVM ""groupups.sqf""; _null = [""trucks""] execVM ""truckspawn.sqf""; sleep 2; _null = [""trucks""] execVM ""truckspawn.sqf"";";
+			expActiv="T2 setTaskState ""SUCCEEDED""; null = [objNull,objNull,T2, ""SUCCEEDED""] execVM ""CA\Modules\MP\data\scriptCommands\taskHint.sqf"";two=true;publicVariable ""two"";deleteMarker ""bridge"";player setCurrenttask T3; _null = [""kamenka1""] execVM ""groupups.sqf""; _null = [""kamenka1_1""] execVM ""groupups.sqf""; _null = [""kamenka1_2""] execVM ""groupups.sqf""; for ""_t"" from 1 to 2 do {_null = [""trucks""] execVM ""truckspawn.sqf""};";
 			class Effects
 			{
 			};
