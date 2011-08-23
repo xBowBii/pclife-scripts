@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project name="Arma2"><Package name="acm">
+<Container name="STR_Advanced_Chat_Module">
+<Key ID="STR_ACM_ALL_CHANNEL">
+      <Original>Global control</Original>
+      <German>Globale Kontrolle</German>
+      <English>Global control</English>
+      <Italian>Controllo globale</Italian>
+      <Spanish>Control global</Spanish>
+      <French>le contrôle global</French>
+      <Czech>Globální kontrola</Czech>
+      <Russian>Глобальное управление</Russian>
+      <Polish>Globalna kontrola</Polish>
+      <Hungarian>A globális szabályozás</Hungarian>
+</Key>
+
+<Key ID="STR_ACM_CHANNEL">
+      <Original>Personal</Original>
+      <German>Persönlich</German>
+      <English>Personal</English>
+      <Italian>Personale</Italian>
+      <Spanish>Starfsfólk</Spanish>
+      <French>Personnels</French>
+      <Czech>Osobní</Czech>
+      <Russian>Личные</Russian>
+      <Polish>Osobisty</Polish>
+      <Hungarian>Személyes</Hungarian>
+</Key>
+
+<Key ID="STR_ACM_PLAYERS">
+      <Original>Players</Original>
+      <German>Players</German>
+      <English>Players</English>
+      <Italian>Giocatori</Italian>
+      <Spanish>Jugadores</Spanish>
+      <French>Joueurs</French>
+      <Czech>Hráči</Czech>
+      <Russian>Игроки</Russian>
+      <Polish>Gracze</Polish>
+      <Hungarian>Játékosok</Hungarian>
+</Key>
+
+<Key ID="STR_ACM_SELECT_CHANNEL">
+      <Original>ACM Channel Management</Original>
+      <German>ACM Channel Management</German>
+      <English>ACM Channel Management</English>
+      <Italian>ACM Channel Management</Italian>
+      <Spanish>ACM Gestión de canales</Spanish>
+      <French>ACM Gestion des canaux</French>
+      <Czech>ACM Channel Management</Czech>
+      <Russian>ACM Управление каналами</Russian>
+      <Polish>ACM Kanał zarządzania</Polish>
+      <Hungarian>ACM Csatorna Menedzsment</Hungarian>
+</Key>
+
+<Key ID="STR_ACM_EXIT">
+      <Original>Exit</Original>
+      <German>Ausfahrt</German>
+      <English>Exit</English>
+      <Italian>Uscita</Italian>
+      <Spanish>Salida</Spanish>
+      <French>Sortir</French>
+      <Czech>Výjezd</Czech>
+      <Russian>Выход</Russian>
+      <Polish>Wyjście</Polish>
+      <Hungarian>Kijárat</Hungarian>
+</Key>
+
+<Key ID="STR_ACM_AUTHOR">
+      <Original>ACM v1.0 by Slon and Kol9yN©</Original>
+      <German>ACM v1.0 by Slon and Kol9yN©</German>
+      <English>ACM v1.0 by Slon and Kol9yN©</English>
+      <Italian>ACM v1.0 by Slon and Kol9yN©</Italian>
+      <Spanish>ACM v1.0 by Slon and Kol9yN©</Spanish>
+      <French>ACM v1.0 by Slon and Kol9yN©</French>
+      <Czech>ACM v1.0 by Slon and Kol9yN©</Czech>
+      <Russian>ACM v1.0 by Slon and Kol9yN©</Russian>
+      <Polish>ACM v1.0 by Slon and Kol9yN©</Polish>
+      <Hungarian>ACM v1.0 by Slon and Kol9yN©</Hungarian>
+</Key>
+
+<Key ID="STR_ACM_CHANNEL_CLOSED_NOW">
+      <Original>Channel closed</Original>
+      <German>Kanal wird geschlossen</German>
+      <English>Channel closed</English>
+      <Italian>Canale è chiuso</Italian>
+      <Spanish>Canal está cerrado</Spanish>
+      <French>Canal est fermé</French>
+      <Czech>Kanál je uzavřen</Czech>
+      <Russian>Канал закрыт</Russian>
+      <Polish>Kanał jest zamknięty</Polish>
+      <Hungarian>Csatorna zárva</Hungarian>
+</Key>
+
+</Container>
+</Package>
+</Project>
