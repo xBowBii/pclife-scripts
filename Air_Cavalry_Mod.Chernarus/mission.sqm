@@ -31,7 +31,8 @@ class Mission
 		"caweapons_ammoboxes",
 		"ca_modules_functions",
 		"acre_sys_prc119",
-		"acre_sys_prc148"
+		"acre_sys_prc148",
+		"ace_sys_repair"
 	};
 	addOnsAuto[]=
 	{
@@ -41,6 +42,8 @@ class Mission
 		"cba_main",
 		"ca_modules_e_weather",
 		"ca_modules_functions",
+		"ace_sys_crewserved",
+		"ace_sys_repair",
 		"CAAir2_UH1Y",
 		"CAWheeled2_HMMWV_Ambulance",
 		"acex_veh_5ton",
@@ -49,7 +52,6 @@ class Mission
 		"CAAir_E_AH6J",
 		"CAAir_E_UH1H_EP1",
 		"ace_c_weapon",
-		"ace_sys_crewserved",
 		"warfarebuildings",
 		"camisc3",
 		"camisc_e",
@@ -72,7 +74,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=15;
+		items=18;
 		class Item0
 		{
 			side="LOGIC";
@@ -145,7 +147,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.33333331;
 					text="ft1lead";
-					init="removeallweapons this; this addweapon ""M16A2GL""; for ""_i"" from 1 to 6 do {this addmagazine ""30Rnd_556x45_Stanag""}; for ""_i"" from 1 to 4 do {this addmagazine ""HandGrenade_West""}; for ""_i"" from 1 to 6 do {this addmagazine ""1Rnd_HE_M203""}; this addmagazine ""1Rnd_SmokeRed_M203""; this addmagazine ""1Rnd_SmokeGreen_M203""; this removeweapon ""ACRE_PRC343""; this removeweapon ""ItemRadio""; _remove = [this] call acre_api_fnc_getCurrentRadio; this removeweapon ""_remove""; this addweapon ""ACRE_PRC148""; this addweapon ""ACRE_PRC119""; this addweapon ""ACE_DAGR""; this removeweapon ""ItemGPS""; this removeweapon ""ACE_Broken_GPS""; this removeweapon ""NVGoggles""; this removeweapon ""ACE_BrokenNVGoggles"";";
+					init="removeallweapons this; this addweapon ""M16A2GL""; for ""_i"" from 1 to 6 do {this addmagazine ""30Rnd_556x45_Stanag""}; for ""_i"" from 1 to 4 do {this addmagazine ""HandGrenade_West""}; for ""_i"" from 1 to 6 do {this addmagazine ""1Rnd_HE_M203""}; this addmagazine ""1Rnd_SmokeRed_M203""; this addmagazine ""1Rnd_SmokeGreen_M203""; this removeweapon ""ACRE_PRC343""; this removeweapon ""ItemRadio""; _remove = [this] call acre_api_fnc_getCurrentRadio; this removeweapon ""_remove""; this addweapon ""ACRE_PRC148""; this addweapon ""ACRE_PRC119""; this addweapon ""ACE_DAGR""; this removeweapon ""ItemGPS""; this removeweapon ""ACE_Broken_GPS""; this removeweapon ""NVGoggles""; this removeweapon ""ACE_BrokenNVGoggles"";  this addEventHandler ['killed', {(_this select 0) execVM 'removeBody.sqf'}];";
 				};
 				class Item1
 				{
@@ -157,7 +159,7 @@ class Mission
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.33333331;
-					init="this removeweapon ""ACRE_PRC343""; this removeweapon ""ItemRadio""; _remove = [this] call acre_api_fnc_getCurrentRadio; this removeweapon ""_remove""; this addweapon ""ACRE_PRC148""; this removeweapon ""ItemGPS""; this removeweapon ""ACE_Broken_GPS"";   this removeweapon ""NVGoggles""; this removeweapon ""ACE_BrokenNVGoggles"";";
+					init="this removeweapon ""ACRE_PRC343""; this removeweapon ""ItemRadio""; _remove = [this] call acre_api_fnc_getCurrentRadio; this removeweapon ""_remove""; this addweapon ""ACRE_PRC148""; this removeweapon ""ItemGPS""; this removeweapon ""ACE_Broken_GPS"";   this removeweapon ""NVGoggles""; this removeweapon ""ACE_BrokenNVGoggles"";  this addEventHandler ['killed', {(_this select 0) execVM 'removeBody.sqf'}];";
 				};
 				class Item2
 				{
@@ -169,7 +171,7 @@ class Mission
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.33333331;
-					init="removeallweapons this; this addweapon ""M16A2""; for ""_i"" from 1 to 6 do {this addmagazine ""30Rnd_556x45_Stanag""}; for ""_i"" from 1 to 4 do {this addmagazine ""HandGrenade_West""}; this removeweapon ""ACRE_PRC343""; this removeweapon ""ItemRadio""; _remove = [this] call acre_api_fnc_getCurrentRadio; this removeweapon ""_remove""; this addweapon ""ACRE_PRC148""; this removeweapon ""ItemGPS""; this removeweapon ""ACE_Broken_GPS""; this removeweapon ""NVGoggles""; this removeweapon ""ACE_BrokenNVGoggles"";";
+					init="removeallweapons this; this addweapon ""M16A2""; for ""_i"" from 1 to 6 do {this addmagazine ""30Rnd_556x45_Stanag""}; for ""_i"" from 1 to 4 do {this addmagazine ""HandGrenade_West""}; this removeweapon ""ACRE_PRC343""; this removeweapon ""ItemRadio""; _remove = [this] call acre_api_fnc_getCurrentRadio; this removeweapon ""_remove""; this addweapon ""ACRE_PRC148""; this removeweapon ""ItemGPS""; this removeweapon ""ACE_Broken_GPS""; this removeweapon ""NVGoggles""; this removeweapon ""ACE_BrokenNVGoggles"";  this addEventHandler ['killed', {(_this select 0) execVM 'removeBody.sqf'}];";
 				};
 				class Item3
 				{
@@ -181,7 +183,7 @@ class Mission
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.33333331;
-					init="removeallweapons this; this addweapon ""M16A2""; for ""_i"" from 1 to 6 do {this addmagazine ""30Rnd_556x45_Stanag""}; for ""_i"" from 1 to 4 do {this addmagazine ""HandGrenade_West""}; this removeweapon ""ACRE_PRC343""; this removeweapon ""ItemRadio""; _remove = [this] call acre_api_fnc_getCurrentRadio; this removeweapon ""_remove""; this addweapon ""ACRE_PRC148""; this removeweapon ""ItemGPS""; this removeweapon ""ACE_Broken_GPS""; this removeweapon ""NVGoggles""; this removeweapon ""ACE_BrokenNVGoggles"";";
+					init="removeallweapons this; this addweapon ""M16A2""; for ""_i"" from 1 to 6 do {this addmagazine ""30Rnd_556x45_Stanag""}; for ""_i"" from 1 to 4 do {this addmagazine ""HandGrenade_West""}; this removeweapon ""ACRE_PRC343""; this removeweapon ""ItemRadio""; _remove = [this] call acre_api_fnc_getCurrentRadio; this removeweapon ""_remove""; this addweapon ""ACRE_PRC148""; this removeweapon ""ItemGPS""; this removeweapon ""ACE_Broken_GPS""; this removeweapon ""NVGoggles""; this removeweapon ""ACE_BrokenNVGoggles"";  this addEventHandler ['killed', {(_this select 0) execVM 'removeBody.sqf'}];";
 				};
 			};
 		};
@@ -203,7 +205,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.33333331;
 					text="ft2lead";
-					init="removeallweapons this; this addweapon ""M16A2GL""; for ""_i"" from 1 to 6 do {this addmagazine ""30Rnd_556x45_Stanag""}; for ""_i"" from 1 to 4 do {this addmagazine ""HandGrenade_West""}; for ""_i"" from 1 to 6 do {this addmagazine ""1Rnd_HE_M203""}; this addmagazine ""1Rnd_SmokeRed_M203""; this addmagazine ""1Rnd_SmokeGreen_M203""; this removeweapon ""ACRE_PRC343""; this removeweapon ""ItemRadio""; _remove = [this] call acre_api_fnc_getCurrentRadio; this removeweapon ""_remove""; this addweapon ""ACRE_PRC148""; this addweapon ""ACRE_PRC119""; this addweapon ""ACE_DAGR""; this removeweapon ""ItemGPS""; this removeweapon ""ACE_Broken_GPS""; this removeweapon ""NVGoggles""; this removeweapon ""ACE_BrokenNVGoggles"";";
+					init="removeallweapons this; this addweapon ""M16A2GL""; for ""_i"" from 1 to 6 do {this addmagazine ""30Rnd_556x45_Stanag""}; for ""_i"" from 1 to 4 do {this addmagazine ""HandGrenade_West""}; for ""_i"" from 1 to 6 do {this addmagazine ""1Rnd_HE_M203""}; this addmagazine ""1Rnd_SmokeRed_M203""; this addmagazine ""1Rnd_SmokeGreen_M203""; this removeweapon ""ACRE_PRC343""; this removeweapon ""ItemRadio""; _remove = [this] call acre_api_fnc_getCurrentRadio; this removeweapon ""_remove""; this addweapon ""ACRE_PRC148""; this addweapon ""ACRE_PRC119""; this addweapon ""ACE_DAGR""; this removeweapon ""ItemGPS""; this removeweapon ""ACE_Broken_GPS""; this removeweapon ""NVGoggles""; this removeweapon ""ACE_BrokenNVGoggles"";  this addEventHandler ['killed', {(_this select 0) execVM 'removeBody.sqf'}];";
 				};
 				class Item1
 				{
@@ -215,7 +217,7 @@ class Mission
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.33333331;
-					init="this removeweapon ""ACRE_PRC343""; this removeweapon ""ItemRadio""; _remove = [this] call acre_api_fnc_getCurrentRadio; this removeweapon ""_remove""; this addweapon ""ACRE_PRC148""; this removeweapon ""ItemGPS""; this removeweapon ""ACE_Broken_GPS""; this removeweapon ""NVGoggles""; this removeweapon ""ACE_BrokenNVGoggles"";";
+					init="this removeweapon ""ACRE_PRC343""; this removeweapon ""ItemRadio""; _remove = [this] call acre_api_fnc_getCurrentRadio; this removeweapon ""_remove""; this addweapon ""ACRE_PRC148""; this removeweapon ""ItemGPS""; this removeweapon ""ACE_Broken_GPS""; this removeweapon ""NVGoggles""; this removeweapon ""ACE_BrokenNVGoggles"";  this addEventHandler ['killed', {(_this select 0) execVM 'removeBody.sqf'}];";
 				};
 				class Item2
 				{
@@ -227,7 +229,7 @@ class Mission
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.33333331;
-					init="removeallweapons this; this addweapon ""M16A2""; for ""_i"" from 1 to 6 do {this addmagazine ""30Rnd_556x45_Stanag""}; for ""_i"" from 1 to 4 do {this addmagazine ""HandGrenade_West""}; this removeweapon ""ACRE_PRC343""; this removeweapon ""ItemRadio""; _remove = [this] call acre_api_fnc_getCurrentRadio; this removeweapon ""_remove""; this addweapon ""ACRE_PRC148""; this removeweapon ""ItemGPS""; this removeweapon ""ACE_Broken_GPS""; this removeweapon ""NVGoggles""; this removeweapon ""ACE_BrokenNVGoggles"";";
+					init="removeallweapons this; this addweapon ""M16A2""; for ""_i"" from 1 to 6 do {this addmagazine ""30Rnd_556x45_Stanag""}; for ""_i"" from 1 to 4 do {this addmagazine ""HandGrenade_West""}; this removeweapon ""ACRE_PRC343""; this removeweapon ""ItemRadio""; _remove = [this] call acre_api_fnc_getCurrentRadio; this removeweapon ""_remove""; this addweapon ""ACRE_PRC148""; this removeweapon ""ItemGPS""; this removeweapon ""ACE_Broken_GPS""; this removeweapon ""NVGoggles""; this removeweapon ""ACE_BrokenNVGoggles"";  this addEventHandler ['killed', {(_this select 0) execVM 'removeBody.sqf'}];";
 				};
 				class Item3
 				{
@@ -239,7 +241,7 @@ class Mission
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.33333331;
-					init="removeallweapons this; this addweapon ""M16A2""; for ""_i"" from 1 to 6 do {this addmagazine ""30Rnd_556x45_Stanag""}; for ""_i"" from 1 to 4 do {this addmagazine ""HandGrenade_West""}; this removeweapon ""ACRE_PRC343""; this removeweapon ""ItemRadio""; _remove = [this] call acre_api_fnc_getCurrentRadio; this removeweapon ""_remove""; this addweapon ""ACRE_PRC148""; this removeweapon ""ItemGPS""; this removeweapon ""ACE_Broken_GPS""; this removeweapon ""NVGoggles""; this removeweapon ""ACE_BrokenNVGoggles"";";
+					init="removeallweapons this; this addweapon ""M16A2""; for ""_i"" from 1 to 6 do {this addmagazine ""30Rnd_556x45_Stanag""}; for ""_i"" from 1 to 4 do {this addmagazine ""HandGrenade_West""}; this removeweapon ""ACRE_PRC343""; this removeweapon ""ItemRadio""; _remove = [this] call acre_api_fnc_getCurrentRadio; this removeweapon ""_remove""; this addweapon ""ACRE_PRC148""; this removeweapon ""ItemGPS""; this removeweapon ""ACE_Broken_GPS""; this removeweapon ""NVGoggles""; this removeweapon ""ACE_BrokenNVGoggles"";  this addEventHandler ['killed', {(_this select 0) execVM 'removeBody.sqf'}];";
 				};
 			};
 		};
@@ -260,7 +262,7 @@ class Mission
 					leader=1;
 					rank="LIEUTENANT";
 					skill=0.33333331;
-					init="removeallweapons this; this addweapon ""ACE_M4""; for ""_i"" from 1 to 6 do {this addmagazine ""30Rnd_556x45_Stanag""}; for ""_i"" from 1 to 2 do {this addmagazine ""HandGrenade_West""}; for ""_i"" from 1 to 2 do {this addmagazine ""SmokeShell""}; this addweapon ""M9""; for ""_i"" from 1 to 4 do {this addmagazine ""15Rnd_9x19_M9""}; this addmagazine ""SmokeShellRed""; this addmagazine ""SmokeShellGreen""; this removeweapon ""ACRE_PRC343""; this removeweapon ""ItemRadio""; _remove = [this] call acre_api_fnc_getCurrentRadio; this removeweapon ""_remove""; this addweapon ""ACRE_PRC148""; this addweapon ""ACRE_PRC119"";  this addweapon ""ACE_DAGR""; this removeweapon ""ItemGPS""; this removeweapon ""ACE_Broken_GPS""; this removeweapon ""NVGoggles""; this removeweapon ""ACE_BrokenNVGoggles"";";
+					init="removeallweapons this; this addweapon ""ACE_M4""; for ""_i"" from 1 to 6 do {this addmagazine ""30Rnd_556x45_Stanag""}; for ""_i"" from 1 to 2 do {this addmagazine ""HandGrenade_West""}; for ""_i"" from 1 to 2 do {this addmagazine ""SmokeShell""}; this addweapon ""M9""; for ""_i"" from 1 to 4 do {this addmagazine ""15Rnd_9x19_M9""}; this addmagazine ""SmokeShellRed""; this addmagazine ""SmokeShellGreen""; this removeweapon ""ACRE_PRC343""; this removeweapon ""ItemRadio""; _remove = [this] call acre_api_fnc_getCurrentRadio; this removeweapon ""_remove""; this addweapon ""ACRE_PRC148""; this addweapon ""ACRE_PRC119"";  this addweapon ""ACE_DAGR""; this removeweapon ""ItemGPS""; this removeweapon ""ACE_Broken_GPS""; this removeweapon ""NVGoggles""; this removeweapon ""ACE_BrokenNVGoggles""; this addEventHandler ['killed', {(_this select 0) execVM 'removeBody.sqf'}];";
 				};
 				class Item1
 				{
@@ -272,7 +274,7 @@ class Mission
 					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.33333331;
-					init="removeallweapons this; this addweapon ""M16A2""; for ""_i"" from 1 to 6 do {this addmagazine ""30Rnd_556x45_Stanag""}; this removeweapon ""ACRE_PRC343""; this removeweapon ""ItemRadio""; _remove = [this] call acre_api_fnc_getCurrentRadio; this removeweapon ""_remove""; this addweapon ""ACRE_PRC148""; this removeweapon ""ItemGPS""; this removeweapon ""ACE_Broken_GPS""; this removeweapon ""NVGoggles""; this removeweapon ""ACE_BrokenNVGoggles"";";
+					init="removeallweapons this; this addweapon ""M16A2""; for ""_i"" from 1 to 6 do {this addmagazine ""30Rnd_556x45_Stanag""}; this removeweapon ""ACRE_PRC343""; this removeweapon ""ItemRadio""; _remove = [this] call acre_api_fnc_getCurrentRadio; this removeweapon ""_remove""; this addweapon ""ACRE_PRC148""; this removeweapon ""ItemGPS""; this removeweapon ""ACE_Broken_GPS""; this removeweapon ""NVGoggles""; this removeweapon ""ACE_BrokenNVGoggles""; this addEventHandler ['killed', {(_this select 0) execVM 'removeBody.sqf'}];";
 				};
 			};
 		};
@@ -293,7 +295,7 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.60000002;
-					init="removeallweapons this; for ""_i"" from 1 to 6 do {this addmagazine ""30Rnd_9x19_MP5""}; this addweapon ""ACE_MP5A5""; this addmagazine ""SmokeShell""; this addmagazine ""SmokeShellRed""; this addweapon ""ACE_DAGR""; this removeweapon ""ItemGPS""; this removeweapon ""ACE_Broken_GPS""; this removeweapon ""ACRE_PRC343""; this removeweapon ""ItemRadio""; _remove = [this] call acre_api_fnc_getCurrentRadio; this removeweapon ""_remove""; this addweapon ""ACRE_PRC148""; this removeweapon ""NVGoggles""; this removeweapon ""ACE_BrokenNVGoggles""; this addweapon ""ACRE_PRC119"";";
+					init="removeallweapons this; for ""_i"" from 1 to 6 do {this addmagazine ""30Rnd_9x19_MP5""}; this addweapon ""ACE_MP5A5""; this addmagazine ""SmokeShell""; this addmagazine ""SmokeShellRed""; this addweapon ""ACE_DAGR""; this removeweapon ""ItemGPS""; this removeweapon ""ACE_Broken_GPS""; this removeweapon ""ACRE_PRC343""; this removeweapon ""ItemRadio""; _remove = [this] call acre_api_fnc_getCurrentRadio; this removeweapon ""_remove""; this addweapon ""ACRE_PRC148""; this removeweapon ""NVGoggles""; this removeweapon ""ACE_BrokenNVGoggles""; this addweapon ""ACRE_PRC119"";  this addEventHandler ['killed', {(_this select 0) execVM 'removeBody.sqf'}];";
 					description="Pilot 1";
 				};
 				class Item1
@@ -306,7 +308,7 @@ class Mission
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
-					init="removeallweapons this; for ""_i"" from 1 to 6 do {this addmagazine ""30Rnd_9x19_MP5""}; this addweapon ""ACE_MP5A5""; this addmagazine ""SmokeShell""; this addmagazine ""SmokeShellRed""; this addweapon ""ACE_DAGR""; this removeweapon ""ItemGPS""; this removeweapon ""ACE_Broken_GPS""; this removeweapon ""ACRE_PRC343""; this removeweapon ""ItemRadio""; _remove = [this] call acre_api_fnc_getCurrentRadio; this removeweapon ""_remove""; this addweapon ""ACRE_PRC148""; this removeweapon ""NVGoggles""; this removeweapon ""ACE_BrokenNVGoggles"";  this addweapon ""ACRE_PRC119"";";
+					init="removeallweapons this; for ""_i"" from 1 to 6 do {this addmagazine ""30Rnd_9x19_MP5""}; this addweapon ""ACE_MP5A5""; this addmagazine ""SmokeShell""; this addmagazine ""SmokeShellRed""; this addweapon ""ACE_DAGR""; this removeweapon ""ItemGPS""; this removeweapon ""ACE_Broken_GPS""; this removeweapon ""ACRE_PRC343""; this removeweapon ""ItemRadio""; _remove = [this] call acre_api_fnc_getCurrentRadio; this removeweapon ""_remove""; this addweapon ""ACRE_PRC148""; this removeweapon ""NVGoggles""; this removeweapon ""ACE_BrokenNVGoggles"";  this addweapon ""ACRE_PRC119""; this addEventHandler ['killed', {(_this select 0) execVM 'removeBody.sqf'}];";
 					description="Pilot 2";
 				};
 			};
@@ -464,6 +466,60 @@ class Mission
 					vehicle="GUE_Soldier_Scout";
 					rank="CORPORAL";
 					skill=0.33333331;
+				};
+			};
+		};
+		class Item15
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={671.12683,376.53195,11999.934};
+					id=57;
+					side="LOGIC";
+					vehicle="ACE_SYS_PRespawn_Logic";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item16
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={671.9812,375.94879,12030.695};
+					id=56;
+					side="LOGIC";
+					vehicle="ACE_CSW_AI";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item17
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={668.56329,376.04208,12061.457};
+					id=55;
+					side="LOGIC";
+					vehicle="ace_sys_repair_tyres";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
 				};
 			};
 		};
@@ -3496,19 +3552,8 @@ class Mission
 	};
 	class Sensors
 	{
-		items=2;
+		items=1;
 		class Item0
-		{
-			position[]={670.32092,408.13644,12382.043};
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="local player";
-			expActiv="handle = [] execVM ""weaponrespawn_ace.sqf"";";
-			class Effects
-			{
-			};
-		};
-		class Item1
 		{
 			position[]={4790.8052,339,10183.867};
 			a=800;
