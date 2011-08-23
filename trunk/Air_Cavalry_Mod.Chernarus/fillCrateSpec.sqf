@@ -45,6 +45,10 @@ switch (specEra) do
 		ammoCrateSpec addWeaponCargo ["ACE_M4SPR_SD",2];
 		ammoCrateSpec addWeaponCargo ["ACE_Mk12mod1_SD",5];
 
+		ammoCrateSpec addWeaponCargo ["ACE_AK74M_SD",5];
+		ammoCrateSpec addWeaponCargo ["ACE_AK74M_SD_Kobra",5];
+		ammoCrateSpec addWeaponCargo ["ACE_AK74M_SD_1P78",2];
+
 		ammoCrateSpec addMagazineCargo ["20Rnd_9x39_SP5_VSS",40];
 		ammoCrateSpec addMagazineCargo ["ACE_20Rnd_9x39_B_OC14",50];
 	};
@@ -59,9 +63,13 @@ switch (specEra) do
 		ammoCrateSpec addWeaponCargo ["ACE_HK416_D10_COMPM3_SD",5];
 		ammoCrateSpec addWeaponCargo ["M4A1_HWS_GL_SD_Camo",5];
 
+		ammoCrateSpec addWeaponCargo ["ACE_AK74M_SD_PSO",2];
+		ammoCrateSpec addWeaponCargo ["ACE_AK74M_SD_TWS",2];
+
 		ammoCrateSpec addMagazineCargo ["20Rnd_9x39_SP5_VSS",50];
 		ammoCrateSpec addMagazineCargo ["ACE_20Rnd_9x39_B_OC14",60];
 		ammoCrateSpec addMagazineCargo ["ACE_5Rnd_127x99_S_TAC50",20];
+
 	};
 };
 
@@ -73,13 +81,18 @@ ammoCrateSpec addMagazineCargo ["15Rnd_9x19_M9SD",60];
 ammoCrateSpec addMagazineCargo ["ACE_12Rnd_45ACP_USPSD",60];
 ammoCrateSpec addMagazineCargo ["ACE_20Rnd_9x18_APSB",60];
 
+ammoCrateSpec addMagazineCargo ["ACE_30Rnd_762x39_S_AK47",60];
+ammoCrateSpec addMagazineCargo ["ACE_30Rnd_545x39_S_AK",60];
+ammoCrateSpec addMagazineCargo ["30Rnd_545x39_AKSD",60];
+ammoCrateSpec addMagazineCargo ["ACE_30Rnd_762x39_SD_AK47",60];
+
 ammoCrateSpec addMagazineCargo ["1Rnd_HE_M203",20];
 ammoCrateSpec addMagazineCargo ["1Rnd_SmokeRed_M203",20];
 ammoCrateSpec addMagazineCargo ["ACE_25Rnd_1143x23_S_UMP45",60];
 ammoCrateSpec addMagazineCargo ["30Rnd_556x45_G36SD",60];
 ammoCrateSpec addMagazineCargo ["30Rnd_556x45_StanagSD",60];
-ammoCrateSpec addMagazineCargo ["ACE_30Rnd_762x39_SD_AK47",60];
-ammoCrateSpec addMagazineCargo ["30Rnd_545x39_AKSD",60];
+
+
 ammoCrateSpec addMagazineCargo ["ACE_20Rnd_762x51_S_M110",60];
 ammoCrateSpec addMagazineCargo ["ACE_30Rnd_9x19_S_MP5",60];
 
