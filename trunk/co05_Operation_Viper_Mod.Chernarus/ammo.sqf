@@ -186,7 +186,6 @@ _this addMagazineCargo ["ACE_5Rnd_127x99_S_TAC50",100];
 _this addMagazineCargo ["ACE_25Rnd_1143x23_S_UMP45",100];
 _this addMagazineCargo ["ACE_30Rnd_6x35_B_PDW",100];
 _this addMagazineCargo ["17Rnd_9x19_glock17",100];
-_this addMagazineCargo ["ACE_SSWhite_FG,",100];
 _this addMagazineCargo ["ACE_12Rnd_45ACP_USPSD",100];
 _this addMagazineCargo ["ACE_64Rnd_9x19_S_Bizon",100];
 _this addMagazineCargo ["64Rnd_9x19_SD_Bizon",100];
