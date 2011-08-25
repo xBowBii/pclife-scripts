@@ -163,13 +163,13 @@ class Params {
 #include "common\resources\titles.hpp"
 #include "common\resources\sounds.hpp"
 
-//#define LOADSCREEN "\CA\Missions_e\campaign\missions\CE2_Pathfinder.Takistan\img\loading03_co.paa"
-#define LOADSCREEN "op4\op4_small.paa"
+#define LOADSCREEN "\CA\Missions_e\campaign\missions\CE2_Pathfinder.Takistan\img\loading03_co.paa"
+//#define LOADSCREEN "op4\op4_small.paa"
 //#define LOADSCREENTEXT "Insurgency - by pogoman, Fireball"
 #define LOADSCREENTEXT "{Op4} Insurgency Fallujah 0.80 - by pogoman, Fireball, converted to ACE by Strikor"
 #include "LoadingScreen.ext"
 
 loadScreen = LOADSCREEN; 
 //onLoadMission = LOADSCREENTEXT; 
-onLoadMission=www.Op4gaming.com - TS3 required for air and armor use - See the right side of the map for details;
+onLoadMission=Herp Derp;
 onLoadMissionTime = false;

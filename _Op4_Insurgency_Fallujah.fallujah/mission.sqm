@@ -47,6 +47,7 @@ class Mission
 		"ace_sys_wounds",
 		"ace_sys_tracking",
 		"ace_sys_playerhud",
+		"ace_sys_crewserved",
 		"camisc_e_wf",
 		"camisc3",
 		"camisc_e",
@@ -60,7 +61,6 @@ class Mission
 		"caair_e_an2",
 		"caair",
 		"caweapons_e",
-		"ace_sys_crewserved",
 		"castructures_e_housea_a_villa",
 		"fallujah_v1_0"
 	};
@@ -80,7 +80,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=50;
+		items=51;
 		class Item0
 		{
 			side="WEST";
@@ -748,7 +748,7 @@ class Mission
 					leader=1;
 					lock="UNLOCKED";
 					skill=0.60000002;
-					init="ace_sys_wounds_leftdam = 0; ace_sys_wounds_no_rpunish = true; ace_sys_wounds_withSpect = true; ace_wounds_prevtime = 600; ace_sys_wounds_noai = true;";
+					init="ace_sys_wounds_leftdam = 0; ace_sys_wounds_no_rpunish = true; ace_sys_wounds_withSpect = true; ace_wounds_prevtime = 600; ace_sys_wounds_noai = false;";
 				};
 			};
 		};
@@ -1405,6 +1405,24 @@ class Mission
 				};
 			};
 		};
+		class Item50
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={-457.70111,7,512.11914};
+					id=112;
+					side="LOGIC";
+					vehicle="ACE_CSW_AI";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
 	};
 	class Vehicles
 	{
@@ -1787,7 +1805,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=18;
+		items=13;
 		class Item0
 		{
 			position[]={-433.54474,7,564.43225};
@@ -1814,60 +1832,13 @@ class Mission
 		};
 		class Item4
 		{
-			position[]={10540.854,7,10113.664};
-			name="ts3";
-			text="Teamspeak 3 Presence Required to Fly Aircraft";
-			type="mil_warning";
-			colorName="ColorRed";
-			a=0.69999999;
-			b=0.69999999;
-		};
-		class Item5
-		{
-			position[]={10528.324,7,9155.8262};
-			name="ts3ip";
-			text="TS3 IP: 208.74.9.26  PORT: 9987  CHANNEL: ARMA 2";
-			type="mil_arrow";
-			colorName="ColorOrange";
-			angle=90;
-		};
-		class Item6
-		{
-			position[]={10538.15,7,9616.5264};
-			name="ts3part2";
-			text="Teamspeak 3 Presence Required to Operate Armored Vehicles";
-			type="mil_warning";
-			colorName="ColorRed";
-			a=0.69999999;
-			b=0.69999999;
-		};
-		class Item7
-		{
-			position[]={2766.1072,7,10130.826};
-			name="op4";
-			text="www.op4gaming.com";
-			type="mil_dot";
-			a=0;
-			b=0;
-		};
-		class Item8
-		{
-			position[]={2766.2341,7,9952.959};
-			name="strikor";
-			text="Converted by Strikor";
-			type="mil_dot";
-			a=0;
-			b=0;
-		};
-		class Item9
-		{
 			position[]={7999.3809,7,10115.518};
 			name="vdis";
 			text="Disabled Vehicle";
 			type="n_maint";
 			colorName="ColorOrange";
 		};
-		class Item10
+		class Item5
 		{
 			position[]={7999.3574,7,9916.2051};
 			name="vdes";
@@ -1875,28 +1846,28 @@ class Mission
 			type="waypoint";
 			colorName="ColorBlack";
 		};
-		class Item11
+		class Item6
 		{
 			position[]={7999.4238,7,9715.7705};
 			name="vhelo";
 			text="Helicopter";
 			type="b_air";
 		};
-		class Item12
+		class Item7
 		{
 			position[]={8000.4375,7,9516.7715};
 			name="varm";
 			text="Armor";
 			type="b_mech_inf";
 		};
-		class Item13
+		class Item8
 		{
 			position[]={7999.9316,7,9315.7461};
 			name="vsup";
 			text="Support";
 			type="b_service";
 		};
-		class Item14
+		class Item9
 		{
 			position[]={5677.126,7,9883.4756};
 			name="hserv";
@@ -1904,7 +1875,7 @@ class Mission
 			type="b_service";
 			colorName="ColorBlue";
 		};
-		class Item15
+		class Item10
 		{
 			position[]={5607.4966,7,9857.2051};
 			name="vserv";
@@ -1912,7 +1883,7 @@ class Mission
 			type="b_service";
 			colorName="ColorBlue";
 		};
-		class Item16
+		class Item11
 		{
 			position[]={8000.0352,7,9120.0381};
 			name="vtr";
@@ -1920,7 +1891,7 @@ class Mission
 			type="b_motor_inf";
 			colorName="ColorBlue";
 		};
-		class Item17
+		class Item12
 		{
 			position[]={2.0989842,7,-368.24878};
 			name="respawn_east";
