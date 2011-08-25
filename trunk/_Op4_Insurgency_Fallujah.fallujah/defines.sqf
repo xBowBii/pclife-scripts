@@ -1,0 +1,47 @@
+//////map specific definitions/macros
+//fallujah has no compatible houses for ambient civilians, thus overriding inexistent mission param
+ambientCivilians = 0;
+//spawnPos must remain available in global missionNamespace, a definition does not
+spawnPos =					[0,0,0];
+#define CENTERPOS		  	[4948.3,4833.76,0]
+#define AORADIUS			4800
+// first define has more variations but many outside positions, second (default) define is always inside of a house but most likely it's always at the same place in the few houses with inside places, too
+//#define CACHEHOUSEPOSITIONS ["Land_dum_istan2b",[0,1,2,3,4,5,6,7,8],"Land_dum_istan3",[3,4],"Land_dum_istan3_pumpa",[1,2,3,4,5],"Land_dum_zboreny",[7,8],"Land_dum_istan2",[0,1,2,3,4,5,6,7,8],"Land_water_tank",[1,2,3,4],"Land_dum_istan3_hromada2",[1,2,3,4,5,6,7,8,9,10],"Land_Vysilac_FM",[1,2,3,4],"Land_A_GeneralStore_01",[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],"Land_dum_istan2_02",[0,1,2,3],"Land_Panelak",[6,7,8,9,10,11,12,13,14,15,16,17],"Land_dum_mesto_in",[0,1,2,3,4,5,6,7,8],"Land_watertower1",[0,1,2,3,4,5,6],"Land_Hlidac_budka",[0,1,2,3,4],"Land_dum_zboreny_total",[0,1,2,3,4,5],"Land_repair_center",[0,1,2,3],"Land_Misc_Cargo1Bo",[0,1,2,3],"Land_Misc_Cargo1Ao",[0,1,2,3],"Land_Ind_Mlyn_03",[0,1,2,3,4,5,6,7],"Land_hut_old02",[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17],"Land_A_Crane_02b",[0,1,2,3,4,5,6,7],"Land_A_Crane_02a",[1,2,3,4,5,6,7],"Land_trafostanica_mala",[0,1,2,3,4,5,6,7],"Land_Ind_SawMill",[0,1,2,3,4,5],"Land_Ind_Vysypka",[0,1,2,3,4,5,6,7,8,9,10],"Land_Ind_SawMillPen",[0,1,2,3,4,5,6],"Land_Tovarna2",[9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,25,26,27,28,29,30,31,32,33,34,35,36],"Land_A_BuildingWIP",[15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60],"Land_hotel",[41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217,218,219,220,221,222,223,224,225,226,227,228,229,230,231,232,233,234,235,236,237,238,239,240,241,242,243,244,245,246,247,248,249,250,251,252,253,254,255,256,257,258,259,260,261],"Land_Panelak2",[0,1,2,3,4,5,6,7,8,9,10,11,12,13],"Land_Barn_Metal",[7,8,9,10,11],"Land_A_GeneralStore_01a",[0,1,2,3,4,5,6,7,8,9,10,11,12],"Land_Ind_Quarry",[9,10,11,12,13,14],"Land_trafostanica_velka",[0,1,2,3,4,5,6,7],"Land_Hangar_2",[0,1,2,3,4,5,6,7],"Land_kostel_trosky",[0,1,2,3,4,5,6],"Land_Nasypka",[1,2,3,4],"Land_A_statue02",[0,1,2,3,4,5,6,7],"Land_fortified_nest_big",[0,1,2,3,4,5,6,7,8,9,10,11,12],"Land_a_stationhouse",[6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],"Land_SS_hangar",[0,1,2,3,4,5,6,7,8,9],"Land_budova4_in",[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14],"Land_Barrack2",[0,1,2,3,4,5],"Land_vysilac_FM2",[1,2,3,4],"Land_Mil_Barracks_i",[0,1,2,3,4,5,6,7,8],"Land_Mil_ControlTower",[2,3,4,5,6,7,8,9,10,11,12,13,14,15,17,18,19,20],"Land_Shed_Ind02",[3,4,5,6,7,8,9,10,11,12,13,14,15,16,17]]
+#define CACHEHOUSEPOSITIONS ["Land_dum_istan3_pumpa",[1],"Land_dum_zboreny",[0,1,2,3],"Land_dum_istan3_hromada2",[1,0],"Land_A_GeneralStore_01",[1,2,3,4,5,6,7,8,9,11,12,14],"Land_Panelak",[7,8,10,11,12,13,14,15,16,17],"Land_dum_istan2b",[1],"Land_dum_mesto_in",[0,1,2,3,4,5,6,7,8],"Land_Hlidac_budka",[1,2,3,4],"Land_dum_istan3",[0],"Land_Misc_Cargo1Bo",[1],"Land_Misc_Cargo1Ao",[1,3],"Land_hut_old02",[1,2,3,4,6,7,8,9,10,11,12,13,14,16,17],"Land_A_Crane_02b",[2],"Land_Ind_Vysypka",[1,2,3,4,6,8,10],"Land_Ind_SawMillPen",[1,2,3],"Land_Tovarna2",[22,23,25,27,28,29,31,33,34,36],"Land_A_BuildingWIP",[18,20,24,25,26,27,28,29,30,31],"Land_hotel",[41,42,43,44,45,46,47,48,49,50,51,55,56,57,58,59,60,61,62,63,67,68,69,70,71,72,73,74,75,79,80,81,82,83,84,85,86,87,88,89,90,94,95,96,97,98,99,100,101,102,103,104,105,259,262,263,264,265],"Land_Panelak2",[0,4],"Land_trafostanica_mala",[3,4],"Land_A_GeneralStore_01a",[0,1,2,3,4,5,6,7,9,10,12],"Land_Ind_Quarry",[0],"Land_Hangar_2",[0,1,2,3,4,5,6,7],"Land_dum_istan2",[1],"Land_fortified_nest_big",[1,2,3,4,5,6,7,8,9,10,11,12],"Land_a_stationhouse",[0,1,2,3,4,5],"Land_budova4_in",[6,7,12,13,14],"Land_Barrack2",[2,3,4,5],"Land_Mil_Barracks_i",[1,2,3,4,5,6,7,8],"Land_Mil_ControlTower",[2,3,4,6],"Land_Vysilac_FM",[4],"Land_Shed_Ind02",[3,4,5,6,7,8,9,10,11,12,13,14,15,16,17]]
+#define GUNROOFPOSITIONS   	["Land_dum_istan2b",[[0,0],[1,0.1],[2,0],[3,0.1],[4,0.1],[5,0.2],[6,0.2],[7,0.1],[8,0.2]],"Land_dum_istan3",[[3,0.2]],"Land_dum_istan3_pumpa",[[2,0],[3,0],[4,0],[5,0.2]],"Land_dum_istan2",[[1,0.7],[2,0.2],[3,0.2],[4,0.1],[5,0.1],[6,0.2],[7,0.1],[8,0.2]],"Land_water_tank",[[1,0],[2,0],[3,0],[4,0]],"Land_dum_istan3_hromada2",[[3,0.3],[4,0.3],[5,0.5],[6,0.4],[7,0.5],[8,0.2],[9,0.2],[10,0.2]],"Land_Vysilac_FM",[[1,0],[2,0],[3,0],[4,0]],"Land_A_CraneCon",[[1,0],[2,0]],"Land_Panelak",[[10,-1],[13,0.4],[14,0.3],[15,0.3],[16,0.3],[17,0.3]],"Land_Panelak3",[[4,0],[5,0],[6,0],[7,0]],"Land_watertower1",[[0,0],[1,0],[2,0],[3,0],[4,0],[5,0],[6,0]],"Land_Ind_Mlyn_01",[[1,0],[3,0.2]],"Land_A_TVTower_Base",[[3,0],[4,0],[5,0],[6,0],[7,0],[8,0],[9,0],[10,0],[12,0]],"Land_Ind_Mlyn_03",[[1,0],[2,0],[3,0],[4,0],[6,0],[7,0]],"Land_A_Crane_02b",[[4,0],[5,0],[6,0.8],[7,0]],"Land_A_Crane_02a",[[1,0],[2,0],[3,0],[4,0],[5,0],[6,0],[7,0]],"Land_dum_zboreny",[[8,1]],"Land_Tovarna2",[[13,0],[14,0],[15,0],[16,0],[17,0.1],[18,0.2],[34,0.8],[35,0.1]],"Land_A_BuildingWIP",[[19,0.7],[20,0.5],[21,0.8],[22,0.2],[23,0],[24,0.9],[25,0.8],[26,0.9],[27,0.9],[28,0.9],[33,1],[34,1],[35,1],[36,1],[37,1],[38,1],[39,0.9],[40,0.6],[41,0.1],[42,0.4],[43,0.5],[44,1],[45,0.5],[46,0.1],[47,0.5],[48,0],[49,0.2],[51,1],[53,0.3],[54,0.2],[55,0],[56,0],[57,0.3],[58,1],[59,0.3],[60,0.9]],"Land_hotel",[[52,0.9],[53,0.6],[54,0.1],[55,1],[57,-1],[64,0.7],[65,0.6],[66,0.6],[67,1],[70,0.7],[76,0.7],[77,0.6],[78,0.6],[91,0.7],[92,0.6],[93,0.6],[94,1],[97,0.7],[99,0.9],[115,1],[116,0.6],[117,0.6],[118,1],[126,0.7],[127,0.6],[128,0.6],[129,1],[132,0.7],[138,0.7],[139,0.6],[140,0.6],[153,0.7],[154,0.6],[155,0.6],[156,1],[159,0.7],[161,0.8],[165,0.3],[177,1],[178,0.6],[179,0.6],[180,1],[188,0.7],[189,0.6],[190,0.6],[191,1],[194,0.7],[200,0.7],[201,0.6],[202,0.6],[215,0.7],[216,0.6],[217,0.6],[218,1],[221,0.7],[223,0.9],[227,0.3],[237,0.3],[238,0.3],[239,0.6],[240,0.3],[241,0.6],[242,0.3],[243,0.6],[244,0.3],[245,0.6],[246,0.3],[247,0.3],[248,0.3],[249,0.3],[250,0.3],[251,0.8],[252,0.3],[253,0.3],[254,0.3],[255,0.3],[256,0.3],[257,0.3],[258,0.3]],"Land_Panelak2",[[1,0.1],[9,0.3],[10,0],[11,0],[12,0],[13,0]],"Land_Barn_Metal",[[7,0.1],[8,0.3],[9,0],[10,0],[11,0]],"Land_Ind_MalyKomin",[[1,0],[2,0],[3,0],[4,0],[5,0.2]],"Land_Ind_Stack_Big",[[1,0],[2,0],[3,0],[4,0],[5,0],[6,0],[7,0]],"Land_Ind_SiloVelke_01",[[0,0],[1,0],[2,0],[3,0],[4,0],[5,0],[6,0],[7,0]],"Land_Ind_Quarry",[[9,0],[10,0],[11,0],[12,0.2],[13,0.3]],"Land_Nasypka",[[1,0],[2,0],[3,0],[4,0]],"Land_a_stationhouse",[[12,0.1],[14,0.1],[15,0.1],[16,0.1],[17,0.1],[18,0.1],[19,0.1],[20,0.1],[21,0.1],[22,0.1],[23,0.1],[24,0.1],[25,0]],"Land_Ind_Pec_01",[[2,0],[3,0],[4,0],[5,0],[6,0.1],[7,0],[9,0],[10,0.3],[11,0.3]],"Land_vysilac_FM2",[[1,0],[2,0],[3,0],[4,0]],"Land_Mil_ControlTower",[[2,-1],[4,-1],[9,0],[10,0],[11,0],[12,0],[13,0],[14,0],[15,0],[17,0],[18,0],[19,0],[20,0]],"Land_Shed_Ind02",[[4,0.2],[5,0],[16,0.2]]]
+#define ILLEGALHOUSES		["Land_Mil_hangar_EP1", "Land_Mil_ControlTower_EP1", "Land_Mil_Guardhouse_EP1", "Land_Mil_Repair_center_EP1","Land_Mil_Barracks_i_EP1","Land_A_Minaret_EP1","Land_Ind_Coltan_Main_EP1"]
+// set EP1HOUSES to 'true' in order to have the param ignored and AI will spawn in every building, which got positions
+#define EP1HOUSES			true
+#define randPos				[(CENTERPOS select 0)+random 4000-random 3000,(CENTERPOS select 1)+random 4000-random 3000, 0]
+#define cacheRadius		 	500
+#define intelRadius			400
+
+//////class definitions
+#define westVehicleClasses  	["AAV","UH1Y","ACE_AH1W_AGM_W","HMMWV_M1151_M2_DES_EP1","HMMWV_Armored","M1126_ICV_mk19_EP1","M1126_ICV_M2_EP1",ATVTYPE,HELITYPE]
+#define limitedSquadGear    	[]
+#define limitedGearList     	[]
+#define westSoldierClasses 	["ACE_USMC_Soldier_TL_D","ACE_USMC_Soldier_Medic_D","ACE_USMC_Soldier_D","ACE_USMC_Soldier_AR_D","ACE_USMC_SoldierM_Marksman_D","ACE_USMC_Soldier_MG_D","ACE_USMC_Soldier_AT_D"]
+
+//////unit definitions
+#define ATVTYPE            "ATV_US_EP1"
+#define HELITYPE           "MH60S"
+#define PILOTTYPE          "US_Soldier_Pilot_EP1"
+#define CAR1TYPE           "HMMWV_M1151_M2_DES_EP1"
+#define CAR2TYPE           "HMMWV_Armored"
+#define MHQTYPE            "LAV25_HQ"
+
+/////weapon and magazine definitions
+//#define ATTYPE "M136"
+//#define ATMAGTYPE "M136"
+
+#define humvMagazines [\
+["30Rnd_556x45_Stanag",12],\
+["5Rnd_762x51_M24",5],\
+["100Rnd_762x51_M240",3],\
+["200Rnd_556x45_M249",4],\
+["PipeBomb",2],\
+["15Rnd_9x19_M9",4],\
+["HandGrenade_West",4],\
+["SmokeShell",4],\
+["1Rnd_HE_M203",6]\
+]
