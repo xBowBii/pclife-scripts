@@ -17,8 +17,6 @@ da_lostkey = isClass(configFile >> "CfgPatches" >> "Loki_Lost_Key");
 
 da_inkodisp = isClass(configFile >> "CfgPatches" >> "inko_disposable_oa");
 
-da_jtd = isClass(configFile >> "CfgPatches" >> "JTD_FireAndSmoke");
-
 sleep 2.5;
 
 while {!addonclear} do
@@ -43,14 +41,6 @@ sleep 0.5;
 if (da_inkodisp) then {
 hintc "***ADDON DISALLOWED***\n\nINKO Disposable\n\nPlease disable this if you wish to play here.\n\nREASON: ACE already does this, why are you running this addon?";
 player sidechat "***ADDON DISALLOWED***   INKO Disposable   Please disable this if you wish to play here.   REASON: ACE already does this, why are you running this addon?";
-player say "DBrian_Oh_no";
-naughty = true;
-};
-sleep 0.5;
-
-if (da_jtd) then {
-hintc "***ADDON DISALLOWED***\n\nJTD Fire and Smoke\n\nPlease disable this if you wish to play here.\n\nREASON: Multiplayer unfriendly";
-player sidechat "***ADDON DISALLOWED***   JTD Fire and Smoke   Please disable this if you wish to play here.   REASON: Multiplayer unfriendly";
 player say "DBrian_Oh_no";
 naughty = true;
 };

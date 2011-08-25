@@ -11,8 +11,3 @@ nul=[_cr01] execVM "op4\crate.sqf";
 	sleep 60;
 	};
 };
-
-if ((side player == east)) then
-{
-nul= [player] execVM "op4\east.sqf";
-};

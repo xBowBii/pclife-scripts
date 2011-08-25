@@ -287,6 +287,6 @@ if (_class in _gl) then {
 	_box addweaponcargo ["M79_EP1",1];
 };	
 
-sleep 300;
+sleep 900;
 
 };
