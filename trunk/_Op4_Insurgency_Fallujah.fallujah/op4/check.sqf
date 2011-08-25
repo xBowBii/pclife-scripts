@@ -11,13 +11,9 @@ sleep 2.5;
 
 #include "mando.h"
 
-is13th = isClass(configFile >> "CfgPatches" >> "op4_13thcrate");
-
 da_lostkey = isClass(configFile >> "CfgPatches" >> "Loki_Lost_Key");
 
 da_inkodisp = isClass(configFile >> "CfgPatches" >> "inko_disposable_oa");
-
-sleep 2.5;
 
 while {!addonclear} do
 {
@@ -44,7 +40,6 @@ player sidechat "***ADDON DISALLOWED***   INKO Disposable   Please disable this 
 player say "DBrian_Oh_no";
 naughty = true;
 };
-sleep 0.5;
 
 if (naughty) then {
 player action ["eject", vehicle player];
