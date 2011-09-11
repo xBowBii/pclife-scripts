@@ -9,12 +9,26 @@ class Mission
 		"CAWheeled2_MTVR",
 		"caweapons_ammoboxes",
 		"camisc3",
-		"cacharacters_e"
+		"cacharacters_e",
+		"ace_sys_spectator",
+		"ace_sys_tracking",
+		"ace_sys_wounds",
+		"ca_modules_e_weather",
+		"ca_modules_clouds",
+		"ace_sys_aitalk",
+		"ace_sys_nvg"
 	};
 	addOnsAuto[]=
 	{
 		"cacharacters2",
 		"cacharacters_e",
+		"ace_sys_spectator",
+		"ace_sys_tracking",
+		"ace_sys_wounds",
+		"ca_modules_e_weather",
+		"ca_modules_clouds",
+		"ace_sys_aitalk",
+		"ace_sys_nvg",
 		"CAWheeled",
 		"CAWheeled2_MTVR",
 		"caweapons_ammoboxes",
@@ -36,7 +50,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=5;
+		items=15;
 		class Item0
 		{
 			side="WEST";
@@ -56,6 +70,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="s1";
+					init="removeallweapons this; {player removeMagazine _x} forEach magazines player;";
 				};
 				class Item1
 				{
@@ -69,11 +84,12 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="s2";
+					init="removeallweapons this; {player removeMagazine _x} forEach magazines player;";
 				};
 				class Item2
 				{
 					position[]={1328.1643,58.861855,1614.5477};
-					azimut=280.47021;
+					azimut=280.47;
 					special="NONE";
 					id=2;
 					side="WEST";
@@ -82,6 +98,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="s3";
+					init="removeallweapons this; {player removeMagazine _x} forEach magazines player;";
 				};
 				class Item3
 				{
@@ -95,6 +112,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="s4";
+					init="removeallweapons this; {player removeMagazine _x} forEach magazines player;";
 				};
 			};
 		};
@@ -117,6 +135,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="s5";
+					init="removeallweapons this; {player removeMagazine _x} forEach magazines player;";
 				};
 				class Item1
 				{
@@ -130,6 +149,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="s6";
+					init="removeallweapons this; {player removeMagazine _x} forEach magazines player;";
 				};
 				class Item2
 				{
@@ -143,6 +163,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="s7";
+					init="removeallweapons this; {player removeMagazine _x} forEach magazines player;";
 				};
 				class Item3
 				{
@@ -156,6 +177,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="s8";
+					init="removeallweapons this; {player removeMagazine _x} forEach magazines player;";
 				};
 			};
 		};
@@ -218,10 +240,190 @@ class Mission
 				};
 			};
 		};
+		class Item5
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1682.2736,47.901588,1556.1982};
+					id=21;
+					side="LOGIC";
+					vehicle="ACE_Spectator_ShownSides_Logic";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item6
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1687.7134,47.787392,1593.5002};
+					id=22;
+					side="LOGIC";
+					vehicle="ACE_ForceGroupMarkersOff_Logic";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item7
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1634.5472,48.618832,1527.6367};
+					id=18;
+					side="LOGIC";
+					vehicle="ACE_Wounds_Logic";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item8
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1635.6462,48.483204,1596.6086};
+					id=20;
+					side="LOGIC";
+					vehicle="ACE_Wounds_FullHeal";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item9
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1634.8693,48.564358,1562.4152};
+					id=19;
+					side="LOGIC";
+					vehicle="ACE_Wounds_EveryoneMedic";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item10
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1732.7864,47.367989,1556.1985};
+					id=23;
+					side="LOGIC";
+					vehicle="WeatherParticlesManager";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item11
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1731.2322,47.346943,1595.0544};
+					id=24;
+					side="LOGIC";
+					vehicle="BIS_clouds_Logic";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item12
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1634.8691,48.642719,1486.2576};
+					id=25;
+					side="LOGIC";
+					vehicle="ACE_RadioTalk_Logic";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item13
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1634.092,48.654861,1452.0641};
+					id=26;
+					side="LOGIC";
+					vehicle="ACE_AITalk_Logic";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item14
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1682.6832,47.919704,1530.6393};
+					id=27;
+					side="LOGIC";
+					vehicle="ACE_NVG_RangeLimit_Logic";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
 	};
 	class Vehicles
 	{
-		items=7;
+		items=8;
 		class Item0
 		{
 			position[]={1338.0256,58.201984,1625.915};
@@ -301,6 +503,15 @@ class Mission
 			leader=1;
 			skill=0.60000002;
 			text="pos4";
+		};
+		class Item7
+		{
+			position[]={1336.7766,58.336758,1624.1042};
+			azimut=-3.8163381;
+			id=28;
+			side="EMPTY";
+			vehicle="ACE_BandageBoxWest";
+			skill=0.60000002;
 		};
 	};
 	class Markers
