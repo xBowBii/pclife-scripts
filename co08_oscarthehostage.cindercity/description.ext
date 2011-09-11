@@ -1,0 +1,42 @@
+class Header
+{
+  gameType = Coop;
+  minPlayers = 1;
+  maxPlayers = 8;
+};
+
+onLoadMission = "*Insert Bill Cosby Quote Here*";
+OnLoadMissionTime = true;
+
+respawn = "Side";
+respawndelay = 4;
+
+class CfgIdentities
+{
+	class Oscar
+	{
+		name="Oscar, the Bill Cosby imitator";
+		face="Face20";
+		glasses="RoundGlasses";
+		speaker="Male01EN";
+		pitch=1.1;
+	};
+};
+
+class Params
+{
+	class TimeOfDay
+	{
+		title = "Time";
+		values[] = {0,2,8,14};
+		texts[] = {"10:00","12:00","18:00","0:00"};
+		default = 0;
+	};
+	class Duration
+	{
+		title = "TimeLimit";
+		values[] = {600,900,1200,1800,3600,5400,90000};
+		texts[] = {"10 min","15 min","20 min","30 min", "60 min", "90 min", "Unlimited"};
+		default = 1200;
+	};
+};

@@ -1,0 +1,687 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"cacharacters2",
+		"mbg_cindercity",
+		"CAWheeled",
+		"CAWheeled2_MTVR",
+		"caweapons_ammoboxes",
+		"camisc3",
+		"cacharacters_e"
+	};
+	addOnsAuto[]=
+	{
+		"cacharacters2",
+		"cacharacters_e",
+		"CAWheeled",
+		"CAWheeled2_MTVR",
+		"caweapons_ammoboxes",
+		"camisc3",
+		"mbg_cindercity"
+	};
+	randomSeed=11338091;
+	class Intel
+	{
+		briefingName="Co 08 Oscar The Hostage";
+		briefingDescription="Rescue Oscar. And he's grumpy.";
+		startWeather=0;
+		forecastWeather=0;
+		year=2011;
+		month=2;
+		day=9;
+		hour=10;
+		minute=0;
+	};
+	class Groups
+	{
+		items=5;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={1321.2297,59.364334,1614.9899};
+					azimut=266.15201;
+					special="NONE";
+					id=0;
+					side="WEST";
+					vehicle="FR_TL";
+					player="PLAYER COMMANDER";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="s1";
+				};
+				class Item1
+				{
+					position[]={1324.1254,59.147491,1614.6318};
+					azimut=280.47;
+					special="NONE";
+					id=1;
+					side="WEST";
+					vehicle="FR_Sapper";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="s2";
+				};
+				class Item2
+				{
+					position[]={1328.1643,58.861855,1614.5477};
+					azimut=280.47021;
+					special="NONE";
+					id=2;
+					side="WEST";
+					vehicle="FR_AR";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="s3";
+				};
+				class Item3
+				{
+					position[]={1330.9504,58.654583,1614.0505};
+					azimut=280.47;
+					special="NONE";
+					id=3;
+					side="WEST";
+					vehicle="FR_Corpsman";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="s4";
+				};
+			};
+		};
+		class Item1
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={1320.9806,59.235374,1630.3971};
+					azimut=250.32401;
+					special="NONE";
+					id=4;
+					side="WEST";
+					vehicle="FR_TL";
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					text="s5";
+				};
+				class Item1
+				{
+					position[]={1324.5916,58.894817,1631.5146};
+					azimut=250.32401;
+					special="NONE";
+					id=5;
+					side="WEST";
+					vehicle="FR_Sapper";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="s6";
+				};
+				class Item2
+				{
+					position[]={1327.2078,58.622093,1632.6661};
+					azimut=250.32401;
+					special="NONE";
+					id=6;
+					side="WEST";
+					vehicle="FR_AR";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="s7";
+				};
+				class Item3
+				{
+					position[]={1329.8668,58.362194,1633.636};
+					azimut=250.32401;
+					special="NONE";
+					id=7;
+					side="WEST";
+					vehicle="FR_Marksman";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="s8";
+				};
+			};
+		};
+		class Item2
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1344.2435,56.559856,1646.8962};
+					special="NONE";
+					id=11;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=0.60000002;
+					text="EDummy";
+				};
+			};
+		};
+		class Item3
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={-48.239338,49.099068,2101.116};
+					special="NONE";
+					id=16;
+					side="EAST";
+					vehicle="RU_Soldier";
+					leader=1;
+					skill=0.60000002;
+					text="InitEastSideDude";
+				};
+			};
+		};
+		class Item4
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={771.73724,73.443352,1383.1122};
+					azimut=-81.318001;
+					special="NONE";
+					id=17;
+					side="CIV";
+					vehicle="CIV_EuroMan01_EP1";
+					leader=1;
+					skill=0.60000002;
+					text="Hostage";
+					init="this addaction [format [""<t color='#FFFF00'>Hostage:</t> Follow us""], ""HostageRescue.sqf"", [], 1, false, true, ""teamSwitchPrev"", ""not HostageRescued""];this setIdentity ""Oscar"";";
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=7;
+		class Item0
+		{
+			position[]={1338.0256,58.201984,1625.915};
+			azimut=265.88177;
+			special="NONE";
+			id=8;
+			side="EMPTY";
+			vehicle="HMMWV";
+			skill=0.60000002;
+			text="A_veh1";
+			init="clearMagazineCargo this; clearWeaponCargo this";
+		};
+		class Item1
+		{
+			position[]={1349.6395,57.377953,1626.384};
+			azimut=265;
+			special="NONE";
+			id=9;
+			side="EMPTY";
+			vehicle="MTVR";
+			skill=0.60000002;
+			text="A_veh2";
+			init="clearMagazineCargo this; clearWeaponCargo this";
+		};
+		class Item2
+		{
+			position[]={1330.8042,58.736931,1625.2113};
+			azimut=265;
+			special="NONE";
+			id=10;
+			side="EMPTY";
+			vehicle="USLaunchersBox";
+			skill=0.60000002;
+			text="Abox";
+			init="this attachto [A_Veh1, [0,2,-.3]];";
+		};
+		class Item3
+		{
+			position[]={1031.5894,73.441483,1601.8431};
+			special="NONE";
+			id=12;
+			side="EMPTY";
+			vehicle="HeliHEmpty";
+			leader=1;
+			skill=0.60000002;
+			text="pos1";
+		};
+		class Item4
+		{
+			position[]={815.02905,73.443352,1556.3815};
+			special="NONE";
+			id=13;
+			side="EMPTY";
+			vehicle="HeliHEmpty";
+			leader=1;
+			skill=0.60000002;
+			text="pos2";
+		};
+		class Item5
+		{
+			position[]={933.09595,73.443352,1388.7883};
+			special="NONE";
+			id=14;
+			side="EMPTY";
+			vehicle="HeliHEmpty";
+			leader=1;
+			skill=0.60000002;
+			text="pos3";
+		};
+		class Item6
+		{
+			position[]={685.7179,73.443352,1348.3885};
+			special="NONE";
+			id=15;
+			side="EMPTY";
+			vehicle="HeliHEmpty";
+			leader=1;
+			skill=0.60000002;
+			text="pos4";
+		};
+	};
+	class Markers
+	{
+		items=16;
+		class Item0
+		{
+			position[]={1062.568,83.162064,1605.8354};
+			name="Sector1";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorRed";
+			fillName="Border";
+			a=200;
+			b=130;
+			angle=54.26268;
+			drawBorder=1;
+		};
+		class Item1
+		{
+			position[]={689.1842,73.443352,1337.1624};
+			name="Sector4";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorRed";
+			fillName="Border";
+			a=200;
+			b=130;
+			angle=54.26268;
+			drawBorder=1;
+		};
+		class Item2
+		{
+			position[]={934.28308,73.443352,1390.3286};
+			name="Sector2";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorRed";
+			fillName="Border";
+			a=100;
+			b=100;
+			angle=54.26268;
+			drawBorder=1;
+		};
+		class Item3
+		{
+			position[]={817.46912,73.443352,1552.6692};
+			name="Sector3";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorRed";
+			fillName="Border";
+			a=100;
+			b=100;
+			angle=54.26268;
+			drawBorder=1;
+		};
+		class Item4
+		{
+			position[]={1336.3536,58.334198,1625.3882};
+			name="markerStart";
+			type="mil_start";
+			angle=-83.748985;
+		};
+		class Item5
+		{
+			position[]={1761.9384,46.446869,804.68945};
+			name="markerEnd";
+			type="mil_end";
+			angle=-39.391285;
+		};
+		class Item6
+		{
+			position[]={917.98706,81.66626,1534.3005};
+			name="hostagePos1";
+			type="Empty";
+		};
+		class Item7
+		{
+			position[]={646.79443,83.015472,1332.7297};
+			name="hostagePos1_1";
+			type="Empty";
+		};
+		class Item8
+		{
+			position[]={788.58997,84.417702,1340.6772};
+			name="hostagePos1_2";
+			type="Empty";
+		};
+		class Item9
+		{
+			position[]={863.98364,80.343346,1420.4978};
+			name="hostagePos1_3";
+			type="Empty";
+		};
+		class Item10
+		{
+			position[]={867.78802,83.057861,1559.4061};
+			name="hostagePos1_4";
+			type="Empty";
+		};
+		class Item11
+		{
+			position[]={824.9035,83.172821,1496.5172};
+			name="hostagePos1_5";
+			type="Empty";
+		};
+		class Item12
+		{
+			position[]={837.35388,84.531105,1445.0313};
+			name="hostagePos1_6";
+			type="Empty";
+		};
+		class Item13
+		{
+			position[]={739.48035,80.343353,1469.2192};
+			name="hostagePos1_7";
+			type="Empty";
+		};
+		class Item14
+		{
+			position[]={998.3205,82.965378,1428.8162};
+			name="hostagePos1_8";
+			type="Empty";
+		};
+		class Item15
+		{
+			position[]={876.62872,73.443352,1484.3346};
+			name="markerHostage";
+			type="Empty";
+		};
+	};
+	class Sensors
+	{
+		items=12;
+		class Item0
+		{
+			position[]={1032.0989,73.441864,1600.2351};
+			a=200;
+			b=200;
+			activationBy="WEST";
+			interruptable=1;
+			age="UNKNOWN";
+			name="oi";
+			expActiv="temp = [pos1, 100] execVM ""spawner.sqf"";Sector1Activated = true";
+			class Effects
+			{
+			};
+		};
+		class Item1
+		{
+			position[]={814.92725,73.443352,1556.4357};
+			a=200;
+			b=200;
+			interruptable=1;
+			age="UNKNOWN";
+			name="oi_1";
+			expActiv="temp = [pos2, 100] execVM ""spawner.sqf""";
+			class Effects
+			{
+			};
+		};
+		class Item2
+		{
+			position[]={933.01379,73.443352,1388.2429};
+			a=200;
+			b=200;
+			activationBy="WEST";
+			interruptable=1;
+			age="UNKNOWN";
+			name="oi_2";
+			expActiv="temp = [pos3, 20] execVM ""spawner.sqf"";Sector2Activated = true;";
+			class Effects
+			{
+			};
+		};
+		class Item3
+		{
+			position[]={684.98224,73.443352,1346.9713};
+			a=200;
+			b=200;
+			interruptable=1;
+			age="UNKNOWN";
+			name="oi_3";
+			expActiv="temp = [pos4, 120] execVM ""spawner.sqf""";
+			class Effects
+			{
+			};
+		};
+		class Item4
+		{
+			position[]={1062.568,83.162064,1605.8354};
+			a=200;
+			b=130;
+			angle=54.262699;
+			rectangular=1;
+			activationBy="EAST";
+			activationType="NOT PRESENT";
+			interruptable=1;
+			age="UNKNOWN";
+			expCond="this and Sector1Activated";
+			expActiv="NULL = [""Sector1"", [200,130],54.2627] execvm ""sectorcleared.sqf"";";
+			class Effects
+			{
+			};
+		};
+		class Item5
+		{
+			position[]={934.28308,73.443352,1390.3286};
+			a=100;
+			b=100;
+			angle=54.262699;
+			rectangular=1;
+			activationBy="EAST";
+			activationType="NOT PRESENT";
+			interruptable=1;
+			age="UNKNOWN";
+			expCond="this and Sector2Activated";
+			expActiv="NULL = [""Sector2"", [100,100],54.2627] execvm ""sectorcleared.sqf"";";
+			class Effects
+			{
+			};
+		};
+		class Item6
+		{
+			position[]={817.46912,73.443352,1552.6692};
+			a=100;
+			b=100;
+			angle=54.262699;
+			rectangular=1;
+			activationBy="EAST";
+			activationType="NOT PRESENT";
+			interruptable=1;
+			age="UNKNOWN";
+			expCond="this and Sector3Activated";
+			class Effects
+			{
+			};
+		};
+		class Item7
+		{
+			position[]={689.1842,73.443352,1337.1624};
+			a=200;
+			b=130;
+			angle=54.262699;
+			rectangular=1;
+			activationBy="EAST";
+			activationType="NOT PRESENT";
+			interruptable=1;
+			age="UNKNOWN";
+			expCond="this and Sector4Activated";
+			class Effects
+			{
+			};
+		};
+		class Item8
+		{
+			position[]={1074.9561,58.62886,1021.6808};
+			a=0;
+			b=0;
+			interruptable=1;
+			age="UNKNOWN";
+			text="Update: Hostage Died";
+			expCond="!alive Hostage";
+			expActiv="NULL = [0] execVM ""EndMission.sqf"";";
+			class Effects
+			{
+			};
+		};
+		class Item9
+		{
+			position[]={1705.9384,46.616741,879.27039};
+			a=2000;
+			b=150;
+			angle=-41.8866;
+			rectangular=1;
+			activationBy="WEST";
+			interruptable=1;
+			age="UNKNOWN";
+			text="END: Hostage secured";
+			expCond="this and (alive Hostage) and HostageRescued";
+			expActiv="NULL = [1] execVM ""EndMission.sqf"";";
+			class Effects
+			{
+			};
+		};
+		class Item10
+		{
+			position[]={1024,62.65163,1024};
+			a=2048;
+			b=2048;
+			rectangular=1;
+			activationBy="WEST";
+			activationType="NOT PRESENT";
+			interruptable=1;
+			age="UNKNOWN";
+			text="END: All failed";
+			expActiv="NULL = [2] execVM ""EndMission.sqf"";";
+			class Effects
+			{
+			};
+		};
+		class Item11
+		{
+			position[]={1730.6252,46.591267,902.29199};
+			a=2000;
+			b=150;
+			angle=-41.8866;
+			rectangular=1;
+			activationBy="WEST";
+			interruptable=1;
+			age="UNKNOWN";
+			text="END: Hostage Died, but team exfiltrated";
+			expCond="this and (!alive Hostage)";
+			expActiv="NULL = [3] execVM ""EndMission.sqf"";";
+			class Effects
+			{
+			};
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"mbg_cindercity"
+	};
+	addOnsAuto[]=
+	{
+		"mbg_cindercity"
+	};
+	randomSeed=2788827;
+	class Intel
+	{
+		startWeather=0.40000001;
+		forecastWeather=0.1;
+		year=2011;
+		month=9;
+		day=2;
+		hour=13;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"mbg_cindercity"
+	};
+	addOnsAuto[]=
+	{
+		"mbg_cindercity"
+	};
+	randomSeed=3689302;
+	class Intel
+	{
+		startWeather=0.40000001;
+		forecastWeather=0.1;
+		year=2011;
+		month=9;
+		day=2;
+		hour=13;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"mbg_cindercity"
+	};
+	addOnsAuto[]=
+	{
+		"mbg_cindercity"
+	};
+	randomSeed=10327724;
+	class Intel
+	{
+		startWeather=0.40000001;
+		forecastWeather=0.1;
+		year=2011;
+		month=9;
+		day=2;
+		hour=13;
+	};
+};
