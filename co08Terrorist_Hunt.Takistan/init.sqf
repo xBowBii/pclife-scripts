@@ -3,12 +3,6 @@ execVM "briefing.sqf";
 //Init UPSMON scritp
 call compile preprocessFileLineNumbers "scripts\Init_UPSMON.sqf";
 
-// needed for Ai Shoots Flares script.
-AIsoldierFlare_units = [];
-
-// this line is for adding the AI light part to any player launched flares in Multi Player missions, optional.
-//{_x addEventHandler ["fired", {_this execVM "scripts\EH_lightflare.sqf"}]} forEach playableUnits;
-
 skiptime (((paramsArray select 0) - daytime + 24) % 24);
 
 switch (paramsArray select 1) do {
@@ -72,4 +66,4 @@ _aiskill = paramsarray select 4;
 //if (paramsArray select 10 == 3) then {east addEventHandler ["HIT",{(_this select 0) setDamage (0.25 * damage (_this select 0));}];};
 //if (paramsArray select 10 == 4) then {east addEventHandler ["HIT",{(_this select 0) setDamage (0 * damage (_this select 0));}];};
 
-ace_wounds_prevtime = 20;
+ace_wounds_prevtime = 60;
