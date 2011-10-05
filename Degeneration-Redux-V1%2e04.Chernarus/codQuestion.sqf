@@ -1,0 +1,3 @@
+
+_dlg =  createdialog "codQuestion";
+
