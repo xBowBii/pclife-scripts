@@ -1,7 +1,7 @@
 _content = getWeaponCargo OC1
 
-If (_content
-
+//If (_content
+// what the fuck is happening there?
 
 /*
 while {true} do {

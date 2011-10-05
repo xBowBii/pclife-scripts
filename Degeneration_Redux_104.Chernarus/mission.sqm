@@ -43,7 +43,9 @@ class Mission
 		"CAWheeled",
 		"cadata",
 		"caweapons_baf",
-		"caair"
+		"caair",
+		"ace_sys_wounds",
+		"ace_sys_repair"
 	};
 	addOnsAuto[]=
 	{
@@ -52,6 +54,8 @@ class Mission
 		"ca_modules_functions",
 		"cacharacters2",
 		"cacharacters_e",
+		"ace_sys_wounds",
+		"ace_sys_repair",
 		"CAAir_E_UH60M",
 		"camisc3",
 		"caweapons_ammoboxes",
@@ -80,7 +84,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=49;
+		items=52;
 		class Item0
 		{
 			side="LOGIC";
@@ -1117,6 +1121,60 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="S8SPAWN";
+				};
+			};
+		};
+		class Item49
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15303.137,0.26718003,11199.105};
+					id=256;
+					side="LOGIC";
+					vehicle="ACE_Wounds_FullHeal";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item50
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15303.23,0.24054569,11130.621};
+					id=257;
+					side="LOGIC";
+					vehicle="ACE_Wounds_EveryoneMedic";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item51
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15299.268,0.22726053,11053.456};
+					id=258;
+					side="LOGIC";
+					vehicle="ace_sys_repair_tyres";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
 				};
 			};
 		};
