@@ -1,0 +1,1 @@
+nul = ["SniperLoad.sqf", "PistolLoad.sqf", "GearLoad.sqf", "HEGLLoad.sqf", "RifeLoad.sqf", "MachineLoad.sqf", "LauncherLoad.sqf","Vehspawn.sqf","attachVehicle.sqf","cancelAttach.sqf","detachVehicle.sqf","dropVehicle.sqf","initAttachVehicle.sqf"] execVM "RSL_Declare.sqf";

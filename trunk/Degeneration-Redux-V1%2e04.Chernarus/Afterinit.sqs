@@ -1,0 +1,143 @@
+;Zombie mission init script by Celery
+Survival=(paramsArray select 4)
+?isNil "CLY_playerstates":CLY_playerstates=[]
+[] execVM "SurvivalCheck.sqf"
+@isDedicated or !isNull player
+
+;Make markers invisible
+?isServer:{_x setMarkerAlpha 0} forEach ["respawn_civilian","canister","canisterborder","vodnik","escape"]
+
+;;;;;;;;;;Serverside only;;;;;;;;;;
+?!isServer:exit
+
+;No conversations
+{_x setVariable ["BIS_noCoreConversations",true,true]} forEach allUnits
+
+;Create HQs for all sides in case the mission doesn't do it
+_hqwest=createCenter west
+_hqeast=createCenter east
+_hqres=createCenter resistance
+_hqciv=createCenter civilian
+
+;Make everyone friendly. Important both for survivor cooperation and proper zombie behavior.
+{_x setFriend [west,1]} forEach [west,east,resistance,civilian]
+{_x setFriend [east,1]} forEach [west,east,resistance,civilian]
+{_x setFriend [resistance,1]} forEach [west,east,resistance,civilian]
+{_x setFriend [civilian,1]} forEach [west,east,resistance,civilian]
+
+;Zombie aggro radius (random between min and max)
+CLY_minaggroradius=30
+CLY_maxaggroradius=(paramsArray select 2)
+
+;At what range from a player zombies can spawn and despawn
+;Minimum's function is mostly protecting players at start
+CLY_minspawndist=100
+CLY_maxspawndist=500
+CLY_despawndist=CLY_maxspawndist+50
+
+;Distance from victim at which a non-horde zombie gives up the chase
+CLY_chasegiveupdist=400
+
+;Zombie will pick a random victim within this radius from the nearest target
+;Value of 1 or below is multiplier of aggro radius, 0 disables randomization
+CLY_randomvictimradius=0.333
+
+;Motorized vehicle aggro radius multiplier
+CLY_vehicleaggromultiplier=2
+
+;Unarmed aggro radius multiplier
+CLY_unarmedaggromultiplier=0.2
+
+;Default zombies per km^2
+CLY_defaultdensity=(paramsArray select 3)
+
+;Minimum and maximum interval between spawning random hordes
+CLY_randomhordemininterval=60
+CLY_randomhordemaxinterval=60
+
+;Minimum and maximum random horde spawning distance from player group
+CLY_randomhordeminspawndist=400
+CLY_randomhordemaxspawndist=600
+
+;Minimum and maximum number of zombies in a random horde
+CLY_randomhordeminamount=1
+CLY_randomhordemaxamount=1
+
+;Groups reserved for hordes - allows hordes to spawn in very crowded areas
+CLY_hordereservedgroups=80
+
+;Zombie types and their % of automatically generated zombies (must total 100)
+;normal		makes noise when idle, runs to victim when one is spotted
+;surprise		runs to victim when one is spotted, silent until close
+;passive		runs to victim when one is spotted, silent until close, waits still
+;crawler		crawls, silent until very close, aggro radius always maximum
+;passive crawler	crawls, silent until very close, waits still
+;sneaker		crawls, silent until very close, starts running when close, aggro radius always maximum
+;ambusher		crawls, silent until very close, waits still, starts running when victim is in aggro range
+;armored		runs to victim when one is spotted, silent until close, withstands lots of damage
+;slow armored	walks to victim when one is spotted, silent until close, withstands lots of damage
+CLY_zombietypes=[["normal",60],["surprise",33],["passive",0],["crawler",0],["passive crawler",0],["sneaker",3],["ambusher",0],["armored",4],["slow armored",0]]
+
+;Chance of zombie spawning with a lootable bandage
+CLY_zombiebandagechance=0.1
+
+;Chance of zombie dropping a random magazine
+CLY_zombiemagazinechance=0.1
+
+;Magazines that a zombie can drop
+CLY_zombiemagazines=["30Rnd_545x39_AKSD","64Rnd_9x19_SD_Bizon","8Rnd_B_Beneli_Pellets","30Rnd_9x19_MP5SD","30Rnd_556x45_StanagSD","15Rnd_9x19_M9SD","8Rnd_9x18_MakarovSD","30Rnd_545x39_AK","5Rnd_86x70_L115A1","HandGrenade"]
+
+;Debug mode - show markers for prepared positions and active zombies
+CLY_debug=false
+
+;Disable ACE stamina
+ACE_NoStaminaEffects=true
+publicVariable "ACE_NoStaminaEffects"
+
+;Sound arrays
+CLY_noises_idle=["idle1","idle2","idle3","idle4","idle5","idle6","idle7","idle8"]
+CLY_noises_chase=["chase1","chase2","chase3","chase4","chase5","chase6","chase7","chase8"]
+CLY_noises_attack=["attack1","attack2","attack3","attack4"]
+CLY_noises_die=["die1","die2"]
+CLY_noises_scream=["scream1","scream2","scream3"]
+
+;Horde trigger
+CLY_hordetrigger=""
+
+;Unit classes that can be used as zombies - civilian units are not recommended due to AI problems
+;Make subarrays for a group of similar units to make the whole group have the same chance to appear as a single unit
+CLY_zombieclasses=["Ins_Villager3","Ins_Woodlander3","Ins_Woodlander2","Ins_Worker2","Ins_Villager4","Ins_Woodlander1","Ins_Lopotev",["Soldier_PMC","Soldier_MG_PMC","Soldier_Engineer_PMC","Ins_Soldier_Pilot"],["Ins_Soldier_1","Ins_Soldier_Crew","Ins_Soldier_CO","Ins_Bardak"],["CDF_Soldier","CDF_Soldier_Militia","CDF_Soldier_TL","CDF_Soldier_Crew","CDF_Soldier_Light"],["USMC_Soldier","USMC_SoldierM_Marksman","USMC_Soldier_Officer","USMC_Soldier_TL","USMC_Soldier_Crew","USMC_Soldier_Light","FR_TL","FR_Marksman","FR_GL","FR_Sapper","FR_Light"],["BAF_Soldier_W","BAF_Soldier_Officer_W","BAF_crewman_W","BAF_Soldier_AR_W","BAF_Soldier_TL_W","BAF_Soldier_L_W"],["RU_Soldier","RU_Soldier_Officer","RU_Soldier_Crew","RU_Soldier_Light","RUS_Soldier3","RUS_Commander"]]
+;Armored zombie classes
+CLY_armoredzombieclasses=["MVD_Soldier"]
+
+;What classes can have which faces (a = Asian, b = African, c = European, d = Arab/Persian)
+;Classes not in any array can have any face
+CLY_zombieclasses_a=["Soldier_PMC","Soldier_MG_PMC","Soldier_Engineer_PMC","Ins_Soldier_Pilot","USMC_Soldier","USMC_SoldierM_Marksman","USMC_Soldier_Officer","USMC_Soldier_TL","USMC_Soldier_Crew","USMC_Soldier_Light","FR_TL","FR_Marksman","FR_GL","FR_Sapper","FR_Light"]
+CLY_zombieclasses_b=["Soldier_PMC","Soldier_MG_PMC","Soldier_Engineer_PMC","Ins_Soldier_Pilot","USMC_Soldier","USMC_SoldierM_Marksman","USMC_Soldier_Officer","USMC_Soldier_TL","USMC_Soldier_Crew","USMC_Soldier_Light","FR_TL","FR_Marksman","FR_GL","FR_Sapper","FR_Light","BAF_Soldier_W","BAF_Soldier_L_W"]
+CLY_zombieclasses_c=["Ins_Villager3","Ins_Woodlander3","Ins_Woodlander2","Ins_Worker2","Ins_Villager4","Ins_Woodlander1","Ins_Lopotev","Soldier_PMC","Soldier_MG_PMC","Soldier_Engineer_PMC","Ins_Soldier_Pilot","Ins_Soldier_1","Ins_Soldier_Crew","Ins_Soldier_CO","Ins_Bardak","GUE_Soldier_1","GUE_Soldier_2","GUE_Soldier_3","CDF_Soldier","CDF_Soldier_Militia","CDF_Soldier_TL","CDF_Soldier_Crew","CDF_Soldier_Light","CDF_Soldier_Pilot","USMC_Soldier","USMC_SoldierM_Marksman","USMC_Soldier_Officer","USMC_Soldier_TL","USMC_Soldier_Crew","USMC_Soldier_Light","FR_TL","FR_Marksman","FR_GL","FR_Sapper","FR_Light","BAF_Soldier_W","BAF_Soldier_Officer_W","BAF_crewman_W","BAF_Soldier_AR_W","BAF_Soldier_TL_W","BAF_Soldier_L_W","RU_Soldier","RU_Soldier_Officer","RU_Soldier_Crew","RU_Soldier_Light","RUS_Soldier3","RUS_Commander","MVD_Soldier"]
+CLY_zombieclasses_d=[]
+
+;Zombie faces
+CLY_faces=[]
+CLY_faces_a=["Face58_camo1"]
+CLY_faces_b=[]
+CLY_faces_c=[]
+CLY_faces_d=[]
+for "_x" from 1 to 107 do {_0="";if (_x<10) then {_0="0"};_face=format ["Face%1%2_camo1",_0,_x];CLY_faces=CLY_faces+[_face]}
+for "_x" from 1 to 21 do {_0="";if (_x<10) then {_0="0"};_face=format ["Face%1%2_camo1_EP1",_0,_x];CLY_faces=CLY_faces+[_face];CLY_faces_d=CLY_faces_d+[_face]}
+for "_x" from 108 to 124 do {_face=format ["Face%1_camo1_PMC",_x];CLY_faces=CLY_faces+[_face];CLY_faces_a=CLY_faces_a+[_face]}
+for "_x" from 26 to 40 do {_face=format ["Face%1_camo1",_x];CLY_faces_b=CLY_faces_b+[_face]}
+for "_x" from 78 to 86 do {_face=format ["Face%1_camo1",_x];if (_face!="Face85_camo1") then {CLY_faces_b=CLY_faces_b+[_face]}}
+for "_x" from 1 to 107 do {_0="";if (_x<10) then {_0="0"};_face=format ["Face%1%2_camo1",_0,_x];if (_face!="Face58_camo1" and !(_face in CLY_faces_b)) then {CLY_faces_c=CLY_faces_c+[_face]}}
+
+;Alternate textures
+CLY_z_alttexturemodels=["\ca\characters2\civil\Worker\Worker","\ca\characters2\civil\Woodlander\Woodlander","\ca\characters2\civil\Villager\Villager"]
+CLY_z_alttextures=[["\ca\characters2\civil\worker\data\worker_co.paa","\ca\characters2\civil\worker\data\Worker_v2_CO.paa","\ca\characters2\civil\worker\data\Worker_v3_CO.paa","\ca\characters2\civil\worker\data\Worker_v4_CO.paa"],["\ca\characters2\civil\woodlander\data\woodlander_co.paa","\ca\characters2\civil\woodlander\data\woodlander_v2_co.paa","\ca\characters2\civil\woodlander\data\woodlander_v3_co.paa","\ca\characters2\civil\woodlander\data\woodlander_v4_co.paa"],["\ca\characters2\civil\villager\data\villager_co.paa","\ca\characters2\civil\villager\data\villager_v2_co.paa","\ca\characters2\civil\villager\data\villager_v3_co.paa","\ca\characters2\civil\villager\data\villager_v4_co.paa"]]
+
+[] exec "zombie_scripts\cly_z_unitupdate.sqs"
+[] exec "zombie_scripts\cly_z_randomhorde.sqs"
+[] execVM "cly_playerstates.sqf"
+[] exec "jipresumepos.sqs"
+[] execVM "Objective.sqf"
+
+exit
