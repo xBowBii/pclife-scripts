@@ -1,0 +1,11 @@
+;Briefing
+player createDiaryRecord ["Diary",["Beginning","<br/>Degeneration- Redux V2.0-<br/><br/>Sahrani, Takistan, Utes and the rest of the world have all fallen to the zombie horde. You are stranded. You are alone. You are the last hope. The last hope in a world of nightmares.<br/><br/>Enjoy Degeneration in a whole new light. New and improved zombies THANKS TO CELERY. Better vehicle spawning systems. More control. More destruction. Enjoy"]]
+
+;Zombie facts
+player createDiaryRecord ["Diary",["Zombie facts","<br/>- Zombies will pursue you if they've noticed you<br/>- You can take two hits from a zombie without dying<br/>- Head and leg shots are the best ways to deal with them<br/>- Torso kills are easier with a powerful weapon<br/>- Unarmed survivors are much less likely to attract attention<br/>- Gunshots attract zombies<br/>- Zombies may have bandages on their person (action will pop up)<br/>- Zombies may drop magazines at their feet when they die"]]
+
+;JIP info
+player createDiaryRecord ["Diary",["Join in progress","<br/>This mission supports joining in progress. Join in progress players will be spawned at their last location (Which gets updated every 5 minutes). Each character's loadout is saved upon exiting, and a player will get the character's saved damage, bandages and gear with 2/3 of the magazines if that character has been used before."]]
+
+;Credits
+player createDiaryRecord ["Diary",["Credits","<br/>Scripts:<br/>Celery<br/><br/>Thanks to:<br/>Celery. THANK YOU CELERY!!!<br/><br/>Craig. Who created various scripts for the mission. Thank you Craig!<br/><br/>Garret. Who made the addons for Degeneration. Thanks buddy!<br/> Thanks to Andrew, Jenkins, Luke, Bobtom, Jaca, Dan for all endless hours of testing and support!<br/><br/>Special thanks to Garret for the load image!<br/>3rd party music:<br/>Shadow Sneaker - Nowhere"]];

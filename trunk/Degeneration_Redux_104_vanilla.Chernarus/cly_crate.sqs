@@ -1,0 +1,51 @@
+;CLY Crate - Centralized crate loadout script
+;
+;Ammo crate content script
+;Put this in a crate's init: [this,1] exec "cly_crate.sqs"
+;The number element determines which loadout is used for that crate.
+;
+;Executed in an ammo crate's init line in the editor
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+_crate=_this select 0
+_number=0
+?count _this>1:_number=_this select 1
+
+;Callable loadout script: [classname of gun,amount of guns,amount of mags,type index or classname of ammo]
+_cratescript={_gun=_this select 0;_gunamount=_this select 1;_magamount=_this select 2;_ammotype=_this select 3;_mag=_ammotype;if (typeName _mag!="STRING") then {_mag=getArray (configFile/"CfgWeapons"/_gun/"magazines") select _ammotype};_crate addWeaponCargo [_gun,_gunamount];_crate addMagazineCargo [_mag,_magamount]}
+
+?typeOf _crate!="WeaponHolder":clearWeaponCargo _crate;clearMagazineCargo _crate
+
+goto format ["crate%1",_number]
+hintSilent format ["CLY Crate: loadout #%1 not found!",_number]
+exit
+
+
+#crate1
+["AKS_74_UN_kobra",1,2,0] call _cratescript
+["bizon_silenced",1,1,0] call _cratescript
+["M1014",3,6,1] call _cratescript
+["MP5SD",0,2,0] call _cratescript
+["M4A1_AIM_SD_camo",0,1,0] call _cratescript
+["M9SD",1,6,0] call _cratescript
+["MakarovSD",1,8,"8Rnd_9x18_MakarovSD"] call _cratescript
+["revolver_EP1",0,3,0] call _cratescript
+["Colt1911",0,2,0] call _cratescript
+["AKS_74_kobra",0,1,0] call _cratescript
+["BAF_LRR_scoped_W",0,2,0] call _cratescript
+exit
+
+
+#crate2
+["AKS_74_UN_kobra",0,4,0] call _cratescript
+["bizon_silenced",0,3,0] call _cratescript
+["M1014",0,18,1] call _cratescript
+["MP5SD",0,6,0] call _cratescript
+["M4A1_AIM_SD_camo",0,4,0] call _cratescript
+["M9SD",0,10,0] call _cratescript
+["MakarovSD",0,14,"8Rnd_9x18_MakarovSD"] call _cratescript
+["revolver_EP1",0,6,0] call _cratescript
+["Colt1911",0,6,0] call _cratescript
+["AKS_74_kobra",0,4,0] call _cratescript
+["BAF_LRR_scoped_W",0,8,0] call _cratescript
+exit
