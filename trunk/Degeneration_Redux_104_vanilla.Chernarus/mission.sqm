@@ -3363,7 +3363,7 @@ class Mission
 	};
 	class Sensors
 	{
-		items=210;
+		items=145;
 		class Item0
 		{
 			position[]={6900.022,338.93076,8498.3779};
@@ -3392,9 +3392,9 @@ class Mission
 		};
 		class Item2
 		{
-			position[]={501.19519,549.18127,14851.2};
-			a=500;
-			b=500;
+			position[]={997.9046,392.89563,14350.035};
+			a=1000;
+			b=1000;
 			rectangular=1;
 			interruptable=1;
 			age="UNKNOWN";
@@ -3406,8 +3406,8 @@ class Mission
 		};
 		class Item3
 		{
-			position[]={1501.1953,385.797,14851.2};
-			a=500;
+			position[]={2998.3174,474.00592,14851.2};
+			a=1000;
 			b=500;
 			rectangular=1;
 			interruptable=1;
@@ -3420,9 +3420,9 @@ class Mission
 		};
 		class Item4
 		{
-			position[]={2501.1951,518.44153,14851.2};
+			position[]={4501.1948,324.79367,14352.844};
 			a=500;
-			b=500;
+			b=1000;
 			rectangular=1;
 			interruptable=1;
 			age="UNKNOWN";
@@ -3434,8 +3434,8 @@ class Mission
 		};
 		class Item5
 		{
-			position[]={3501.1951,456.44125,14851.2};
-			a=500;
+			position[]={6010.6445,409.60556,14858.631};
+			a=1000;
 			b=500;
 			rectangular=1;
 			interruptable=1;
@@ -3448,8 +3448,8 @@ class Mission
 		};
 		class Item6
 		{
-			position[]={4501.1948,418.18365,14851.2};
-			a=500;
+			position[]={8003.5469,143.86267,14859.355};
+			a=1000;
 			b=500;
 			rectangular=1;
 			interruptable=1;
@@ -3462,9 +3462,9 @@ class Mission
 		};
 		class Item7
 		{
-			position[]={5501.1948,467.10547,14851.2};
+			position[]={2501.1951,328.70166,13356.829};
 			a=500;
-			b=500;
+			b=1000;
 			rectangular=1;
 			interruptable=1;
 			age="UNKNOWN";
@@ -3476,9 +3476,9 @@ class Mission
 		};
 		class Item8
 		{
-			position[]={6501.1948,408.76669,14851.2};
+			position[]={3501.1951,248.07159,13352.843};
 			a=500;
-			b=500;
+			b=1000;
 			rectangular=1;
 			interruptable=1;
 			age="UNKNOWN";
@@ -3490,8 +3490,8 @@ class Mission
 		};
 		class Item9
 		{
-			position[]={7501.1943,289.53256,14851.2};
-			a=500;
+			position[]={6002.5034,273.98291,13864.995};
+			a=1000;
 			b=500;
 			rectangular=1;
 			interruptable=1;
@@ -3504,9 +3504,9 @@ class Mission
 		};
 		class Item10
 		{
-			position[]={8501.1953,238.7413,14851.2};
-			a=500;
-			b=500;
+			position[]={8003.3848,225.87906,13358.713};
+			a=1000;
+			b=1000;
 			rectangular=1;
 			interruptable=1;
 			age="UNKNOWN";
@@ -3517,188 +3517,6 @@ class Mission
 			};
 		};
 		class Item11
-		{
-			position[]={501.19519,380.51794,13851.2};
-			a=500;
-			b=500;
-			rectangular=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="true";
-			expActiv="0=[thisTrigger,-1] execVM ""zombie_scripts\cly_z_generator.sqf""";
-			class Effects
-			{
-			};
-		};
-		class Item12
-		{
-			position[]={1501.1953,432.04062,13851.2};
-			a=500;
-			b=500;
-			rectangular=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="true";
-			expActiv="0=[thisTrigger,-1] execVM ""zombie_scripts\cly_z_generator.sqf""";
-			class Effects
-			{
-			};
-		};
-		class Item13
-		{
-			position[]={2501.1951,423.26288,13851.2};
-			a=500;
-			b=500;
-			rectangular=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="true";
-			expActiv="0=[thisTrigger,-1] execVM ""zombie_scripts\cly_z_generator.sqf""";
-			class Effects
-			{
-			};
-		};
-		class Item14
-		{
-			position[]={3501.1951,373.45627,13851.2};
-			a=500;
-			b=500;
-			rectangular=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="true";
-			expActiv="0=[thisTrigger,-1] execVM ""zombie_scripts\cly_z_generator.sqf""";
-			class Effects
-			{
-			};
-		};
-		class Item15
-		{
-			position[]={4501.1948,335.02258,13851.2};
-			a=500;
-			b=500;
-			rectangular=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="true";
-			expActiv="0=[thisTrigger,-1] execVM ""zombie_scripts\cly_z_generator.sqf""";
-			class Effects
-			{
-			};
-		};
-		class Item16
-		{
-			position[]={5501.1948,347.20752,13851.2};
-			a=500;
-			b=500;
-			rectangular=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="true";
-			expActiv="0=[thisTrigger,-1] execVM ""zombie_scripts\cly_z_generator.sqf""";
-			class Effects
-			{
-			};
-		};
-		class Item17
-		{
-			position[]={6501.1948,333.74988,13851.2};
-			a=500;
-			b=500;
-			rectangular=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="true";
-			expActiv="0=[thisTrigger,-1] execVM ""zombie_scripts\cly_z_generator.sqf""";
-			class Effects
-			{
-			};
-		};
-		class Item18
-		{
-			position[]={7501.1943,344.71692,13851.2};
-			a=500;
-			b=500;
-			rectangular=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="true";
-			expActiv="0=[thisTrigger,-1] execVM ""zombie_scripts\cly_z_generator.sqf""";
-			class Effects
-			{
-			};
-		};
-		class Item19
-		{
-			position[]={8501.1953,199.99693,13851.2};
-			a=500;
-			b=500;
-			rectangular=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="true";
-			expActiv="0=[thisTrigger,-1] execVM ""zombie_scripts\cly_z_generator.sqf""";
-			class Effects
-			{
-			};
-		};
-		class Item20
-		{
-			position[]={501.19519,388.21463,12851.2};
-			a=500;
-			b=500;
-			rectangular=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="true";
-			expActiv="0=[thisTrigger,-1] execVM ""zombie_scripts\cly_z_generator.sqf""";
-			class Effects
-			{
-			};
-		};
-		class Item21
-		{
-			position[]={1501.1953,293.34512,12851.2};
-			a=500;
-			b=500;
-			rectangular=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="true";
-			expActiv="0=[thisTrigger,-1] execVM ""zombie_scripts\cly_z_generator.sqf""";
-			class Effects
-			{
-			};
-		};
-		class Item22
-		{
-			position[]={2501.1951,273.40652,12851.2};
-			a=500;
-			b=500;
-			rectangular=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="true";
-			expActiv="0=[thisTrigger,-1] execVM ""zombie_scripts\cly_z_generator.sqf""";
-			class Effects
-			{
-			};
-		};
-		class Item23
-		{
-			position[]={3501.1951,189.95944,12851.2};
-			a=500;
-			b=500;
-			rectangular=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="true";
-			expActiv="0=[thisTrigger,-1] execVM ""zombie_scripts\cly_z_generator.sqf""";
-			class Effects
-			{
-			};
-		};
-		class Item24
 		{
 			position[]={4501.1948,174.93036,12851.2};
 			a=500;
@@ -3712,7 +3530,7 @@ class Mission
 			{
 			};
 		};
-		class Item25
+		class Item12
 		{
 			position[]={5501.1948,203.88075,12851.2};
 			a=500;
@@ -3726,7 +3544,7 @@ class Mission
 			{
 			};
 		};
-		class Item26
+		class Item13
 		{
 			position[]={6501.1948,178.75006,12851.2};
 			a=500;
@@ -3740,10 +3558,38 @@ class Mission
 			{
 			};
 		};
-		class Item27
+		class Item14
 		{
-			position[]={7501.1943,164.07964,12851.2};
+			position[]={1010.6445,336.05142,12356.472};
+			a=1000;
+			b=1000;
+			rectangular=1;
+			interruptable=1;
+			age="UNKNOWN";
+			expCond="true";
+			expActiv="0=[thisTrigger,-1] execVM ""zombie_scripts\cly_z_generator.sqf""";
+			class Effects
+			{
+			};
+		};
+		class Item15
+		{
+			position[]={2501.1951,279.5766,11363.898};
 			a=500;
+			b=1000;
+			rectangular=1;
+			interruptable=1;
+			age="UNKNOWN";
+			expCond="true";
+			expActiv="0=[thisTrigger,-1] execVM ""zombie_scripts\cly_z_generator.sqf""";
+			class Effects
+			{
+			};
+		};
+		class Item16
+		{
+			position[]={3999.467,363.89948,11855.278};
+			a=1000;
 			b=500;
 			rectangular=1;
 			interruptable=1;
@@ -3754,10 +3600,24 @@ class Mission
 			{
 			};
 		};
-		class Item28
+		class Item17
 		{
-			position[]={8501.1953,135.56355,12851.2};
+			position[]={5501.1948,251.9612,11357.771};
 			a=500;
+			b=1000;
+			rectangular=1;
+			interruptable=1;
+			age="UNKNOWN";
+			expCond="true";
+			expActiv="0=[thisTrigger,-1] execVM ""zombie_scripts\cly_z_generator.sqf""";
+			class Effects
+			{
+			};
+		};
+		class Item18
+		{
+			position[]={7004.2271,363.93106,11857.045};
+			a=1000;
 			b=500;
 			rectangular=1;
 			interruptable=1;
@@ -3768,119 +3628,7 @@ class Mission
 			{
 			};
 		};
-		class Item29
-		{
-			position[]={501.19519,406.82907,11851.2};
-			a=500;
-			b=500;
-			rectangular=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="true";
-			expActiv="0=[thisTrigger,-1] execVM ""zombie_scripts\cly_z_generator.sqf""";
-			class Effects
-			{
-			};
-		};
-		class Item30
-		{
-			position[]={1501.1953,252.28299,11851.2};
-			a=500;
-			b=500;
-			rectangular=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="true";
-			expActiv="0=[thisTrigger,-1] execVM ""zombie_scripts\cly_z_generator.sqf""";
-			class Effects
-			{
-			};
-		};
-		class Item31
-		{
-			position[]={2501.1951,236.22859,11851.2};
-			a=500;
-			b=500;
-			rectangular=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="true";
-			expActiv="0=[thisTrigger,-1] execVM ""zombie_scripts\cly_z_generator.sqf""";
-			class Effects
-			{
-			};
-		};
-		class Item32
-		{
-			position[]={3501.1951,289.11258,11851.2};
-			a=500;
-			b=500;
-			rectangular=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="true";
-			expActiv="0=[thisTrigger,-1] execVM ""zombie_scripts\cly_z_generator.sqf""";
-			class Effects
-			{
-			};
-		};
-		class Item33
-		{
-			position[]={4501.1948,262.27313,11851.2};
-			a=500;
-			b=500;
-			rectangular=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="true";
-			expActiv="0=[thisTrigger,-1] execVM ""zombie_scripts\cly_z_generator.sqf""";
-			class Effects
-			{
-			};
-		};
-		class Item34
-		{
-			position[]={5501.1948,218.17082,11851.2};
-			a=500;
-			b=500;
-			rectangular=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="true";
-			expActiv="0=[thisTrigger,-1] execVM ""zombie_scripts\cly_z_generator.sqf""";
-			class Effects
-			{
-			};
-		};
-		class Item35
-		{
-			position[]={6501.1948,265.75027,11851.2};
-			a=500;
-			b=500;
-			rectangular=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="true";
-			expActiv="0=[thisTrigger,-1] execVM ""zombie_scripts\cly_z_generator.sqf""";
-			class Effects
-			{
-			};
-		};
-		class Item36
-		{
-			position[]={7501.1943,298.17386,11851.2};
-			a=500;
-			b=500;
-			rectangular=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="true";
-			expActiv="0=[thisTrigger,-1] execVM ""zombie_scripts\cly_z_generator.sqf""";
-			class Effects
-			{
-			};
-		};
-		class Item37
+		class Item19
 		{
 			position[]={8501.1953,185.55862,11851.2};
 			a=500;
@@ -3894,11 +3642,11 @@ class Mission
 			{
 			};
 		};
-		class Item38
+		class Item20
 		{
-			position[]={501.19519,425.17416,10851.2};
-			a=500;
-			b=500;
+			position[]={1004.1926,296.24719,10355.917};
+			a=1000;
+			b=1000;
 			rectangular=1;
 			interruptable=1;
 			age="UNKNOWN";
@@ -3908,11 +3656,11 @@ class Mission
 			{
 			};
 		};
-		class Item39
+		class Item21
 		{
-			position[]={1501.1953,275.92392,10851.2};
+			position[]={3501.1951,358.7153,10348.465};
 			a=500;
-			b=500;
+			b=1000;
 			rectangular=1;
 			interruptable=1;
 			age="UNKNOWN";
@@ -3922,35 +3670,7 @@ class Mission
 			{
 			};
 		};
-		class Item40
-		{
-			position[]={2501.1951,294.15146,10851.2};
-			a=500;
-			b=500;
-			rectangular=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="true";
-			expActiv="0=[thisTrigger,-1] execVM ""zombie_scripts\cly_z_generator.sqf""";
-			class Effects
-			{
-			};
-		};
-		class Item41
-		{
-			position[]={3501.1951,340.49222,10851.2};
-			a=500;
-			b=500;
-			rectangular=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="true";
-			expActiv="0=[thisTrigger,-1] execVM ""zombie_scripts\cly_z_generator.sqf""";
-			class Effects
-			{
-			};
-		};
-		class Item42
+		class Item22
 		{
 			position[]={4501.1948,338.98001,10851.2};
 			a=500;
@@ -3964,10 +3684,10 @@ class Mission
 			{
 			};
 		};
-		class Item43
+		class Item23
 		{
-			position[]={5501.1948,289.35294,10851.2};
-			a=500;
+			position[]={7001.9346,328.05127,10854.816};
+			a=1000;
 			b=500;
 			rectangular=1;
 			interruptable=1;
@@ -3978,77 +3698,7 @@ class Mission
 			{
 			};
 		};
-		class Item44
-		{
-			position[]={6500.6782,317.42484,10851.1};
-			a=500;
-			b=500;
-			rectangular=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="true";
-			expActiv="0=[thisTrigger,-1] execVM ""zombie_scripts\cly_z_generator.sqf""";
-			class Effects
-			{
-			};
-		};
-		class Item45
-		{
-			position[]={7501.1943,268.41284,10851.2};
-			a=500;
-			b=500;
-			rectangular=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="true";
-			expActiv="0=[thisTrigger,-1] execVM ""zombie_scripts\cly_z_generator.sqf""";
-			class Effects
-			{
-			};
-		};
-		class Item46
-		{
-			position[]={8501.1953,285.05865,10851.2};
-			a=500;
-			b=500;
-			rectangular=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="true";
-			expActiv="0=[thisTrigger,-1] execVM ""zombie_scripts\cly_z_generator.sqf""";
-			class Effects
-			{
-			};
-		};
-		class Item47
-		{
-			position[]={501.19519,359.85706,9851.2002};
-			a=500;
-			b=500;
-			rectangular=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="true";
-			expActiv="0=[thisTrigger,-1] execVM ""zombie_scripts\cly_z_generator.sqf""";
-			class Effects
-			{
-			};
-		};
-		class Item48
-		{
-			position[]={1501.1953,326.5408,9851.2002};
-			a=500;
-			b=500;
-			rectangular=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="true";
-			expActiv="0=[thisTrigger,-1] execVM ""zombie_scripts\cly_z_generator.sqf""";
-			class Effects
-			{
-			};
-		};
-		class Item49
+		class Item24
 		{
 			position[]={2501.1951,258.99472,9851.2002};
 			a=500;
@@ -4062,21 +3712,7 @@ class Mission
 			{
 			};
 		};
-		class Item50
-		{
-			position[]={3501.1951,311.21194,9851.2002};
-			a=500;
-			b=500;
-			rectangular=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="true";
-			expActiv="0=[thisTrigger,-1] execVM ""zombie_scripts\cly_z_generator.sqf""";
-			class Effects
-			{
-			};
-		};
-		class Item51
+		class Item25
 		{
 			position[]={4501.1948,338.95874,9851.2002};
 			a=500;
@@ -4090,7 +3726,7 @@ class Mission
 			{
 			};
 		};
-		class Item52
+		class Item26
 		{
 			position[]={5501.1948,308.35294,9851.2002};
 			a=500;
@@ -4104,7 +3740,7 @@ class Mission
 			{
 			};
 		};
-		class Item53
+		class Item27
 		{
 			position[]={6501.1948,340.56223,9851.2002};
 			a=500;
@@ -4118,7 +3754,7 @@ class Mission
 			{
 			};
 		};
-		class Item54
+		class Item28
 		{
 			position[]={7501.1943,397.33386,9851.2002};
 			a=500;
@@ -4132,11 +3768,11 @@ class Mission
 			{
 			};
 		};
-		class Item55
+		class Item29
 		{
-			position[]={8501.1953,400.67999,9851.2002};
-			a=500;
-			b=500;
+			position[]={1003.91,238.82799,8359.4707};
+			a=1000;
+			b=1000;
 			rectangular=1;
 			interruptable=1;
 			age="UNKNOWN";
@@ -4146,35 +3782,7 @@ class Mission
 			{
 			};
 		};
-		class Item56
-		{
-			position[]={501.19519,248.84502,8851.2002};
-			a=500;
-			b=500;
-			rectangular=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="true";
-			expActiv="0=[thisTrigger,-1] execVM ""zombie_scripts\cly_z_generator.sqf""";
-			class Effects
-			{
-			};
-		};
-		class Item57
-		{
-			position[]={1501.1953,332.82172,8851.2002};
-			a=500;
-			b=500;
-			rectangular=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="true";
-			expActiv="0=[thisTrigger,-1] execVM ""zombie_scripts\cly_z_generator.sqf""";
-			class Effects
-			{
-			};
-		};
-		class Item58
+		class Item30
 		{
 			position[]={2501.1951,275.7742,8851.2002};
 			a=500;
@@ -4188,7 +3796,7 @@ class Mission
 			{
 			};
 		};
-		class Item59
+		class Item31
 		{
 			position[]={3501.1951,299.71564,8851.2002};
 			a=500;
@@ -4202,7 +3810,7 @@ class Mission
 			{
 			};
 		};
-		class Item60
+		class Item32
 		{
 			position[]={4501.1948,323.0864,8851.2002};
 			a=500;
@@ -4216,7 +3824,7 @@ class Mission
 			{
 			};
 		};
-		class Item61
+		class Item33
 		{
 			position[]={5501.1948,327.73544,8851.2002};
 			a=500;
@@ -4230,7 +3838,7 @@ class Mission
 			{
 			};
 		};
-		class Item62
+		class Item34
 		{
 			position[]={6501.1948,380.21811,8851.2002};
 			a=500;
@@ -4244,10 +3852,10 @@ class Mission
 			{
 			};
 		};
-		class Item63
+		class Item35
 		{
-			position[]={7501.1943,397.23273,8851.2002};
-			a=500;
+			position[]={7998.8438,449.013,8859.3555};
+			a=1000;
 			b=500;
 			rectangular=1;
 			interruptable=1;
@@ -4258,49 +3866,7 @@ class Mission
 			{
 			};
 		};
-		class Item64
-		{
-			position[]={8501.1953,401.69476,8851.2002};
-			a=500;
-			b=500;
-			rectangular=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="true";
-			expActiv="0=[thisTrigger,-1] execVM ""zombie_scripts\cly_z_generator.sqf""";
-			class Effects
-			{
-			};
-		};
-		class Item65
-		{
-			position[]={501.19519,238.48763,7851.2002};
-			a=500;
-			b=500;
-			rectangular=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="true";
-			expActiv="0=[thisTrigger,-1] execVM ""zombie_scripts\cly_z_generator.sqf""";
-			class Effects
-			{
-			};
-		};
-		class Item66
-		{
-			position[]={1501.1953,270.26685,7851.2002};
-			a=500;
-			b=500;
-			rectangular=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="true";
-			expActiv="0=[thisTrigger,-1] execVM ""zombie_scripts\cly_z_generator.sqf""";
-			class Effects
-			{
-			};
-		};
-		class Item67
+		class Item36
 		{
 			position[]={2501.1951,358.26959,7851.2002};
 			a=500;
@@ -4314,7 +3880,7 @@ class Mission
 			{
 			};
 		};
-		class Item68
+		class Item37
 		{
 			position[]={3501.1951,298.3468,7851.2002};
 			a=500;
@@ -4328,10 +3894,10 @@ class Mission
 			{
 			};
 		};
-		class Item69
+		class Item38
 		{
-			position[]={4501.1948,304.07968,7851.2002};
-			a=500;
+			position[]={4999.4673,335.95178,7855.2778};
+			a=1000;
 			b=500;
 			rectangular=1;
 			interruptable=1;
@@ -4342,21 +3908,7 @@ class Mission
 			{
 			};
 		};
-		class Item70
-		{
-			position[]={5501.1948,318.93259,7851.2002};
-			a=500;
-			b=500;
-			rectangular=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="true";
-			expActiv="0=[thisTrigger,-1] execVM ""zombie_scripts\cly_z_generator.sqf""";
-			class Effects
-			{
-			};
-		};
-		class Item71
+		class Item39
 		{
 			position[]={6501.1948,311.3299,7851.2002};
 			a=500;
@@ -4370,7 +3922,7 @@ class Mission
 			{
 			};
 		};
-		class Item72
+		class Item40
 		{
 			position[]={7501.1943,332.30075,7851.2002};
 			a=500;
@@ -4384,11 +3936,11 @@ class Mission
 			{
 			};
 		};
-		class Item73
+		class Item41
 		{
-			position[]={8501.1953,346.59747,7851.2002};
+			position[]={501.19519,193.50789,6348.856};
 			a=500;
-			b=500;
+			b=1000;
 			rectangular=1;
 			interruptable=1;
 			age="UNKNOWN";
@@ -4398,21 +3950,7 @@ class Mission
 			{
 			};
 		};
-		class Item74
-		{
-			position[]={501.19519,303.58505,6851.2002};
-			a=500;
-			b=500;
-			rectangular=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="true";
-			expActiv="0=[thisTrigger,-1] execVM ""zombie_scripts\cly_z_generator.sqf""";
-			class Effects
-			{
-			};
-		};
-		class Item75
+		class Item42
 		{
 			position[]={1501.1953,185.50655,6851.2002};
 			a=500;
@@ -4426,7 +3964,7 @@ class Mission
 			{
 			};
 		};
-		class Item76
+		class Item43
 		{
 			position[]={2501.1951,364.71298,6851.2002};
 			a=500;
@@ -4440,7 +3978,7 @@ class Mission
 			{
 			};
 		};
-		class Item77
+		class Item44
 		{
 			position[]={3501.1951,345.06235,6851.2002};
 			a=500;
@@ -4454,7 +3992,7 @@ class Mission
 			{
 			};
 		};
-		class Item78
+		class Item45
 		{
 			position[]={4501.1948,272.68311,6851.2002};
 			a=500;
@@ -4468,7 +4006,7 @@ class Mission
 			{
 			};
 		};
-		class Item79
+		class Item46
 		{
 			position[]={5501.1948,295.88739,6851.2002};
 			a=500;
@@ -4482,7 +4020,7 @@ class Mission
 			{
 			};
 		};
-		class Item80
+		class Item47
 		{
 			position[]={6501.1948,342.12109,6851.2002};
 			a=500;
@@ -4496,7 +4034,7 @@ class Mission
 			{
 			};
 		};
-		class Item81
+		class Item48
 		{
 			position[]={7501.1943,301.98123,6851.2002};
 			a=500;
@@ -4510,7 +4048,7 @@ class Mission
 			{
 			};
 		};
-		class Item82
+		class Item49
 		{
 			position[]={8501.1953,337.16217,6851.2002};
 			a=500;
@@ -4524,11 +4062,11 @@ class Mission
 			{
 			};
 		};
-		class Item83
+		class Item50
 		{
-			position[]={501.19519,166.36166,5851.2002};
+			position[]={1501.1956,163.00862,5348.5293};
 			a=500;
-			b=500;
+			b=1000;
 			rectangular=1;
 			interruptable=1;
 			age="UNKNOWN";
@@ -4538,21 +4076,7 @@ class Mission
 			{
 			};
 		};
-		class Item84
-		{
-			position[]={1501.1953,195.64154,5851.2002};
-			a=500;
-			b=500;
-			rectangular=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="true";
-			expActiv="0=[thisTrigger,-1] execVM ""zombie_scripts\cly_z_generator.sqf""";
-			class Effects
-			{
-			};
-		};
-		class Item85
+		class Item51
 		{
 			position[]={2501.1951,265.17569,5851.2002};
 			a=500;
@@ -4566,10 +4090,10 @@ class Mission
 			{
 			};
 		};
-		class Item86
+		class Item52
 		{
-			position[]={3501.1951,340.51865,5851.2002};
-			a=500;
+			position[]={3999.4673,376.33145,5859.356};
+			a=1000;
 			b=500;
 			rectangular=1;
 			interruptable=1;
@@ -4580,21 +4104,7 @@ class Mission
 			{
 			};
 		};
-		class Item87
-		{
-			position[]={4501.1948,306.86826,5851.2002};
-			a=500;
-			b=500;
-			rectangular=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="true";
-			expActiv="0=[thisTrigger,-1] execVM ""zombie_scripts\cly_z_generator.sqf""";
-			class Effects
-			{
-			};
-		};
-		class Item88
+		class Item53
 		{
 			position[]={5501.1948,274.13358,5851.2002};
 			a=500;
@@ -4608,7 +4118,7 @@ class Mission
 			{
 			};
 		};
-		class Item89
+		class Item54
 		{
 			position[]={6501.1948,318.49338,5851.2002};
 			a=500;
@@ -4622,7 +4132,7 @@ class Mission
 			{
 			};
 		};
-		class Item90
+		class Item55
 		{
 			position[]={7501.1943,244.69968,5851.2002};
 			a=500;
@@ -4638,11 +4148,11 @@ class Mission
 			{
 			};
 		};
-		class Item91
+		class Item56
 		{
-			position[]={8501.1953,261.27408,5851.2002};
+			position[]={501.19519,69.656586,4364.644};
 			a=500;
-			b=500;
+			b=1000;
 			rectangular=1;
 			interruptable=1;
 			age="UNKNOWN";
@@ -4652,35 +4162,7 @@ class Mission
 			{
 			};
 		};
-		class Item92
-		{
-			position[]={501.19519,79.097534,4851.2002};
-			a=500;
-			b=500;
-			rectangular=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="true";
-			expActiv="0=[thisTrigger,-1] execVM ""zombie_scripts\cly_z_generator.sqf""";
-			class Effects
-			{
-			};
-		};
-		class Item93
-		{
-			position[]={1501.1953,149.68788,4851.2002};
-			a=500;
-			b=500;
-			rectangular=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="true";
-			expActiv="0=[thisTrigger,-1] execVM ""zombie_scripts\cly_z_generator.sqf""";
-			class Effects
-			{
-			};
-		};
-		class Item94
+		class Item57
 		{
 			position[]={2501.1951,207.74739,4851.2002};
 			a=500;
@@ -4694,7 +4176,7 @@ class Mission
 			{
 			};
 		};
-		class Item95
+		class Item58
 		{
 			position[]={3501.1951,248.55354,4851.2002};
 			a=500;
@@ -4708,7 +4190,7 @@ class Mission
 			{
 			};
 		};
-		class Item96
+		class Item59
 		{
 			position[]={4501.1948,282.22208,4851.2002};
 			a=500;
@@ -4722,7 +4204,7 @@ class Mission
 			{
 			};
 		};
-		class Item97
+		class Item60
 		{
 			position[]={5501.1948,234.08871,4851.2002};
 			a=500;
@@ -4736,7 +4218,7 @@ class Mission
 			{
 			};
 		};
-		class Item98
+		class Item61
 		{
 			position[]={6501.1948,221.64195,4851.2002};
 			a=500;
@@ -4750,7 +4232,7 @@ class Mission
 			{
 			};
 		};
-		class Item99
+		class Item62
 		{
 			position[]={7501.1943,211.68866,4851.2002};
 			a=500;
@@ -4764,35 +4246,7 @@ class Mission
 			{
 			};
 		};
-		class Item100
-		{
-			position[]={8501.1953,140.22575,4851.2002};
-			a=500;
-			b=500;
-			rectangular=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="true";
-			expActiv="0=[thisTrigger,-1] execVM ""zombie_scripts\cly_z_generator.sqf""";
-			class Effects
-			{
-			};
-		};
-		class Item101
-		{
-			position[]={501.19519,46.652233,3851.2002};
-			a=500;
-			b=500;
-			rectangular=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="true";
-			expActiv="0=[thisTrigger,-1] execVM ""zombie_scripts\cly_z_generator.sqf""";
-			class Effects
-			{
-			};
-		};
-		class Item102
+		class Item63
 		{
 			position[]={1501.1953,120.5446,3851.2002};
 			a=500;
@@ -4806,21 +4260,7 @@ class Mission
 			{
 			};
 		};
-		class Item103
-		{
-			position[]={2501.1951,166.70435,3851.2002};
-			a=500;
-			b=500;
-			rectangular=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="true";
-			expActiv="0=[thisTrigger,-1] execVM ""zombie_scripts\cly_z_generator.sqf""";
-			class Effects
-			{
-			};
-		};
-		class Item104
+		class Item64
 		{
 			position[]={3501.1951,182.51147,3851.2002};
 			a=500;
@@ -4834,10 +4274,10 @@ class Mission
 			{
 			};
 		};
-		class Item105
+		class Item65
 		{
-			position[]={4501.1948,145.60915,3851.2002};
-			a=500;
+			position[]={5003.8423,210.32777,3854.4082};
+			a=1000;
 			b=500;
 			rectangular=1;
 			interruptable=1;
@@ -4848,21 +4288,7 @@ class Mission
 			{
 			};
 		};
-		class Item106
-		{
-			position[]={5501.1948,165.61388,3851.2002};
-			a=500;
-			b=500;
-			rectangular=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="true";
-			expActiv="0=[thisTrigger,-1] execVM ""zombie_scripts\cly_z_generator.sqf""";
-			class Effects
-			{
-			};
-		};
-		class Item107
+		class Item66
 		{
 			position[]={6501.1948,107.94376,3851.2002};
 			a=500;
@@ -4876,7 +4302,7 @@ class Mission
 			{
 			};
 		};
-		class Item108
+		class Item67
 		{
 			position[]={7501.1943,46.157555,3851.2002};
 			a=500;
@@ -4890,7 +4316,7 @@ class Mission
 			{
 			};
 		};
-		class Item109
+		class Item68
 		{
 			position[]={8501.1953,237.18753,3851.2002};
 			a=500;
@@ -4904,11 +4330,11 @@ class Mission
 			{
 			};
 		};
-		class Item110
+		class Item69
 		{
-			position[]={501.19519,114.82442,2851.2002};
+			position[]={501.19519,129.57066,2361.8479};
 			a=500;
-			b=500;
+			b=1000;
 			rectangular=1;
 			interruptable=1;
 			age="UNKNOWN";
@@ -4918,7 +4344,7 @@ class Mission
 			{
 			};
 		};
-		class Item111
+		class Item70
 		{
 			position[]={1501.1953,47.484509,2851.2002};
 			a=500;
@@ -4932,11 +4358,11 @@ class Mission
 			{
 			};
 		};
-		class Item112
+		class Item71
 		{
-			position[]={2501.1951,84.366486,2851.2002};
+			position[]={2506.3804,146.04996,3348.8708};
 			a=500;
-			b=500;
+			b=1000;
 			rectangular=1;
 			interruptable=1;
 			age="UNKNOWN";
@@ -4946,7 +4372,7 @@ class Mission
 			{
 			};
 		};
-		class Item113
+		class Item72
 		{
 			position[]={3501.1951,34.946846,2851.2002};
 			a=500;
@@ -4960,7 +4386,7 @@ class Mission
 			{
 			};
 		};
-		class Item114
+		class Item73
 		{
 			position[]={4501.1948,13.024817,2851.2002};
 			a=500;
@@ -4974,11 +4400,11 @@ class Mission
 			{
 			};
 		};
-		class Item115
+		class Item74
 		{
-			position[]={5501.1948,57.302021,2851.2002};
+			position[]={5501.1948,58.491631,2350.781};
 			a=500;
-			b=500;
+			b=1000;
 			rectangular=1;
 			interruptable=1;
 			age="UNKNOWN";
@@ -4988,7 +4414,7 @@ class Mission
 			{
 			};
 		};
-		class Item116
+		class Item75
 		{
 			position[]={7501.1943,3.6559682,2851.2002};
 			a=500;
@@ -5002,10 +4428,10 @@ class Mission
 			{
 			};
 		};
-		class Item117
+		class Item76
 		{
-			position[]={8501.1953,5.5970111,2851.2002};
-			a=500;
+			position[]={9004.918,157.96837,2859.7356};
+			a=1000;
 			b=500;
 			rectangular=1;
 			interruptable=1;
@@ -5016,21 +4442,7 @@ class Mission
 			{
 			};
 		};
-		class Item118
-		{
-			position[]={501.19519,24.841089,1851.2002};
-			a=500;
-			b=500;
-			rectangular=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="true";
-			expActiv="0=[thisTrigger,-1] execVM ""zombie_scripts\cly_z_generator.sqf""";
-			class Effects
-			{
-			};
-		};
-		class Item119
+		class Item77
 		{
 			position[]={1501.1953,0.33305442,1851.2002};
 			a=500;
@@ -5044,7 +4456,7 @@ class Mission
 			{
 			};
 		};
-		class Item120
+		class Item78
 		{
 			position[]={2501.1951,0.34158525,1851.2002};
 			a=500;
@@ -5058,24 +4470,10 @@ class Mission
 			{
 			};
 		};
-		class Item121
+		class Item79
 		{
-			position[]={3501.1951,0.15276238,1851.2002};
-			a=500;
-			b=500;
-			rectangular=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="true";
-			expActiv="0=[thisTrigger,-0.3] execVM ""zombie_scripts\cly_z_generator.sqf""";
-			class Effects
-			{
-			};
-		};
-		class Item122
-		{
-			position[]={4501.1948,0.27634883,1851.2002};
-			a=500;
+			position[]={4003.3831,0.36164677,1846.0175};
+			a=1000;
 			b=500;
 			rectangular=1;
 			interruptable=1;
@@ -5086,21 +4484,7 @@ class Mission
 			{
 			};
 		};
-		class Item123
-		{
-			position[]={5501.1948,0.15057966,1851.2002};
-			a=500;
-			b=500;
-			rectangular=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="true";
-			expActiv="0=[thisTrigger,-0.5] execVM ""zombie_scripts\cly_z_generator.sqf""";
-			class Effects
-			{
-			};
-		};
-		class Item124
+		class Item80
 		{
 			position[]={6501.1948,0.42000192,1851.2002};
 			a=500;
@@ -5114,10 +4498,24 @@ class Mission
 			{
 			};
 		};
-		class Item125
+		class Item81
 		{
-			position[]={9504.4678,300.66614,14852.292};
-			a=500;
+			position[]={9992.7959,114.23428,14348.195};
+			a=1000;
+			b=1000;
+			rectangular=1;
+			interruptable=1;
+			age="UNKNOWN";
+			expCond="true";
+			expActiv="0=[thisTrigger,-1] execVM ""zombie_scripts\cly_z_generator.sqf""";
+			class Effects
+			{
+			};
+		};
+		class Item82
+		{
+			position[]={12005.776,83.910675,14861.487};
+			a=1000;
 			b=500;
 			rectangular=1;
 			interruptable=1;
@@ -5128,10 +4526,38 @@ class Mission
 			{
 			};
 		};
-		class Item126
+		class Item83
 		{
-			position[]={10504.468,134.617,14852.292};
+			position[]={13499.87,88.69043,14355.725};
 			a=500;
+			b=1000;
+			rectangular=1;
+			interruptable=1;
+			age="UNKNOWN";
+			expCond="true";
+			expActiv="0=[thisTrigger,-1] execVM ""zombie_scripts\cly_z_generator.sqf""";
+			class Effects
+			{
+			};
+		};
+		class Item84
+		{
+			position[]={15005.126,84.751076,14356.742};
+			a=1000;
+			b=1000;
+			rectangular=1;
+			interruptable=1;
+			age="UNKNOWN";
+			expCond="true";
+			expActiv="0=[thisTrigger,-1] execVM ""zombie_scripts\cly_z_generator.sqf""";
+			class Effects
+			{
+			};
+		};
+		class Item85
+		{
+			position[]={12005.776,89.804626,13861.487};
+			a=1000;
 			b=500;
 			rectangular=1;
 			interruptable=1;
@@ -5142,175 +4568,7 @@ class Mission
 			{
 			};
 		};
-		class Item127
-		{
-			position[]={11504.468,129.83536,14852.292};
-			a=500;
-			b=500;
-			rectangular=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="true";
-			expActiv="0=[thisTrigger,-1] execVM ""zombie_scripts\cly_z_generator.sqf""";
-			class Effects
-			{
-			};
-		};
-		class Item128
-		{
-			position[]={12504.469,115.95849,14852.292};
-			a=500;
-			b=500;
-			rectangular=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="true";
-			expActiv="0=[thisTrigger,-1] execVM ""zombie_scripts\cly_z_generator.sqf""";
-			class Effects
-			{
-			};
-		};
-		class Item129
-		{
-			position[]={13504.469,93.264542,14852.292};
-			a=500;
-			b=500;
-			rectangular=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="true";
-			expActiv="0=[thisTrigger,-1] execVM ""zombie_scripts\cly_z_generator.sqf""";
-			class Effects
-			{
-			};
-		};
-		class Item130
-		{
-			position[]={14504.469,69.492249,14852.292};
-			a=500;
-			b=500;
-			rectangular=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="true";
-			expActiv="0=[thisTrigger,-1] execVM ""zombie_scripts\cly_z_generator.sqf""";
-			class Effects
-			{
-			};
-		};
-		class Item131
-		{
-			position[]={15504.469,197.69835,14852.292};
-			a=500;
-			b=500;
-			rectangular=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="true";
-			expActiv="0=[thisTrigger,-1] execVM ""zombie_scripts\cly_z_generator.sqf""";
-			class Effects
-			{
-			};
-		};
-		class Item132
-		{
-			position[]={9504.4678,99.088951,13852.292};
-			a=500;
-			b=500;
-			rectangular=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="true";
-			expActiv="0=[thisTrigger,-1] execVM ""zombie_scripts\cly_z_generator.sqf""";
-			class Effects
-			{
-			};
-		};
-		class Item133
-		{
-			position[]={10504.468,133.88997,13852.292};
-			a=500;
-			b=500;
-			rectangular=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="true";
-			expActiv="0=[thisTrigger,-1] execVM ""zombie_scripts\cly_z_generator.sqf""";
-			class Effects
-			{
-			};
-		};
-		class Item134
-		{
-			position[]={11504.468,90.963005,13852.292};
-			a=500;
-			b=500;
-			rectangular=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="true";
-			expActiv="0=[thisTrigger,-1] execVM ""zombie_scripts\cly_z_generator.sqf""";
-			class Effects
-			{
-			};
-		};
-		class Item135
-		{
-			position[]={12504.469,54.454926,13852.292};
-			a=500;
-			b=500;
-			rectangular=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="true";
-			expActiv="0=[thisTrigger,-1] execVM ""zombie_scripts\cly_z_generator.sqf""";
-			class Effects
-			{
-			};
-		};
-		class Item136
-		{
-			position[]={13504.469,7.9627562,13852.292};
-			a=500;
-			b=500;
-			rectangular=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="true";
-			expActiv="0=[thisTrigger,-1] execVM ""zombie_scripts\cly_z_generator.sqf""";
-			class Effects
-			{
-			};
-		};
-		class Item137
-		{
-			position[]={14504.469,48.028126,13852.292};
-			a=500;
-			b=500;
-			rectangular=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="true";
-			expActiv="0=[thisTrigger,-1] execVM ""zombie_scripts\cly_z_generator.sqf""";
-			class Effects
-			{
-			};
-		};
-		class Item138
-		{
-			position[]={9504.4678,153.07965,12852.292};
-			a=500;
-			b=500;
-			rectangular=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="true";
-			expActiv="0=[thisTrigger,-1] execVM ""zombie_scripts\cly_z_generator.sqf""";
-			class Effects
-			{
-			};
-		};
-		class Item139
+		class Item86
 		{
 			position[]={10504.468,249.62227,12852.292};
 			a=500;
@@ -5324,7 +4582,7 @@ class Mission
 			{
 			};
 		};
-		class Item140
+		class Item87
 		{
 			position[]={11504.468,190.311,12852.292};
 			a=500;
@@ -5338,7 +4596,7 @@ class Mission
 			{
 			};
 		};
-		class Item141
+		class Item88
 		{
 			position[]={12504.469,168.40866,12852.292};
 			a=500;
@@ -5352,7 +4610,7 @@ class Mission
 			{
 			};
 		};
-		class Item142
+		class Item89
 		{
 			position[]={13504.469,72.411354,12852.292};
 			a=500;
@@ -5366,11 +4624,11 @@ class Mission
 			{
 			};
 		};
-		class Item143
+		class Item90
 		{
-			position[]={9504.4678,234.65776,11852.292};
+			position[]={9500.8496,203.08115,12351.409};
 			a=500;
-			b=500;
+			b=1000;
 			rectangular=1;
 			interruptable=1;
 			age="UNKNOWN";
@@ -5380,7 +4638,7 @@ class Mission
 			{
 			};
 		};
-		class Item144
+		class Item91
 		{
 			position[]={10504.468,292.74078,11852.292};
 			a=500;
@@ -5394,7 +4652,7 @@ class Mission
 			{
 			};
 		};
-		class Item145
+		class Item92
 		{
 			position[]={11504.468,197.52748,11852.292};
 			a=500;
@@ -5408,10 +4666,10 @@ class Mission
 			{
 			};
 		};
-		class Item146
+		class Item93
 		{
-			position[]={12504.469,74.439354,11852.292};
-			a=500;
+			position[]={13000.699,57.1115,11858.708};
+			a=1000;
 			b=500;
 			rectangular=1;
 			interruptable=1;
@@ -5422,10 +4680,10 @@ class Mission
 			{
 			};
 		};
-		class Item147
+		class Item94
 		{
-			position[]={13504.469,45.646557,11852.292};
-			a=500;
+			position[]={9003.1602,275.50876,10852.292};
+			a=1000;
 			b=500;
 			rectangular=1;
 			interruptable=1;
@@ -5436,10 +4694,10 @@ class Mission
 			{
 			};
 		};
-		class Item148
+		class Item95
 		{
-			position[]={9504.4678,232.98529,10852.292};
-			a=500;
+			position[]={11003.906,166.04263,10855.499};
+			a=1000;
 			b=500;
 			rectangular=1;
 			interruptable=1;
@@ -5450,35 +4708,7 @@ class Mission
 			{
 			};
 		};
-		class Item149
-		{
-			position[]={10504.468,154.68689,10852.292};
-			a=500;
-			b=500;
-			rectangular=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="true";
-			expActiv="0=[thisTrigger,-1] execVM ""zombie_scripts\cly_z_generator.sqf""";
-			class Effects
-			{
-			};
-		};
-		class Item150
-		{
-			position[]={11504.468,192.65623,10852.292};
-			a=500;
-			b=500;
-			rectangular=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="true";
-			expActiv="0=[thisTrigger,-1] execVM ""zombie_scripts\cly_z_generator.sqf""";
-			class Effects
-			{
-			};
-		};
-		class Item151
+		class Item96
 		{
 			position[]={12504.469,85.220879,10852.292};
 			a=500;
@@ -5492,10 +4722,24 @@ class Mission
 			{
 			};
 		};
-		class Item152
+		class Item97
 		{
-			position[]={13504.469,0.058115676,10852.292};
+			position[]={13504.469,0.32364336,10350.707};
 			a=500;
+			b=1000;
+			rectangular=1;
+			interruptable=1;
+			age="UNKNOWN";
+			expCond="true";
+			expActiv="0=[thisTrigger,-1] execVM ""zombie_scripts\cly_z_generator.sqf""";
+			class Effects
+			{
+			};
+		};
+		class Item98
+		{
+			position[]={9002.7412,343.36877,9848.2139};
+			a=1000;
 			b=500;
 			rectangular=1;
 			interruptable=1;
@@ -5506,21 +4750,7 @@ class Mission
 			{
 			};
 		};
-		class Item153
-		{
-			position[]={9504.4678,284.08804,9852.292};
-			a=500;
-			b=500;
-			rectangular=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="true";
-			expActiv="0=[thisTrigger,-1] execVM ""zombie_scripts\cly_z_generator.sqf""";
-			class Effects
-			{
-			};
-		};
-		class Item154
+		class Item99
 		{
 			position[]={10504.468,109.55388,9852.292};
 			a=500;
@@ -5534,7 +4764,7 @@ class Mission
 			{
 			};
 		};
-		class Item155
+		class Item100
 		{
 			position[]={11504.468,42.396255,9852.292};
 			a=500;
@@ -5548,7 +4778,7 @@ class Mission
 			{
 			};
 		};
-		class Item156
+		class Item101
 		{
 			position[]={12504.469,8.9251833,9852.292};
 			a=500;
@@ -5562,21 +4792,7 @@ class Mission
 			{
 			};
 		};
-		class Item157
-		{
-			position[]={13504.469,0.21986249,9852.292};
-			a=500;
-			b=500;
-			rectangular=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="true";
-			expActiv="0=[thisTrigger,-1] execVM ""zombie_scripts\cly_z_generator.sqf""";
-			class Effects
-			{
-			};
-		};
-		class Item158
+		class Item102
 		{
 			position[]={9504.4678,304,8852.292};
 			a=500;
@@ -5590,7 +4806,7 @@ class Mission
 			{
 			};
 		};
-		class Item159
+		class Item103
 		{
 			position[]={10504.468,228.34964,8852.292};
 			a=500;
@@ -5604,7 +4820,7 @@ class Mission
 			{
 			};
 		};
-		class Item160
+		class Item104
 		{
 			position[]={11504.468,121.3455,8852.292};
 			a=500;
@@ -5618,7 +4834,7 @@ class Mission
 			{
 			};
 		};
-		class Item161
+		class Item105
 		{
 			position[]={12504.469,20.463102,8852.292};
 			a=500;
@@ -5632,10 +4848,10 @@ class Mission
 			{
 			};
 		};
-		class Item162
+		class Item106
 		{
-			position[]={9504.4678,197.1819,7852.292};
-			a=500;
+			position[]={8998.6611,283.5881,7848.2139};
+			a=1000;
 			b=500;
 			rectangular=1;
 			interruptable=1;
@@ -5646,7 +4862,7 @@ class Mission
 			{
 			};
 		};
-		class Item163
+		class Item107
 		{
 			position[]={10504.468,183.84,7852.292};
 			a=500;
@@ -5660,10 +4876,10 @@ class Mission
 			{
 			};
 		};
-		class Item164
+		class Item108
 		{
-			position[]={11504.468,266.75507,7852.292};
-			a=500;
+			position[]={12003.593,155.63957,7855.1362};
+			a=1000;
 			b=500;
 			rectangular=1;
 			interruptable=1;
@@ -5674,21 +4890,7 @@ class Mission
 			{
 			};
 		};
-		class Item165
-		{
-			position[]={12504.469,94.511795,7852.292};
-			a=500;
-			b=500;
-			rectangular=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="true";
-			expActiv="0=[thisTrigger,-1] execVM ""zombie_scripts\cly_z_generator.sqf""";
-			class Effects
-			{
-			};
-		};
-		class Item166
+		class Item109
 		{
 			position[]={13504.469,0.2141768,7852.292};
 			a=500;
@@ -5702,7 +4904,7 @@ class Mission
 			{
 			};
 		};
-		class Item167
+		class Item110
 		{
 			position[]={9504.4678,228.77835,6852.292};
 			a=500;
@@ -5716,7 +4918,7 @@ class Mission
 			{
 			};
 		};
-		class Item168
+		class Item111
 		{
 			position[]={10504.468,124.14797,6852.292};
 			a=500;
@@ -5730,7 +4932,7 @@ class Mission
 			{
 			};
 		};
-		class Item169
+		class Item112
 		{
 			position[]={11504.468,123.36316,6852.292};
 			a=500;
@@ -5744,11 +4946,11 @@ class Mission
 			{
 			};
 		};
-		class Item170
+		class Item113
 		{
-			position[]={12504.469,160.72643,6852.292};
+			position[]={12500.39,64.787552,6354.7861};
 			a=500;
-			b=500;
+			b=1000;
 			rectangular=1;
 			interruptable=1;
 			age="UNKNOWN";
@@ -5758,7 +4960,7 @@ class Mission
 			{
 			};
 		};
-		class Item171
+		class Item114
 		{
 			position[]={13495.966,0.21987373,6851.6665};
 			a=500;
@@ -5772,10 +4974,10 @@ class Mission
 			{
 			};
 		};
-		class Item172
+		class Item115
 		{
-			position[]={9504.4678,298.01947,5852.292};
-			a=500;
+			position[]={9001.5898,344.85574,5852.292};
+			a=1000;
 			b=500;
 			rectangular=1;
 			interruptable=1;
@@ -5786,7 +4988,7 @@ class Mission
 			{
 			};
 		};
-		class Item173
+		class Item116
 		{
 			position[]={10504.468,281.01459,5852.292};
 			a=500;
@@ -5800,7 +5002,7 @@ class Mission
 			{
 			};
 		};
-		class Item174
+		class Item117
 		{
 			position[]={11504.468,195.55772,5852.292};
 			a=500;
@@ -5814,21 +5016,7 @@ class Mission
 			{
 			};
 		};
-		class Item175
-		{
-			position[]={12504.469,91.061554,5852.292};
-			a=500;
-			b=500;
-			rectangular=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="true";
-			expActiv="0=[thisTrigger,-1] execVM ""zombie_scripts\cly_z_generator.sqf""";
-			class Effects
-			{
-			};
-		};
-		class Item176
+		class Item118
 		{
 			position[]={13504.469,0.11360323,5852.292};
 			a=500;
@@ -5842,10 +5030,10 @@ class Mission
 			{
 			};
 		};
-		class Item177
+		class Item119
 		{
-			position[]={9504.4678,98.589622,4852.292};
-			a=500;
+			position[]={9006.8193,134.40317,4856.3706};
+			a=1000;
 			b=500;
 			rectangular=1;
 			interruptable=1;
@@ -5856,11 +5044,11 @@ class Mission
 			{
 			};
 		};
-		class Item178
+		class Item120
 		{
-			position[]={10504.468,208.20178,4852.292};
+			position[]={10499.869,101.14962,4360.3213};
 			a=500;
-			b=500;
+			b=1000;
 			rectangular=1;
 			interruptable=1;
 			age="UNKNOWN";
@@ -5870,11 +5058,11 @@ class Mission
 			{
 			};
 		};
-		class Item179
+		class Item121
 		{
-			position[]={11504.468,192.50806,4852.292};
+			position[]={11509.067,171.45148,4364.9189};
 			a=500;
-			b=500;
+			b=1000;
 			rectangular=1;
 			interruptable=1;
 			age="UNKNOWN";
@@ -5884,7 +5072,7 @@ class Mission
 			{
 			};
 		};
-		class Item180
+		class Item122
 		{
 			position[]={12504.469,171.63576,4852.292};
 			a=500;
@@ -5898,7 +5086,7 @@ class Mission
 			{
 			};
 		};
-		class Item181
+		class Item123
 		{
 			position[]={13504.469,5.4932094,4852.292};
 			a=500;
@@ -5912,7 +5100,7 @@ class Mission
 			{
 			};
 		};
-		class Item182
+		class Item124
 		{
 			position[]={9504.4678,231.94336,3852.292};
 			a=500;
@@ -5926,35 +5114,7 @@ class Mission
 			{
 			};
 		};
-		class Item183
-		{
-			position[]={10504.468,92.395119,3852.292};
-			a=500;
-			b=500;
-			rectangular=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="true";
-			expActiv="0=[thisTrigger,-1] execVM ""zombie_scripts\cly_z_generator.sqf""";
-			class Effects
-			{
-			};
-		};
-		class Item184
-		{
-			position[]={11504.468,163.33672,3852.292};
-			a=500;
-			b=500;
-			rectangular=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="true";
-			expActiv="0=[thisTrigger,-1] execVM ""zombie_scripts\cly_z_generator.sqf""";
-			class Effects
-			{
-			};
-		};
-		class Item185
+		class Item125
 		{
 			position[]={12504.469,48.456356,3852.292};
 			a=500;
@@ -5968,11 +5128,11 @@ class Mission
 			{
 			};
 		};
-		class Item186
+		class Item126
 		{
-			position[]={13504.469,0.21624379,3852.292};
+			position[]={13500.391,68.143379,3358.863};
 			a=500;
-			b=500;
+			b=1000;
 			rectangular=1;
 			interruptable=1;
 			age="UNKNOWN";
@@ -5982,21 +5142,7 @@ class Mission
 			{
 			};
 		};
-		class Item187
-		{
-			position[]={9504.4678,148.71324,2852.292};
-			a=500;
-			b=500;
-			rectangular=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="true";
-			expActiv="0=[thisTrigger,-1] execVM ""zombie_scripts\cly_z_generator.sqf""";
-			class Effects
-			{
-			};
-		};
-		class Item188
+		class Item127
 		{
 			position[]={10504.468,74.631371,2852.292};
 			a=500;
@@ -6010,21 +5156,7 @@ class Mission
 			{
 			};
 		};
-		class Item189
-		{
-			position[]={11504.468,0.23394716,2852.292};
-			a=500;
-			b=500;
-			rectangular=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="true";
-			expActiv="0=[thisTrigger,-1] execVM ""zombie_scripts\cly_z_generator.sqf""";
-			class Effects
-			{
-			};
-		};
-		class Item190
+		class Item128
 		{
 			position[]={9504.4678,10.564516,1852.292};
 			a=500;
@@ -6038,7 +5170,7 @@ class Mission
 			{
 			};
 		};
-		class Item191
+		class Item129
 		{
 			position[]={10504.468,0.21109626,1852.292};
 			a=500;
@@ -6052,49 +5184,7 @@ class Mission
 			{
 			};
 		};
-		class Item192
-		{
-			position[]={15504.469,0.38497883,13848.289};
-			a=500;
-			b=500;
-			rectangular=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="true";
-			expActiv="0=[thisTrigger,-1] execVM ""zombie_scripts\cly_z_generator.sqf""";
-			class Effects
-			{
-			};
-		};
-		class Item193
-		{
-			position[]={7503.6304,0.14412019,1851.2003};
-			a=500;
-			b=500;
-			rectangular=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="true";
-			expActiv="0=[thisTrigger,-0.5] execVM ""zombie_scripts\cly_z_generator.sqf""";
-			class Effects
-			{
-			};
-		};
-		class Item194
-		{
-			position[]={8499.4424,0.40775651,1851.8256};
-			a=500;
-			b=500;
-			rectangular=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="true";
-			expActiv="0=[thisTrigger,-0.5] execVM ""zombie_scripts\cly_z_generator.sqf""";
-			class Effects
-			{
-			};
-		};
-		class Item195
+		class Item130
 		{
 			position[]={6624.4058,16.000061,2616.5491};
 			a=1000;
@@ -6112,7 +5202,7 @@ class Mission
 			{
 			};
 		};
-		class Item196
+		class Item131
 		{
 			position[]={14909.588,0.35587093,11464.438};
 			a=0;
@@ -6130,7 +5220,7 @@ class Mission
 			{
 			};
 		};
-		class Item197
+		class Item132
 		{
 			position[]={14908.611,0.24001026,11343.353};
 			a=0;
@@ -6145,7 +5235,7 @@ class Mission
 			{
 			};
 		};
-		class Item198
+		class Item133
 		{
 			position[]={7037.8926,337.6348,8504.2246};
 			a=0;
@@ -6158,7 +5248,7 @@ class Mission
 			{
 			};
 		};
-		class Item199
+		class Item134
 		{
 			position[]={14501.943,0.052577436,12852.291};
 			a=500;
@@ -6172,7 +5262,7 @@ class Mission
 			{
 			};
 		};
-		class Item200
+		class Item135
 		{
 			position[]={7060.9907,359.87762,9180.5752};
 			a=10;
@@ -6188,7 +5278,7 @@ class Mission
 			{
 			};
 		};
-		class Item201
+		class Item136
 		{
 			position[]={25776.721,0.26907501,6822.8457};
 			a=400;
@@ -6204,7 +5294,7 @@ class Mission
 			{
 			};
 		};
-		class Item202
+		class Item137
 		{
 			position[]={234.64957,583.66199,15084.126};
 			a=3;
@@ -6219,7 +5309,7 @@ class Mission
 			{
 			};
 		};
-		class Item203
+		class Item138
 		{
 			position[]={7.0678663,586.75879,15250.188};
 			a=3;
@@ -6234,7 +5324,7 @@ class Mission
 			{
 			};
 		};
-		class Item204
+		class Item139
 		{
 			position[]={32.86721,622.87903,15366.515};
 			a=3;
@@ -6249,7 +5339,7 @@ class Mission
 			{
 			};
 		};
-		class Item205
+		class Item140
 		{
 			position[]={446.74213,647.04303,15212.658};
 			a=3;
@@ -6264,7 +5354,7 @@ class Mission
 			{
 			};
 		};
-		class Item206
+		class Item141
 		{
 			position[]={233.29411,629.61292,15256.242};
 			a=3;
@@ -6279,7 +5369,7 @@ class Mission
 			{
 			};
 		};
-		class Item207
+		class Item142
 		{
 			position[]={19.791367,542.33081,15108.122};
 			a=3;
@@ -6294,7 +5384,7 @@ class Mission
 			{
 			};
 		};
-		class Item208
+		class Item143
 		{
 			position[]={411.35464,636.36432,15036.33};
 			a=3;
@@ -6310,7 +5400,7 @@ class Mission
 			{
 			};
 		};
-		class Item209
+		class Item144
 		{
 			position[]={414.2305,665.05536,15353.856};
 			a=3;
