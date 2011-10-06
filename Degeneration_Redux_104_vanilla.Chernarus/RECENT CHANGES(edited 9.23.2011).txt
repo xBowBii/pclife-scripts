@@ -1,0 +1,132 @@
+/*Dominic:
+New Horde Param. Change whether you want the zombies to FUCK YOU UP or not.
+Added "this setVariable ["victim",objNull,true];" to all the survivors. Not sure what it does but it's in Celery's missions for the players.
+Fixed up the BLUfor pilot spawn after the wait time.
+*\
+
+/*Craig:
+Added Vehicle spawn in map screen by server only.Not noticeable by players.Vehicles are there when you enter game. Can be found in preload.sqf script
+Deleted vehicles spawn script, redundant.
+*/
+
+
+/*Dominic:08/21/2011
+Removed Horde Param! Might have been issue.
+Removed the init line from the players. "this setVariable ["victim",objNull,true];"
+*\
+
+/*Craig:08/22/2011
+added playerconnected.sqf, includes: personalized messages when player joins server. This script can be used for any mission
+added fix for vehicle script that makes the vehicles go flat to terrain
+removed my points scripts
+removed CEP cacheing like a baddy
+added a 1 in 10 chance that a spawned vehicle is tipped over on its side, simulates chaos and rioting and crazy zombies, and craig being craig
+slightly increased vehicle amount
+*/
+
+
+/*Dominic:08/22/2011
+Added "_car addAction ["Attach Vehicle", "attachVehicle.sqf", [], 1, false, true, "", "driver _target == player"];" to preload.sqf. Which gives the option for most vehicles to tow static weapons.
+Removed _horde=true. Going to try Aggro range to see if it presents enough of a challenge. (Trying to make it so players can stake out an area if necessary without constant zombies 100% of the time)
+Increased horde spawn time, just a tad. (5 minutes flat)
+Increased horde spawn count. (30-50 zombies)
+Increased Horde spawn radius
+Random Gear Cache completed. Should be optimized to best of ability :O
+*\
+
+
+/*Craig:08/23/2011
+NOTE: the 5.1 version on the server does not include the following changes.
+Changed the hints in the onplayerconnect.sqf to sidechat messages
+Added a very small chance of a special vehicle spawning: armored minigun suv, m2a3, stryker, or LAV25
+Added a 75 percent chance of an aa12 spawning in the special vehicle
+Spent an hour searching for a nonexistant ammo dump at the north airfield with dan
+*/
+
+/*Dominic:08/24/2011
+Static Weapon Cache completeed
+Gear Cache completed/fixed
+Added Join Group commands to all BLUfor on the map.
+Added random BLUfor groups. WATCH OUT FOR FF!! AHH!!!
+Added the ability to access helicopter! Must  find all 5 ZU cannons (Temporary)
+*\
+
+
+/*Craig:08/25/2011
+Continuted on the cararray from yesterday. Added publicVariable "cararray"; so that cararray is synced on jip. 
+Untested*
+*/
+
+
+/*Dominic:08/25/2011
+Tested car's didn't seem to work for dedicated :|. I couldn't even get the script to work for NON-jip players even. I'm failing. Can't get the damn action to stick.
+*\
+
+/*Dominic:08/27/2011
+Thanks to Garret and Craig the Vehicle towing scripts have been implemented. They should be JIP compatibile as well! We just need to do some play testing. We are close to being done as well.
+We will just need to tweak a couple of things (Such as weapon spawns/special vehicle spawn types). Any cool ideas can be implemented as well as long as it's just updated hur in this txt
+file. I would like to have a few sidemissions as well. (Sidemissions give players options as to what reward they want? A special vehicle, Truck with an ammo crate in the back,(Unique items)
+Added files to init.sqf
+afterinit.sqf
+*\
+
+
+/*Dominic:08/31/2011
+Updated a few scripts. Added in a new script called "ZombieTest.sqf". For now it just spawns a random # (large) Horde of zombies in the middle of the map that will track the players 
+down eventually. I fixed the fires not appearing on Helicopter parts (So they are easier to spot now. Yay!) and created a marker that will show the location of ONE Helicopter Part.
+That way the players know what they are looking for.
+This all needs dedicated server testing. It all worked correctly in lan.
+Also removed all BLUfor in the map. Way too much friendly fire. The thing about friendly fire, is that it isn't.
+*\
+
+/*Dominic:09/1/2011
+UNTESTED/ADDED: Attempted to fix bug with players not seeing tow actions until they rejoin. (Commented addaction lines and moved them to the preload script)
+ADDED/PARTIALLYTESTED: Added the "Objective.sqf" to the Afterinit.sqs script (At bottom). This should monitor the ZU cannons and their locations to the Heli.
+CHANGED: Changed the horde spawn time from 10 minutes to every 15 minutes (Keep in mind the max # of zombies in play is roughly 432)
+ADDED/UNTESTED: Created "PartLocation.sqf". When the players are within 150 Meters of one of the "Helicopter Parts" 
+it will change the intensity of the fire to 0. Eliminating some lag/uncessary rendering. It should also
+re-add the fire effect (to an intensity of 4.5) once the players leave the 150M distance. It gets checked
+every 10 seconds. ***Worried that it might created infinite fires on an object? Only LAG will tell!
+FIXED: One of the towing scripts would run the wrong script. Should be corrected now. 
+FIXED: The Addaction's for the Towing scripts suddenly having the same name so the players wouldn't know which action did what.
+ADDED: (THANKS TO GARRET) The Food/Water System!WOOO!!!!!
+ADDED: (THANKS TO GARRET) Addon for Food/Water icons and Helicopter Parts
+*\
+
+
+/*Dominic:09/4/2011
+ADDED/CHANGED: Garret fixed up the addon/added classes and etc.
+CHANGED: Vehicles can now tow 9999 items (Thanks to Garret)
+Fixed: Helicopter system is now working.
+New: You can fly to the very East to end the game. (Or swim?)
+Changed: A bunch of stuff...Uh...can't recall all. :|
+*\
+
+
+
+/*Dominic:09/16/2011
+CHANGED: Zombie Horde Script lowered from 15 minutes to 10. Changed it so it will spawn a flat 30 zombies and then a random 5 armored zombies
+CHANGED: Drop loot from zombies
+CHANGED: Debug mode to work properly in MP
+CHANGED: Spawn radius for vehicles increased by 150 M
+*\
+
+
+/*Dominic:09/18/2011
+ADDED: Health Bar.
+ADDED: Water Bar.
+ADDED: Food Bar (By Garret).
+CHANGED: Bandage drop rate increased to 10%
+ADDED: Added a "Food Stash"
+CHANGED: Increased chance of food/water in vehicles. (Made it so there will ALWAYS be at least 1 bread/water when the script it called)
+*\
+
+/*Dominic:09/19/2011
+FIXED: Health/Food/Water bar HOPEFULLY are setup correctly... Probably not though :|
+*/
+
+
+/*Dominic:09/23/2011
+FIXED: Locality issues with Food/Water bars and timers.
+ADDED: Another Easter Egg
+*/

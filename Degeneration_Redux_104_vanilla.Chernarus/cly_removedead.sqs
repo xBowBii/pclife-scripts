@@ -1,0 +1,39 @@
+;CLY Remove Dead by Celery
+;Removes dead units and vehicles from the battlefield.
+;
+;Syntax:
+;[wait time for men and animals,wait time for vehicles] exec "cly_removedead.sqs"
+;A value of 0 prevents that type from being removed.
+;Prevent an individual unit from being removed with:  this setVariable ["CLY_removedead",false,true]
+;Remove an individual unit immediately with:  this setVariable ["CLY_removedead",true,true]
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;hideBody PVEH
+"CLY_hidebodypv" addPublicVariableEventHandler {_body=_this select 1;hideBody _body}
+
+?!isServer:exit
+
+_manwait=_this select 0
+?count _this>1:_vehiclewait=_this select 1
+?isNil "_vehiclewait":_vehiclewait=_manwait
+CLY_dontremovedead=[]
+
+_removedead={_unit=_this select 0;_wait=_this select 1;sleep _wait;if (_x in CLY_dontremovedead) exitWith {};waitUntil {isNull flag _unit};if (getPosATL _unit select 2<1.5 and _unit isKindOf "Man") then {hideBody _unit;CLY_hidebodypv=_unit;publicVariable "CLY_hidebodypv";sleep 6};deleteVehicle _unit}
+
+?!(isClass (configFile/"CfgWeapons"/"glock17_EP1")):goto "a2"
+
+#oaloop
+~2
+{if (isNil {_x getVariable "CLY_removedead"}) then {if (_x in CLY_dontremovedead) exitWith {};_wait=if (_x isKindOf "Man") then {_manwait} else {_vehiclewait};if (_wait>0 and vehicle _x==_x) then {_x setVariable ["CLY_removedead",false];[_x,_wait] spawn _removedead}} else {if (_x getVariable "CLY_removedead") then {_x setVariable ["CLY_removedead",false];[_x,0] spawn _removedead} else {if !(_x in CLY_dontremovedead) then {CLY_dontremovedead set [count CLY_dontremovedead,_x]}}}} forEach allDead
+goto "oaloop"
+
+#a2
+_units=allUnits
+_deadunits=[]
+#a2loop
+~2
+{if !(_x in allUnits) then {_deadunits set [count _deadunits,_x]}} forEach _units
+_units=allUnits
+{if (isNil {_x getVariable "CLY_removedead"}) then {_wait=if (_x isKindOf "Man") then {_manwait} else {_vehiclewait};if (_wait>0 and vehicle _x==_x) then {[_x,_wait] spawn _removedead}} else {if (_x getVariable "CLY_removedead") then {[_x,0] spawn _removedead}}} forEach _deadunits
+_deadunits=[]
+goto "a2loop"

@@ -1,0 +1,124 @@
+;Ingeniously simple and easy to figure objective script by Celery
+
+?isNil "obj1":obj1=taskNull
+?isNil "obj2":obj2=taskNull
+?isNil "obj3":obj3=taskNull
+?isNil "obj4":obj4=taskNull
+
+?isNil "obj1activated":obj1activated=false
+?isNil "obj2activated":obj2activated=false
+?isNil "obj3activated":obj3activated=false
+?isNil "obj4activated":obj4activated=false
+
+?isNil "obj1done":obj1done=false
+?isNil "obj2done":obj2done=false
+?isNil "obj3done":obj3done=false
+?isNil "obj4done":obj4done=false
+
+?isNil "klenreached":klenreached=false
+
+_obj1activated=false
+_obj2activated=false
+_obj3activated=false
+_obj4activated=false
+
+_obj1done=false
+_obj2done=false
+_obj3done=false
+_obj4done=false
+
+_jiptime=time+5
+
+#loop
+?!_obj1activated and obj1activated:_obj1activated=true;goto "obj1activated"
+?!_obj1done and obj1done:_obj1done=true;goto "obj1done"
+?!_obj2activated and obj2activated:_obj2activated=true;goto "obj2activated"
+?!_obj2done and obj2done:_obj2done=true;goto "obj2done"
+?!_obj3activated and obj3activated:_obj3activated=true;goto "obj3activated"
+?!_obj3done and obj3done:_obj3done=true;goto "obj3done"
+?!_obj4activated and obj4activated:_obj4activated=true;goto "obj4activated"
+?!_obj4done and obj4done:_obj4done=true;goto "obj4done"
+~0.5
+goto "loop"
+
+
+#obj1activated
+obj1=player createSimpleTask [""]
+obj1 setSimpleTaskDescription ["<br/>Find the <marker name='ammo1'>weapons cache</marker> in northern Berezino.<br/><br/><img image='ammo1.jpg' width='160' height='100'/><br/><br/>Look in:<br/>- Backyards<br/>- Buildings<br/><br/>The Reporter has a more accurate location of the cache.<br/>","Optional: Find the weapons cache",""]
+player setCurrentTask obj1
+~1
+?time>_jiptime or !obj1done:taskHint ["New objective:\nFind the weapons cache",[1,1,0,1],"taskNew"]
+goto "loop"
+
+#obj1done
+obj1 setTaskState "Succeeded"
+"ammo1" setMarkerPosLocal getPos ammo1
+"ammo1" setMarkerTypeLocal "hd_destroy"
+"ammo1" setMarkerDirLocal 45
+"ammo1border" setMarkerAlphaLocal 0
+?time>_jiptime:taskHint ["Objective completed:\nFind the weapons cache",[0,1,0,1],"taskDone"]
+?time>_jiptime or !obj2done:taskHint ["New objective:\nFind the ammo cache",[1,1,0,1],"taskNew"];player setCurrentTask obj2
+goto "loop"
+
+
+#obj2activated
+obj2=player createSimpleTask [""]
+obj2 setSimpleTaskDescription ["<br/>Find the <marker name='ammo2'>ammo cache</marker> in the Berezino suburbs.<br/><br/><img image='ammo2.jpg' width='160' height='100'/><br/><br/>Look in:<br/>- Yards<br/>- Buildings<br/><br/>The Reporter has a more accurate location of the cache.<br/>","Optional: Find the ammo cache",""]
+obj2 setTaskState "Created"
+goto "loop"
+
+#obj2done
+obj2 setTaskState "Succeeded"
+"ammo2" setMarkerPosLocal getPos ammo2
+"ammo2" setMarkerTypeLocal "hd_destroy";
+"ammo2" setMarkerDirLocal 135
+"ammo2border" setMarkerAlphaLocal 0
+?time>_jiptime:taskHint ["Objective completed:\nFind the ammo cache",[0,1,0,1],"taskDone"]
+?time>_jiptime or !obj3done:taskHint ["New objective:\nFind a fuel canister",[1,1,0,1],"taskNew"];player setCurrentTask obj3
+goto "loop"
+
+
+#obj3activated
+obj3=player createSimpleTask [""]
+obj3 setSimpleTaskDescription ["<br/>The armored car is out of fuel. Downtown Berezino is your best bet to find a <marker name='canister'>fuel canister</marker>.<br/><br/><img image='can.jpg' width='160' height='100'/><br/><br/>Look in:<br/>- Shacks and sheds<br/>- Buildings<br/>- Secluded corners<br/>","Find a fuel canister",""]
+obj3 setTaskState "Created"
+goto "loop"
+
+#obj3done
+obj3 setTaskState "Succeeded"
+"canister" setMarkerPosLocal getPos canister
+"canister" setMarkerTypeLocal "hd_destroy"
+"canister" setMarkerDirLocal 225
+"canisterborder" setMarkerAlphaLocal 0
+?time>_jiptime:taskHint ["Objective completed:\nFind a fuel canister",[0,1,0,1],"taskDone"]
+?time>_jiptime or !obj4done:taskHint ["New objective:\nRefuel the car and escape",[1,1,0,1],"taskNew"]
+goto "loop"
+
+
+#obj4activated
+obj4=player createSimpleTask [""]
+obj4 setSimpleTaskDescription ["<br/>Refuel the <marker name='vodnik'>armored car</marker> and <marker name='escape'>drive out</marker> of Berezino.<br/>","Refuel the car and escape",""]
+obj4 setTaskState "Created"
+goto "loop"
+
+#obj4done
+obj4 setTaskState "Succeeded"
+?time>_jiptime:taskHint ["Objective completed:\nRefuel the car and escape",[0,1,0,1],"taskDone"]
+
+~5
+titleText ["\n\n\n\n\nTO BE CONTINUED...","PLAIN",0.3]
+titleCut ["","BLACK OUT",3]
+3 fadeSound 0
+~3
+titleCut ["","BLACK FADED",100]
+titleRsc ["outro","PLAIN"]
+CLY_jukeboxkill=10.5
+~11
+
+;Reinstate player rating
+player addRating -rating player
+player addRating CLY_playerrating
+
+?vehicle player distance vodnik>50:endMission "END4";exit
+endMission "END1"
+goto "loop"
