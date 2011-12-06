@@ -29,7 +29,7 @@
 
 <Key ID="STR_ACM_PLAYERS">
       <Original>Players</Original>
-      <German>Players</German>
+      <German>Spieler</German>
       <English>Players</English>
       <Italian>Giocatori</Italian>
       <Spanish>Jugadores</Spanish>
@@ -55,7 +55,7 @@
 
 <Key ID="STR_ACM_EXIT">
       <Original>Exit</Original>
-      <German>Ausfahrt</German>
+      <German>Schließen</German>
       <English>Exit</English>
       <Italian>Uscita</Italian>
       <Spanish>Salida</Spanish>
@@ -90,6 +90,19 @@
       <Russian>Канал закрыт</Russian>
       <Polish>Kanał jest zamknięty</Polish>
       <Hungarian>Csatorna zárva</Hungarian>
+</Key>
+
+<Key ID="STR_ACM_CHANNEL_Leader">
+      <Original>Commander to group</Original>
+      <German>Kommandant können Gruppen-Chat</German>
+      <English>Commander can use group </English>
+      <Italian>Comandante - la chat di gruppo</Italian>
+      <Spanish>Comandante - chat de grupo</Spanish>
+      <French>Commandant - le chat en groupe</French>
+      <Czech>Velitel - skupiny chat</Czech>
+      <Russian>Командир - чат группы</Russian>
+      <Polish>Commander może korzystać grupy czatu</Polish>
+      <Hungarian>Commander használható csoportos csevegés</Hungarian>
 </Key>
 
 </Container>

@@ -1,10 +1,10 @@
 ﻿class CfgPatches  {
 
-	class ACM_Sln_Chat_1  {
+	class Sln_Chat_1  {
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = 0.100000;
-		requiredAddons[] = {"CAUI" };
+		requiredAddons[] = {"CAUI"};
 	};
 };
 class RscButton;
@@ -14,21 +14,25 @@ class RscEdit;
 class RscShortcutButton;
 class RscListNBox;
 
+//окно ввода
+
 class RscDisplayChat  {
 idd = 24;
-onLoad = "_as = _this execVM '\acm\acm_e_o.sqf'";
+onLoad = "_as = [findDisplay 63] Spawn fn_chat_lock";
 movingEnable = true;
 enableSimulation = true;
-	onKeyDown = "if ((_this select 1) == 28 || (_this select 1) == 156) then {_as = (ctrlText ((_this select 0) displayCtrl 101)) execVM '\acm\acm_edit.sqf'}";
+	onKeyDown = "if ((_this select 1) in [28,156]) then {_as = (ctrlText ((_this select 0) displayCtrl 101)) execVM '\acm\acm_edit.sqf'}";
 	class controls  {
 	class Ca_Line;
 	class Ca_Background;
 	};
 };
 
+//название канала
+
 class RscDisplayChannel  {
 idd = 63;
-onLoad = "if (isNil 'Ms_nCC') then {_as = [0] execVM '\acm\acm_n_o.sqf'}";
+onLoad = "if (isNil 'Ms_nCC') then {_as = [0] execVM '\acm\acm_n_o.sqf'} else {_as = _this Spawn fn_chat_lock}";
 	class controls  {
 		class Ca_Channel;
 		class Background ;
@@ -36,15 +40,18 @@ onLoad = "if (isNil 'Ms_nCC') then {_as = [0] execVM '\acm\acm_n_o.sqf'}";
 	};
 };
 
+// окно админа
+
 #define Xps(a) 	x=SafeZoneX+SafeZoneW*a
 #define Yps(a) 	y=SafeZoneY+SafeZoneH*a
 #define Wps(a) 	w=SafeZoneW*a
 #define Hps(a) 	h=SafeZoneH*a
 
-class ACM_Sln_Chat_admin  {
+class ACM_Sln_Chat_admin {
 	idd = 5064;
 	movingEnable = 1;
 onLoad = "_as = _this Spawn Fn_chat_select";
+
 	
 class controlsBackground  {	
 	class fon : RscPicture {
@@ -132,12 +139,9 @@ class Controls {
 		sizeEx = 0.020000;
 		text = "$STR_ACM_AUTHOR";
 		};
-		class copyright : canal_all  {
+		class copyright : autor  {
 		Yps(0.66);
-		Xps(0.07);
-		sizeEx = 0.020000;
 		text = "Copyright 2011";
 		};
-		
 	};
 };
