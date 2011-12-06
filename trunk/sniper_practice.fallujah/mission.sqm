@@ -1,0 +1,315 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"cacharacters_e",
+		"fallujah_v1_0",
+		"acex_ru_c_weapon",
+		"acex_c_weapon",
+		"CAAir_E_AH6J",
+		"ace_sys_wounds",
+		"ace_sys_playerhud"
+	};
+	addOnsAuto[]=
+	{
+		"cacharacters_e",
+		"ace_sys_wounds",
+		"ace_sys_playerhud",
+		"acex_ru_c_weapon",
+		"acex_c_weapon",
+		"CAAir_E_AH6J",
+		"fallujah_v1_0"
+	};
+	randomSeed=8526199;
+	class Intel
+	{
+		startWeather=0;
+		forecastWeather=0;
+		year=2010;
+		month=1;
+		day=11;
+		hour=12;
+		minute=0;
+	};
+	class Groups
+	{
+		items=3;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={3493.6624,6.9900088,6828.0103};
+					id=0;
+					side="WEST";
+					vehicle="US_Soldier_SL_EP1";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.60000002;
+					text="spotter";
+					init="removeallweapons this; {this removeMagazine _x} forEach magazines this;";
+				};
+				class Item1
+				{
+					position[]={3490.6812,6.9900088,6830.8892};
+					id=10;
+					side="WEST";
+					vehicle="US_Soldier_Marksman_EP1";
+					skill=0.60000002;
+					text="sniper_1";
+					init="removeallweapons this; {this removeMagazine _x} forEach magazines this;";
+				};
+				class Item2
+				{
+					position[]={3495.7715,6.9900088,6830.8892};
+					id=11;
+					side="WEST";
+					vehicle="US_Soldier_Marksman_EP1";
+					skill=0.60000002;
+					text="sniper_2";
+					init="removeallweapons this; {this removeMagazine _x} forEach magazines this;";
+				};
+			};
+		};
+		class Item1
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={3467.6157,6.9900088,6634.8315};
+					id=6;
+					side="LOGIC";
+					vehicle="ACE_Wounds_Logic";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+				class Item1
+				{
+					position[]={3507.1804,6.9900088,6636.373};
+					id=7;
+					side="LOGIC";
+					vehicle="ACE_Wounds_EveryoneMedic";
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+				class Item2
+				{
+					position[]={3538.5242,6.9900088,6640.9971};
+					id=8;
+					side="LOGIC";
+					vehicle="ACE_Wounds_FullHeal";
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item2
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3577.5752,6.9900088,6646.1353};
+					id=9;
+					side="LOGIC";
+					vehicle="ACE_SYS_PRespawn_Logic";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=5;
+		class Item0
+		{
+			position[]={3497.6882,6.9900088,6837.7319};
+			azimut=270;
+			id=1;
+			side="EMPTY";
+			vehicle="ACE_WeaponBox_RU";
+			skill=0.60000002;
+		};
+		class Item1
+		{
+			position[]={3497.8433,6.9900088,6834.1157};
+			azimut=270;
+			id=2;
+			side="EMPTY";
+			vehicle="ACE_WeaponBox_BIS_US";
+			skill=0.60000002;
+		};
+		class Item2
+		{
+			position[]={3487.4907,6.9900088,6834.272};
+			azimut=89.052719;
+			id=3;
+			side="EMPTY";
+			vehicle="ACE_WeaponBox_RU";
+			skill=0.60000002;
+		};
+		class Item3
+		{
+			position[]={3487.2759,6.9900088,6837.8848};
+			azimut=89.052719;
+			id=4;
+			side="EMPTY";
+			vehicle="ACE_WeaponBox_BIS_US";
+			skill=0.60000002;
+		};
+		class Item4
+		{
+			position[]={3496.259,6.9900088,6807.1436};
+			id=5;
+			side="EMPTY";
+			vehicle="MH6J_EP1";
+			skill=0.60000002;
+		};
+	};
+	class Markers
+	{
+		items=8;
+		class Item0
+		{
+			position[]={3349.6055,6.990027,7341.5513};
+			name="normal_range";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorBlue";
+			fillName="FDiagonal";
+			a=650;
+			b=200;
+		};
+		class Item1
+		{
+			position[]={3348.1885,9.1399422,7790.4131};
+			name="long_range";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorRed";
+			fillName="BDiagonal";
+			a=650;
+			b=250;
+		};
+		class Item2
+		{
+			position[]={1908.7852,6.9900088,7441.8833};
+			name="extra_range";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorRed";
+			fillName="FDiagonal";
+			a=200;
+			b=200;
+			angle=45;
+		};
+		class Item3
+		{
+			position[]={3371.2405,7.5753918,7532.9814};
+			name="brdm_spawn";
+			type="Empty";
+		};
+		class Item4
+		{
+			position[]={3551.7393,6.9900088,7291.272};
+			name="btr_spawn";
+			type="Empty";
+		};
+		class Item5
+		{
+			position[]={3068.8535,6.9900088,7180.9619};
+			name="btr_wp1";
+			type="Empty";
+		};
+		class Item6
+		{
+			position[]={3676.2119,6.9900088,7206.2817};
+			name="btr_wp2";
+			type="Empty";
+		};
+		class Item7
+		{
+			position[]={3492.7627,6.9900088,6849.2998};
+			name="respawn_west";
+			type="Empty";
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"fallujah_v1_0"
+	};
+	addOnsAuto[]=
+	{
+		"fallujah_v1_0"
+	};
+	randomSeed=14343196;
+	class Intel
+	{
+		startWeather=0;
+		forecastWeather=0;
+		year=2010;
+		month=1;
+		day=11;
+		hour=12;
+		minute=0;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"fallujah_v1_0"
+	};
+	addOnsAuto[]=
+	{
+		"fallujah_v1_0"
+	};
+	randomSeed=7925793;
+	class Intel
+	{
+		startWeather=0;
+		forecastWeather=0;
+		year=2010;
+		month=1;
+		day=11;
+		hour=12;
+		minute=0;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"fallujah_v1_0"
+	};
+	addOnsAuto[]=
+	{
+		"fallujah_v1_0"
+	};
+	randomSeed=8052427;
+	class Intel
+	{
+		startWeather=0;
+		forecastWeather=0;
+		year=2010;
+		month=1;
+		day=11;
+		hour=12;
+		minute=0;
+	};
+};
