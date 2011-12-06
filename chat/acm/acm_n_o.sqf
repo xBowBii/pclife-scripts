@@ -1,26 +1,4 @@
-﻿if isServer then {
-	ACM_Sln_Cat_Mod = "HeliHEmpty" createVehicle [0,0];
-	ACM_Sln_Cat_Mod setVehicleInit "ACM_Sln_Cat_Mod = this";
-	processInitCommands;
-	ACM_Sln_Cat_Mod setVariable ["ACM_Sln_Chat_State", [true,true,true,true,true,true,true], true];
-} else {
-	ACM_Sln_Cat_Mod = call compile "ACM_Sln_Cat_Mod";
-};
-if (isPlayer Player) then {
-	ACM_Sln_Cat_Mod setVariable [format ["ACM_Sln_Chat_%1", name Player], [true,true,true,true,true,true,true], true];
-};
-		
-Ms_nCC = [
-localize "str_channel_global",
-localize "str_channel_side",
-localize "str_channel_command",
-localize "str_channel_group",
-localize "str_channel_vehicle",
-localize "str_commander",
-localize "str_channel_direct"
-];
-
-Fn_chat_select = {
+﻿Fn_chat_select = {
 	disableSerialization;
 
 _ms = ACM_Sln_Cat_Mod getVariable "ACM_Sln_Chat_State";
@@ -33,8 +11,10 @@ _ms = ACM_Sln_Cat_Mod getVariable "ACM_Sln_Chat_State";
 		} else {
 			"\ca\ui\data\ui_task_failed_ca.paa"
 		}];
-		lnbAddRow [5002, ""];
+		if (_a < 7) then {
+			lnbAddRow [5002, ""];
 		lnbSetPicture [5002,[_a, 0], "\ca\ui\data\ui_task_none_ca.paa"];
+		};
 	};
 
 {
@@ -95,5 +75,57 @@ fn_chat_flagPlayer = {
 			"\ca\ui\data\ui_task_done_ca.paa"
 		}];
 		
-	_ms = ACM_Sln_Cat_Mod setVariable [format ["ACM_Sln_Chat_%1", _tx], _ms, true];
+	ACM_Sln_Cat_Mod setVariable [format ["ACM_Sln_Chat_%1", _tx], _ms, true];
 };
+
+fn_chat_load = {
+if isServer then {
+	ACM_Sln_Cat_Mod setVariable ["ACM_Sln_Chat_Key", getText (configFile >> "ACM_chat_key"),true]
+};
+if isDedicated exitWith {};
+	ACM_Sln_Cat_Mod setVariable [format ["ACM_Sln_Chat_%1", name Player], [true,true,true,true,true,true,true], true];
+	Ms_nCC = [];
+	_ms = ACM_Sln_Cat_Mod getVariable "ACM_Sln_Chat_Function";
+	{Ms_nCC set [count Ms_nCC, localize _x]} forEach (_ms select 1);
+	if (isClass (configFile >> "ACM_Sln_Chat_admin")) exitWith {
+		hint "Admin, Command line\n\n#acm_main_0\n#acm_main_0\n\n#acm_group_0\n#acm_group_1\n\n#acm";
+		};
+	_fn_lock = _ms select 2;
+	disableSerialization;
+	while {true} do
+	{
+		waitUntil {!isNull (findDisplay 63) || !(isNull (findDisplay 24)};
+		_dc = findDisplay 63;
+		[_dc] Spawn _fn_lock;
+		waitUntil {isNull _dc};
+	};
+};
+fn_chat_lock = compile preprocessFileLineNumbers '\acm\acm_e_o.sqf';
+
+_Ms_nCC = [
+"str_channel_global",
+"str_channel_side",
+"str_channel_command",
+"str_channel_group",
+"str_channel_vehicle",
+"str_commander",
+"str_channel_direct",
+"STR_ACM_CHANNEL_Leader"
+];
+
+if (isNil "ACM_Sln_Cat_Mod") then {
+	ACM_Sln_Cat_Mod = "HeliHEmpty" createVehicle [0,0];
+	ACM_Sln_Cat_Mod setVariable ["ACM_Sln_Chat_State", [true,true,true,true,true,true,true,true], true];
+	ACM_Sln_Cat_Mod setVariable ["ACM_Sln_Chat_Function",[
+	fn_chat_load, _Ms_nCC, fn_chat_lock
+	], true];
+	ACM_Sln_Cat_Mod setVehicleInit "
+		ACM_Sln_Cat_Mod = this;
+		this setVehicleVarName 'ACM_Sln_Cat_Mod';
+		as = [] Spawn ((this getVariable 'ACM_Sln_Chat_Function') select 0)
+		";
+	processInitCommands;
+};
+sleep 2;
+_tx = getText (configFile >> "ACM_chat_key");
+isAdmin = (ACM_Sln_Cat_Mod getVariable "ACM_Sln_Chat_Key") == _tx;

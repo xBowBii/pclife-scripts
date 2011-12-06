@@ -1,45 +1,49 @@
-﻿// запускается из конфига, при открытии ввода.
-// onLoad = "_as = [] execVM 'control_chat\e_o.sqf'";
-if false exitWith {};// набор условий для отмены блокировки, админ
-disableSerialization;
-_cn = (findDisplay 63) displayCtrl 101;
+﻿disableSerialization;
+_cn = (_this select 0) displayCtrl 101;
 WaitUntil {ctrlText _cn != ""};// получение названия канала
-_ms = ACM_Sln_Cat_Mod getVariable "ACM_Sln_Chat_State";
-_mn = ACM_Sln_Cat_Mod getVariable format ["ACM_Sln_Chat_%1", name Player];
-_nb = false;
-
-switch (ctrlText _cn) do {
+_ms = ACM_Sln_Cat_Mod getVariable "ACM_Sln_Chat_State";// глобальные фпаги
+_mn = ACM_Sln_Cat_Mod getVariable format ["ACM_Sln_Chat_%1", name Player];//локальные флаги
+// проверка флагов
+if (
+switch (ctrlText _cn) do
+{
 	case (Ms_nCC select 0):{
-		if (serverCommandAvailable "#kick" ) then {
-			_nb = true
-		} else {
-			_nb = (_ms select 0) && (_mn select 0)
-		};
+		if isAdmin then {true} else {
+		(_ms select 0) && (_mn select 0)
+		}
 	};
 	case (Ms_nCC select 1):{
-		_nb = (_ms select 1) && (_mn select 1)
+		(_ms select 1) && (_mn select 1)
 	};
 	case (Ms_nCC select 2):{
-		_nb = (_ms select 2) && (_mn select 2)
+		(_ms select 2) && (_mn select 2)
 	};
 	case (Ms_nCC select 3):{
-		_nb = (_ms select 3) && (_mn select 3)
+		if (Player == leader Player) then {
+		(_ms select 7) && (_mn select 3)
+		} else {
+		(_ms select 3) && (_mn select 3)
+		}
 	};
 	case (Ms_nCC select 4):{
-		_nb = (_ms select 4) && (_mn select 4)
+		(_ms select 4) && (_mn select 4)
 	};
 	case (Ms_nCC select 5):{
-		_nb = (_ms select 5) && (_mn select 5)
+		(_ms select 5) && (_mn select 5)
 	};
 	case (Ms_nCC select 6):{
-		_nb = (_ms select 6) && (_mn select 6)
+		(_ms select 6) && (_mn select 6)
 	};
 	default {
-		//hint format ["Unknow Channel\n%1",ctrlText _cn]
-	};
+		false
+	}
+}
+) then {
+	((findDisplay 24) displayCtrl 101) ctrlShow true;
+	ctrlSetFocus ((findDisplay 24) displayCtrl 101)
+} else {
+	_cn ctrlSetText localize "str_no_action";
+	((findDisplay 24) displayCtrl 101) ctrlShow false;
+	((findDisplay 24) displayCtrl 101) ctrlSetText "";
 };
-if false then {_nb = false};// набор условий для обязательной блокировки.
-if ! _nb then {
-	_cn ctrlSetText localize "STR_ACM_CHANNEL_CLOSED_NOW";
-	((_this select 0) displayCtrl 101) ctrlShow false
-};
+
