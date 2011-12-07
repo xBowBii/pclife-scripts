@@ -2,6 +2,8 @@ _target = _this select 0;
 _damage = _this select 2;
 _part = _this select 1;
 _shooter = _this select 3;
+
+_grp = group _target;
   
 _healthStatus = "";
 
@@ -18,8 +20,8 @@ if (alive _target) then {
 else {
   _healthStatus = "killed";
   _shooter addScore _damage + 1;
-  sleep 5;
   deleteVehicle _target;
+  deleteGroup _grp;
 };
   
 player globalchat format ["Target hit by %2 in %3. Target is %4.",_target, _shooter, _part, _healthStatus];

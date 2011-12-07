@@ -9,13 +9,15 @@ class Mission
 		"acex_c_weapon",
 		"CAAir_E_AH6J",
 		"ace_sys_wounds",
-		"ace_sys_playerhud"
+		"ace_sys_playerhud",
+		"cacharacters2"
 	};
 	addOnsAuto[]=
 	{
 		"cacharacters_e",
 		"ace_sys_wounds",
 		"ace_sys_playerhud",
+		"cacharacters2",
 		"acex_ru_c_weapon",
 		"acex_c_weapon",
 		"CAAir_E_AH6J",
@@ -34,7 +36,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=3;
+		items=4;
 		class Item0
 		{
 			side="WEST";
@@ -59,6 +61,7 @@ class Mission
 					id=10;
 					side="WEST";
 					vehicle="US_Soldier_Marksman_EP1";
+					player="PLAY CDG";
 					skill=0.60000002;
 					text="sniper_1";
 					init="removeallweapons this; {this removeMagazine _x} forEach magazines this;";
@@ -69,6 +72,7 @@ class Mission
 					id=11;
 					side="WEST";
 					vehicle="US_Soldier_Marksman_EP1";
+					player="PLAY CDG";
 					skill=0.60000002;
 					text="sniper_2";
 					init="removeallweapons this; {this removeMagazine _x} forEach magazines this;";
@@ -129,6 +133,24 @@ class Mission
 				};
 			};
 		};
+		class Item3
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					presence=0;
+					position[]={20.399342,7,10228.578};
+					id=12;
+					side="GUER";
+					vehicle="GUE_Soldier_Crew";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
 	};
 	class Vehicles
 	{
@@ -180,7 +202,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=8;
+		items=34;
 		class Item0
 		{
 			position[]={3349.6055,6.990027,7341.5513};
@@ -217,8 +239,8 @@ class Mission
 		};
 		class Item3
 		{
-			position[]={3371.2405,7.5753918,7532.9814};
-			name="brdm_spawn";
+			position[]={3373.9722,7.6445942,7547.3784};
+			name="brdm_spawn_1";
 			type="Empty";
 		};
 		class Item4
@@ -229,13 +251,13 @@ class Mission
 		};
 		class Item5
 		{
-			position[]={3068.8535,6.9900088,7180.9619};
+			position[]={3335.2197,6.9900088,7223.9834};
 			name="btr_wp1";
 			type="Empty";
 		};
 		class Item6
 		{
-			position[]={3676.2119,6.9900088,7206.2817};
+			position[]={3709.252,6.9900088,7214.1392};
 			name="btr_wp2";
 			type="Empty";
 		};
@@ -243,6 +265,166 @@ class Mission
 		{
 			position[]={3492.7627,6.9900088,6849.2998};
 			name="respawn_west";
+			type="Empty";
+		};
+		class Item8
+		{
+			position[]={1851.228,44.841244,7213.5718};
+			name="xlwp_1";
+			type="Empty";
+		};
+		class Item9
+		{
+			position[]={1854.0603,26.13821,7223.2744};
+			name="xlwp_2";
+			type="Empty";
+		};
+		class Item10
+		{
+			position[]={1854.0116,27.310608,7193.1733};
+			name="xlwp_3";
+			type="Empty";
+		};
+		class Item11
+		{
+			position[]={1875.7966,13.984715,7218.5034};
+			name="xlwp_4";
+			type="Empty";
+		};
+		class Item12
+		{
+			position[]={1925.8289,6.9900088,7240.1831};
+			name="xlwp_5";
+			type="Empty";
+		};
+		class Item13
+		{
+			position[]={1947.0575,6.9900088,7263.2871};
+			name="xlwp_6";
+			type="Empty";
+		};
+		class Item14
+		{
+			position[]={2034.637,27.310608,7350.4653};
+			name="xlwp_7";
+			type="Empty";
+		};
+		class Item15
+		{
+			position[]={2432.8618,6.9900088,7287.1006};
+			name="xlwp_8";
+			type="Empty";
+		};
+		class Item16
+		{
+			position[]={3611.6338,6.9900088,7369.0649};
+			name="brdm_spawn_2";
+			type="Empty";
+		};
+		class Item17
+		{
+			position[]={3479.7395,6.9900088,7151.0747};
+			name="brdm_spawn_0";
+			type="Empty";
+		};
+		class Item18
+		{
+			position[]={2722.1277,6.9900088,7176.5244};
+			name="convoy_400_0";
+			type="Empty";
+		};
+		class Item19
+		{
+			position[]={2899.3396,6.9900088,7241.2427};
+			name="convoy_400_1";
+			type="Empty";
+		};
+		class Item20
+		{
+			position[]={3102.8093,7.1733189,7328.4834};
+			name="convoy_400_2";
+			type="Empty";
+		};
+		class Item21
+		{
+			position[]={3222.5234,7.7198019,7424.4199};
+			name="convoy_400_3";
+			type="Empty";
+		};
+		class Item22
+		{
+			position[]={2886.8801,6.9900088,6490.4429};
+			name="convoy_200_0";
+			type="Empty";
+		};
+		class Item23
+		{
+			position[]={3000.0664,6.9900088,6513.5293};
+			name="convoy_200_1";
+			type="Empty";
+		};
+		class Item24
+		{
+			position[]={3300.522,6.9900088,6549.5464};
+			name="convoy_200_2";
+			type="Empty";
+		};
+		class Item25
+		{
+			position[]={3699.8511,6.9900088,6599.248};
+			name="convoy_200_3";
+			type="Empty";
+		};
+		class Item26
+		{
+			position[]={2884.3184,6.9900088,6498.6802};
+			name="c_300_start";
+			text="Convoy start";
+			type="mil_ambush";
+		};
+		class Item27
+		{
+			position[]={2732.1829,6.9900088,7179.4785};
+			name="c_400_start";
+			text="Convoy_start";
+			type="hd_ambush";
+		};
+		class Item28
+		{
+			position[]={3676.4663,11.765741,7227.7842};
+			name="patrol_training";
+			text="Patrol elimination training";
+			type="mil_objective";
+			colorName="ColorRed";
+		};
+		class Item29
+		{
+			position[]={3678.1116,13.09001,7220.9917};
+			name="patrol_0";
+			type="Empty";
+		};
+		class Item30
+		{
+			position[]={3681.1606,6.9900088,7216.3047};
+			name="patrol_1";
+			type="Empty";
+		};
+		class Item31
+		{
+			position[]={3667.1777,6.9900088,7219.8511};
+			name="patrol_2";
+			type="Empty";
+		};
+		class Item32
+		{
+			position[]={3670.1577,6.9900088,7238.0918};
+			name="patrol_3";
+			type="Empty";
+		};
+		class Item33
+		{
+			position[]={3684.5452,6.9900088,7235.9346};
+			name="patrol_4";
 			type="Empty";
 		};
 	};
