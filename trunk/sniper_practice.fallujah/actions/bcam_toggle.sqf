@@ -1,0 +1,2 @@
+if (BDKS_DisableBulletCam) then {[-2, {BDKS_DisableBulletCam = false; hint "Bulletcam enabled!";}] call CBA_fnc_globalExecute;};
+if (!BDKS_DisableBulletCam) then {[-2, {BDKS_DisableBulletCam = true; hint "Bulletcam disabled!";}] call CBA_fnc_globalExecute;};

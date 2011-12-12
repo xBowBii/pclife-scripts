@@ -1,0 +1,1 @@
+["spawnConvoy400"] call CBA_fnc_globalEvent;
