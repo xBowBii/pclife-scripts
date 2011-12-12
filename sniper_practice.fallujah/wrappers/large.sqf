@@ -1,0 +1,1 @@
+["spawnLarge"] call CBA_fnc_globalEvent;

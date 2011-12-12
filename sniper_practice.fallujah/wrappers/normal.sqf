@@ -1,0 +1,1 @@
+["spawnNormal"] call CBA_fnc_globalEvent;
