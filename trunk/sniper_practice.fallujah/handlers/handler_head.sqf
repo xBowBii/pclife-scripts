@@ -6,8 +6,8 @@ _shooter = _this select 3;
 _delta = _damage - HEAD_DMG;
 
 if (_damage != 1) then {
-  if (_delta > 0.2) then {
-    [_target, "head_hit", _delta, _shooter] call reportDamage;
+  if (_delta > 0.3) then {
+    [_target, "head", _delta, _shooter] call reportDamage;
   };
 };
 HEAD_DMG = _damage;
