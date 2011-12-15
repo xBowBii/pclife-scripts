@@ -84,4 +84,4 @@ if (isServer) then {["spawnConvoy400", {[400] call spawn_convoy}] call CBA_fnc_a
 //add some cover-spawn points to 1500+ range - fixed
 //add some cover/in-building spawn points to 300-700 range - fixed?
 //add automatic in-building positioning, if it breaks LOS - fixed
-//fix elevator
+//fix elevator - fixed

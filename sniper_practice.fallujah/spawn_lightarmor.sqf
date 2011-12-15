@@ -9,13 +9,13 @@ switch (_place) do
   case 0:
     {_btrType = "BTR60_TK_EP1"};  
   case 1:
-    {_btrType = "M1126_ICV_M2_EP1"};  
+    {_btrType = "ACE_Stryker_ICV_M2"};  
   case 2:
     {_btrType = "LAV25"};
 };
 
 //cleaning stuff
-_toDelete = nearestObjects [getMarkerPos "btr_spawn", ["BTR60_TK_EP1","M1126_ICV_M2_EP1","LAV25"], 350];
+_toDelete = nearestObjects [getMarkerPos "btr_spawn", ["BTR60_TK_EP1","M1126_ICV_M2_EP1","LAV25"], 550];
 {
   _crew = crew _x;
   {deleteVehicle _x} foreach _crew;
