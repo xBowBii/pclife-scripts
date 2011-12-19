@@ -1,0 +1,2 @@
+THEEND_MISSION = true;
+IGNITE_MISSION = false;

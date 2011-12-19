@@ -1,0 +1,362 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"cacharacters_e",
+		"ace_sys_playerhud",
+		"ace_sys_wounds",
+		"acex_ru_c_weapon",
+		"acex_usnavy_c_weapon",
+		"takistan",
+		"ace_c_weapon",
+		"camisc_e",
+		"camisc3",
+		"cacharacters_baf",
+		"acex_ru_men_naval"
+	};
+	addOnsAuto[]=
+	{
+		"cacharacters_e",
+		"ace_sys_playerhud",
+		"ace_sys_wounds",
+		"cacharacters_baf",
+		"acex_ru_men_naval",
+		"acex_ru_c_weapon",
+		"acex_usnavy_c_weapon",
+		"camisc_e",
+		"camisc3",
+		"takistan"
+	};
+	randomSeed=14907951;
+	class Intel
+	{
+		briefingName="Sniper Pictures";
+		startWeather=0.52337849;
+		forecastWeather=0.30118823;
+		year=2011;
+		month=12;
+		day=18;
+		hour=11;
+		minute=20;
+	};
+	class Groups
+	{
+		items=4;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=5;
+				class Item0
+				{
+					position[]={8258.373,296.04001,2137.1909};
+					id=0;
+					side="WEST";
+					vehicle="US_Soldier_Officer_EP1";
+					player="PLAYER COMMANDER";
+					leader=1;
+					rank="MAJOR";
+					skill=0.60000002;
+					text="teh_commander";
+				};
+				class Item1
+				{
+					position[]={8256.0723,296.04001,2139.1167};
+					id=1;
+					side="WEST";
+					vehicle="US_Soldier_Spotter_EP1";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="spotter_1";
+				};
+				class Item2
+				{
+					position[]={8254.7471,296.04001,2139.9995};
+					id=2;
+					side="WEST";
+					vehicle="US_Soldier_Marksman_EP1";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="sniper_1";
+				};
+				class Item3
+				{
+					position[]={8261.79,296.04001,2140.1208};
+					id=3;
+					side="WEST";
+					vehicle="US_Soldier_Marksman_EP1";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="sniper_2";
+				};
+				class Item4
+				{
+					position[]={8260.4482,296.04001,2139.1702};
+					id=4;
+					side="WEST";
+					vehicle="US_Soldier_Spotter_EP1";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="spotter_2";
+				};
+			};
+		};
+		class Item1
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={8263.2471,296.04001,2102.5591};
+					id=7;
+					side="LOGIC";
+					vehicle="ACE_SYS_PRespawn_Logic";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+				class Item1
+				{
+					position[]={8274.8799,296.04001,2109.687};
+					id=8;
+					side="LOGIC";
+					vehicle="ACE_Wounds_Logic";
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+				class Item2
+				{
+					position[]={8286.2627,296.04001,2117.8398};
+					id=9;
+					side="LOGIC";
+					vehicle="ACE_Wounds_EveryoneMedic";
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+				class Item3
+				{
+					position[]={8298.3818,296.04001,2126.9531};
+					id=10;
+					side="LOGIC";
+					vehicle="ACE_Wounds_FullHeal";
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item2
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					presence=0;
+					position[]={1341.7108,176.93283,12270.853};
+					id=13;
+					side="GUER";
+					vehicle="CIV_Contractor1_BAF";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item3
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					presence=0;
+					position[]={1378.5931,172.76753,12272.368};
+					id=14;
+					side="EAST";
+					vehicle="ACE_RU_Soldier_D";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=4;
+		class Item0
+		{
+			position[]={8267.2588,296.04001,2162.2581};
+			azimut=53.209042;
+			id=5;
+			side="EMPTY";
+			vehicle="ACE_WeaponBox_RU";
+			skill=0.60000002;
+			text="ammocrate_ru";
+		};
+		class Item1
+		{
+			position[]={8269.2275,296.04001,2159.5276};
+			azimut=414.69901;
+			id=6;
+			side="EMPTY";
+			vehicle="ACE_WeaponBox_USMC";
+			skill=0.60000002;
+			text="ammocrate_us";
+		};
+		class Item2
+		{
+			position[]={8268.2705,296.04001,2161.0925};
+			azimut=52.071053;
+			id=11;
+			side="EMPTY";
+			vehicle="Land_CamoNet_NATO_EP1";
+			skill=0.60000002;
+		};
+		class Item3
+		{
+			position[]={8272.1123,296.04001,2150.5051};
+			azimut=245;
+			id=12;
+			side="EMPTY";
+			vehicle="Satelit";
+			skill=0.60000002;
+			text="task_manager";
+		};
+	};
+	class Markers
+	{
+		items=10;
+		class Item0
+		{
+			position[]={8258.3594,296.04001,2140.1284};
+			name="respawn_west";
+			type="Empty";
+		};
+		class Item1
+		{
+			position[]={7893.8101,213.02643,8238.21};
+			name="convoy_0_teleport";
+			type="Empty";
+		};
+		class Item2
+		{
+			position[]={9033.3447,203.88466,6841.3008};
+			name="convoy_0_spawn";
+			type="Empty";
+		};
+		class Item3
+		{
+			position[]={8962.04,202.05429,6932.4541};
+			name="convoy_0_wp1";
+			type="Empty";
+		};
+		class Item4
+		{
+			position[]={8814.6367,191.23045,7209.4688};
+			name="convoy_0_wp2";
+			type="Empty";
+		};
+		class Item5
+		{
+			position[]={8484.3311,187.01672,7532.4492};
+			name="convoy_0_wp3";
+			type="Empty";
+		};
+		class Item6
+		{
+			position[]={8226.3896,176.12384,7807.0449};
+			name="convoy_0_wp4";
+			type="Empty";
+		};
+		class Item7
+		{
+			position[]={6790.0986,120.6075,8925.9375};
+			name="convoy_0_wp5";
+			type="Empty";
+		};
+		class Item8
+		{
+			position[]={2497.6904,192.54503,5027.3491};
+			name="arm_convoy_0_teleport";
+			type="Empty";
+		};
+		class Item9
+		{
+			position[]={2512.3987,195.07932,5100.8013};
+			name="arm_convoy_0_spawn";
+			type="Empty";
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"takistan"
+	};
+	addOnsAuto[]=
+	{
+		"takistan"
+	};
+	randomSeed=10018947;
+	class Intel
+	{
+		startWeather=0.40000001;
+		forecastWeather=0.40000001;
+		year=2009;
+		day=28;
+		hour=16;
+		minute=20;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"takistan"
+	};
+	addOnsAuto[]=
+	{
+		"takistan"
+	};
+	randomSeed=12977927;
+	class Intel
+	{
+		startWeather=0.40000001;
+		forecastWeather=0.40000001;
+		year=2009;
+		day=28;
+		hour=16;
+		minute=20;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"takistan"
+	};
+	addOnsAuto[]=
+	{
+		"takistan"
+	};
+	randomSeed=5684725;
+	class Intel
+	{
+		startWeather=0.40000001;
+		forecastWeather=0.40000001;
+		year=2009;
+		day=28;
+		hour=16;
+		minute=20;
+	};
+};
